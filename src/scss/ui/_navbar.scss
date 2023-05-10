@@ -1,0 +1,237 @@
+@use '../custom' as *;
+
+ul::-webkit-scrollbar {
+    background-color: white;
+    -webkit-appearance: none;
+  }
+
+//Navbar
+li.categoria {
+    font-size: 1rem;
+    text-align: center;
+    padding-bottom: 12px;
+    padding-top: 12px;
+    color: $white;
+    border-bottom: 1px solid $gris-light;
+    background: -webkit-gradient(linear, right top, left top, from(#626262), to(#0095C5));
+    background: linear-gradient(270deg, #626262, #0095C5);
+    background-size: 400% 400%;
+    -webkit-animation: back-gradiente-producto 7s ease infinite;
+    animation: back-gradiente-producto 7s ease infinite;
+    text-transform: uppercase;
+}
+
+li.categoria span {
+    display: block;
+    text-align: center;
+    color: $white;
+}
+
+.dropdown-menu.fade-up {
+    padding: 0px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.logo-cla {
+    width: 180px;
+    transition: all 0.3s ease-in;
+}
+.logo-cla-small{
+    width: 90px;
+    transition: all 0.3s ease-in;
+}
+
+img.logo-bnp {
+    width: 150px;
+    transition: all 0.3s ease-in;
+}
+
+img.logo-bnp-small {
+    width: 75px;
+    transition: all 0.3s ease-in;
+}
+
+img.logo-cslc {
+    width: 90px;
+    transition: all 0.3s ease-in;
+}
+
+img.logo-cslc-small {
+    width: 45px;
+    transition: all 0.3s ease-in;
+}
+
+.navbar-toggler {
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transition: .5s ease-in-out;
+}
+
+.navbar-toggler,
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none;
+    box-shadow: none;
+    border: 0;
+    position: relative;
+    top: 6px;
+    left: 93%;
+}
+
+.navbar-toggler span {
+    margin: 0;
+    padding: 0;
+}
+
+.toggler-icon {
+    display: block;
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    background: $primary;
+    border-radius: 1px;
+    opacity: 1;
+    left: 0;
+    transform: rotate(0deg);
+    transition: .25s ease-in-out;
+}
+
+.middle-bar {
+    margin-top: 0px;
+}
+
+
+/* State when the navbar is collapsed */
+
+.navbar-toggler.collapsed .top-bar {
+    position: absolute;
+    top: -5px;
+    transform: rotate(0deg);
+}
+
+.navbar-toggler.collapsed .middle-bar {
+    opacity: 1;
+    position: absolute;
+    top: 4px;
+    filter: alpha(opacity=100);
+}
+
+.navbar-toggler.collapsed .bottom-bar {
+    position: absolute;
+    top: 13px;
+    transform: rotate(0deg);
+}
+
+/* when navigation is clicked */
+
+.navbar-toggler .top-bar {
+    top: inherit;
+    transform: rotate(135deg);
+}
+
+.navbar-toggler .middle-bar {
+    opacity: 0;
+    top: inherit;
+    filter: alpha(opacity=0);
+}
+
+.navbar-toggler .bottom-bar {
+    top: inherit;
+    transform: rotate(-135deg);
+}
+
+/* Color of 3 lines */
+
+.navbar-toggler.collapsed .toggler-icon {
+    background: $primary;
+}
+
+.btn.btn-volver {
+    border: 2px solid #0076A9;
+    color: #000;
+    background-color: #FFFFFF;
+    height: 48px;
+    &:hover{
+        background-color: #F6F7F7;
+        color: $dark;
+    }
+}
+.btn.btn-text {
+    
+    color: #0076A9;
+    background-color: #FFFFFF;
+    height: 48px;
+    &:hover{
+        background: #F6F7F7;
+        border-radius: 8px;
+    };
+}
+
+.navegacion-white  {
+    background-color: $white;
+    transition: all 0.3s ease-in;
+}
+
+.myHeader{
+    transition: all 0.3s ease-in;
+}
+
+.icono-nav-home{
+    font-size: 1.1rem;
+    font-weight: bolder;
+}
+
+//NavBar Principal
+.navegacion nav a {
+    color: $gris-dark;
+    font-size: 16px;
+    //font-family: 'Rawson';
+    font-weight: bolder;
+    transition: all 0.3s ease-in;
+    &:hover{
+        color: $gris-dark;
+        transition: all 0.3s ease-in;
+    }
+}
+
+nav a.nav-link.active{
+    color: $primary;
+    font-weight: bolder;
+    border-bottom: 3px solid $primary;
+}
+
+.disabled-proteccion{
+    color: $gris-light !important;
+}
+
+//Fin Navbar
+
+.nav-tab1 {
+    background-color: #FFFFFF;
+    padding-bottom: 0px;
+    margin-bottom: 40px;
+    width: 100%;
+
+    white-space: nowrap;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-y: hidden;
+
+}
+
+.nav-tab1 div ul li.nav-item .nav-link {
+    padding: 8px 40px;
+}
+
+.nav-tab1 li a{
+    color: $gris-dark;
+    border-bottom: 3px solid $g3;
+    color: $gris-dark;
+}
+
+.nav-tab1 a.nav-link.active {
+    border-bottom: 3px solid $primary;
+    color: $primary;
+}

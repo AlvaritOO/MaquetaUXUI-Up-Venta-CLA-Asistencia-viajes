@@ -1,0 +1,1231 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kaisei+HarunoUmi:wght@400;700&family=Open+Sans&display=swap" rel="stylesheet"> 
+  <link rel="stylesheet" href="../../build/css/app.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+  <title>CLA - OneInsurance</title>
+  <!-- Animate -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+  <!-- Material  CSS -->
+  <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+</head>
+
+
+<body>
+
+<!--Header-->
+<section id="header" class="myHeader fijo-arriba">
+  <div class="container">
+    <header
+      class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 border-bottom">
+      <a id="02-pv-gestionar-tabs-disabled-navbar-logo-caja-los-andes" href="/" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
+        <img src="../../build/img/svg/logo-cla.svg" alt="Caja los Andes" class="logo-cla">
+      </a>
+
+      <div class="col-md-6 text-end d-none d-sm-block d-sm-none d-md-block">
+        <a id="02-pv-gestionar-tabs-disabled-logo-bnp-paribas" href="#"><img src="../../build/img/svg/bnp.svg" class="logo-bnp mr-4" alt="BNP Paribas Cardif"></a>
+        <a id="02-pv-gestionar-tabs-disabled-logo-corredora" href="#"><img src="../../build/img/svg/corredora-color.svg" class="logo-cslc ms-4"
+            alt="Corredora de seguros la Camara"></a>
+      </div>
+    </header>
+  </div>
+<!--NavBar-->
+  <div class="contenedor-navegacion ">
+    <div class="container navegacion">
+
+      <nav id="navbar-principal" class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+
+          <button class="navbar-toggler collapsed justify-content-around" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="toggler-icon top-bar"></span>
+            <span class="toggler-icon middle-bar"></span>
+            <span class="toggler-icon bottom-bar"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item dropdown-hover">
+                <a id="02-pv-gestionar-tabs-disabled-navbar-mis-seguros" class="nav-link dropdown-hover-button"  href="#">Mis Seguros</a>
+              </li>
+              <li class="nav-item dropdown-hover">
+                <a id="02-pv-gestionar-tabs-disabled-navbar-mis-siniestros" class="nav-link dropdown-hover-button"  href="#">Mis Siniestros</a>
+                <div class="dropdown-hover-content shadow">
+                  <div class="row">
+                    <div class="col-lg-3 mega-menu">
+                      <div class="mb-3">
+                        <a id="02-pv-gestionar-tabs-disabled-navbar-dropdown-mis-seguros-denuncia-auto" class="dropdown-item p-0"  href="#">Denuncia tu siniestro de auto</a>
+                        <a id="02-pv-gestionar-tabs-disabled-navbar-dropdown-mis-seguros-denuncia" class="dropdown-item p-0" href="#">Denuncia tu siniestro</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="nav-item dropdown-hover">
+                <a id="02-pv-gestionar-tabs-disabled-navbar-mas-proteccion" class="nav-link dropdown-hover-button disabled-proteccion" href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Lo sentimos, este beneficio no esta disponible para el seguro contratado"">+Protección</a>
+              </li>
+              <li class="nav-item dropdown-hover">
+                <a id="02-pv-gestionar-tabs-disabled-navbar-solicitar-ayuda" class="nav-link dropdown-hover-button" href="#">Solicitar Ayuda</a>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+      </nav>
+    </div>
+  </div>
+<!--Fin NavBar-->    
+</section>
+<!--Fin Header-->
+
+<!--Detalles del Seguro-->
+<section id="PlanesContratados">
+
+  <div class="container mb-2 espaciado-cabecera">
+    <div class="divisor"></div>
+    <h2 class="text-center pb-4 mt-5 p-5 mt-5 mb-5">
+      Detalle
+      <span class="fw-bold"> de tu seguro</span>
+    </h2>
+
+    <div class="contenedor-plan-gestion mb-3">
+      <div class="row mb-3">
+
+            <div class="col-sm-1 text-center">
+              <img src="../../build/img/svg/icono-familiarfull.svg" class="img-fluid" width="50px">
+            </div>
+  
+            <div class="col-sm-4">
+              <span class="h4 pe-2 title-plan-pv">Vida Familiar Full - {Plan}</span>
+              <p class="pt-2 d-none d-sm-block">
+                <span class="fecha-contratacion">Contratado el 12 Septiembre 2018</span>
+              </p>
+            </div>
+  
+            <div class="col-sm-2 text-center">
+              <span class="h5">1UF/mes</span>
+              <p><span class="small">$</span><span>3.746 aprox.</span></p>
+            </div>
+  
+            <div class="col-sm-5 text-center d-grid d-block gap-2 d-sm-block">
+  
+              <button id="01-pv-home-producto-descargar-01" type="button" class="btn btn-text mb-sm-2 mb-2"
+                data-bs-toggle="tooltip" data-bs-placement="top" title="Descargar certificado de cobertura">
+                <i class="bi bi-file-arrow-down pe-1"></i>
+                Descargar
+              </button>
+  
+              <button id="01-pv-home-producto-enviar-01" type="button" class="btn btn-text mb-sm-2 mb-2"
+                data-bs-toggle="tooltip" data-bs-placement="top" title="Enviar certificado de cobertura por correo">
+                <i class="bi bi-envelope pe-1" data-bs-toggle="modal" data-bs-target="#modalCertificado"></i>
+                Enviar
+              </button>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="container mt-4">
+          <div class="alert alert-info d-flex align-items-center" role="alert">
+            <img class="ms-4" src="../img/svg/alert-info-.svg">
+            <div class="ms-4">
+              Si necesitas actualizar tu datos personales ****** .....
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+</section>
+<!--Fin Detalles del Seguro-->
+  
+<!--Tab-->
+<section id="tab">
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-12">
+        <ul class="nav nav-tab1 justify-content-center">
+        <li class="col-12 col-sm-3 text-center nav-item">
+          <a id="02-pv-gestionar-tabs-tab-datos-seguro" class="nav-link active" id="datos-tab" data-bs-toggle="tab" data-bs-target="#datos" type="button" role="tab" aria-controls="datos" aria-selected="true">
+            Datos de <br/>tu seguro</a>
+        </li>
+        <li class="col-12 col-sm-3 text-center nav-item">
+          <a id="02-pv-gestionar-tabs-tab-asistencia" class="nav-link" id="asistencia-tab" data-bs-toggle="tab" data-bs-target="#asistencia" type="button" role="tab" aria-controls="asistencia" aria-selected="false">
+            <br/>Asistencia</a>
+        </li>
+        <li class="col-12 col-sm-3 text-center nav-item">
+          <a id="02-pv-gestionar-tabs-tab-coberturas-exclusiones" class="nav-link" id="nocubre-tab" data-bs-toggle="tab" data-bs-target="#nocubre" type="button" role="tab" aria-controls="nocubre" aria-selected="false">
+            Cobertura y <br/>exclusiones</a>
+        </li>
+        <li class="col-12 col-sm-3 text-center nav-item">
+          <a id="02-pv-gestionar-tabs-tab-caso-siniestros" class="nav-link" id="casodesinisestro-tab" data-bs-toggle="tab" data-bs-target="#casodesinisestro" type="button" role="tab" aria-controls="casodesinisestro" aria-selected="false">
+            ¿Qué hacer en <br/>caso de siniestro?</a>
+        </li>
+      </ul>
+    </div>
+</div>
+
+    <div class="tab-content">
+      <div class="tab-pane active" id="datos" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+        <div class="container d-flex align-items-center justify-content-center">
+          <section id="datosPlan">
+
+            <div class="row">
+        
+              <div class="col-sm-6 list-unstyled">
+        
+                <h6 class="fw-bold mt-4"><span class="color-primary fw-bold">Datos de tu seguro</span></h6>
+                
+                <ul class="list-unstyled"><span class="fw-bold">Número de poliza</span>
+                  <li>123456789</li>
+                </ul>
+                <ul class="list-unstyled"><span class="fw-bold">Prima</span>
+                  <li>UF 90</li>
+                </ul>
+                
+                <ul class="list-unstyled"><span class="fw-bold">Fecha de inicio</span>
+                  <li>{dd:mm:año}</li>
+                </ul>
+        
+                <ul class="list-unstyled"><span class="fw-bold">Fecha fin</span>
+                  <li>{dd:mm:año}</li>
+                </ul>
+            </div>
+        
+            <div class="col-sm-6">
+                <div class="col-sm-6 col-md-12">
+                  <p class="h6 fw-bold mt-5">Coberturas</p>
+                  <table class="table table-borderless">
+                    <thead class="table-light">
+                      <tr>
+                        <th scope="col">Tipo Cobertura</th>
+                        <th scope="col">Tope</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Vida</td>
+                        <td>90 UF</td>
+                      </tr>
+                      <tr>
+                        <td>Incapacidad Permanente</td>
+                        <td>90 UF</td>
+                      </tr>
+                      <tr>
+                        <td>Muerte Accidental</td>
+                        <td>90 UF</td>
+                      </tr>
+                      <tr>
+                        <td>Otro Item</td>
+                        <td>90 UF</td>
+                      </tr>
+        
+                    </tbody>
+                  </table>
+        
+                </div>
+              </div>
+              
+      
+          <div class="divisor"></div>
+      
+            <div class="row">
+      
+              <h6 class="fw-bold mt-4"><span class="color-primary fw-bold">Datos personales del asegurado titular</span></h6>
+              
+                <div class="col-12 col-md-6 col-sm-12">
+                  <ul class="list-unstyled order-1"><span class="fw-bold">Nombre titular</span>
+                    <li>Pedro Andres Gonzalez Gonzalez</li>
+                  </ul>
+                </div>
+      
+                <div class="col-lg-2 col-md-2 col-sm-12">
+                  <ul class="list-unstyled order-2"><span class="fw-bold">RUT</span>
+                    <li>15.526.234-5</li>
+                  </ul>
+                </div>
+      
+            </div>
+            
+              <div>
+                <h6 class="fw-bold mt-4"><span class="color-primary fw-bold">Datos de contacto</span></h6>
+                
+                <div class="d-flex justify-content-start">
+      
+                  <div class="col-6">
+                    <ul class="list-unstyled order-1"><span class="fw-bold">Dirección titular</span>
+                      <li>Jose Antunez Perez 1455, Providencia, Región Metropolitana</li>
+                    </ul>
+                  </div>
+      
+                  <div class="col-sm-2">
+                    <ul class="list-unstyled order-2 d-none d-sm-block"><span class="fw-bold">Télefono</span>
+                      <li>123456789</li>
+                    </ul>
+                  </div>
+      
+                  <div class="col-md-12 col-sm-2">
+                    <ul class="list-unstyled order-3 d-none d-sm-block"><span class="fw-bold">Correo electrónico</span>
+                      <li>micorreo@email.cl</li>
+                    </ul>
+                  </div>
+      
+                </div>
+              </div>
+      
+          <div class="divisor mt-5"></div>
+      
+            <div class="col-lg-5 col-md-6 table-responsive">
+      
+              <h6 class="fw-bold mt-4"><span class="color-primary fw-bold">Beneficiarios asignados a este seguro</span></h6>
+              
+              <table class="table table-borderless mt-3">
+                <thead>
+                  <tr>
+                    <th scope="col-1"></th>
+                    <th scope="col">Nombre</th>
+                    <th scope="col">RUT</th>
+                    <th scope="col">Participación</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row" class="text-secondary">1</th>
+                    <td class="fw-bold">Daniela Cruz Gaete</td>
+                    <td>15.526.234-5</td>
+                    <td>80%</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="text-secondary">2</th>
+                    <td class="fw-bold">Isabella Javiera cruz</td>
+                    <td>15.526.234-5</td>
+                    <td>10%</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="text-secondary">3</th>
+                    <td class="fw-bold">Trinidad Millaray Cruz</td>
+                    <td>15.526.234-5</td>
+                    <td>10%</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+      
+          <div class="divisor mb-4 mt-5"></div>
+      
+          <div class="row col-12 d-none d-sm-block d-md-none d-lg-block">  
+            <div class="table-responsive">
+      
+              <h6 class="fw-bold mt-4"><span class="color-primary fw-bold">Adicionales asignados a este seguro</span></h6>
+              
+              <table class="table table-borderless mt-3">
+                <thead>
+                  <tr>
+                    <th scope="col-1"></th>
+                    <th scope="col-1">Nombre</th>
+                    <th scope="col-1">RUT</th>
+                    <th scope="col-1">Télefono</th>
+                    <th scope="col-1">Dirección</th>
+                    <th scope="col-1">Correo electrónico</th>
+                  </tr>
+                </thead>
+                <tbody> 
+                  <tr>
+                    <th scope="row" class="text-secondary">1</th>
+                    <td class="fw-bold">Daniela Cruz Gaete</td>
+                    <td>9.526.234-5</td>
+                    <td>9123 456 78</td>
+                    <td>Jose Antunez Perez  1455, Región Metropolitana</td>
+                    <td>Daniela@gmail.com</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="text-secondary">2</th>
+                    <td class="fw-bold">Isabella Javiera Cruz</td>
+                    <td>8.526.234-5</td>
+                    <td>9123 456 78</td>
+                    <td>Jose Antunez Perez  1455, Región Metropolitana</td>
+                    <td>isabella@gmail.com</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="text-secondary">3</th>
+                    <td class="fw-bold">Trinidad Millaray Cruz</td>
+                    <td>16.526.234-5</td>
+                    <td>9123 456 78</td>
+                    <td>Jose Antunez Perez  1455, Región Metropolitana</td>
+                    <td>Trinidad@gmail.com</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+      
+            </div>
+      
+            <div class="d-lg-none d-lg-block">
+              <h6 class="fw-bold mt-4"><span class="color-primary fw-bold">Adicionales asignados a este seguro</span></h6>
+              
+              <div class="row">
+      
+                <div class="col col-sm-12">
+                  <ul class="list-unstyled "><span class="fw-bold">Nombre</span>
+                    <li>Daniela Cruz Gaete</li>
+                  </ul>  
+                  <ul class="list-unstyled  "><span class="fw-bold">RUT</span>
+                    <li>15.526.234-5</li>
+                  </ul>  
+                  <ul class="list-unstyled "><span class="fw-bold">Télefono</span>
+                      <li>9 1234 5678</li>   
+                  </ul>    
+                  <ul class="list-unstyled "><span class="fw-bold">Dirección titular</span>
+                    <li>Jose Antunez Perez 1455, Providencia, Región Metropolitana</li>
+                  </ul>  
+                  <ul class="list-unstyled "><span class="fw-bold">Correo electrónico</span>
+                    <li>micorreo@email.cl</li>
+                  </ul>
+                </div>
+      
+              </div>
+            </div>
+      
+            <div class="d-lg-none d-lg-block">
+              <div class="divisor mb-4"></div>
+              
+              <div class="row">
+      
+                <div class="col col-sm-12">
+                  <ul class="list-unstyled "><span class="fw-bold">Nombre</span>
+                    <li>Isabella Javiera Cruz</li>
+                  </ul>  
+                  <ul class="list-unstyled  "><span class="fw-bold">RUT</span>
+                    <li>15.526.234-5</li>
+                  </ul>  
+                  <ul class="list-unstyled "><span class="fw-bold">Télefono</span>
+                      <li>9 1234 5678</li>   
+                  </ul>    
+                  <ul class="list-unstyled "><span class="fw-bold">Dirección titular</span>
+                    <li>Jose Antunez Perez 1455, Providencia, Región Metropolitana</li>
+                  </ul>  
+                  <ul class="list-unstyled "><span class="fw-bold">Correo electrónico</span>
+                    <li>micorreo@email.cl</li>
+                  </ul>
+                </div>
+      
+              </div>
+            </div>
+      
+            <div class="d-lg-none d-lg-block">
+              <div class="divisor mb-4"></div>
+              
+              <div class="row">
+      
+                <div class="col col-sm-12">
+                  <ul class="list-unstyled "><span class="fw-bold">Nombre</span>
+                    <li>Daniela Cruz Gaete</li>
+                  </ul>  
+                  <ul class="list-unstyled  "><span class="fw-bold">RUT</span>
+                    <li>15.526.234-5</li>
+                  </ul>  
+                  <ul class="list-unstyled "><span class="fw-bold">Télefono</span>
+                      <li>9 1234 5678</li>   
+                  </ul>    
+                  <ul class="list-unstyled "><span class="fw-bold">Dirección titular</span>
+                    <li>Jose Antunez Perez 1455, Providencia, Región Metropolitana</li>
+                  </ul>  
+                  <ul class="list-unstyled "><span class="fw-bold">Correo electrónico</span>
+                    <li>micorreo@email.cl</li>
+                  </ul>
+                </div>
+      
+              </div>
+            </div>
+      
+            <div class="row float-lg-end">
+              <div class="d-grid d-block gap-2 d-sm-block mt-4">
+                  <button id="02-pv-gestionar-tabs-tab-datos-seguro-btn-volver" type="button" class="btn btn-volver me-1">Volver</button>
+                  <button id="02-pv-gestionar-tabs-tab-datos-seguro-btn-renuncia" type="button" class="btn btn-primary">Renunciar a este seguro <i class="bi bi-trash ms-2"></i></button>
+              </div>
+            </div>
+          
+          </section>
+        </div>
+      </div>
+      <div class="tab-pane" id="asistencia" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+        <div class="container d-flex align-items-center justify-content-center">
+          <div class="container">
+            <h4 class="text-center pb-4 fw-bold mt-3">La información de asistencias las puede visualizar descargando el certificado <br/>de cobertura  o consultando al siguiente número: <a href="#" target="_blank">800 364 663</a></h4>
+            <h5 class="text-center pb-4 mb-4">Llama sin costo las 24 hrs, los 365 días del año</h5>
+            
+            <div class="row mb-4 acordeones">
+
+              <div class="accordion accordion-flush mb-4" id="accordionFlushExample1">
+                <div id="02-pv-gestionar-tabs-tab-asistencia-acordion-consulta-medica" class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingUno">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapseUno" aria-expanded="false" aria-controls="flush-collapseUno">
+                      <h5 class="acordeon">Acceso a Consultas Médicas a través de teleconsulta online</h5>
+                    </button>
+                  </h2>
+                  <div id="flush-collapseUno" class="accordion-collapse collapse" aria-labelledby="flush-headingUno"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                      <p>1- Consulta médica online, con un doctor que entrega asesorías respecto de la situación médica, las 24 horas del día, de forma ilimitada para ti y tu familia. Vía correo electrónico puede enviar recetas, ordenes de exámenes y certificados médicos. Eventualmente, el doctor podrá recomendar la derivación presencial a un especialista, en caso de que el paciente lo requiera.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion accordion-flush mb-4" id="accordionFlushExample2">
+                <div id="02-pv-gestionar-tabs-tab-asistencia-acordion-asistencia-box-medico" class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingDos">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapseDos" aria-expanded="false" aria-controls="flush-collapseDos">
+                      <h5 class="acordeon">Asistencias Box Médico Vida Familiar</h5>
+                    </button>
+                  </h2>
+                  <div id="flush-collapseDos" class="accordion-collapse collapse" aria-labelledby="flush-headingDos"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+
+                      <p class="fw-bold"> 1.- Recibe atención médica online, con un doctor que entrega asesorías respecto de
+                        la situación
+                        médica, las 24 horas del día, de forma ilimitada para ti y tu familia.</p>
+
+                      <p>Vía correo electrónico puede enviar recetas, ordenes de exámenes y certificados médicos.
+                        Eventualmente, el doctor podrá recomendar la derivación presencial a un especialista, en caso de
+                        que el paciente lo requiera.</p>
+
+                      <p>Para acceder a las consultas online, ingresa al sitio web o descarga y regístrate en la app
+                        Videoconsulta Seguro Caja los Andes:</p>
+                      <p>Ingresa con tu RUT (sin puntos ni guión) y clave (5 primeros dígitos del RUT)</p>
+
+                      <p class="fw-bold">2.- Además, recibe sin costo y de forma presencial lo siguiente*:</p>
+
+                      <ul class="list-unstyled">
+                        <li>Consultas Médicas de Especialidad (dos eventos al año)</li>
+                        <li>Exámenes de Radiografía (dos eventos al año)</li>
+                        <li>Exámenes de Maternidad y Embarazo (un evento al año, que incluye el set completo)</li>
+                        <li>Exámenes de Ecotomografías o Ultrasonido (un evento al año)</li>
+                        <li>Exámenes de Laboratorio (dos eventos anuales)</li>
+                      </ul>
+
+                      <p>Ingresa al <a href="https://cajalosandes.clinicadigital.cl" target="_blank">sitio web</a> , o
+                        descarga la <a href="https://play.google.com/store/apps/details?id=cajalosandes.cla">app Videoconsulta
+                          Seguro Caja los Andes</a> y regístrate.</p>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="accordion accordion-flush mb-4" id="accordionFlushExample3">
+                <div id="02-pv-gestionar-tabs-tab-asistencia-acordion-videoconsultas" class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingTres">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapseTres" aria-expanded="false" aria-controls="flush-collapseTres">
+                      <h5 class="acordeon">Videoconsultas</h5>
+                    </button>
+                  </h2>
+                  <div id="flush-collapseTres" class="accordion-collapse collapse" aria-labelledby="flush-headingTres"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+
+                      <p> Ingresa al sitio <a class="text-primary" href="">web</a> , o  <a class="text-primary" href="">descarga la app Videoconsulta</a> Seguro Caja los Andes y
+                        regístrate:<br/>
+                        Ingresa con tu RUT (sin puntos ni guión) y clave (5 primeros dígitos del RUT).
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          
+        </div>
+        <div class="row float-lg-end">
+          <div class="d-grid gap-2 d-md-block">
+            <a id="02-pv-gestionar-tabs-tab-asistencia-btn-volver" type="button" class="btn btn-volver">Volver</a>
+          </div>
+        </div>
+      </div>
+      <div class="tab-pane" id="nocubre" role="tabpanel" aria-labelledby="messages-tab" tabindex="0">
+        <div class="container d-flex align-items-center justify-content-center">
+          <div class="row container-fluid mb-4 acordeones">
+
+            <div class="accordion accordion-flush mb-4" id="accordionFlushExample2">
+              <div id="02-pv-gestionar-tabs-tab-cobertura-exclusiones-acordeon-cobertura" class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingDos">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseDos" aria-expanded="false" aria-controls="flush-collapseDos">
+                    <h5 class="acordeon">Cobertura</h5>
+                  </button>
+                </h2>
+                <div id="flush-collapseDos" class="accordion-collapse collapse mb-5" aria-labelledby="flush-headingDos"
+                  data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">
+                  <div class="col-lg-12 col-12 px-5">
+                    <h4>¿Qué cubre este seguro?</h4>
+                    <ul class="list-unstyled que-cubre">
+                      <li><span class="material-icons-outlined me-2">done</span>
+                        <d class="fw-bold">Vida:</d> en caso de fallecimiento por causa natural o accidental del asegurado titular, se pagará el capital asegurado a los beneficiarios designados.</li>
+                      <li><span class="material-icons-outlined me-2">done</span>
+                        <d class="fw-bold">Muerte accidental:</d> Se pagará un monto adicional al capital de vida, si el fallecimiento se produce a consecuencia directa e inmediata de un accidente.</li>
+                      <li><span class="material-icons-outlined me-2">done</span>
+                        <d class="fw-bold">Enfermedades graves(*):</d> se pagará el monto asegurado cuando
+                        el asegurado titular y/o grupo familiar (cargas familiares acreditadas en Caja Los Andes) se viera afectado por alguna
+                        de las siguientes enfermedades graves: Cáncer, Infarto Cardíaco, Derrame Cerebral, Insuficiencia Renal Crónica,
+                        Cirugía By-Pass Aortocoronaria.<br>
+                        <d class="fw-bold">(*)IMPORTANTE:</d> Esta cobertura posee Carencia.
+                        ¿Qué es la carencia? Es aquel periodo de tiempo contado a partir de la fecha de incorporación al seguro durante el
+                        cual, en caso de siniestro, no se tendrá derecho a indemnización alguna. En este seguro el periodo de carencia es de
+                        90 días desde la contratación
+                        de tu seguro.</li>
+                      <li><span class="material-icons-outlined me-2">done</span>
+                        <d class="fw-bold">Incapacidad total y permanente dos tercios (2/3) por accidente: </d>Cubre al 
+                        asegurado titular si a consecuencia directa de un accidente sufre lesiones que le provoquen 
+                        alguna de las formas de invalidez indicadas en la póliza, dentro de los 90 días contados desde la fecha del accidente. </li>
+                    </ul>
+                  </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="accordion accordion-flush mb-4" id="accordionFlushExample3">
+              <div id="02-pv-gestionar-tabs-tab-cobertura-exclusiones-acordeon-exclusiones" class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingTres">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseTres" aria-expanded="false" aria-controls="flush-collapseTres">
+                    <h5 class="acordeon">Exclusiones</h5>
+                  </button>
+                </h2>
+                <div id="flush-collapseTres" class="accordion-collapse collapse" aria-labelledby="flush-headingTres"
+                  data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">
+                    <div class="col-lg-12 col-12 mt-3 px-5">
+  
+                      <ul class="list-unstyled no-cubre">
+                        <li><span class="material-icons me-2">close</span>Suicidio o Intento de suicidio.</li>
+                        <li><span class="material-icons me-2">close</span>Pena de muerte.</li>
+                        <li><span class="material-icons me-2">close</span>Peleas o riñas, comisión de actos delictivos, en calidad
+                          de autor, cómplice o encubridor por el beneficiario. </li>
+                        <li><span class="material-icons me-2">close</span>Guerra, invasión, acción de un enemigo extranjero u
+                          hostilidades.</li>
+                        <li><span class="material-icons me-2">close</span>Participación en actos, deportes o actividades que pongan
+                          en riesgo la integridad física de las personas.</li>
+                        <li><span class="material-icons me-2">close</span>Enfermedades, Lesiones, Dolencias o Situaciones de Salud
+                          Preexistentes.</li>
+                        <li><span class="material-icons me-2">close</span>Sismo desde el grado 8 inclusive en la escala de Mercalli,
+                          determinado por el Centro Sismológico Nacional o su futuro reemplazo.</li>
+                        <li><span class="material-icons me-2">close</span>Riesgos nucleares o atómicos.</li>
+                        <li><span class="material-icons me-2">close</span>Infección oportunista o neoplasma maligno, en caso que el
+                          asegurado se encuentre afectado o sea portador del SIDA.</li>
+                        <p class="fw-bold">Asimismo, no se efectuará el pago de la indemnización si la invalidez permanente 2/3 se
+                          produce, entre otros, como consecuencia de:</p>
+                      </ul>
+                      <ol>
+                        <li>Intento de suicidio.</li>
+                        <li>Intoxicación bajo los efectos del alcohol, drogas o alucinógenos.</li>
+                        <li>Embarazo, parto o aborto.</li>
+                        <li>Dolor de espalda y condiciones relacionadas.</li>
+                        <li>Enfermedades psico – neuróticas (Depresión, Stress, Desórdenes mentales, etc.).</li>
+            
+                      </ol>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row float-lg-end">
+          <div class="d-grid gap-2 d-md-block">
+            <a id="02-pv-gestionar-tabs-tab-cobertura-exclusiones-btn-volver" type="button" class="btn btn-volver">Volver</a>
+          </div>
+        </div>
+      </div>
+      <div class="tab-pane" id="casodesinisestro" role="tabpanel" aria-labelledby="casodesinisestro-tab" tabindex="0">
+        <div class="container d-flex align-items-center justify-content-center">
+          <div class="container">
+            <div class="row mb-4 acordeones">
+
+              <div class="accordion accordion-flush mb-4" id="accordionFlush1">
+                <div id="02-pv-gestionar-tabs-tab-caso-siniestro-acordeon-enfermedades-graves" class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingUno">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapseUno" aria-expanded="false" aria-controls="flush-collapseUno">
+                      <h5 class="acordeon">Cobertura Enfermedades Graves</h5>
+                    </button>
+                  </h2>
+                  <div id="flush-collapseUno" class="accordion-collapse collapse" aria-labelledby="flush-headingUno"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                      <ul class="list-unstyled">
+                        <li>a) Formulario de denuncia de siniestros firmado por el Asegurado indicando número de
+                          la póliza, cobertura siniestrada y plan contratado.</li>
+                        <li>b) En caso de Infarto al Miocardio: Informe Médico con diagnóstico; Copia de la epicrisis de la enfermedad, junto con alguno de estos documentos:
+                            - Una hospitalización cuyo registro indique un infarto del miocardio dentro de un plazo
+                            de 24 horas antes de dicha hospitalización.
+                            - Un historial de dolor de pecho, indicativo de una enfermedad cardiaca isquémica.
+                            - Cambios nuevos y relevantes en el electrocardiograma EGG.
+                            - Aumento de las enzimas cardíacas por sobre los valores normales.</li>
+                        <li>c) En caso de Accidente Vascular Encefálico: Informe médico con diagnóstico, y respaldado por una hospitalización cuyo registro indique una apoplejía cerebral dentro
+                            de un plazo de 24 horas antes de dicha hospitalización; Copia de la epicrisis de la
+                            enfermedad.</li>
+                        <li>d) En caso de Enfermedad de las Coronarias: Informe Médico con diagnóstico; Copia del Protocolo operatorio y exámenes comprobatorios de la enfermedad.</li>
+                        <li>e) En caso de Cáncer Primario: Informe Médico con diagnóstico (realizado por oncólogo) y confirmado por un diagnóstico histopatológico de biopsia que certifique positivamente la presencia de un cáncer. Será requisito la presentación de un informe histopatológico por escrito.</li>
+                        <li>f) En caso de Insuficiencia Renal Crónica: Informe médico con diagnóstico, incluyendo el estado funcional de ambos riñones. Pruebas de función renal que acrediten la IRC: clearance de creatinina y/o creatinina plasmática</li>
+                      </ul>
+                    
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="accordion accordion-flush mb-4" id="accordionFlushExample2">
+                <div id="02-pv-gestionar-tabs-tab-caso-siniestro-acordeon-hospitalizacion" class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingUno2">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapseUno2" aria-expanded="false" aria-controls="flush-collapseUno2">
+                      <h5 class="acordeon">Cobertura Cantidad diaria por Hospitalización a causa de Accidente</h5>
+                    </button>
+                  </h2>
+                  <div id="flush-collapseUno2" class="accordion-collapse collapse" aria-labelledby="flush-headingUno2"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                      <ul class="list-unstyled">
+                        <li>a) Formulario de denuncia de siniestros firmado por el Asegurado indicando número de la póliza, cobertura siniestrada y plan contratado.</li>
+                        <li>b)Detalle de la cuenta, este documento es emitido por el centro hospitalario. El detalle de la cuenta debe establecer el número de días cama y el tipo de prestación (cuidados básicos, UTI, UCI, etc.).</li>
+                        <li>c) Resumen clínico epicrisis, debe contener la fecha de ingreso y egreso, diagnóstico asociado, tratamiento, exámenes realizados, nombre médico tratante e indicaciones de alta.</li>
+                      </ul>
+                    
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="accordion accordion-flush mb-4" id="accordionFlushExample3">
+                <div id="02-pv-gestionar-tabs-tab-caso-siniestro-acordeon-muerte-accidental" class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingUno3">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapseUno3" aria-expanded="false" aria-controls="flush-collapseUno3">
+                      <h5 class="acordeon">Cobertura Muerte Accidental</h5>
+                    </button>
+                  </h2>
+                  <div id="flush-collapseUno3" class="accordion-collapse collapse" aria-labelledby="flush-headingUno3"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                      <ul class="list-unstyled">
+                        <li>a) Formulario de denuncia de siniestros firmado por el Reclamante indicando número de póliza, cobertura siniestrada y plan contratado.</li>
+                        <li>b) Copia del parte policial y/o documento atención de urgencia (según corresponda).</li>
+                        <li>c) Informe toxicológico y alcoholemia.</li>
+                      </ul>
+                    
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="accordion accordion-flush mb-4" id="accordionFlushExample4">
+                <div id="02-pv-gestionar-tabs-tab-caso-siniestro-acordeon-incapacidad" class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingUno4">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapseUno4" aria-expanded="false" aria-controls="flush-collapseUno4">
+                      <h5 class="acordeon">Cobertura Incapacidad Total y Permanente por Accidente</h5>
+                    </button>
+                  </h2>
+                  <div id="flush-collapseUno4" class="accordion-collapse collapse" aria-labelledby="flush-headingUno4"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                      <ul class="list-unstyled">
+                        <li>a) Formulario de denuncia de siniestros firmado por el Asegurado indicando número de póliza, cobertura siniestrada y plan contratado.</li>
+                        <li>b) Informe Médico Tratante (IMT), el informe debe ser completado con letra clara y legible, además de contener nombre y firma del médico tratante.</li>
+                        <li>c) Copia del Parte policial y Certificado de atención de urgencia por el accidente.</li>
+                        <li>d) Dictamen grado de invalidez, documento es emitido por la Comisión de Medicina Preventiva e Invalidez (COMPIN). El dictamen debe indicar el grado de invalidez y fecha de emisión.</li>
+                        <li>e) Resumen clínico epicrisis, debe contener la fecha de ingreso y egreso, diagnóstico asociado, tratamiento, exámenes realizados, nombre médico tratante e indicaciones de alta contratado y/o Certificado Médico.</li>
+                      </ul>
+                    
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="accordion accordion-flush mb-4" id="accordionFlushExample5">
+                <div id="02-pv-gestionar-tabs-tab-caso-siniestro-acordeon-gastos-medicos" class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingUno5">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapseUno5" aria-expanded="false" aria-controls="flush-collapseUno5">
+                      <h5 class="acordeon">Cobertura Reembolso de Gastos Médicos por Accidente</h5>
+                    </button>
+                  </h2>
+                  <div id="flush-collapseUno5" class="accordion-collapse collapse" aria-labelledby="flush-headingUno5"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                      <ul class="list-unstyled">
+                        <li>a) Documento original o fotocopia de bono(s) y/o boletas, documento (bono) es emitido por Isapre o Fonasa. Se debe b) enviar el documento original o una copia de este.</li>
+                        <li>b) Resumen clínico epicrisis, debe contener la fecha de ingreso y egreso, diagnóstico asociado, tratamiento, exámenes realizados, nombre médico tratante e indicaciones de alta.</li>
+                        <li>c) Receta Médica emitida por el médico tratante. El documento debe contener el nombre del medicamento comprado, nombre y firma del médico tratante, debe coincidir con el recetado o, al menos, debe contener el mismo principio activo y cantidad (bioequivalente).</li>
+                      </ul>
+                    
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="accordion accordion-flush mb-4" id="accordionFlushExample6">
+                <div id="02-pv-gestionar-tabs-tab-caso-siniestro-acordeon-vida-escolar" class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingUno6">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapseUno6" aria-expanded="false" aria-controls="flush-collapseUno6">
+                      <h5 class="acordeon">Cobertura de Vida y Vida Escolar</h5>
+                    </button>
+                  </h2>
+                  <div id="flush-collapseUno6" class="accordion-collapse collapse" aria-labelledby="flush-headingUno6"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                      <ul class="list-unstyled">
+                        <li>a) Formulario de denuncia de siniestros firmado por el Reclamante indicando número de la póliza, cobertura siniestrada y plan contratado.</li>
+                        <li>b) En el caso que todos los documentos fueron entregados, se enviarán a la Compañía de Seguros. Si faltó algún documento, el ejecutivo que recibió la documentación deberá solicitarle al asegurado o beneficiario el 100% de los documentos para luego entregar a la compañía de seguro, de esta forma evitará que el caso quede pendiente y/o rechazado</li>
+                        <li>c) Compañia de Seguros ingresa el siniestro en el sistema y tiene 10 días hábiles para notificar al asegurado o beneficiario el estado de su denuncio.</li>
+                      </ul>
+                    
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <div class="row float-lg-end">
+          <div class="d-grid gap-2 d-md-block">
+            <a id="02-pv-gestionar-tabs-tab-caso-siniestro-btn-volver" type="button" class="btn btn-volver">Volver</a>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+    
+  </div>
+</section>
+<!--Fin Tab-->
+    
+<!--Footer Consolidado-->
+
+<!-- Canales de contacto-->
+<section id="CanalesContacto">
+  <div class="container pt-4 mt-6" id="canales">
+      <div class="row">
+
+            <h2 class="text-center pb-4 mb-4 mt-5">¿Tienes<span class="fw-bold"> dudas?</span></h2>
+            <p class="text-center">Si tienes dudas, puedes contactarte con nosotros a través de los siguientes canales:</p>
+
+            <div class="col-md-4 mt-2 p-4">
+                <div class="col-md-6 mb-4"><img src="../../build/img/svg/logo-cla.svg" class="text-center" height="65px"></div>
+                <span class="fw-bold">Caja Los Andes.</span>
+                <p>Horario de Atención: Lunes a Viernes de 08:00 a 20:00 hrs.</p>
+                <p class="d-none d-sm-block">Teléfono <a id="02-pv-gestionar-tabs-canales-contacto-cla-telefono" href="tel:600 510 0000" data-bs-toggle="tooltip" data-bs-placement="top" title="Llamar Caja los Andes">600 510 0000</a></p>
+                <a id="02-pv-gestionar-tabs-canales-contacto-cla-telefono-btn" href="tel:600 510 0000" class="btn btn-volver d-block d-sm-none">Llamar al 600 510 0000</a>
+            </div>
+
+            <div class="col-md-4 mt-2 p-4">
+                <div class="col-md-6 mb-4"><img src="../../build/img/svg/bnp.svg" class="text-center" height="65px"></div>
+                <span class="fw-bold">BNP Paribas Cardif.</span>
+                <p>Horario de Atención: Lunes a Viernes de 09:00 a 18:00 hrs.</p>
+                <p class="d-none d-sm-block">Teléfono <a id="02-pv-gestionar-tabs-canales-contacto-bnp-telefono" href="tel:800 362 100" data-bs-toggle="tooltip" data-bs-placement="top" title="Llamar a BNP Paribas">800 362 100</a></p>
+                <a id="02-pv-gestionar-tabs-canales-contacto-bnp-telefono-btn" href="tel:800 362 100" class="btn btn-volver d-block d-sm-none">Llamar al 800 362 100</a>
+            </div>
+
+
+            <div class="col-md-4 mt-2 p-4">
+                <div class="col-md-6 mb-4"><img src="../../build/img/svg/corredora-color.svg" class="text-center" height="65px"></div>
+                <span class="fw-bold">Corredora de Seguros La Cámara SpA.</span>
+                <p>Horario de Atención: Lunes a Jueves de 08:30 a 18:00 hrs y Viernes de 08:30 a 14:30 hrs.</p>
+                <p class="d-none d-sm-block">Teléfono <a id="02-pv-gestionar-tabs-canales-contacto-cslc-telefono" href="tel:(+56 ) 229 642 400" data-bs-toggle="tooltip" data-bs-placement="top" title="Llamar a Corredora de Seguros">(+56 ) 229 642 400 </a> </p>
+                <a id="02-pv-gestionar-tabs-canales-contacto-cslc-telefono-btn" href="tel:+56229642400" class="btn btn-volver d-block d-sm-none">Llamar al (+56 ) 229 642 400</a>
+            </div>
+                
+            
+      </div>    
+  </div>
+
+</section>
+<!--Fin Canales de contacto-->
+
+<!--Seccion Legales-->
+<section id="legales">
+<div class="container mt-4 mb-4">
+  <div class="row">
+    <div class="col-lg-8 mx-auto">
+      <div class="accordion accordion-flush" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button id="02-pv-gestionar-tabs-legales-acordion" class="accordion-button collapsed acordion-legales" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              <span class="material-icons-outlined me-2 color-primario">privacy_tip</span><strong
+                class="color-primario">Legales</strong>
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <p class="text-legales">
+                Los riesgos son cubiertos por la compañía de seguros BNP Paribas Cardif Seguros de Vida S.A. Las
+                coberturas contratadas se rigen según las condiciones generales cuyos modelos se encuentran
+                depositados en la CMF bajo
+                los Códigos POL 220130353 (Vida); POL 320130357 Art. 3 Alternativa A (Muerte Accidental), y
+                Alternativa D (Reembolso de gastos médicos por Accidente); POL 320130600 Art. 4, Alternativa H
+                (Incapacidad total y permanente
+                2/3 por accidente); POL 320130369 Artículo 3° números 1,2,3,4,5 (Anticipo de Capital por
+                Enfermedades graves). POL 320130085 Art. 2º, letra I (Cantidad diaria por hospitalización a causa de
+                accidente).
+                Los seguros son intermediados por Corredora de Seguros La Cámara SpA, quien asume las obligaciones
+                propias de los seguros que intermedia en dependencias de Caja de Compensación de Asignación Familiar
+                Los Andes sin responsabilidad ni injerencia para esta última. La presente información sólo
+                representa un resumen de las coberturas y exclusiones, el detalle de éstas se encuentra en las
+                condiciones
+                generales antes mencionadas y en las condiciones particulares del seguro publicitado bajo la póliza
+                N° 220031390. Las condiciones generales pueden ser consultadas a través del sitio web de la Comisión
+                para el Mercado Financiero (<a href="www.suseso.cl" target="_blank">www.cmfchile.cl</a>), en la
+                opción Mercado de Seguros/Deposito de Pólizas. Condición: que se cumpla con los requisitos de
+                asegurabilidad. Forma de pago de la prima: mensual
+                según el plan contratado. Póliza del seguro puede ser contratada en todas las sucursales de Caja Los
+                Andes.</p>
+              <p class="text-legales">
+                Se deja constancia que Caja Los Andes no comercializa y no intermedia seguros. Las Cajas de
+                Compensación son fiscalizadas por la Superintendencia de Seguridad Social <a href="www.suseso.cl"
+                  target="_blank">www.suseso.cl</a>.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</section>
+<!--Fin Seccion Legales-->
+
+<!--Footer-->
+<section id="footer">
+<div class="container">
+  <footer class="d-flex flex-wrap justify-content-between align-items-center py-4">
+    <p class="col-md-4 col-12 col-sm-2 col-lg-4 mb-0 text-muted">
+      <a id="02-pv-gestionar-tabs-footer-logo-bnp" href="#"><img class="col-6 logo-footer" alt="BNP Paribas Cardif" src="../../build/img/svg/cardif-byn.svg"></a>
+    </p>
+
+    <ul class="nav col-md-8 mt-2 justify-content-end">
+      <li class="nav-item col-12 col-sm-4 col-lg-3 text-center"><a id="02-pv-gestionar-tabs-footer-terminos-condicones" href="#" class="fw-bold link-footer nav-link px-2" data-bs-toggle="modal" data-bs-target="#modaltyc">Términos y Condiciones</a></li>
+      <li class="nav-item col-12 col-sm-4 col-lg-3 text-center"><a id="02-pv-gestionar-tabs-footer-pregunta-frecuentes" href="#" class="fw-bold link-footer nav-link px-2" data-bs-toggle="modal" data-bs-target="#modalFAQ">Preguntas Frecuentes</a></li>
+      <li class="nav-item col-12 col-sm-4 col-lg-3 text-center"><a id="02-pv-gestionar-tabs-footer-canal-contactos" href="#" class="fw-bold link-footer nav-link px-2 text-left">Canales de Contacto <br><small><i class="bi bi-telephone-forward pe-2"></i>9 123 456 78</small></a></li>
+    </ul>
+  </footer>
+</div>
+</section>
+<!--Fin Footer-->
+
+<!--Fin Footer Consolidado-->
+
+
+<!--toast mensaje numero de serie-->
+<div class="toast-container position-fixed top-0 end-0 p-3" style="z-index: 99991">
+  <div id="liveToast" class="toast text-white bg-success border-0" role="alert" aria-live="assertive" aria-atomic="true" data-bs-delay="10000">
+    <div class="d-flex">
+      <div class="toast-body">
+        <b>Número de serie validado correctamente</b>
+      </div>
+      <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+    </div>
+  </div>
+
+    <!--modal verificacion-->
+    <div class="modal fade" id="modalVerificacion" tabindex="-1" aria-labelledby="modalVerificacion" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title color-primary" id="modalVerificacion">Verificación</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+
+            <form>
+              <div class="mb-3">
+                <p>Para continuar con la solicitud de renuncia, debemos validar tu identidad.</p>
+                <label for="exampleInputEmail1" class="form-label">Número de documento o serie</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <div id="emailHelp" class="form-text"  data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample"><a href="#">¿Donde encuentro esto?</a></div>
+              </div>
+
+              <div class="collapse mb-4" id="collapseExample">
+                <div class="card card-body">
+                  
+                  <p class="form-text">En la <strong>nueva cedula de Identidad</strong> puedes encontrar el número de documento en la parte
+                    <strong>frontal.</strong></p>
+                  <p class="form-text">En la <strong>vieja cedula de Identidad</strong> puedes encontrar el número de serie en la parte
+                    <strong>trasera</strong>.</p>
+                  <img src="../../build/img/serie-carnet.jpg" class="img-fluid">
+
+                </div>
+              </div>
+
+            </form>
+
+
+            <div class="col-sm-12 mt-4 text-left">
+              <p class="mb-2">*Debes validar el captcha para continuar</p>
+              <img src="../../build/img/captcha-ejemplo.jpg">
+            </div>
+
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Cerrar</button>
+            <button type="submit" class="btn btn-primary" id="liveToastBtn" data-bs-dismiss="modal">Validar número de serie</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--modal certificado-->
+    <div class="modal fade" id="modalCertificado" tabindex="-1" aria-labelledby="modalCertificado" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title color-primary" id="modalVerificacion">Enviar certificado</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+
+            <form>
+              <div class="mb-3">
+                <p>Confirmar la dirrección de correo electrónico a la cual se enviará el certificado de cobertura </p>
+                <label for="exampleInputEmail1" class="form-label">Correo electrónico</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <label for="exampleInputEmail1" class="form-label mt-3">Confirmar correo electrónico</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              </div>
+
+              <div class="alert alert-danger d-flex align-items-center" role="alert">
+                <img src="../img/svg/alert-danger.svg">
+                <div class="ms-4">
+                  No podemos atender tu solicitud en este momento. <br/> Por favor intenta más tarde.
+                </div>
+              </div>
+            </form>
+
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-volver" data-bs-dismiss="modal">Cancelar</button>
+            <button type="submit" class="btn btn-primary" id="liveToastBtn" data-bs-dismiss="modal">Enviar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+  <!--modal FAQ-->
+  <div class="modal fade" id="modalFAQ" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title color-primary" id="exampleModalLabel">Preguntas Frecuentes</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="pregunta">
+            <div class="accordion accordion-flush pb-3 pt-3" id="accordionExample1">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="heading1">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="false" aria-controls="collapse1">
+                    ¿Qué es una cobertura?
+                  </button>
+                </h2>
+                <div id="collapse1" class="accordion-collapse collapse" aria-labelledby="heading1" data-bs-parent="#accordionExample1">
+                  <div class="accordion-body">
+                    <strong>R: </strong>Riesgos o posibilidades de siniestros que están protegidos por la póliza. Cuando
+                    sucede uno de ellos, el asegurado está en la capacidad de solicitar una indemnización.
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+  
+            <div class="accordion accordion-flush pb-3" id="accordionExample2">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="heading2">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                    ¿Qué es una asistencia?
+                  </button>
+                </h2>
+                <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="heading2" data-bs-parent="#accordionExample2">
+                  <div class="accordion-body">
+                    <strong>R: </strong>Es un beneficio adicional a la cobertura del seguro, a la que puedes acceder sin
+                    costo adicional. La asistencia dependerá del seguro contratado.
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+            <div class="accordion accordion-flush pb-3" id="accordionExample3">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="heading3">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="true" aria-controls="collapse3">
+                    ¿Qué es una carencia?
+                  </button>
+                </h2>
+                <div id="collapse3" class="accordion-collapse collapse" aria-labelledby="heading3" data-bs-parent="#accordionExample3">
+                  <div class="accordion-body">
+                    <strong>R: </strong>La carencia es el periodo de tiempo durante el cual el asegurado no tendrá derecho
+                    a indemnización en caso de siniestro, contado desde la fecha de contratación del seguro. Para aquellos
+                    seguros que se deben ratificar conforme al Artículo 538 bis del Código de Comercio, la carencia se
+                    contará desde la ratificación (confirmación de la contratación).
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+            <div class="accordion accordion-flush pb-3" id="accordionExample4">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="heading4">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
+                    ¿Qué es la prima del seguro?
+                  </button>
+                </h2>
+                <div id="collapse4" class="accordion-collapse collapse" aria-labelledby="heading4" data-bs-parent="#accordionExample4">
+                  <div class="accordion-body">
+                    <strong>R: </strong>La prima es el precio del seguro definido en la póliza de seguro.
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+            <div class="accordion accordion-flush pb-3" id="accordionExample5">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="heading5">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapse5">
+                    ¿Dónde puedo ver el detalle de mi seguro?
+                  </button>
+                </h2>
+                <div id="collapse5" class="accordion-collapse collapse" aria-labelledby="heading5" data-bs-parent="#accordionExample5">
+                  <div class="accordion-body">
+                    <strong>R: </strong>Puedes ver todos los detalles de tu seguro en la solicitud de
+                    incorporación/certificado de cobertura entregado al momento de la contratación. Si tienes dudas o
+                    quieres solicitar una copia, puedes contactar a la Corredora de Seguros La Cámara al fono +56 2 2964
+                    2400.
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+  
+            <div class="accordion accordion-flush pb-3" id="accordionExample6">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="heading6">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse6" aria-expanded="false" aria-controls="collapse6">
+                    ¿Qué hacer en caso de siniestro?
+                  </button>
+                </h2>
+                <div id="collapse6" class="accordion-collapse collapse" aria-labelledby="heading6" data-bs-parent="#accordionExample6">
+                  <div class="accordion-body">
+                    <strong>R: </strong>Una vez producido el siniestro, el asegurado o los beneficiarios puede denunciar
+                    un siniestro haciendo <a href="https://denuncioonline.cardifnet.com/#/login" target="”_blank”">click
+                      aquí</a> o pueden entregar el <a href="https://www.cajalosandes.cl/cs/groups/public/documents/document/bmnp/by0y/~edisp/denuncio-2019.pdf" target="”_blank”">siguiente formulario</a> en una Sucursal de Caja Los Andes.
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+  
+            <div class="accordion accordion-flush pb-3" id="accordionExample7">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="heading7">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse7" aria-expanded="false" aria-controls="collapse7">
+                    ¿Cómo saber si mi seguro está activo?
+                  </button>
+                </h2>
+                <div id="collapse7" class="accordion-collapse collapse" aria-labelledby="heading7" data-bs-parent="#accordionExample7">
+                  <div class="accordion-body">
+                    <strong>R: </strong>Para saber el estado actual de tu seguro, puedes contactarte con la Corredora de
+                    Seguros La Cámara al fono +56 2 2964 2400.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+
+          <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--fin modal FAQ-->
+
+
+
+  <!-- Modal terminos-->
+<div class="modal fade" id="modaltyc" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title color-primary" id="exampleModalLabel">Terminos y Condiciones</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eros nunc, porttitor et porta quis, aliquet sit
+        amet ipsum. Phasellus rhoncus risus nec dolor scelerisque pulvinar. Praesent placerat pharetra ante, in posuere tellus
+        convallis blandit. Aenean nibh nisl, aliquam eget dolor a, fermentum molestie nisl. Phasellus vel augue vel magna rutrum
+        bibendum non vitae justo. Nam fermentum ante ac dolor dapibus placerat. Integer turpis felis, aliquet in risus et,
+        blandit imperdiet urna. Sed tempus finibus mauris ac feugiat. Fusce ultricies justo a quam sodales, id efficitur quam
+        sagittis. Donec in accumsan massa. Aenean risus diam, tristique nec turpis condimentum, facilisis consectetur risus.
+        Duis scelerisque varius diam at euismod.
+        
+        Nam sagittis, nulla nec facilisis imperdiet, massa orci pulvinar sem, quis scelerisque nisl ligula non felis. Etiam
+        iaculis sed lectus sit amet gravida. Proin feugiat suscipit nisl, ac efficitur sem fermentum at. Praesent fringilla
+        neque urna, eu rutrum nisl condimentum nec. Praesent sed ipsum vitae erat pharetra pellentesque et at neque. Praesent
+        sit amet ante euismod, ornare tortor non, luctus mauris. Suspendisse eu rhoncus metus.
+        
+        Donec tristique pulvinar tristique. Phasellus auctor massa ut velit cursus, quis vulputate magna aliquet. Aliquam congue
+        neque nulla, vitae luctus ligula pretium ut. Sed pulvinar dictum nibh non consequat. Interdum et malesuada fames ac ante
+        ipsum primis in faucibus. Nam id felis bibendum, varius massa cursus, ultricies neque. Vestibulum nec fringilla metus.
+        Vestibulum quis orci sagittis, imperdiet augue non, suscipit velit. Duis auctor risus vitae mi ullamcorper ultricies.
+        Pellentesque massa erat, pretium bibendum elit sit amet, hendrerit condimentum massa. Aenean pharetra suscipit auctor.
+        Aliquam varius ex at turpis vestibulum fermentum. </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+  <script src="../js/bootstrap.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="../js/scrollreveal.min.js"></script>
+  <script src="../js/owl.carousel.min.js"></script>
+  <script src="../js/splide.min.js"></script>
+  <script src="../js/jquery.scheletrone.js"></script>
+  <script src="../js/funciones.js"></script>
+
+</body>
+
+</html>

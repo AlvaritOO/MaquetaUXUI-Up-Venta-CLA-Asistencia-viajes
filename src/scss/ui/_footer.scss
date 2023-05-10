@@ -1,0 +1,52 @@
+@use '../custom' as *;
+
+//Legales
+
+p.text-legales {
+    font-size: 0.8rem;
+}
+//Fin legales
+
+//Footer
+section#footer {
+    background-color: #0076A9;
+    margin-top: auto;
+}
+
+.logo-footer{
+    filter: grayscale(100%);
+}
+
+a.link-footer{
+    display: block;
+	position: relative;
+	padding: 0.2em 0;
+    color: $white;
+}
+
+a.link-footer:hover{
+    display: block;
+	position: relative;
+	padding: 0.2em 0;
+    color: $backgris;
+}
+
+a.link-footer:after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: $secundario;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+
+a.link-footer:hover:after { 
+    width: 100%; 
+    left: 0; 
+  }
+
+//Fin Footer

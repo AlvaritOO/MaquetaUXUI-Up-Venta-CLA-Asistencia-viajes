@@ -1,0 +1,152 @@
+$blue:    #0095C5 !default;
+
+//Variables
+$primary: #0076A9;
+$secundario: #FFB300;
+$gris-dark: #3E4545;
+$gris-darker: #666;
+$white: #fff;
+$verde: #5B9E45;
+$error: #dc3545;
+$gris-light: #ccc;
+$gris-intermedio: #e7e7e7;
+$backgris: #F8F8F8;
+$black: #000;
+$g3: #A8B3B7;
+
+//Card
+$card-border-radius: 0px;
+
+//Tooltip
+$tooltip-border-radius: 8px;
+$tooltip-bg: $black;
+
+//Formularios
+$form-label-font-weight: bolder;  
+$form-label-margin-bottom: .1rem;
+
+//Alerts
+$alert-border-width:  4px;
+
+//Carousel
+$carousel-indicator-height: 8px;
+$carousel-indicator-active-bg: $secundario;
+$carousel-indicator-opacity:         .3;
+
+$badge-font-size:                   0.9em;
+//Inputs
+$input-focus-border-color:#008EC4;
+$input-border-radius: 8px;
+$input-border-color: #0076A9;
+$input-focus-color: $primary;
+$input-focus-width: 3px;
+$input-focus-box-shadow: $secundario;
+
+//Botones
+$btn-border-radius: 24px;
+$btn-line-height: 24px;
+$btn-padding-y: 11px;
+/*$btn-link-color: #ccc;
+$link-color: #fff !default;
+$link-color: #ccc;*/
+$btn-padding-x: 24px;
+$btn-close-color: #0076A9;
+
+//Navbar
+$navbar-toggler-border-radius: 0px;
+
+//Nav-tabs
+$nav-tabs-border-radius: 0px;
+$nav-tabs-link-active-color: $blue;
+
+//Modal
+$modal-content-border-radius: 24px;
+
+$position-values: (
+  0: 0,
+  1:1%,
+  2:2%,
+  3:3%,
+  4:4%,
+  5: 5%,
+  5y5:5.5%,
+  6: 6%,
+  7: 7%,
+  8: 8%,
+  9: 9%,
+  10: 10%,
+  12: 12%,
+  14: 14%,
+  16: 16%,
+  18: 18%,
+  20: 20%,
+  22: 22%,
+  25: 25%,
+  27: 27%,
+  30: 30%,
+  35: 35%,
+  40: 40%,
+  50: 50%,
+  60: 60%,
+  70: 70%,
+  75: 75%,
+  80: 80%,
+  85: 85%,
+  90: 90%,
+  95: 95%,
+  100: 100%,
+  101: 101%,
+);
+
+@font-face {
+  font-family: 'Rawson';
+  src: url("../../src/fonts/RawsonRegular.otf") format("opentype") !important;
+}
+
+html{
+  scroll-behavior: smooth;
+  font-family: "Rawson", sans-serif;
+}
+
+body {
+  font-family: "Rawson", sans-serif !important;
+  font-size: 18px;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-weight: 700;
+}
+
+div.nav.nav-tabs.tabs-categorias.mt-4 button span {
+  position: relative;
+  top: 5px;
+}
+
+
+
+
+// Importar Bootstrap
+@import '../../node_modules/bootstrap/scss/bootstrap.scss';
+
+.carousel-indicators {
+  position: absolute;
+  right: 0;
+  bottom: -42px;
+  left: 0;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin-right: 15%;
+  margin-bottom: 1rem;
+  margin-left: 15%;
+  list-style: none;
+}
