@@ -1,0 +1,742 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kaisei+HarunoUmi:wght@400;700&family=Open+Sans&display=swap" rel="stylesheet"> 
+  <link rel="stylesheet" href="../../build/css/app.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+  <title>CLA - OneInsurance</title>
+  <!-- Animate -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+  <!-- Material  CSS -->
+  <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+</head>
+
+<body class="d-flex flex-column h-100">
+
+
+
+  <!--toast nuevo beneficiario-->
+  <div class="toast-container position-fixed top-0 end-0 p-3" style="z-index: 99991">
+    <div id="liveToast" class="toast text-white bg-success border-0" role="alert" aria-live="assertive"
+      aria-atomic="true">
+      <div class="d-flex">
+        <div class="toast-body">
+          <b>Beneficiario inscrito correctamente.</b>
+        </div>
+        <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast"
+          aria-label="Close"></button>
+      </div>
+    </div>
+
+
+
+    <div id="liveToast2" class="toast text-white bg-success border-0" role="alert" aria-live="assertive"
+      aria-atomic="true">
+      <div class="d-flex">
+        <div class="toast-body">
+          <b>Cambios Guardados correctamente</b>
+        </div>
+        <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast"
+          aria-label="Close"></button>
+      </div>
+    </div>
+  </div>
+
+
+  <div id="liveToast3" class="toast text-white bg-success border-0" role="alert" aria-live="assertive"
+    aria-atomic="true">
+    <div class="d-flex">
+      <div class="toast-body">
+        <b>Beneficario eliminado correctamente</b>
+      </div>
+      <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast"
+        aria-label="Close"></button>
+    </div>
+  </div>
+  </div>
+
+
+  <section id="header" class="myHeader fijo-arriba">
+    <div class="container">
+      <header
+        class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 border-bottom">
+        <a href="/" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
+          <img src="img/svg/logo-cla.svg" alt="Caja los Andes" class="logo-cla">
+        </a>
+
+        <div class="col-md-6 text-end d-none d-sm-block d-sm-none d-md-block">
+          <a href="#"><img src="img/svg/bnp.svg" class="logo-bnp mr-4" alt="BNP Paribas Cardif"></a>
+          <a href="#"><img src="img/svg/corredora-color.svg" class="logo-cslc ms-4"
+              alt="Corredora de seguros la Camara"></a>
+        </div>
+      </header>
+    </div>
+
+    <div class="contenedor-navegacion ">
+      <div class="container navegacion">
+
+        <nav class="navbar navbar-expand-lg">
+          <div class="container-fluid">
+
+            <button class="navbar-toggler collapsed justify-content-around" type="button" data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+              aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+
+              <span class="toggler-icon top-bar"></span>
+              <span class="toggler-icon middle-bar"></span>
+              <span class="toggler-icon bottom-bar"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Contratar Seguros</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Mis Seguros Contatados</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Denunciar un siniestro</a>
+                </li>
+
+                <!--btn volver mobile-->
+                <li>
+                  <a class="nav-link btn btn-volver btn-sm d-block d-sm-none" href="#" id="navbarDropdown" role="button"
+                    data-bs-toggle="dropdown" aria-expanded="false"><i class="bi bi-arrow-left"></i> VOLVER A
+                    SEGUROS</a>
+                </li>
+
+            </div>
+            <!--btn volver desktop-->
+            <a class="btn btn-volver btn-sm d-none d-lg-block" href="#"><i class="bi bi-arrow-left"></i> VOLVER A
+              SEGUROS</a>
+            </ul>
+          </div>
+      </div>
+      </nav>
+
+    </div>
+    </div>
+  </section>
+
+<!-- ///////////////////////////////////////////////////////////////////////////PASO 2 ///////////////////////////////////////////////////////////////////////////-->
+    
+ <!--wizard-->
+ <section id="wizard" class="mb-5 pt-3 container d-none d-lg-block">
+  <div class="container contenedor-wizard">
+      <div class="row">
+        <div class="col-sm-12 col-md-10 offset-md-1">
+          <div class="position-relative">
+            <div class="progress" style="height: 1px;">
+                <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+            <button type="button" class="position-absolute top-0 start-0 translate-middle btn btn-sm btn-primary rounded-pill" style="width: 2rem; height:2rem;">1</button>
+            <button type="button" class="position-absolute top-0 start-25 translate-middle btn btn-sm btn-primary rounded-pill" style="width: 2rem; height:2rem;">2</button>
+            <button type="button" class="position-absolute top-0 start-50 translate-middle btn btn-sm btn-secondary rounded-pill" style="width: 2rem; height:2rem;">3</button>
+            <button type="button" class="position-absolute top-0 start-75 translate-middle btn btn-sm btn-secondary rounded-pill" style="width: 2rem; height:2rem;">4</button>
+            <button type="button" class="position-absolute top-0 start-100 translate-middle btn btn-sm btn-secondary rounded-pill" style="width: 2rem; height:2rem;">5</button>
+          </div>
+        </div>
+      </div>
+      <div class="container d-none d-sm-block">
+            <div class="row mt-5">
+              <div class="col-sm-12 col-md-10 offset-md-1">
+                <div class="position-relative">
+                  <span class="position-absolute top-0 start-0 translate-middle text-center">DATOS DEL <br>ASEGURADO</span>
+                  <span class="position-absolute top-0 start-25 translate-middle text-center">VIAJEROS <br>ADICIONALES</span>
+                  <span class="position-absolute top-0 start-50 translate-middle text-center">SELECCION <br>DE PLAN</span>
+                  <span class="position-absolute top-0 start-75 translate-middle text-center">MEDIOS DE<br>PAGO</span>
+                  <span class="position-absolute top-0 start-100 translate-middle text-center">RESUMEN Y CONFIRMACIÓN</span>
+                </div>
+            </div>
+          </div>
+      </div>
+  </div>
+</section>
+<!--fin wizard-->
+
+
+<!-- wizard mobile-->
+<section id="wizard-mobile">
+<div class="container d-lg-none mt-2 mb-1 wizard-mobile shadow">
+    <div class="row">
+          <div class="col-6 paso-actual">
+                  <span class="now-next text-right">Ahora</span>
+                  <span class="h4 text-right">Paso 2 de 5</span>
+                  <p class="nombre-paso text-right">VIAJEROS ADICIONALES</p>
+          </div>
+
+          <div class="col-6 paso-siguiente">
+                  <span class="now-next text-right">Siguiente</span>
+                  <span class="h4 text-right">Paso 3 de 5</span>
+                  <p class="nombre-paso text-right">SELECCION DE PLAN</p>
+          </div>
+
+    </div>
+</div>
+</section>
+<!--fin wizard mobile-->
+
+
+  <!-- form -->
+  <section id="beneficiarios" class="pt-4 ">
+
+    <div class="container">
+
+      <div class="row">
+        <h5 class="title-form">VIAJEROS ADICIONALES</h5>
+        <p class="mb-5">
+          Puedes agregar hasta 4 viajeros adicionales.
+        </p>
+
+      </div>
+
+      <div id="contenedor-beneficiarios">
+        <div class="row acordeon-beneficiarios">
+          <h6>Beneficiarios inscritos: <span class="cantidad-beneficiarios"></span></h6>
+          <div class="col-sm-12 col-md-12 col-lg-11 ">
+            <div class="accordion accordion-flush mb-4 position-relative item-beneficiario" id="accordionFlushExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingOne">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                    <b><i class="bi bi-person-badge me-2 d-none"></i>Maximiliano Torres</b>
+                    <div class="ms-4 d-none d-sm-block d-sm-none d-md-block">14.567.890-K</div>
+                    <div class="ms-4 d-none d-sm-block d-sm-none d-md-block">{Fecha de Nacimiento}</div>
+                    <div class="ms-4 d-none d-lg-block">maximilianohtorrez@correo.cl</div><!-- % en desktop-->
+                    <div class="ms-4 d-lg-none">
+                      <a class="btn btn-outline-secondary">Editar</a>
+                    </div>
+                    <div class="ms-4 d-lg-none">
+                      <a class="btn btn-outline-secondary" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">Eliminar</a>
+                    </div>
+                    <div class="d-grid gap-2 d-md-flex justify-content-md-end d-none d-sm-none d-md-none d-lg-block">
+                      <a class=" position-absolute top-50 start-90 translate-middle link-dark">Editar</a>
+                    </div>
+
+                  </button>
+                </h2>
+                <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                  data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">
+
+                    <form>
+
+                      <div class="row">
+                        <p class="mb-4 fst-italic link-secondary">(*) Campos Obligatorios</p>
+                        <div class="mb-3 col-sm-4 col-md-3 col-lg-2">
+                          <label for="exampleInputEmail1" class="form-label">RUT*</label>
+                          <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                            placeholder="">
+                        </div>
+                      </div>
+
+                      <div class="row">
+                        <div class="mb-3 col-sm-5 col-md-4 col-lg-4">
+                          <label for="exampleInputEmail1" class="form-label">Nombres*</label>
+                          <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                            placeholder="">
+                        </div>
+
+                        <div class="mb-3 col-sm-5 col-md-4 col-lg-3">
+                          <label for="exampleInputEmail1" class="form-label">Apellido materno*</label>
+                          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                            placeholder="">
+                        </div>
+
+                        <div class="mb-3 col-sm-5 col-md-4 col-lg-3">
+                          <label for="exampleInputEmail1" class="form-label">Apellido paterno*</label>
+                          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                            placeholder="">
+                        </div>
+
+                      </div>
+
+                      <div class="row">
+                        <div class="mb-3 col-sm-5 col-md-4">
+                          <label for="exampleInputEmail1" class="form-label">Vínculo con el titular*</label>
+                          <select class="form-select" aria-label="Default select example">
+                            <option selected="">Seleccione</option>
+                            <option value="1">Padre</option>
+                            <option value="2">Hermano</option>
+                            <option value="3">Otra Opcion</option>
+                          </select>
+                        </div>
+
+                      </div>
+
+                      <div class="row">
+                        <div class="mb-3 col-sm-5 col-md-4 col-lg-4">
+                          <label for="exampleInputEmail1" class="form-label">Correo electrónico*</label>
+                          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                            placeholder="">
+                        </div>
+
+                        <div class="mb-3 col-sm-6 col-md-5 col-lg-3">
+                          <label for="exampleInputEmail1" class="form-label">Confirme correo electrónico*</label>
+                          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                            placeholder="">
+                        </div>
+                      </div>
+
+                      <div class="divisor"></div>
+
+                      <div class="row justify-content-end mt-4">
+                        <div class="col-12 text-end">
+                          <button type="button" class="btn btn-outline-secondary">Cancelar</button>
+                          <button type="button" class="btn btn-primary" id="liveToastBtn2">Guardar cambios</button>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-1 col-12 d-none d-lg-block" data-bs-toggle="tooltip" data-bs-placement="top"
+            title="Quitar Beneficiario">
+            <a href="" class="boton-eliminar-beneficiario shadow" data-bs-toggle="modal"
+              data-bs-target="#exampleModal"><span class="material-icons-outlined">delete</span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- formulario nuevo beneficiario-->
+  <section id="NuevoBeneficiario" class="fondo-gris-suave">
+    <div class="container mt-5">
+
+
+      <a class="btn btn-primary mb-4" data-bs-toggle="collapse" href="#collapseExample" role="button"
+        aria-expanded="false" aria-controls="collapseExample">
+        Agregar nuevo viajero <i class="bi bi-plus-circle ms-2"></i>
+      </a>
+      <div class="row justify-content-center">
+        <div class="col-sm-12 col align-self-center">
+          <div class="content-nuevo-ben" id="collapseExample">
+            <div class="card card-body shadow rounded mb-4">
+
+              <p class="mb-4 fst-italic link-secondary">(*) Campos Obligatorios</p>
+
+              <div class="col-sm-12 mb-4">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                  <label class="form-check-label" for="flexCheckChecked">Copiar datos de adicionales</label>
+                </div>
+              </div>
+
+              <form>
+                <div class="row">
+                  <div class="mb-3 col-sm-4 col-md-4 col-lg-3">
+                    <label for="exampleInputEmail1" class="form-label">RUT*</label>
+                    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                      placeholder="">
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="mb-3 col-sm-4 col-md-4 col-lg-4">
+                    <label for="exampleInputEmail1" class="form-label">Nombres*</label>
+                    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                      placeholder="">
+                  </div>
+
+                  <div class="mb-3 col-sm-4 col-md-4">
+                    <label for="exampleInputEmail1" class="form-label">Apellido materno*</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                      placeholder="">
+                  </div>
+
+                  <div class="mb-3 col-sm-4 col-md-4">
+                    <label for="exampleInputEmail1" class="form-label">Apellido paterno*</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                      placeholder="">
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="mb-3 col-sm-6 col-md-4">
+                    <label for="exampleInputEmail1" class="form-label">Correo electrónico*</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                      placeholder="">
+                  </div>
+
+                  <div class="mb-3 col-sm-6 col-md-4">
+                    <label for="exampleInputEmail1" class="form-label">Confirme correo electrónico*</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                      placeholder="">
+                  </div>
+                </div>
+
+                <div class="divisor"></div>
+
+                <div class="row justify-content-end mt-4">
+                  <div class="col-12 text-end">
+                    <button type="button" class="btn btn-outline-secondary">Cancelar</button>
+
+                    <a type="button" href="#" class="btn btn-primary" id="liveToastBtn">Guardar nuevo viajero</a>
+                  </div>
+                </div>
+              </form>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--<div class="alert alert-danger d-flex align-items-center col-sm-12 col-md-12 col-lg-6 offset-lg-3" role="alert">
+        <span class="material-icons-outlined bi flex-shrink-0 me-4">info</span>
+        <div class="text-center">
+          <strong>Has alcanzado el límite máximo de beneficiarios que puedes incluir.</strong> <br>
+          Recuerda que puedes agregar hasta 7 beneficiarios.
+
+        </div>
+      </div>
+    </div>-->
+  </section>
+
+  <section id="botonera" class="mb-4 mt-4">
+    <div class="container">
+      <div class="row justify-content-end">
+        <div class="col-8 text-end">
+          <button type="button" class="btn btn-outline-secondary">Volver</button>
+
+          <button type="button" class="btn btn-primary">Continuar
+            <i class="bi bi-arrow-right-short"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--fin seccion formulario agregar beneficiari-->
+
+
+  <!--Seccion Legales-->
+  <section id="legales">
+    <div class="container mt-4 mb-4">
+      <div class="row">
+        <div class="col-lg-8 mx-auto">
+          <div class="accordion accordion-flush " id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button collapsed acordion-legales" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+
+
+                  <span class="material-icons-outlined me-2 color-primario">privacy_tip</span><strong
+                    class="color-primario">Legales</strong>
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <p class="text-legales">
+                    Los riesgos son cubiertos por la compañía de seguros BNP Paribas Cardif Seguros de Vida S.A. Las
+                    coberturas contratadas se rigen según las condiciones generales cuyos modelos se encuentran
+                    depositados en la CMF bajo
+                    los Códigos POL 220130353 (Vida); POL 320130357 Art. 3 Alternativa A (Muerte Accidental), y
+                    Alternativa D (Reembolso de gastos médicos por Accidente); POL 320130600 Art. 4, Alternativa H
+                    (Incapacidad total y permanente
+                    2/3 por accidente); POL 320130369 Artículo 3° números 1,2,3,4,5 (Anticipo de Capital por
+                    Enfermedades graves). POL 320130085 Art. 2º, letra I (Cantidad diaria por hospitalización a causa de
+                    accidente).
+                    Los seguros son intermediados por Corredora de Seguros La Cámara SpA, quien asume las obligaciones
+                    propias de los seguros que intermedia en dependencias de Caja de Compensación de Asignación Familiar
+                    Los Andes sin responsabilidad ni injerencia para esta última. La presente información sólo
+                    representa un resumen de las coberturas y exclusiones, el detalle de éstas se encuentra en las
+                    condiciones
+                    generales antes mencionadas y en las condiciones particulares del seguro publicitado bajo la póliza
+                    N° 220031390. Las condiciones generales pueden ser consultadas a través del sitio web de la Comisión
+                    para el Mercado Financiero (<a href="www.suseso.cl" target="_blank">www.cmfchile.cl</a>), en la
+                    opción Mercado de Seguros/Deposito de Pólizas. Condición: que se cumpla con los requisitos de
+                    asegurabilidad. Forma de pago de la prima: mensual
+                    según el plan contratado. Póliza del seguro puede ser contratada en todas las sucursales de Caja Los
+                    Andes.</p>
+                  <p class="text-legales">
+                    Se deja constancia que Caja Los Andes no comercializa y no intermedia seguros. Las Cajas de
+                    Compensación son fiscalizadas por la Superintendencia de Seguridad Social <a href="www.suseso.cl"
+                      target="_blank">www.suseso.cl</a>.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+  <!--Fin Seccion Legales-->
+
+
+  <!-- Modal 5-->
+  <!-- Modal -->
+  <div class="modal fade " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog shadow">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title color-primary" id="exampleModalLabel">Quitar Beneficiario</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p class="fw-bold">¿Esta seguro que desea quitar este beneficiario?</p>
+          <p>Esta accion no se puede deshacer</p>
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+          <button type="button" class="btn btn-primary" id="confirmarEliminacion">Confirmar Eliminación</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!--Ctc -->
+  <div id="btn-ayuda" class="btn-ayuda-flotante d-none d-sm-block shadow">
+    <c><span class="material-icons-outlined">contact_support</span>Necesitas ayuda</c>
+  </div>
+
+  <div class="ctc-open gradient-border">
+    <div class="content-ctc">
+      <h5 class="text-center">Déjanos tu número y te llamamos.</h5>
+      <div class="divisor"></div>
+      <p class="text-center">Horario de atención: <br>De Lunes a Viernes de 9:00 a 19:00hrs.</p>
+      <form>
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">Mi nombre</label>
+          <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">Teléfono</label>
+          <input type="tel" class="form-control" id="exampleInputPassword1" value="+569 ">
+        </div>
+        <div class="d-grid gap-2">
+          <button id="pedirAsistencia" type="submit" class="btn btn-primary">Pedir asistencia</button>
+          <button id="ContainerCtcDismiss" type="" class="btn btn-link">Cancelar</button>
+        </div>
+      </form>
+    </div>
+  </div>
+  <!--Fin ctc -->
+
+
+  <!--Footer-->
+  <section id="footer">
+    <div class="container">
+      <footer class="d-flex flex-wrap justify-content-between align-items-center py-4">
+        <p class="col-md-4 col-12 col-sm-2 col-lg-4 mb-0 text-muted">
+          <a href="#"><img class="col-5 logo-footer" alt="BNP Paribas Cardif" src="img/svg/cardif-byn.svg"></a>
+        </p>
+
+        <ul class="nav col-md-8 mt-2 justify-content-end">
+          <li class="nav-item col-12 col-sm-4 col-lg-3 text-center"><a href="#"
+              class="fw-bold link-footer nav-link px-2" data-bs-toggle="modal" data-bs-target="#modaltyc">Términos y
+              Condiciones</a></li>
+          <li class="nav-item col-12 col-sm-4 col-lg-3 text-center"><a href="#"
+              class="fw-bold link-footer nav-link px-2" data-bs-toggle="modal" data-bs-target="#modalFAQ">Preguntas
+              Frecuentes</a></li>
+          <li class="nav-item col-12 col-sm-4 col-lg-3 text-center"><a href="#"
+              class="fw-bold link-footer nav-link px-2 text-left">Canales de Contacto <br><small><i
+                  class="bi bi-telephone-forward pe-2"></i>9 123 456 78</small></a></li>
+
+
+          </li>
+        </ul>
+      </footer>
+    </div>
+  </section>
+  <!--Fin Footer-->
+
+
+  <!--modal FAQ-->
+  <div class="modal fade" id="modalFAQ" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title color-primary" id="exampleModalLabel">Preguntas Frecuentes</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="pregunta">
+            <div class="accordion accordion-flush pb-3 pt-3" id="accordionExample1">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="heading1">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapse1" aria-expanded="false" aria-controls="collapse1">
+                    ¿Qué es una cobertura?
+                  </button>
+                </h2>
+                <div id="collapse1" class="accordion-collapse collapse" aria-labelledby="heading1"
+                  data-bs-parent="#accordionExample1">
+                  <div class="accordion-body">
+                    <strong>R: </strong>Riesgos o posibilidades de siniestros que están protegidos por la póliza. Cuando
+                    sucede uno de ellos, el asegurado está en la capacidad de solicitar una indemnización.
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="accordion accordion-flush pb-3" id="accordionExample2">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="heading2">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                    ¿Qué es una asistencia?
+                  </button>
+                </h2>
+                <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="heading2"
+                  data-bs-parent="#accordionExample2">
+                  <div class="accordion-body">
+                    <strong>R: </strong>Es un beneficio adicional a la cobertura del seguro, a la que puedes acceder sin
+                    costo adicional. La asistencia dependerá del seguro contratado.
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion accordion-flush pb-3" id="accordionExample3">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="heading3">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapse3" aria-expanded="true" aria-controls="collapse3">
+                    ¿Qué es una carencia?
+                  </button>
+                </h2>
+                <div id="collapse3" class="accordion-collapse collapse" aria-labelledby="heading3"
+                  data-bs-parent="#accordionExample3">
+                  <div class="accordion-body">
+                    <strong>R: </strong>La carencia es el periodo de tiempo durante el cual el asegurado no tendrá
+                    derecho
+                    a indemnización en caso de siniestro, contado desde la fecha de contratación del seguro. Para
+                    aquellos
+                    seguros que se deben ratificar conforme al Artículo 538 bis del Código de Comercio, la carencia se
+                    contará desde la ratificación (confirmación de la contratación).
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion accordion-flush pb-3" id="accordionExample4">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="heading4">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
+                    ¿Qué es la prima del seguro?
+                  </button>
+                </h2>
+                <div id="collapse4" class="accordion-collapse collapse" aria-labelledby="heading4"
+                  data-bs-parent="#accordionExample4">
+                  <div class="accordion-body">
+                    <strong>R: </strong>La prima es el precio del seguro definido en la póliza de seguro.
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion accordion-flush pb-3" id="accordionExample5">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="heading5">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapse5">
+                    ¿Dónde puedo ver el detalle de mi seguro?
+                  </button>
+                </h2>
+                <div id="collapse5" class="accordion-collapse collapse" aria-labelledby="heading5"
+                  data-bs-parent="#accordionExample5">
+                  <div class="accordion-body">
+                    <strong>R: </strong>Puedes ver todos los detalles de tu seguro en la solicitud de
+                    incorporación/certificado de cobertura entregado al momento de la contratación. Si tienes dudas o
+                    quieres solicitar una copia, puedes contactar a la Corredora de Seguros La Cámara al fono +56 2 2964
+                    2400.
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="accordion accordion-flush pb-3" id="accordionExample6">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="heading6">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapse6" aria-expanded="false" aria-controls="collapse6">
+                    ¿Qué hacer en caso de siniestro?
+                  </button>
+                </h2>
+                <div id="collapse6" class="accordion-collapse collapse" aria-labelledby="heading6"
+                  data-bs-parent="#accordionExample6">
+                  <div class="accordion-body">
+                    <strong>R: </strong>Una vez producido el siniestro, el asegurado o los beneficiarios puede denunciar
+                    un siniestro haciendo <a href="https://denuncioonline.cardifnet.com/#/login" target="”_blank”">click
+                      aquí</a> o pueden entregar el <a
+                      href="https://www.cajalosandes.cl/cs/groups/public/documents/document/bmnp/by0y/~edisp/denuncio-2019.pdf"
+                      target="”_blank”">siguiente formulario</a> en una Sucursal de Caja Los Andes.
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="accordion accordion-flush pb-3" id="accordionExample7">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="heading7">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapse7" aria-expanded="false" aria-controls="collapse7">
+                    ¿Cómo saber si mi seguro está activo?
+                  </button>
+                </h2>
+                <div id="collapse7" class="accordion-collapse collapse" aria-labelledby="heading7"
+                  data-bs-parent="#accordionExample7">
+                  <div class="accordion-body">
+                    <strong>R: </strong>Para saber el estado actual de tu seguro, puedes contactarte con la Corredora de
+                    Seguros La Cámara al fono +56 2 2964 2400.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+
+          <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--fin modal FAQ-->
+
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="js/scrollreveal.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/splide.min.js"></script>
+  <script src="js/funciones.js"></script>
+
+
+
+  <!-- Option 2: Separate Popper and Bootstrap JS -->
+  <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>
