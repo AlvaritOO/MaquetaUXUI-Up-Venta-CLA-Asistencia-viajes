@@ -240,10 +240,11 @@ p.card-text a {
 .divisor {
     height: 2px;
     margin: 40px 0px;
+    border-bottom: 1px solid #C9D0D3;
 }
 
 .divisor-small {
-    border-bottom: 1px solid $gris-light;
+    border-bottom: 1px solid $gris-dark;
     padding: 10px 29px 0px 29px;
     margin-bottom: 10px;
     width: 50%;
@@ -300,7 +301,6 @@ p.card-text a {
 .back-gradiente{
     
     background: #DEF4FF;
-    box-shadow: 0px 8px 40px rgba(0, 0, 0, 0.08);
     border-radius: 24px;
     width: 800px;
     p, h2{

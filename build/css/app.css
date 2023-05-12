@@ -3644,7 +3644,7 @@ textarea.form-control-lg {
   --bs-nav-tabs-border-color: #dee2e6;
   --bs-nav-tabs-border-radius: 0px;
   --bs-nav-tabs-link-hover-border-color: #e9ecef #e9ecef #dee2e6;
-  --bs-nav-tabs-link-active-color: #0095C5;
+  --bs-nav-tabs-link-active-color: #495057;
   --bs-nav-tabs-link-active-bg: #fff;
   --bs-nav-tabs-link-active-border-color: #dee2e6 #dee2e6 #fff;
   border-bottom: var(--bs-nav-tabs-border-width) solid var(--bs-nav-tabs-border-color);
@@ -7162,6 +7162,10 @@ textarea.form-control-lg {
   top: 60% !important;
 }
 
+.top-65 {
+  top: 65% !important;
+}
+
 .top-70 {
   top: 70% !important;
 }
@@ -7292,6 +7296,10 @@ textarea.form-control-lg {
 
 .bottom-60 {
   bottom: 60% !important;
+}
+
+.bottom-65 {
+  bottom: 65% !important;
 }
 
 .bottom-70 {
@@ -7426,6 +7434,10 @@ textarea.form-control-lg {
   left: 60% !important;
 }
 
+.start-65 {
+  left: 65% !important;
+}
+
 .start-70 {
   left: 70% !important;
 }
@@ -7556,6 +7568,10 @@ textarea.form-control-lg {
 
 .end-60 {
   right: 60% !important;
+}
+
+.end-65 {
+  right: 65% !important;
 }
 
 .end-70 {
@@ -11520,10 +11536,11 @@ p.card-text a {
 .divisor {
   height: 2px;
   margin: 40px 0px;
+  border-bottom: 1px solid #C9D0D3;
 }
 
 .divisor-small {
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid #3E4545;
   padding: 10px 29px 0px 29px;
   margin-bottom: 10px;
   width: 50%;
@@ -11574,7 +11591,6 @@ p.card-text a {
 
 .back-gradiente {
   background: #DEF4FF;
-  box-shadow: 0px 8px 40px rgba(0, 0, 0, 0.08);
   border-radius: 24px;
   width: 800px;
 }
@@ -12310,6 +12326,10 @@ p.text-legales {
   font-size: 0.8rem;
 }
 
+section#legales {
+  margin-top: auto;
+}
+
 section#footer {
   background-color: #0076A9;
   margin-top: auto;
@@ -12542,7 +12562,6 @@ img.logo-cslc-small {
 }
 
 nav a.nav-link.active {
-  color: #0076A9;
   font-weight: bolder;
   border-bottom: 3px solid #0076A9;
 }
@@ -12575,6 +12594,11 @@ nav a.nav-link.active {
 .nav-tab1 a.nav-link.active {
   border-bottom: 3px solid #0076A9;
   color: #0076A9;
+}
+
+.navbar-nav .show > .nav-link,
+.navbar-nav .nav-link.active {
+  color: #FFFFFF !important;
 }
 
 .texto-medium-banner-top {

@@ -197,7 +197,6 @@ img.logo-cslc-small {
 }
 
 nav a.nav-link.active{
-    color: $primary;
     font-weight: bolder;
     border-bottom: 3px solid $primary;
 }
@@ -234,4 +233,9 @@ nav a.nav-link.active{
 .nav-tab1 a.nav-link.active {
     border-bottom: 3px solid $primary;
     color: $primary;
+}
+
+.navbar-nav .show > .nav-link,
+.navbar-nav .nav-link.active {
+  color: #FFFFFF !important;
 }
