@@ -12064,6 +12064,16 @@ button.owl-prev span, button.owl-next span {
   background: #EBEFF4;
 }
 
+.fondo-agregar-viajero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  height: auto;
+  background: #EBEFF4;
+}
+
 @-webkit-keyframes AnimationName {
   0% {
     background-position: 0% 50%;
@@ -12119,7 +12129,7 @@ section#requisitos div ol li::marker {
 
 .contenedor-wizard {
   margin-top: 172px;
-  margin-bottom: 42px;
+  margin-bottom: 2px;
 }
 
 .nombre-paso {
@@ -12596,11 +12606,10 @@ nav a.nav-link.active {
   color: #0076A9;
 }
 
-.navbar-nav .show > .nav-link,
+/*.navbar-nav .show > .nav-link,
 .navbar-nav .nav-link.active {
-  color: #FFFFFF !important;
-}
-
+color: #FFFFFF !important;
+}*/
 .texto-medium-banner-top {
   font-size: calc(1.675rem + 5.1vw);
   font-weight: 800;

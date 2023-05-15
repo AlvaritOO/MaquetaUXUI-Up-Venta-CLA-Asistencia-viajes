@@ -63,8 +63,6 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 
-
-
                 <li class="nav-item dropdown-hover">
                   <a class="nav-link active dropdown-hover-button" href="#">Contratar Seguros</a>
                   <div class="dropdown-hover-content shadow">
@@ -137,7 +135,7 @@
                 <li class="nav-item dropdown">
                 </li>
             </div>
-
+            <a class="btn text-primary fw-bold btn-sm d-none d-lg-block" href="#"><i class="bi bi-arrow-left"></i> Volver a seguros</a>
           </div>
           </ul>
       </div>
@@ -146,239 +144,441 @@
   </section>
   <!--Fin Header-->
 
-  <!--Carrusel-->
-  <section id="carousel">
-    <div class="row">
-      <div class="carousel-item active">
-        <img src="../../build/img/image-asistencia.jpg" class="img-fluid d-none d-sm-block">
-        <img src="../../build/img/image-asistencia-mobile.jpg" class="img-fluid d-block d-sm-none">
-        <div class="">
-          <div class="col-md-12 contenedor-btn ">
-            <div
-              class="texto-big-banner col-sm-8 col-md-10 col-lg-10 offset-md-1 position-absolute bottom-30 start-4 p-4">
-              <h1 class="texto-imagen-cabecera pb-2">Seguro de<br><span class="texto-medium-banner-top">asistencia en viaje</span>
-              </h1>
-            </div>
-            <div
-              class="col-sm-10 col-md-7 col-lg-6 col-xl-5 offset-md-1 position-absolute bottom-16 start-4 p-4 d-md-none d-lg-block d-sm-none d-md-block">
-              <h3 class="pb-2 texto-medium-banner-bottom">¡Viaja tranquilo y disfruta de tu viaje sin preocupaciones con el seguro de Accidentes ITP 2/3 + Asistencia en Viaje!</h3>
-            </div>
-            <div class="col-sm-10 col-md-7 col-lg-5 offset-md-1 position-absolute bottom-8 start-4 p-4">    
-              <a href="#planes" class="btn btn-primary boton-banner mt-4">Ver planes<i class="bi bi-arrow-right-short"></i></a>
-            </div>
-
+    <!--toast nuevo beneficiario-->
+    <div class="toast-container position-fixed top-0 end-0 p-3" style="z-index: 99991">
+      <div id="liveToast" class="toast text-white bg-success border-0" role="alert" aria-live="assertive"
+        aria-atomic="true">
+        <div class="d-flex">
+          <div class="toast-body">
+            <b>Beneficiario inscrito correctamente.</b>
           </div>
+          <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast"
+            aria-label="Close"></button>
         </div>
-      </div>
-    </div>
-  </section>
-  <!--Fin Carrusel-->
-
-  <!-- Caracteristicas -->
-  <section id="carateristicas" class="pt-4">
-    <div class="container">
-      <div class="row">
-        <h2 class="text-center pb-4 mb-4 mt-5">¿Por qué contratar <span class="fw-bold">Nuestro Seguro de Asistencia en Viaje?</span></h2>
-        <div class="col-lg-6 pt-4 d-none d-sm-block d-sm-none d-md-block d-md-none d-lg-block">
-          <div class="col-lg-12 col-12 ms-5">
-            <img class="bd-placeholder-img" src="../../build/img/ELLA 1.jpg" width="500px">
-          </div>
-        </div>
-
-        <!--item1-->
-
-        <div class="col-lg-6">
-
-          <div class="col-lg-12 col-md-6 mb-4 pt-md-6 pt-2">
-            <div class="feature-box not-dark">
-              <div class="fbox-icon">
-                <span class="material-icons-outlined" style="height: 52px;">favorite_border</span>
-              </div>
-              <div class="fbox-content">
-                <h5 class="fw-bold">Asistencia Médica cuando lo necesites</h5>
-                <p>Podrás acceder a una App que tendrá disponible una asistencia médica 24/7.</p>
-              </div>
-            </div>
-
-            <div class="feature-box not-dark mt-4">
-              <div class="fbox-icon">
-                <span class="material-icons-outlined" style="height: 52px;">business_center</span>
-              </div>
-              <div class="fbox-content">
-                <h5 class="fw-bold">Indemnización por pérdida de equipaje</h5>
-                <p>En caso que pierdas tu equipaje complementario podrás optar a una indemnización.</p>
-              </div>
-            </div>
-
-            <div class="feature-box not-dark mt-4">
-              <div class="fbox-icon">
-                <span class="material-icons-outlined" style="height: 52px;">flight</span>
-              </div>
-              <div class="fbox-content">
-                <h5 class="fw-bold">Viaja tranquilo</h5>
-                <p>Tendrás optar a más de 20 distintos beneficios de asistencias que te acompañarán en tu viaje.</p>
-              </div>
-            </div>
-
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- Fin Caracteristicas -->
-
-
-  <!-- Canales de contacto-->
-  <section id="CanalesContacto">
-    <div class="fondo-denunciar-siniestros">
-
-    </div>
-
-  </section>
-  <!--Fin Canales de contacto-->
-
-  <!--NO Cubre-->
-  <section>
-    <div class="container">
-      <div class="text-center mt-5 pt-5 mb-3">
-        <a id="02-home-cobertura-exclusiones-acordeon-cobertura-btn-ver-mas" class="btn btn-ver-mas text-primary fw-bold">
-          Explora hacia abajo
-        </a>
       </div>
   
-      <div class="text-center">
-        <a class="text-primary fw-bold">
-          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
-            <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
-          </svg>
-        </a>
-      </div>
-      <h2 class="text-center pb-4 mb-4 mt-5 fw-bold">¿Qué no cubre este seguro?</h2>
-    </div>
-    <div class="container d-flex align-items-center justify-content-center">
-      <div class="row container-fluid mb-4">
-          <div id="02-home-cobertura-exclusiones-acordeon-cobertura">
-            <div class="col-lg-12 col-12 px-5 mb-5 pb-5">
-              <d class="fw-bold">No se indemnizará al asegurado titular cuando la hospitalización por Accidente del Asegurado o los gastos médicos por accidente, se produzcan como consecuencia de:</d>
-                  <ul class="list-unstyled no-cubre mt-4">
-                    <li><span class="material-icons me-2">close</span>Guerra, declarada o no, invasión, acción de un enemigo extranjero, hostilidades u operaciones bélicas.</li>
-                    <li><span class="material-icons me-2">close</span>Lesiones auto-inferidas, atentados contra su propia vida, automutilación o autolesión, o por lesiones inferidas al Asegurado por terceros con su consentimiento, ya sea estando en su pleno juicio o enajenado mentalmente.</li>
-                    <li><span class="material-icons me-2">close</span>Comisión o participación del Asegurado o sus Beneficiario(s) en actos calificados como delito según la ley, en calidad de autor, cómplice o encubridor. Las peleas o riñas también serán excluidas a excepción de que haya sido en legítima defensa.</li>
-                    <li><span class="material-icons me-2">close</span>Participación activa del Asegurado en actos de rebelión, revolución, sublevación, asonada, motín, conmoción civil, subversión incluidos los actos terroristas entendiéndose por acto terrorista toda conducta calificada como tal por la ley, así como el uso de fuerza o violencia o la amenaza de ésta motivado por causas políticas, religiosas, ideológicas o similares, con la intención de ejercer influencia sobre cualquier gobierno o de atemorizar a la población, o a cualquier segmento de la misma.</li>
-                    <li><span class="material-icons me-2">close</span>Movimientos sísmicos desde el grado 8 en escala de Mercalli.</li>
-                    <li><span class="material-icons me-2">close</span>Participación en carreras, apuestas o competencias (remuneradas o no).</li>
-                  </ul>
-                  <p>Esta Póliza no otorga cobertura, indemnización, pago o prestación alguna en aquellos casos en que el(los) contratante (s), Asegurado(s) y/o Beneficiario(s) sean objeto o se encuentren incluidos en cualquier listado, sanción o restricción económica o comercial, embargo o medida restrictiva elaborada, dictada, administrada, impuesta o aplicada por la Oficina de Control de Activos Extranjeros (OFAC) del Departamento del Tesoro de los Estados Unidos de Norteamérica, el Departamento de Estado
-                    de los Estados Unidos de Norteamérica, el Consejo de Seguridad de las Naciones Unidas y la Unión Europea.</p>
-              </div>
+      <div id="liveToast2" class="toast text-white bg-success border-0" role="alert" aria-live="assertive"
+        aria-atomic="true">
+        <div class="d-flex">
+          <div class="toast-body">
+            <b>Cambios Guardados correctamente</b>
           </div>
-      </div>
-  
-    </div>
-          </div>
+          <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast"
+            aria-label="Close"></button>
         </div>
+      </div>
+    </div>
+  
+    <div id="liveToast3" class="toast text-white bg-success border-0" role="alert" aria-live="assertive"
+      aria-atomic="true">
+      <div class="d-flex">
+        <div class="toast-body">
+          <b>Beneficario eliminado correctamente</b>
+        </div>
+        <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast"
+          aria-label="Close"></button>
       </div>
     </div>
     
-  </section>
-
-<!--Seccion requisitos-->
-<section id="requisitos" class="back-diagonal pt-4 pb-4">
-  <div class="container fondo-requisitos ">
-    <div class="row">
-      <div class="text-center imagen-req mt-5 mb-5">
-        <span class="material-icons-outlined"><i class="bi bi-check-circle"></i></span>
+<!--wizard-->
+<section id="wizard" class="mb-5 pt-3 container d-none d-lg-block">
+  <div class="container contenedor-wizard">
+      <div class="row">
+        <div class="col-sm-12 col-md-10 offset-md-1">
+          <div class="position-relative">
+            <div class="progress" style="height: 1px;">
+                <div class="progress-bar" role="progressbar" style="width: 70%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+            <button type="button" class="position-absolute top-0 start-1 translate-middle btn btn-sm btn-primary rounded-pill" style="width: 2rem; height:2rem;">1</button>
+            <button type="button" class="position-absolute top-0 start-35 translate-middle btn btn-sm btn-primary  rounded-pill" style="width: 2rem; height:2rem;">2</button>
+            <button type="button" class="position-absolute top-0 start-70 translate-middle btn btn-sm btn-primary  rounded-pill" style="width: 2rem; height:2rem;">3</button>
+            <button type="button" class="position-absolute top-0 start-100 translate-middle btn btn-sm btn-secondary  rounded-pill" style="width: 2rem; height:2rem;">4</button>
+          
+          </div>
+        </div>
       </div>
-      <h2 class="text-center pb-4 mb-4 contraste text-white">Requisitos</h2>
-
-        <ol style="margin-left: 240px;">
-          <li>La edad mínima de ingreso de los Asegurados es de 18 años.</li>
-          <li>La edad máxima de ingreso para todos los Asegurados es hasta los 68 años, 364 días.</li>
-          <li>La edad máxima de permanencia para todos los Asegurados es hasta los 69 años, 364 días.</li>
-        </ol>
-
-    </div>
+      <div class="container d-none d-sm-block">
+            <div class="row mt-5">
+              <div class="col-sm-12 col-md-10 offset-md-1">
+                <div class="position-relative">
+                  <span class="position-absolute top-0 start-0 translate-middle text-center">Datos del <br> asegurado</span>
+                  <span class="position-absolute top-0 start-35 translate-middle text-center">Viajeros <br> adicionales</span>
+                  <span class="position-absolute top-0 start-70 translate-middle text-center">Resumen <br> y confirmación</span>
+                  <span class="position-absolute top-0 start-101 translate-middle text-center">Medios de pago</span>
+                </div>
+            </div>
+          </div>
+      </div>
   </div>
 </section>
-<!--Fin Seccion requisitos-->
+<!--fin wizard-->
 
-  <!-- Canales de contacto-->
-  <section id="CanalesContacto">
-    <div class="container pt-4 mt-6" id="canales">
-      <div class="row">
-        <div class="container pt-5 mt-4 pb-2 back-gradiente">
-          
-          <p class="text-center"><span class="material-icons-round">warning_amber</span></p>
-          <h2 class="text-center pb-2">Denunciar <span class="fw-bold">un siniestro</span></h2>
-          <p class="text-center">Declara un siniestro contratado.</p>
+<!-- wizard mobile-->
+<section id="wizard-mobile">
+<div class="container d-lg-none mt-2 mb-1 wizard-mobile shadow">
+    <div class="row">
+          <div class="col-6 paso-actual">
+                  <span class="now-next text-right">Ahora</span>
+                  <span class="h4 text-right">Paso 1 de 5</span>
+                  <p class="nombre-paso text-right">DATOS DEL ASEGURADO</p>
+          </div>
 
-          <p class="text-center pb-4"> 
-            <a id="01-categorias-canales-contacto-denunciar-siniestro" type="button"
-            class="text-primary fw-bold" style="text-decoration: none;">Denunciar un siniestro
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-            fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
-            <path fill-rule="evenodd"
-              d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
-          </svg>
-            </a>
+          <div class="col-6 paso-siguiente">
+                  <span class="now-next text-right">Siguiente</span>
+                  <span class="h4 text-right">Paso 2 de 5</span>
+                  <p class="nombre-paso text-right">VIAJEROS ADICIONALES</p>
+          </div>
+
+    </div>
+</div>
+</section>
+<!--fin wizard mobile-->
+
+
+    <!-- RESUMEN Y CONFIRMACIÓN -->
+    <section id="beneficiarios" class="pt-4 ">
+      <div class="container">
+        <div class="row">
+          <h5 class="title-form fw-bold">RESUMEN Y CONFIRMACIÓN</h5>
+          <p class="mb-5">
+              ¡Estás a un solo paso de contratar tu seguro XXXXXX! Para finalizar el proceso de contratación, te <br> pedimos que puedas aceptar los términos y condiciones en la parte final.
           </p>
         </div>
+    </section>
 
-        <h2 class="text-center pb-4 mb-4 mt-5">¿Tienes<span class="fw-bold"> dudas?</span></h2>
-        <p class="text-center">Si tienes dudas, puedes contactarte con nosotros a través de los siguientes canales:</p>
+    <!-- Detalle del Seguro -->
+    <section id="resumen" class="mt-6">
+                    <div class="container">
+                      <div class="row">
+                        <p class="title-form text-primary fw-bold">Detalle del Seguro XXXX</p>
+                        <div class="row">
+                          <div class="col-sm-12 col-lg-2">
+          
+                            <h5 class="text-black-50">Nombre Plan</h5>
+                            <ul class="list-unstyled">
+                              <li>{Nombre Plan Seleccionado}</li>
+                            </ul>
+                          </div>
+                          <div class="col-sm-12 col-lg-2">
+          
+                            <h5 class="text-black-50">Viajeros Adicionales</h5>
+                            <ul class="list-unstyled">
+                              <li>{nombre asegurado 1}</li>
+                              <li>{nombre asegurado 2}</li>
+                            </ul>
+                          </div>
 
-        <div class="col-md-4 mt-2 p-4">
-          <div class="col-md-6 mb-4"><img src="../../build/img/svg/logo-cla.svg" class="text-center" height="65px">
+                          <div class="col-sm-12 col-lg-2">
+                            <h5 class="text-black-50">Titular Asegurado</h5>
+                            <ul class="list-unstyled">
+                              <li>{nombre titular}</li>
+                            </ul>
+                          </div>
+          
+                          <div class="col-sm-12 col-lg-2">
+                            <div class="row">
+                                <h5 class="text-black-50">Medios de Pago</h5>
+                                <ul class="list-unstyled">
+                                  <li>{transbank}</li>
+                                </ul>
+                            </div>
+                          </div>
+
+                        <div class="col-sm-12 col-lg-2">
+                          <h5 class="text-black-50">Viajeros Adicionales</h5>
+                          <ul class="list-unstyled">
+                            <li>{nombre asegurado 1}</li>
+                            <li>{nombre asegurado 2}</li>
+                          </ul>
+                        </div>
+
+                        <div class="col-sm-12 col-lg-2">
+                          <h5 class="text-black-50">Viajeros Adicionales</h5>
+                          <ul class="list-unstyled">
+                            <li>{nombre asegurado 1}</li>
+                            <li>{nombre asegurado 2}</li>
+                          </ul>
+                        </div>
+                      </div>
           </div>
-          <span class="fw-bold">Caja Los Andes.</span>
-          <p>Horario de Atención: Lunes a Viernes de 08:00 a 20:00 hrs.</p>
-          <p class="d-none d-sm-block">Teléfono <a id="01-pv-home-canales-contacto-cla-telefono" href="tel:600 510 0000"
-              data-bs-toggle="tooltip" data-bs-placement="top" title="Llamar Caja los Andes">600 510 0000</a></p>
-          <a id="01-pv-home-canales-contacto-cla-telefono-btn" href="tel:600 510 0000"
-            class="btn btn-volver d-block d-sm-none">Llamar al 600 510 0000</a>
+
+    </section>
+
+    <!-- ¡Tendrás los siguientes beneficios! -->
+    <section id="resumen" class="mt-5">
+      <div class="container">
+        <div class="row">
+          <p class="title-form text-primary fw-bold">¡Tendrás los siguientes beneficios!</p>
+          <p class="">(Recuerda que para utilizarlos debes seguir las instrucciones que te enviaremos una vez hayas terminado de contratar tu seguro).</p>
+          <div class="row">
+            <div class="col-sm-12 col-lg-2">
+
+              <h5 class="text-black-50">Nombre Plan</h5>
+              <ul class="list-unstyled">
+                <li>{Nombre Plan Seleccionado}</li>
+              </ul>
+            </div>
+            <div class="col-sm-12 col-lg-2">
+
+              <h5 class="text-black-50">Viajeros Adicionales</h5>
+              <ul class="list-unstyled">
+                <li>{nombre asegurado 1}</li>
+                <li>{nombre asegurado 2}</li>
+              </ul>
+            </div>
+
+            <div class="col-sm-12 col-lg-2">
+              <h5 class="text-black-50">Titular Asegurado</h5>
+              <ul class="list-unstyled">
+                <li>{nombre titular}</li>
+              </ul>
+            </div>
+
+            <div class="col-sm-12 col-lg-2">
+              <div class="row">
+                  <h5 class="text-black-50">Medios de Pago</h5>
+                  <ul class="list-unstyled">
+                    <li>{transbank}</li>
+                  </ul>
+              </div>
+            </div>
+
+          <div class="col-sm-12 col-lg-2">
+            <h5 class="text-black-50">Viajeros Adicionales</h5>
+            <ul class="list-unstyled">
+              <li>{nombre asegurado 1}</li>
+              <li>{nombre asegurado 2}</li>
+            </ul>
+          </div>
+
+          <div class="col-sm-12 col-lg-2">
+            <h5 class="text-black-50">Viajeros Adicionales</h5>
+            <ul class="list-unstyled">
+              <li>{nombre asegurado 1}</li>
+              <li>{nombre asegurado 2}</li>
+            </ul>
+          </div>
         </div>
-
-        <div class="col-md-4 mt-2 p-4">
-          <div class="col-md-6 mb-4"><img src="../../build/img/svg/bnp.svg" class="text-center" height="65px"></div>
-          <span class="fw-bold">BNP Paribas Cardif.</span>
-          <p>Horario de Atención: Lunes a Viernes de 09:00 a 18:00 hrs.</p>
-          <p class="d-none d-sm-block">Teléfono <a id="01-pv-home-canales-contacto-bnp-telefono" href="tel:800 362 100"
-              data-bs-toggle="tooltip" data-bs-placement="top" title="Llamar a BNP Paribas">800 362 100</a></p>
-          <a id="01-pv-home-canales-contacto-bnp-telefono-btn" href="tel:800 362 100"
-            class="btn btn-volver d-block d-sm-none">Llamar al 800 362 100</a>
-        </div>
-
-
-        <div class="col-md-4 mt-2 p-4">
-          <div class="col-md-6 mb-4"><img src="../../build/img/svg/corredora-color.svg" class="text-center"
-              height="65px"></div>
-          <span class="fw-bold">Corredora de Seguros La Cámara SpA.</span>
-          <p>Horario de Atención: Lunes a Jueves de 08:30 a 18:00 hrs y Viernes de 08:30 a 14:30 hrs.</p>
-          <p class="d-none d-sm-block">Teléfono <a id="01-pv-home-canales-contacto-cslc-telefono"
-              href="tel:(+56 ) 229 642 400" data-bs-toggle="tooltip" data-bs-placement="top"
-              title="Llamar a Corredora de Seguros">(+56 ) 229 642 400 </a> </p>
-          <a id="01-pv-home-canales-contacto-cslc-telefono-btn" href="tel:+56229642400"
-            class="btn btn-volver d-block d-sm-none">Llamar al (+56 ) 229 642 400</a>
-        </div>
-
-
-      </div>
     </div>
 
-  </section>
-  <!--Fin Canales de contacto-->
+    <div class="mt-4 mb-4">
+    <a class="btn btn-volver"><i class="bi bi-box-arrow-in-down"></i> Descargar póliza</a>
+    </div>
+
+    <div class="divisor"> </div>
+    </section>
+
+    <!-- Autorizaciones-->
+    <section>
+          <div class="container mt-4">
+            <div class="row">
+                <div class="col-lg-12">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault" data-bs-toggle="tooltip" data-bs-placement="right" title="" data-bs-original-title="Ver el uso de mis datos para contactabilidad">
+                      Autorizo el uso de mis datos para contactabilidad. <br>
+                      <span><a data-bs-toggle="modal" data-bs-target="#exampleModa1">Ver documento de Aceptación.</a></span>
+                    </label>
+                  </div>
+                </div>
+            </div>
+          </div>
+          
+          <div class="container mt-4">
+            <div class="row">
+                <div class="col-lg-12">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault2">
+                    <label class="form-check-label" for="flexCheckDefault2" data-bs-toggle="tooltip" data-bs-placement="right" title="" data-bs-original-title="Ver Términos y Condiciones del seguro">
+                      He leído y acepto Términos y Condiciones del seguro. <br>
+                      <span><a data-bs-toggle="modal" data-bs-target="#exampleModal3">Ver documento de Aceptación.</a></span>
+                    </label>
+                  </div>
+                </div>
+            </div>
+          </div>
+          
+          <div class="container mt-4">
+            <div class="row">
+                <div class="col-lg-12">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault2">
+                    <label class="form-check-label" for="flexCheckDefault2" data-bs-toggle="tooltip" data-bs-placement="right" title="" data-bs-original-title="Ver Términos y Condiciones del seguro">
+                      Autorizo el descuento de la prima mensual contratada de acuerdo al Mandato de Cargo.<br> 
+                      <span><a data-bs-toggle="modal" data-bs-target="#exampleModa2">Ver documento de Aceptación.</a></span>
+                    </label>
+                  </div>
+                </div>
+            </div>
+          </div>
+          
+          
+          <!--modal -->
+          <div class="modal fade" id="exampleModa1" tabindex="-1" aria-labelledby="exampleModalLabe3" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title color-primary" id="exampleModalLabe3">Autorización de uso de Datos para Contactabilidad.</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <p>Autorizo que mi información personal sea recopilada, almacenada, tratada y divulgada por
+                  Caja de Compensación de Asignación Familiar de Los Andes (“Caja Los Andes” o la “Caja”), según la normativa. Vigente y conforme al Acuerdo de Privacidad.
+                  </p>
+
+                  <ul>1. Autorización de tratamiento de Datos Personales: Por medio de la contratación de este seguro autorizo, como responsables de bases de datos, a las sociedades: BNP Paribas Cardif Seguros Generales S.A., BNP Paribas Cardif Seguros de Vida S.A. y BNP Paribas Cardif Servicios y Asistencia Ltda. (conjuntamente “BNP Paribas Cardif”) a tratar mis datos personales, de acuerdo a los fines y condiciones aquí descritos. Los datos que autorizo tratar son los contenidos en esta solicitud, y aquellos que más adelante resulten necesarios para el otorgamiento de los productos y/o servicios contratados de BNP Paribas Cardif.</ul>
+                  <ul>2. Propósitos del tratamiento: Los propósitos para los cuales autorizo a BNP Paribas Cardif a tratar mis datos personales son todos o algunos de los siguientes propósitos:
+                    <ul> a) Evaluar esta solicitud y proporcionarme los productos y servicios que sean contratados;</ul>
+                    <ul> b) Contactarme y responder a mis consultas;</ul>
+                    <ul> c) Gestionar y procesar los denuncios de mis siniestros;</ul>
+                    <ul> d) Enviar comunicaciones publicitarias;</ul>
+                    <ul> e) Evaluar y mejorar los productos y servicios de BNP Paribas Cardif, a través de desarrollos asociados a seguros, análisis de datos y estudios analíticos;</ul>
+                    <ul> f) Realizar operaciones propias del negocio de BNP Paribas Cardif tales como: contabilidad, administración, monitoreo de riesgo y técnico, auditorías, facturación y, cobros; y (vii) dar cumplimiento a las obligaciones legales de BNP Paribas Cardif.</ul>
+                  </ul>
+                  <ul>3. Datos personales de terceros: Sobre la información personal de terceros que yo entregue a BNP Paribas Cardif (ej. beneficiaros), declaro contar con las autorizaciones suficientes, para que BNP Paribas Cardif trate debidamente aquella información, según los propósitos indicados en el número anterior.</ul>
+                  <ul>4. Comunicación de datos a terceros: Únicamente para los propósitos indicados, autorizo a BNP Paribas Cardif para que pueda comunicar mis datos personales a sus proveedores y terceros colaboradores como, por ejemplo, corredores de seguros, liquidadores, intermediadores y socios comerciales.</ul>
+                  <ul>5. Mis derechos: Declaro conocer que mis derechos como titular de datos, los puedo hacer efectivos de manera gratuita comunicándome al 800362100.</ul>
+                </div>
+
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-volver">Entiendo y acepto</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          
+          <!--modal verificacion-->
+          <div class="modal fade" id="modalVerificacion" tabindex="-1" aria-labelledby="modalVerificacion" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title color-primary" id="modalVerificacion">Verificación</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+          
+                      <form>
+                        <div class="mb-3">
+                          <label for="exampleInputEmail1" class="form-label">Número de documento o serie</label>
+                          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                          <div id="emailHelp" class="form-text"  data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample"><a href="#">¿Donde encuentro esto?</a></div>
+                        </div>
+          
+                        <div class="collapse mb-4" id="collapseExample">
+                          <div class="card card-body">
+                            
+                            <p class="form-text">En la <strong>nueva cedula de Identidad</strong> puedes encontrar el número de documento en la parte
+                              <strong>frontal.</strong></p>
+                            <p class="form-text">En la <strong>vieja cedula de Identidad</strong> puedes encontrar el número de serie en la parte
+                              <strong>trasera</strong>.</p>
+                            <img src="img/serie-carnet.jpg" class="img-fluid">
+          
+                          </div>
+                        </div>
+
+                      </form>
+          
+          
+                      <div class="col-sm-12 mt-4 text-left">
+                        <p class="mb-2">*Debes validar el captcha para continuar</p>
+                        <img src="img/captcha-ejemplo.jpg">
+                      </div>
+          
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                      <button type="submit" class="btn btn-primary">Validar número de serie</button>
+                    </div>
+                  </div>
+                </div>
+          </div>
+          
+          
+          <!--modal mandato cargo-->
+          <div class="modal fade" id="exampleModa2" tabindex="-1" aria-labelledby="exampleModalLabe3" aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title color-primary" id="exampleModalLabe3">Mandato de cargo</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam at varius turpis. Nunc volutpat, ipsum eget iaculis
+                      aliquam, mauris nisi congue leo, et mattis sapien elit et enim. Nunc ut urna interdum, dapibus nisi a, tempor mauris.
+                      Pellentesque quis justo ut ligula dapibus consectetur. In orci dui, convallis non erat non, consequat elementum leo.
+                      Nunc in aliquam arcu. Pellentesque cursus tortor id lorem laoreet tempor. Praesent libero tellus, placerat eget aliquet
+                      fringilla, interdum et justo.
+                      Ut a dictum orci. Phasellus in nisl non neque pellentesque facilisis. Fusce in dolor imperdiet, semper elit sed,
+                      dignissim quam. Fusce id erat sed justo porta commodo. Aliquam eleifend non ex elementum pulvinar. Ut at orci faucibus,
+                      rutrum nunc eget, accumsan lacus. Proin sed varius elit. Maecenas vel odio felis. Nunc justo lorem, mollis id urna eget,
+                      auctor feugiat libero. Praesent ut suscipit est. Curabitur sem turpis, pellentesque non tempus in, posuere vel enim.
+                      Vivamus pellentesque neque id quam porttitor placerat. Aliquam hendrerit molestie vestibulum. Morbi vulputate dapibus
+                      imperdiet.</div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-volver" data-bs-dismiss="modal">Entiendo y acepto</button>
+                    </div>
+                  </div>
+                </div>
+          </div>
+          <!--modal terminos y condiciones-->
+          <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabe3" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title color-primary" id="exampleModalLabe3">Términos y condiciones</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam at varius turpis. Nunc volutpat, ipsum eget iaculis
+                  aliquam, mauris nisi congue leo, et mattis sapien elit et enim. Nunc ut urna interdum, dapibus nisi a, tempor mauris.
+                  Pellentesque quis justo ut ligula dapibus consectetur. In orci dui, convallis non erat non, consequat elementum leo.
+                  Nunc in aliquam arcu. Pellentesque cursus tortor id lorem laoreet tempor. Praesent libero tellus, placerat eget aliquet
+                  fringilla, interdum et justo.
+                  Ut a dictum orci. Phasellus in nisl non neque pellentesque facilisis. Fusce in dolor imperdiet, semper elit sed,
+                  dignissim quam. Fusce id erat sed justo porta commodo. Aliquam eleifend non ex elementum pulvinar. Ut at orci faucibus,
+                  rutrum nunc eget, accumsan lacus. Proin sed varius elit. Maecenas vel odio felis. Nunc justo lorem, mollis id urna eget,
+                  auctor feugiat libero. Praesent ut suscipit est. Curabitur sem turpis, pellentesque non tempus in, posuere vel enim.
+                  Vivamus pellentesque neque id quam porttitor placerat. Aliquam hendrerit molestie vestibulum. Morbi vulputate dapibus
+                  imperdiet.</div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-volver" data-bs-dismiss="modal">Entiendo y acepto</button>
+                </div>
+              </div>
+            </div>
+      </div>
+          
+          <!-- fin autorizaciones-->
+
+    </section>
+
+    <section id="botonera" class="mb-4 mt-4">
+        <div class="container">
+          <div class="row justify-content-end">
+            <div class="col-8 text-end">
+              <button type="button" class="btn btn-volver">Volver</button>
+
+              <button type="button" class="btn btn-primary">Continuar</button>
+            </div>
+          </div>
+        </div>
+    </section>
+
+
+<!--fin seccion beneficiario-->
 
   <!--Seccion Legales-->
   <section id="legales">
     <div class="container mt-4 mb-4">
       <div class="row">
         <div class="col-lg-8 mx-auto">
-          <div class="accordion accordion-flush" id="accordionExample">
+          <div class="accordion accordion-flush " id="accordionExample">
             <div class="accordion-item">
               <h2 class="accordion-header" id="headingOne">
-                <button id="01-pv-home-legales-acordion" class="accordion-button collapsed acordion-legales"
-                  type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
-                  aria-controls="collapseOne">
+                <button class="accordion-button collapsed acordion-legales" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+
+
                   <span class="material-icons-outlined me-2 color-primario">privacy_tip</span><strong
                     class="color-primario">Legales</strong>
                 </button>
