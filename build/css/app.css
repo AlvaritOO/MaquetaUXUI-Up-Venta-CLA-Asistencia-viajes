@@ -7190,6 +7190,10 @@ textarea.form-control-lg {
   top: 95% !important;
 }
 
+.top-98 {
+  top: 98% !important;
+}
+
 .top-100 {
   top: 100% !important;
 }
@@ -7324,6 +7328,10 @@ textarea.form-control-lg {
 
 .bottom-95 {
   bottom: 95% !important;
+}
+
+.bottom-98 {
+  bottom: 98% !important;
 }
 
 .bottom-100 {
@@ -7462,6 +7470,10 @@ textarea.form-control-lg {
   left: 95% !important;
 }
 
+.start-98 {
+  left: 98% !important;
+}
+
 .start-100 {
   left: 100% !important;
 }
@@ -7596,6 +7608,10 @@ textarea.form-control-lg {
 
 .end-95 {
   right: 95% !important;
+}
+
+.end-98 {
+  right: 98% !important;
 }
 
 .end-100 {
@@ -11975,6 +11991,11 @@ p.title-folleto {
 
 .espaciador {
   height: 200px;
+}
+
+.btn-wizard-secundary {
+  color: #B7C8DA;
+  background: #EBEFF4;
 }
 
 .btn-primary {

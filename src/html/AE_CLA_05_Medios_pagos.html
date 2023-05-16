@@ -54,17 +54,13 @@
             <button class="navbar-toggler collapsed justify-content-around" type="button" data-bs-toggle="collapse"
               data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
               aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-
               <span class="toggler-icon top-bar"></span>
               <span class="toggler-icon middle-bar"></span>
               <span class="toggler-icon bottom-bar"></span>
             </button>
+
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-
-
-
                 <li class="nav-item dropdown-hover">
                   <a class="nav-link active dropdown-hover-button" href="#">Contratar Seguros</a>
                   <div class="dropdown-hover-content shadow">
@@ -146,7 +142,7 @@
   </section>
   <!--Fin Header-->
 
-    
+
 <!--wizard-->
 <section id="wizard" class="mb-5 pt-3 container d-none d-lg-block">
   <div class="container contenedor-wizard">
@@ -154,13 +150,12 @@
         <div class="col-sm-12 col-md-10 offset-md-1">
           <div class="position-relative">
             <div class="progress" style="height: 1px;">
-                <div class="progress-bar" role="progressbar" style="width: 100%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+              <div class="progress-bar" role="progressbar" style="width: 100%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
             </div>
             <button type="button" class="position-absolute top-0 start-1 translate-middle btn btn-sm btn-primary rounded-pill" style="width: 2rem; height:2rem;">1</button>
           <button type="button" class="position-absolute top-0 start-35 translate-middle btn btn-sm btn-primary rounded-pill" style="width: 2rem; height:2rem;">2</button>
           <button type="button" class="position-absolute top-0 start-70 translate-middle btn btn-sm btn-primary rounded-pill" style="width: 2rem; height:2rem;">3</button>
           <button type="button" class="position-absolute top-0 start-100 translate-middle btn btn-sm btn-primary rounded-pill" style="width: 2rem; height:2rem;">4</button>
-          
           </div>
         </div>
       </div>
@@ -168,10 +163,10 @@
             <div class="row mt-5">
               <div class="col-sm-12 col-md-10 offset-md-1">
                 <div class="position-relative">
-                  <span class="position-absolute top-0 start-0 translate-middle text-center">Datos del <br> asegurado</span>
-                  <span class="position-absolute top-0 start-35 translate-middle text-center">Viajeros <br> adicionales</span>
-                  <span class="position-absolute top-0 start-70 translate-middle text-center">Resumen <br> y confirmación</span>
-                  <span class="position-absolute top-0 start-101 translate-middle text-center">Medios de pago</span>
+                    <span class="position-absolute top-0 start-0 translate-middle text-center">Datos del asegurado</span>
+                    <span class="position-absolute top-0 start-35 translate-middle text-center">Viajeros adicionales</span>
+                    <span class="position-absolute top-0 start-70 translate-middle text-center">Resumen y confirmación</span>
+                    <span class="position-absolute top-0 start-101 translate-middle text-center" style="width: 200px">Medios de pago</span>
                 </div>
             </div>
           </div>
@@ -182,42 +177,34 @@
 
 <!-- wizard mobile-->
 <section id="wizard-mobile">
-<div class="container d-lg-none mt-2 mb-1 wizard-mobile shadow">
-    <div class="row">
-          <div class="col-6 paso-actual">
-                  <span class="now-next text-right">Ahora</span>
-                  <span class="h4 text-right">Paso 1 de 5</span>
-                  <p class="nombre-paso text-right">DATOS DEL ASEGURADO</p>
-          </div>
-
-          <div class="col-6 paso-siguiente">
-                  <span class="now-next text-right">Siguiente</span>
-                  <span class="h4 text-right">Paso 2 de 5</span>
-                  <p class="nombre-paso text-right">VIAJEROS ADICIONALES</p>
-          </div>
-
-    </div>
-</div>
-</section>
-<!--fin wizard mobile-->
+  <div class="container d-lg-none mt-2 mb-1 wizard-mobile shadow">
+      <div class="row">
+            <div class="col-6 paso-actual">
+                    <span class="now-next text-right">Ahora</span>
+                    <span class="h4 text-right">Paso 4 de 4</span>
+                    <p class="nombre-paso text-right">Medios de pago</p>
+            </div>
+  
+      </div>
+  </div>
+  </section>
+  <!--fin wizard mobile-->
 
 <!-- form -->
 <section id="mediosPago">
   <div class="container mt-4">
       <div class="row">
         <h5 class="title-form fw-bold">MEDIOS DE PAGO</h5>
-          <p>El seguro que vas a contratar se descontará mensualmente de la liquidación de sueldo. <br> Selecciona la empresa
-            por la cual se te descontará el seguro: </p>
+          <p>Estás contratando el Seguro XXXXXX por UF XX.XXX ($XX.XXX). <br>
+            El seguro que vas a contratar se descontará mensualmente de la liquidación de sueldo.</p>
 
-          <h5>Empresas seleccionadas</h5>
+          <p class="fw-bold">Empresa seleccionada:</p>
 
           <div class="container mb-3">
             <div class="form-check form-check-inline">
               <img class="bd-placeholder-img" src="../../build/img/svg/logo-webpay.svg" width="300px">
             </div>
           </div>
-
-
 
           <div class="modal fade" id="exampleModa2" tabindex="-1" aria-labelledby="exampleModalLabe3" aria-hidden="true">
             <div class="modal-dialog modal-lg">
@@ -267,18 +254,16 @@
 
 <!--Seccion Legales-->
 <section id="legales">
-    <div class="container mt-4 mb-4">
+    <div class="container mt-5 mb-4">
       <div class="row">
         <div class="col-lg-8 mx-auto">
-          <div class="accordion accordion-flush " id="accordionExample">
+          <div class="accordion accordion-flush" id="accordionExample">
             <div class="accordion-item">
               <h2 class="accordion-header" id="headingOne">
                 <button class="accordion-button collapsed acordion-legales" type="button" data-bs-toggle="collapse"
                   data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-
-
-                  <span class="material-icons-outlined me-2 color-primario">privacy_tip</span><strong
-                    class="color-primario">Legales</strong>
+                  <span class="material-icons-outlined me-2 color-primario">privacy_tip</span>
+                  <strong class="color-primario">Legales</strong>
                 </button>
               </h2>
               <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
