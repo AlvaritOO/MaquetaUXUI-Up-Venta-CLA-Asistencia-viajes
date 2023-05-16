@@ -151,11 +151,11 @@
         <div class="col-sm-12 col-md-10 offset-md-1">
           <div class="position-relative">
             <div class="progress" style="height: 1px;">
-              <div class="progress-bar" role="progressbar" style="width: 70%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+              <div class="progress-bar" role="progressbar" style="width: 35%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
             </div>
             <button type="button" class="position-absolute top-0 start-1 translate-middle btn btn-sm btn-primary rounded-pill" style="width: 2rem; height:2rem;">1</button>
-          <button type="button" class="position-absolute top-0 start-35 translate-middle btn btn-sm btn-primary rounded-pill" style="width: 2rem; height:2rem;">2</button>
-          <button type="button" class="position-absolute top-0 start-70 translate-middle btn btn-sm btn-wizard-secundary rounded-pill" style="width: 2rem; height:2rem;">3</button>
+          <button type="button" class="position-absolute top-0 start-35 translate-middle btn btn-sm btn-wizard-secundary rounded-pill" style="width: 2rem; height:2rem;">2</button>
+          <button type="button" class="position-absolute top-0 start-65 translate-middle btn btn-sm btn-wizard-secundary rounded-pill" style="width: 2rem; height:2rem;">3</button>
           <button type="button" class="position-absolute top-0 start-100 translate-middle btn btn-sm btn-wizard-secundary rounded-pill" style="width: 2rem; height:2rem;">4</button>
           </div>
         </div>
@@ -166,7 +166,7 @@
                 <div class="position-relative">
                     <span class="position-absolute top-0 start-0 translate-middle text-center">Datos del asegurado</span>
                     <span class="position-absolute top-0 start-35 translate-middle text-center">Viajeros adicionales</span>
-                    <span class="position-absolute top-0 start-70 translate-middle text-center">Resumen y confirmación</span>
+                    <span class="position-absolute top-0 start-65 translate-middle text-center">Resumen y confirmación</span>
                     <span class="position-absolute top-0 start-101 translate-middle text-center" style="width: 200px">Medios de pago</span>
                 </div>
             </div>
@@ -176,483 +176,195 @@
 </section>
 <!--fin wizard-->
 
-<!-- wizard mobile-->
-<section id="wizard-mobile">
-  <div class="container d-lg-none mt-2 mb-1 wizard-mobile shadow">
-      <div class="row">
-            <div class="col-6 paso-actual">
-                    <span class="now-next text-right">Ahora</span>
-                    <span class="h4 text-right">Paso 2 de 4</span>
-                    <p class="nombre-paso text-right">Viajeros adicionales</p>
-            </div>
+  <!-- wizard mobile-->
+  <section id="wizard-mobile">
+    <div class="container d-lg-none mt-2 mb-1 wizard-mobile shadow">
+        <div class="row">
+              <div class="col-6 paso-actual">
+                      <span class="now-next text-right">Ahora</span>
+                      <span class="h4 text-right">Paso 1 de 4</span>
+                      <p class="nombre-paso text-right">Datos del asegurado</p>
+              </div>
   
-            <div class="col-6 paso-siguiente">
-                    <span class="now-next text-right">Siguiente</span>
-                    <span class="h4 text-right">Paso 3 de 4</span>
-                    <p class="nombre-paso text-right">Resumen y confirmación</p>
-            </div>
-      </div>
-  </div>
+              <div class="col-6 paso-siguiente">
+                      <span class="now-next text-right">Siguiente</span>
+                      <span class="h4 text-right">Paso 2 de 4</span>
+                      <p class="nombre-paso text-right">Viajeros adicionales</p>
+              </div>
+  
+        </div>
+    </div>
   </section>
   <!--fin wizard mobile-->
-  
 
+<!-- form -->
+<section id="formulario">
+  <div class="container">
+    <form>
+      <div class="row">
+        <div class="divisor"></div>
+        <h2 class="mb-5 fw-bold color-primary">Bienvenido Cristian<br>
+          <span class="h6">15.526.234-6</span></h2>
+        
+        
+      <h5 class="title-form fw-bold">DATOS DEL TITULAR</h5>
+        <p class="mb-4 fst-italic link-secondary">(*) Campos Obligatorios</p>
+        <div class="mb-3 col-sm-6 col-lg-4">
+          <label for="exampleInputEmail1" class="form-label">Fecha de nacimiento</label>
+              <span class="material-icons-outlined ic-form" data-bs-toggle="tooltip" data-bs-placement="top" title="Si la fecha de nacimiento no corresponde dirígete a tu sucursal Caja Los Andes más cercana para modificar el dato">
+                info
+              </span>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="01-09-1984" >
+        </div>
 
-  <!-- form -->
-  <section id="beneficiarios" class="pt-4 ">
+        <div class="mb-3 col-sm-6 col-lg-4">
+          <label for="exampleInputEmail1" class="form-label">Nacionalidad</label>
+          <select class="form-select" aria-label="Default select example">
+            <option selected>Seleccione</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+          </select>
+        </div>
 
-    <div class="container">
+      </div>
+      <div class="row">
+          <label for="exampleFormControlInput1" class="form-label">Género</label>
+      </div>
+      <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1" >
+          <label class="form-check-label" for="inlineRadio1">Femenimo</label>
+      </div>
+      <div class="form-check form-check-inline mb-4">
+          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2" checked>
+          <label class="form-check-label" for="inlineRadio2">Masculino</label>
+      </div>
 
       <div class="row">
-        <h5 class="title-form fw-bold">VIAJEROS ADICIONALES</h5>
-        <p class="mb-5">
-          Puedes agregar hasta 4 viajeros adicionales.
-        </p>
-      </div>
+        <div class="mb-3 col-sm-6 col-lg-4">
+          <label for="exampleInputEmail1" class="form-label">Profesión / Ocupación</label>
+          <select class="form-select" aria-label="Default select example" >
+            <option selected>Seleccione</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+          </select>
+        </div>
 
-      <div id="contenedor-beneficiarios">
-        <div class="row acordeon-beneficiarios">
-          <h6 class="fw-bold">Viajeros adicionales inscritos: <span class="cantidad-beneficiarios"></span></h6>
-          <div class="col-sm-12 col-md-12 col-lg-12 ">
-            <div class="accordion accordion-flush mb-4 position-relative item-beneficiario" id="accordionFlushExample">
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="flush-headingOne">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                    <b><i class="bi bi-person-badge me-2 d-none"></i>Maximiliano Torres</b>
-                    <div class="ms-4 d-none d-sm-block d-sm-none d-md-block">14.567.890-K</div>
-                    <div class="ms-4 d-none d-sm-block d-sm-none d-md-block">{Fecha de Nacimiento}</div>
-                    <div class="ms-4 d-none d-lg-block">maximilianohtorrez@correo.cl</div><!-- % en desktop-->
-                    <div class="ms-4 d-lg-none">
-                      <a class="btn btn-outline-secondary">Editar</a>
-                    </div>
-                    <div class="ms-4 d-lg-none">
-                      <a class="btn btn-outline-secondary" data-bs-toggle="modal"
-                        data-bs-target="#exampleModal">Eliminar</a>
-                    </div>
-                    <div class="d-grid gap-2 d-md-flex justify-content-md-end d-none d-sm-none d-md-none d-lg-block">
-                      <a class=" position-absolute top-50 start-80 translate-middle link-dark">Editar</a>
-                    </div>
-                    <div class="d-grid gap-2 d-md-flex justify-content-md-end d-none d-sm-none d-md-none d-lg-block">
-                      <a class=" position-absolute top-50 start-90 translate-middle link-dark">Eliminar</a>
-                    </div>
-
-                  </button>
-                </h2>
-                <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
-                  data-bs-parent="#accordionFlushExample">
-                  <div class="accordion-body">
-
-                    <form>
-
-                      <div class="row">
-
-                        <div class="mb-3 col-sm-5 col-md-4 col-lg-4">
-                          <label for="exampleInputEmail1" class="form-label">Nombres</label>
-                          <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-                            placeholder="">
-                        </div>
-
-                        <div class="mb-3 col-sm-5 col-md-4 col-lg-4">
-                          <label for="exampleInputEmail1" class="form-label">Apellidos</label>
-                          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-                            placeholder="">
-                        </div>
-                      </div>
-
-                      <div class="row">
-                        <div class="mb-3 col-sm-5 col-md-4 col-lg-4">
-                          <label for="exampleInputEmail1" class="form-label">RUT</label>
-                          <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-                            placeholder="">
-                        </div>
-
-                        <div class="mb-3 col-sm-5 col-md-4 col-lg-4">
-                          <label for="exampleInputEmail1" class="form-label">Fecha de nacimiento</label>
-                          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-                            placeholder="">
-                        </div>
-                      </div>
-
-                      <div class="row">
-                        <label for="exampleFormControlInput1" class="form-label">Género</label>
-                    </div>
-                    <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1" >
-                        <label class="form-check-label" for="inlineRadio1">Femenimo</label>
-                    </div>
-                    <div class="form-check form-check-inline mb-4">
-                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2" checked>
-                        <label class="form-check-label" for="inlineRadio2">Masculino</label>
-                    </div>
-              
-                    <div class="row">
-                      <div class="mb-3 col-sm-6 col-lg-4">
-                        <label for="exampleInputEmail1" class="form-label">Nacionalidad</label>
-                        <select class="form-select" aria-label="Default select example" >
-                          <option selected>Seleccione</option>
-                          <option value="1">One</option>
-                          <option value="2">Two</option>
-                          <option value="3">Three</option>
-                        </select>
-                      </div>
-              
-                      <div class="mb-3 col-sm-6 col-lg-4">
-                        <label for="exampleInputEmail1" class="form-label">Vinculo con el titular</label>
-                        <select class="form-select" aria-label="Default select example">
-                          <option selected>Seleccione</option>
-                          <option value="1">One</option>
-                          <option value="2">Two</option>
-                          <option value="3">Three</option>
-                        </select>
-                      </div>
-                    </div>
-
-                    <div class="row">
-                      <div class="mb-3 col-sm-6 col-lg-4">
-                        <label for="exampleInputEmail1" class="form-label">Profesión / Ocupación</label>
-                        <select class="form-select" aria-label="Default select example" >
-                          <option selected>Seleccione</option>
-                          <option value="1">One</option>
-                          <option value="2">Two</option>
-                          <option value="3">Three</option>
-                        </select>
-                      </div>
-              
-                      <div class="mb-3 col-sm-6 col-lg-4">
-                        <label for="exampleInputEmail1" class="form-label">Estado civil</label>
-                        <select class="form-select" aria-label="Default select example">
-                          <option selected>Seleccione</option>
-                          <option value="1">One</option>
-                          <option value="2">Two</option>
-                          <option value="3">Three</option>
-                        </select>
-                      </div>
-                    </div>
-                      <div class="divisor"></div>
-
-                      <div class="row">
-                        <div class="mb-3 col-sm-5 col-md-4 col-lg-4">
-                          <label for="exampleInputEmail1" class="form-label">Teléfono de contacto</label>
-                          <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-                            placeholder="">
-                        </div>
-                      </div>
-
-                      <div class="row">
-                        <div class="mb-3 col-sm-5 col-md-4 col-lg-4">
-                          <label for="exampleInputEmail1" class="form-label">Correo electrónico</label>
-                          <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-                            placeholder="">
-                        </div>
-
-                        <div class="mb-3 col-sm-5 col-md-4 col-lg-4">
-                          <label for="exampleInputEmail1" class="form-label">Confirma tu correo electrónico</label>
-                          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-                            placeholder="">
-                        </div>
-
-                      </div>
-
-                      <div class="divisor"></div>
-
-                      <div class="row">
-                        <div class="mb-3 col-sm-6 col-lg-4">
-                          <label for="exampleInputEmail1" class="form-label">País de residencia</label>
-                          <select class="form-select" aria-label="Default select example" >
-                            <option selected>Seleccione</option>
-                            <option value="1">One</option>
-                            <option value="2">Two</option>
-                            <option value="3">Three</option>
-                          </select>
-                        </div>
-                
-                        <div class="mb-3 col-sm-6 col-lg-4">
-                          <label for="exampleInputEmail1" class="form-label">Región</label>
-                          <select class="form-select" aria-label="Default select example">
-                            <option selected>Seleccione</option>
-                            <option value="1">One</option>
-                            <option value="2">Two</option>
-                            <option value="3">Three</option>
-                          </select>
-                        </div>
-                      </div>
-  
-                      <div class="row">
-                        <div class="mb-3 col-sm-6 col-lg-4">
-                          <label for="exampleInputEmail1" class="form-label">Comuna</label>
-                          <select class="form-select" aria-label="Default select example" >
-                            <option selected>Seleccione</option>
-                            <option value="1">One</option>
-                            <option value="2">Two</option>
-                            <option value="3">Three</option>
-                          </select>
-                        </div>
-                
-                        <div class="mb-3 col-sm-5 col-md-4 col-lg-4">
-                          <label for="exampleInputEmail1" class="form-label">Calle</label>
-                          <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-                            placeholder="">
-                        </div>
-                      </div>
-
-                      <div class="row">
-                        <div class="mb-3 col-sm-5 col-md-4 col-lg-4">
-                          <label for="exampleInputEmail1" class="form-label">Número de domicilio</label>
-                          <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-                            placeholder="">
-                        </div>
-                
-                        <div class="mb-3 col-sm-5 col-md-4 col-lg-4">
-                          <label for="exampleInputEmail1" class="form-label">Departamento/Oficina</label>
-                          <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-                            placeholder="">
-                        </div>
-                      </div>
-
-                      <div class="divisor"></div>
-
-                      <div class="row justify-content-end mt-4">
-                        <div class="col-12 text-end">
-                          <button type="button" class="btn btn-volver">Cancelar</button>
-                          <button type="button" class="btn btn-primary" id="liveToastBtn2">Guardar cambios</button>
-                        </div>
-                      </div>
-                    </form>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-
+        <div class="mb-3 col-sm-6 col-lg-4">
+          <label for="exampleInputEmail1" class="form-label">Estado civil</label>
+          <select class="form-select" aria-label="Default select example">
+            <option selected>Seleccione</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+          </select>
         </div>
       </div>
+
       <div class="divisor"></div>
 
-      <h5 class="title-form fw-bold">VIAJEROS ADICIONALES</h5>
-      <div id="contenedor-beneficiarios">
-        <div class="row acordeon-beneficiarios">
-          
-          <div class="col-sm-12 col-md-12 col-lg-12 ">
-            <div class="accordion accordion-flush mb-4 position-relative item-beneficiario" id="accordionFlushExample">
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="flush-headingOne1">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#flush-collapseOne1" aria-expanded="false" aria-controls="flush-collapseOne1">
-                    <b><i class="bi bi-person-badge me-2 d-none"></i>Viajero adicional</b>
-                    
-
-                  </button>
-                </h2>
-                <div id="flush-collapseOne1" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
-                  data-bs-parent="#accordionFlushExample">
-                  <div class="accordion-body">
-
-                    <form>
-
-                      <div class="row">
-                        <div class="mb-3 col-sm-5 col-md-4 col-lg-4">
-                          <label for="exampleInputEmail1" class="form-label">Nombres</label>
-                          <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-                            placeholder="">
-                        </div>
-
-                        <div class="mb-3 col-sm-5 col-md-4 col-lg-4">
-                          <label for="exampleInputEmail1" class="form-label">Apellidos</label>
-                          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-                            placeholder="">
-                        </div>
-                      </div>
-
-                      <div class="row">
-                        <div class="mb-3 col-sm-5 col-md-4 col-lg-4">
-                          <label for="exampleInputEmail1" class="form-label">RUT</label>
-                          <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-                            placeholder="">
-                        </div>
-
-                        <div class="mb-3 col-sm-5 col-md-4 col-lg-4">
-                          <label for="exampleInputEmail1" class="form-label">Fecha de nacimiento</label>
-                          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-                            placeholder="">
-                        </div>
-                      </div>
-
-                      <div class="row">
-                        <label for="exampleFormControlInput1" class="form-label">Género</label>
-                    </div>
-                    <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1" >
-                        <label class="form-check-label" for="inlineRadio1">Femenimo</label>
-                    </div>
-                    <div class="form-check form-check-inline mb-4">
-                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2" checked>
-                        <label class="form-check-label" for="inlineRadio2">Masculino</label>
-                    </div>
-              
-                    <div class="row">
-                      <div class="mb-3 col-sm-6 col-lg-4">
-                        <label for="exampleInputEmail1" class="form-label">Nacionalidad</label>
-                        <select class="form-select" aria-label="Default select example" >
-                          <option selected>Seleccione</option>
-                          <option value="1">One</option>
-                          <option value="2">Two</option>
-                          <option value="3">Three</option>
-                        </select>
-                      </div>
-              
-                      <div class="mb-3 col-sm-6 col-lg-4">
-                        <label for="exampleInputEmail1" class="form-label">Vinculo con el titular</label>
-                        <select class="form-select" aria-label="Default select example">
-                          <option selected>Seleccione</option>
-                          <option value="1">One</option>
-                          <option value="2">Two</option>
-                          <option value="3">Three</option>
-                        </select>
-                      </div>
-                    </div>
-
-                    <div class="row">
-                      <div class="mb-3 col-sm-6 col-lg-4">
-                        <label for="exampleInputEmail1" class="form-label">Profesión / Ocupación</label>
-                        <select class="form-select" aria-label="Default select example" >
-                          <option selected>Seleccione</option>
-                          <option value="1">One</option>
-                          <option value="2">Two</option>
-                          <option value="3">Three</option>
-                        </select>
-                      </div>
-              
-                      <div class="mb-3 col-sm-6 col-lg-4">
-                        <label for="exampleInputEmail1" class="form-label">Estado civil</label>
-                        <select class="form-select" aria-label="Default select example">
-                          <option selected>Seleccione</option>
-                          <option value="1">One</option>
-                          <option value="2">Two</option>
-                          <option value="3">Three</option>
-                        </select>
-                      </div>
-                    </div>
-                      <div class="divisor"></div>
-
-                      <div class="row">
-                        <div class="mb-3 col-sm-5 col-md-4 col-lg-4">
-                          <label for="exampleInputEmail1" class="form-label">Teléfono de contacto</label>
-                          <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-                            placeholder="">
-                        </div>
-                      </div>
-
-                      <div class="row">
-                        <div class="mb-3 col-sm-5 col-md-4 col-lg-4">
-                          <label for="exampleInputEmail1" class="form-label">Correo electrónico</label>
-                          <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-                            placeholder="">
-                        </div>
-
-                        <div class="mb-3 col-sm-5 col-md-4 col-lg-4">
-                          <label for="exampleInputEmail1" class="form-label">Confirma tu correo electrónico</label>
-                          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-                            placeholder="">
-                        </div>
-
-                      </div>
-
-                      <div class="divisor"></div>
-
-                      <div class="row">
-                        <div class="mb-3 col-sm-6 col-lg-4">
-                          <label for="exampleInputEmail1" class="form-label">País de residencia</label>
-                          <select class="form-select" aria-label="Default select example" >
-                            <option selected>Seleccione</option>
-                            <option value="1">One</option>
-                            <option value="2">Two</option>
-                            <option value="3">Three</option>
-                          </select>
-                        </div>
-                
-                        <div class="mb-3 col-sm-6 col-lg-4">
-                          <label for="exampleInputEmail1" class="form-label">Región</label>
-                          <select class="form-select" aria-label="Default select example">
-                            <option selected>Seleccione</option>
-                            <option value="1">One</option>
-                            <option value="2">Two</option>
-                            <option value="3">Three</option>
-                          </select>
-                        </div>
-                      </div>
-  
-                      <div class="row">
-                        <div class="mb-3 col-sm-6 col-lg-4">
-                          <label for="exampleInputEmail1" class="form-label">Comuna</label>
-                          <select class="form-select" aria-label="Default select example" >
-                            <option selected>Seleccione</option>
-                            <option value="1">One</option>
-                            <option value="2">Two</option>
-                            <option value="3">Three</option>
-                          </select>
-                        </div>
-                
-                        <div class="mb-3 col-sm-5 col-md-4 col-lg-4">
-                          <label for="exampleInputEmail1" class="form-label">Calle</label>
-                          <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-                            placeholder="">
-                        </div>
-                      </div>
-
-                      <div class="row">
-                        <div class="mb-3 col-sm-5 col-md-4 col-lg-4">
-                          <label for="exampleInputEmail1" class="form-label">Número de domicilio</label>
-                          <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-                            placeholder="">
-                        </div>
-                
-                        <div class="mb-3 col-sm-5 col-md-4 col-lg-4">
-                          <label for="exampleInputEmail1" class="form-label">Departamento/Oficina</label>
-                          <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-                            placeholder="">
-                        </div>
-                      </div>
-
-                      <div class="divisor"></div>
-
-                      <div class="row justify-content-end mt-4">
-                        <div class="col-12 text-end">
-                          <button type="button" class="btn btn-volver">Cancelar</button>
-                          <button type="button" class="btn btn-primary" id="liveToastBtn2">Guardar cambios</button>
-                        </div>
-                      </div>
-                    </form>
-                  </div>
-                </div>
-              </div>
-            </div>
+      <div class="row">
+        <h5 class="title-form fw-bold">CONTACTO</h5>
+        <div class="mb-3 col-sm-6 col-md-5 col-lg-4">
+          <label for="exampleInputEmail1" class="form-label">Teléfono de Contacto*</label>
+          <input type="" class="form-control input-telefono" id="exampleInputEmail1" aria-describedby="emailHelp"  value="+569 ">
+          <div class="invalid-feedback">
+            Debes ingresar un número valido
           </div>
-
-
         </div>
       </div>
-    </div>
-  </section>
 
-
-  <section id="botonera" class="mb-4 mt-4">
-    <div class="container">
-      <div class="row justify-content-end">
-        <div class="col-8 text-end">
-          <button type="button" class="btn btn-volver">Volver</button>
-
-          <button type="button" class="btn btn-primary">Continuar</button>
+      <div class="row">
+        <div class="mb-3 col-sm-6 col-lg-4">
+          <label for="exampleInputEmail1" class="form-label">Correo electrónico*</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="">
         </div>
+
+        <div class="mb-3 col-sm-6 col-lg-4">
+          <label for="exampleInputEmail1" class="form-label">Confirme correo electrónico*</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="">
+        </div>
+        </row>
+
+        <div class="divisor"></div>
+
+        <h5 class="title-form fw-bold">RESIDENCIA</h5>
+
+        <div class="row">
+          <div class="mb-3 col-sm-6 col-lg-4">
+            <label for="exampleInputEmail1" class="form-label">País de residencia*</label>
+            <select class="form-select" aria-label="Chile">
+              <option selected>Seleccione</option>
+              <option value="1" selected="selected">Chile</option>
+              <option value="2">Argentina</option>
+              <option value="3">Brasil</option>
+            </select>
+          </div>
+        
+          <div class="mb-3 col-sm-6 col-lg-4">
+            <label for="exampleInputEmail1" class="form-label">Región*</label>
+            <select class="form-select" aria-label="Default select
+                      example">
+              <option selected>Seleccione*</option>
+              <option value="1">Region Metropolitana</option>
+              <option value="2">A</option>
+              <option value="3">B</option>
+              <option value="3">C</option>
+            </select>
+          </div>
+        </div>
+        
+        <div class="row">
+          <div class="mb-3 col-sm-6 col-lg-4">
+            <label for="exampleInputEmail1" class="form-label">Comuna*</label>
+            <select class="form-select" aria-label="Chile">
+              <option selected>Seleccione</option>
+              <option value="2">A</option>
+              <option value="3">B</option>
+              <option value="3">C</option>
+            </select>
+          </div>
+        
+          <div class="mb-3 col-sm-6 col-lg-4">
+            <label for="exampleInputEmail1" class="form-label">Calle*</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="">
+          </div>
+        </div> 
+
+        <div class="row">
+          <div class="mb-3 col-sm-6 col-lg-4">
+            <label for="exampleInputEmail1" class="form-label">Número de domicilio</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="">
+          </div>
+        
+          <div class="mb-3 col-sm-6 col-lg-4">
+            <label for="exampleInputEmail1" class="form-label">Departamento/Oficina</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="">
+          </div>
+        </div> 
+        
+        </div>
+  
+
+
+</section>
+
+<section id="botonera" class="mb-4 mt-4">
+  <div class="container">
+    <div class="row justify-content-end">
+      <div class="col-8 text-end">
+        <button type="button" class="btn btn-volver">Volver</button>
+
+        <button type="button" class="btn btn-primary">Continuar</button>
       </div>
     </div>
-  </section>
+  </div>
+</section>
+<!--fin form-->
 
-  <!--fin seccion formulario agregar beneficiari-->
-
-  <!--Seccion Legales-->
-  <section id="legales">
+<!--Seccion Legales-->
+<section id="legales">
     <div class="container mt-4 mb-4">
       <div class="row">
         <div class="col-lg-8 mx-auto">
@@ -705,8 +417,9 @@
       </div>
     </div>
 
-  </section>
-  <!--Fin Seccion Legales-->
+</section>
+<!--Fin Seccion Legales-->
+
 
   <!--Footer-->
   <section id="footer">

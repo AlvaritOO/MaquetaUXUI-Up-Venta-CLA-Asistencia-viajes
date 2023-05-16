@@ -58,9 +58,9 @@
               <span class="toggler-icon middle-bar"></span>
               <span class="toggler-icon bottom-bar"></span>
             </button>
+
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-
                 <li class="nav-item dropdown-hover">
                   <a class="nav-link active dropdown-hover-button" href="#">Contratar Seguros</a>
                   <div class="dropdown-hover-content shadow">
@@ -142,42 +142,7 @@
   </section>
   <!--Fin Header-->
 
-    <!--toast nuevo beneficiario-->
-    <div class="toast-container position-fixed top-0 end-0 p-3" style="z-index: 99991">
-      <div id="liveToast" class="toast text-white bg-success border-0" role="alert" aria-live="assertive"
-        aria-atomic="true">
-        <div class="d-flex">
-          <div class="toast-body">
-            <b>Beneficiario inscrito correctamente.</b>
-          </div>
-          <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast"
-            aria-label="Close"></button>
-        </div>
-      </div>
-  
-      <div id="liveToast2" class="toast text-white bg-success border-0" role="alert" aria-live="assertive"
-        aria-atomic="true">
-        <div class="d-flex">
-          <div class="toast-body">
-            <b>Cambios Guardados correctamente</b>
-          </div>
-          <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast"
-            aria-label="Close"></button>
-        </div>
-      </div>
-    </div>
-  
-    <div id="liveToast3" class="toast text-white bg-success border-0" role="alert" aria-live="assertive"
-      aria-atomic="true">
-      <div class="d-flex">
-        <div class="toast-body">
-          <b>Beneficario eliminado correctamente</b>
-        </div>
-        <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast"
-          aria-label="Close"></button>
-      </div>
-    </div>
-    
+
 <!--wizard-->
 <section id="wizard" class="mb-5 pt-3 container d-none d-lg-block">
   <div class="container contenedor-wizard">
@@ -189,8 +154,8 @@
             </div>
             <button type="button" class="position-absolute top-0 start-1 translate-middle btn btn-sm btn-primary rounded-pill" style="width: 2rem; height:2rem;">1</button>
           <button type="button" class="position-absolute top-0 start-35 translate-middle btn btn-sm btn-primary rounded-pill" style="width: 2rem; height:2rem;">2</button>
-          <button type="button" class="position-absolute top-0 start-70 translate-middle btn btn-sm btn-primary rounded-pill" style="width: 2rem; height:2rem;">3</button>
-          <button type="button" class="position-absolute top-0 start-100 translate-middle btn btn-sm btn-wizard-secundary rounded-pill" style="width: 2rem; height:2rem;">4</button>
+          <button type="button" class="position-absolute top-0 start-65 translate-middle btn btn-sm btn-primary rounded-pill" style="width: 2rem; height:2rem;">3</button>
+          <button type="button" class="position-absolute top-0 start-100 translate-middle btn btn-sm btn-primary rounded-pill" style="width: 2rem; height:2rem;">4</button>
           </div>
         </div>
       </div>
@@ -200,7 +165,7 @@
                 <div class="position-relative">
                     <span class="position-absolute top-0 start-0 translate-middle text-center">Datos del asegurado</span>
                     <span class="position-absolute top-0 start-35 translate-middle text-center">Viajeros adicionales</span>
-                    <span class="position-absolute top-0 start-70 translate-middle text-center">Resumen y confirmación</span>
+                    <span class="position-absolute top-0 start-65 translate-middle text-center">Resumen y confirmación</span>
                     <span class="position-absolute top-0 start-101 translate-middle text-center" style="width: 200px">Medios de pago</span>
                 </div>
             </div>
@@ -216,12 +181,6 @@
       <div class="row">
             <div class="col-6 paso-actual">
                     <span class="now-next text-right">Ahora</span>
-                    <span class="h4 text-right">Paso 3 de 4</span>
-                    <p class="nombre-paso text-right">Resumen y confirmación</p>
-            </div>
-  
-            <div class="col-6 paso-siguiente">
-                    <span class="now-next text-right">Siguiente</span>
                     <span class="h4 text-right">Paso 4 de 4</span>
                     <p class="nombre-paso text-right">Medios de pago</p>
             </div>
@@ -231,299 +190,27 @@
   </section>
   <!--fin wizard mobile-->
 
+<!-- form -->
+<section id="mediosPago">
+  <div class="container mt-4">
+      <div class="row">
+        <h5 class="title-form fw-bold">MEDIOS DE PAGO</h5>
+          <p>Estás contratando el Seguro XXXXXX por UF XX.XXX ($XX.XXX). <br>
+            El seguro que vas a contratar se descontará mensualmente de la liquidación de sueldo.</p>
 
-    <!-- RESUMEN Y CONFIRMACIÓN -->
-    <section id="beneficiarios" class="pt-4 ">
-      <div class="container">
-        <div class="row">
-          <h5 class="title-form fw-bold">RESUMEN Y CONFIRMACIÓN</h5>
-          <p class="mb-5">
-              ¡Estás a un solo paso de contratar tu seguro XXXXXX! Para finalizar el proceso de contratación, te <br> pedimos que puedas aceptar los términos y condiciones en la parte final.
-          </p>
-        </div>
-    </section>
+          <p class="fw-bold">Empresa seleccionada:</p>
 
-    <!-- Detalle del Seguro -->
-    <section id="resumen" class="mt-6">
-                    <div class="container">
-                      <div class="row">
-                        <p class="title-form text-primary fw-bold">Detalle del Seguro XXXX</p>
-                        <div class="row">
-                          <div class="col-sm-12 col-lg-2">
-          
-                            <h5 class="text-black-50">Nombre Plan</h5>
-                            <ul class="list-unstyled">
-                              <li>{Nombre Plan Seleccionado}</li>
-                            </ul>
-                          </div>
-                          <div class="col-sm-12 col-lg-2">
-          
-                            <h5 class="text-black-50">Viajeros Adicionales</h5>
-                            <ul class="list-unstyled">
-                              <li>{nombre asegurado 1}</li>
-                              <li>{nombre asegurado 2}</li>
-                            </ul>
-                          </div>
-
-                          <div class="col-sm-12 col-lg-2">
-                            <h5 class="text-black-50">Titular Asegurado</h5>
-                            <ul class="list-unstyled">
-                              <li>{nombre titular}</li>
-                            </ul>
-                          </div>
-          
-                          <div class="col-sm-12 col-lg-2">
-                            <div class="row">
-                                <h5 class="text-black-50">Medios de Pago</h5>
-                                <ul class="list-unstyled">
-                                  <li>{transbank}</li>
-                                </ul>
-                            </div>
-                          </div>
-
-                        <div class="col-sm-12 col-lg-2">
-                          <h5 class="text-black-50">Viajeros Adicionales</h5>
-                          <ul class="list-unstyled">
-                            <li>{nombre asegurado 1}</li>
-                            <li>{nombre asegurado 2}</li>
-                          </ul>
-                        </div>
-
-                        <div class="col-sm-12 col-lg-2">
-                          <h5 class="text-black-50">Viajeros Adicionales</h5>
-                          <ul class="list-unstyled">
-                            <li>{nombre asegurado 1}</li>
-                            <li>{nombre asegurado 2}</li>
-                          </ul>
-                        </div>
-                      </div>
-          </div>
-
-    </section>
-
-    <!-- ¡Tendrás los siguientes beneficios! -->
-    <section id="resumen" class="mt-5">
-      <div class="container">
-        <div class="row">
-          <p class="title-form text-primary fw-bold">¡Tendrás los siguientes beneficios!</p>
-          <p class="">(Recuerda que para utilizarlos debes seguir las instrucciones que te enviaremos una vez hayas terminado de contratar tu seguro).</p>
-          <div class="row">
-            <div class="col-sm-12 col-lg-2">
-
-              <h5 class="text-black-50">Nombre Plan</h5>
-              <ul class="list-unstyled">
-                <li>{Nombre Plan Seleccionado}</li>
-              </ul>
-            </div>
-            <div class="col-sm-12 col-lg-2">
-
-              <h5 class="text-black-50">Viajeros Adicionales</h5>
-              <ul class="list-unstyled">
-                <li>{nombre asegurado 1}</li>
-                <li>{nombre asegurado 2}</li>
-              </ul>
-            </div>
-
-            <div class="col-sm-12 col-lg-2">
-              <h5 class="text-black-50">Titular Asegurado</h5>
-              <ul class="list-unstyled">
-                <li>{nombre titular}</li>
-              </ul>
-            </div>
-
-            <div class="col-sm-12 col-lg-2">
-              <div class="row">
-                  <h5 class="text-black-50">Medios de Pago</h5>
-                  <ul class="list-unstyled">
-                    <li>{transbank}</li>
-                  </ul>
-              </div>
-            </div>
-
-          <div class="col-sm-12 col-lg-2">
-            <h5 class="text-black-50">Viajeros Adicionales</h5>
-            <ul class="list-unstyled">
-              <li>{nombre asegurado 1}</li>
-              <li>{nombre asegurado 2}</li>
-            </ul>
-          </div>
-
-          <div class="col-sm-12 col-lg-2">
-            <h5 class="text-black-50">Viajeros Adicionales</h5>
-            <ul class="list-unstyled">
-              <li>{nombre asegurado 1}</li>
-              <li>{nombre asegurado 2}</li>
-            </ul>
-          </div>
-        </div>
-    </div>
-
-    <div class="mt-4 mb-4">
-    <a class="btn btn-volver"><i class="bi bi-box-arrow-in-down"></i> Descargar póliza</a>
-    </div>
-
-    <div class="divisor"> </div>
-    </section>
-
-    <!-- Autorizaciones-->
-    <section>
-          <div class="container mt-4">
-            <div class="row">
-                <div class="col-lg-12">
-                  <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                    <label class="form-check-label" for="flexCheckDefault" data-bs-toggle="tooltip" data-bs-placement="right" title="" data-bs-original-title="Ver el uso de mis datos para contactabilidad">
-                      Autorizo el uso de mis datos para contactabilidad. <br>
-                      <span><a data-bs-toggle="modal" data-bs-target="#exampleModa1">Ver documento de Aceptación.</a></span>
-                    </label>
-                  </div>
-                </div>
+          <div class="container mb-3">
+            <div class="form-check form-check-inline">
+              <img class="bd-placeholder-img" src="../../build/img/svg/logo-webpay.svg" width="300px">
             </div>
           </div>
-          
-          <div class="container mt-4">
-            <div class="row">
-                <div class="col-lg-12">
-                  <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault2">
-                    <label class="form-check-label" for="flexCheckDefault2" data-bs-toggle="tooltip" data-bs-placement="right" title="" data-bs-original-title="Ver Términos y Condiciones del seguro">
-                      He leído y acepto Términos y Condiciones del seguro. <br>
-                      <span><a data-bs-toggle="modal" data-bs-target="#exampleModal3">Ver documento de Aceptación.</a></span>
-                    </label>
-                  </div>
-                </div>
-            </div>
-          </div>
-          
-          <div class="container mt-4">
-            <div class="row">
-                <div class="col-lg-12">
-                  <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault2">
-                    <label class="form-check-label" for="flexCheckDefault2" data-bs-toggle="tooltip" data-bs-placement="right" title="" data-bs-original-title="Ver Términos y Condiciones del seguro">
-                      Autorizo el descuento de la prima mensual contratada de acuerdo al Mandato de Cargo.<br> 
-                      <span><a data-bs-toggle="modal" data-bs-target="#exampleModa2">Ver documento de Aceptación.</a></span>
-                    </label>
-                  </div>
-                </div>
-            </div>
-          </div>
-          
-          
-          <!--modal -->
-          <div class="modal fade" id="exampleModa1" tabindex="-1" aria-labelledby="exampleModalLabe3" aria-hidden="true">
-            <div class="modal-dialog modal-lg">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h5 class="modal-title color-primary" id="exampleModalLabe3">Autorización de uso de Datos para Contactabilidad.</h5>
-                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                  <p>Autorizo que mi información personal sea recopilada, almacenada, tratada y divulgada por
-                  Caja de Compensación de Asignación Familiar de Los Andes (“Caja Los Andes” o la “Caja”), según la normativa. Vigente y conforme al Acuerdo de Privacidad.
-                  </p>
 
-                  <ul>1. Autorización de tratamiento de Datos Personales: Por medio de la contratación de este seguro autorizo, como responsables de bases de datos, a las sociedades: BNP Paribas Cardif Seguros Generales S.A., BNP Paribas Cardif Seguros de Vida S.A. y BNP Paribas Cardif Servicios y Asistencia Ltda. (conjuntamente “BNP Paribas Cardif”) a tratar mis datos personales, de acuerdo a los fines y condiciones aquí descritos. Los datos que autorizo tratar son los contenidos en esta solicitud, y aquellos que más adelante resulten necesarios para el otorgamiento de los productos y/o servicios contratados de BNP Paribas Cardif.</ul>
-                  <ul>2. Propósitos del tratamiento: Los propósitos para los cuales autorizo a BNP Paribas Cardif a tratar mis datos personales son todos o algunos de los siguientes propósitos:
-                    <ul> a) Evaluar esta solicitud y proporcionarme los productos y servicios que sean contratados;</ul>
-                    <ul> b) Contactarme y responder a mis consultas;</ul>
-                    <ul> c) Gestionar y procesar los denuncios de mis siniestros;</ul>
-                    <ul> d) Enviar comunicaciones publicitarias;</ul>
-                    <ul> e) Evaluar y mejorar los productos y servicios de BNP Paribas Cardif, a través de desarrollos asociados a seguros, análisis de datos y estudios analíticos;</ul>
-                    <ul> f) Realizar operaciones propias del negocio de BNP Paribas Cardif tales como: contabilidad, administración, monitoreo de riesgo y técnico, auditorías, facturación y, cobros; y (vii) dar cumplimiento a las obligaciones legales de BNP Paribas Cardif.</ul>
-                  </ul>
-                  <ul>3. Datos personales de terceros: Sobre la información personal de terceros que yo entregue a BNP Paribas Cardif (ej. beneficiaros), declaro contar con las autorizaciones suficientes, para que BNP Paribas Cardif trate debidamente aquella información, según los propósitos indicados en el número anterior.</ul>
-                  <ul>4. Comunicación de datos a terceros: Únicamente para los propósitos indicados, autorizo a BNP Paribas Cardif para que pueda comunicar mis datos personales a sus proveedores y terceros colaboradores como, por ejemplo, corredores de seguros, liquidadores, intermediadores y socios comerciales.</ul>
-                  <ul>5. Mis derechos: Declaro conocer que mis derechos como titular de datos, los puedo hacer efectivos de manera gratuita comunicándome al 800362100.</ul>
-                </div>
-
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-volver">Entiendo y acepto</button>
-                </div>
-              </div>
-            </div>
-          </div>
-          
-          
-          <!--modal verificacion-->
-          <div class="modal fade" id="modalVerificacion" tabindex="-1" aria-labelledby="modalVerificacion" aria-hidden="true">
-                <div class="modal-dialog">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h5 class="modal-title color-primary" id="modalVerificacion">Verificación</h5>
-                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-          
-                      <form>
-                        <div class="mb-3">
-                          <label for="exampleInputEmail1" class="form-label">Número de documento o serie</label>
-                          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                          <div id="emailHelp" class="form-text"  data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample"><a href="#">¿Donde encuentro esto?</a></div>
-                        </div>
-          
-                        <div class="collapse mb-4" id="collapseExample">
-                          <div class="card card-body">
-                            
-                            <p class="form-text">En la <strong>nueva cedula de Identidad</strong> puedes encontrar el número de documento en la parte
-                              <strong>frontal.</strong></p>
-                            <p class="form-text">En la <strong>vieja cedula de Identidad</strong> puedes encontrar el número de serie en la parte
-                              <strong>trasera</strong>.</p>
-                            <img src="img/serie-carnet.jpg" class="img-fluid">
-          
-                          </div>
-                        </div>
-
-                      </form>
-          
-          
-                      <div class="col-sm-12 mt-4 text-left">
-                        <p class="mb-2">*Debes validar el captcha para continuar</p>
-                        <img src="img/captcha-ejemplo.jpg">
-                      </div>
-          
-                    </div>
-                    <div class="modal-footer">
-                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                      <button type="submit" class="btn btn-primary">Validar número de serie</button>
-                    </div>
-                  </div>
-                </div>
-          </div>
-          
-          
-          <!--modal mandato cargo-->
           <div class="modal fade" id="exampleModa2" tabindex="-1" aria-labelledby="exampleModalLabe3" aria-hidden="true">
-                <div class="modal-dialog modal-lg">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h5 class="modal-title color-primary" id="exampleModalLabe3">Mandato de cargo</h5>
-                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam at varius turpis. Nunc volutpat, ipsum eget iaculis
-                      aliquam, mauris nisi congue leo, et mattis sapien elit et enim. Nunc ut urna interdum, dapibus nisi a, tempor mauris.
-                      Pellentesque quis justo ut ligula dapibus consectetur. In orci dui, convallis non erat non, consequat elementum leo.
-                      Nunc in aliquam arcu. Pellentesque cursus tortor id lorem laoreet tempor. Praesent libero tellus, placerat eget aliquet
-                      fringilla, interdum et justo.
-                      Ut a dictum orci. Phasellus in nisl non neque pellentesque facilisis. Fusce in dolor imperdiet, semper elit sed,
-                      dignissim quam. Fusce id erat sed justo porta commodo. Aliquam eleifend non ex elementum pulvinar. Ut at orci faucibus,
-                      rutrum nunc eget, accumsan lacus. Proin sed varius elit. Maecenas vel odio felis. Nunc justo lorem, mollis id urna eget,
-                      auctor feugiat libero. Praesent ut suscipit est. Curabitur sem turpis, pellentesque non tempus in, posuere vel enim.
-                      Vivamus pellentesque neque id quam porttitor placerat. Aliquam hendrerit molestie vestibulum. Morbi vulputate dapibus
-                      imperdiet.</div>
-                    <div class="modal-footer">
-                      <button type="button" class="btn btn-volver" data-bs-dismiss="modal">Entiendo y acepto</button>
-                    </div>
-                  </div>
-                </div>
-          </div>
-          <!--modal terminos y condiciones-->
-          <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabe3" aria-hidden="true">
             <div class="modal-dialog modal-lg">
               <div class="modal-content">
                 <div class="modal-header">
-                  <h5 class="modal-title color-primary" id="exampleModalLabe3">Términos y condiciones</h5>
+                  <h5 class="modal-title color-primary" id="exampleModalLabe3">Modal Mandato de Cargo</h5>
                   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
@@ -539,45 +226,44 @@
                   Vivamus pellentesque neque id quam porttitor placerat. Aliquam hendrerit molestie vestibulum. Morbi vulputate dapibus
                   imperdiet.</div>
                 <div class="modal-footer">
-                  <button type="button" class="btn btn-volver" data-bs-dismiss="modal">Entiendo y acepto</button>
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                  <button type="button" class="btn btn-primary">Entiendo y Acepto las Condiciones</button>
                 </div>
               </div>
             </div>
-      </div>
-          
-          <!-- fin autorizaciones-->
-
-    </section>
-
-    <section id="botonera" class="mb-4 mt-4">
-        <div class="container">
-          <div class="row justify-content-end">
-            <div class="col-8 text-end">
-              <button type="button" class="btn btn-volver">Volver</button>
-
-              <button type="button" class="btn btn-primary">Continuar</button>
-            </div>
           </div>
-        </div>
-    </section>
+
+          <section id="botonera">
+            <div class="container mt-5">
+              <div class="row justify-content-end">
+                <div class="col-8 text-end">
+                  <button type="button" class="btn btn-volver">Volver</button>
+
+                  <button type="button" class="btn btn-primary">Finalizar contratación
+                  </button>
+                </div>
+              </div>
+            </div>
+          </section>
+      </div>
+  </div>
+</section>
+
+<!--fin form-->
 
 
-<!--fin seccion beneficiario-->
-
-  <!--Seccion Legales-->
-  <section id="legales">
-    <div class="container mt-4 mb-4">
+<!--Seccion Legales-->
+<section id="legales">
+    <div class="container mt-5 mb-4">
       <div class="row">
         <div class="col-lg-8 mx-auto">
-          <div class="accordion accordion-flush " id="accordionExample">
+          <div class="accordion accordion-flush" id="accordionExample">
             <div class="accordion-item">
               <h2 class="accordion-header" id="headingOne">
                 <button class="accordion-button collapsed acordion-legales" type="button" data-bs-toggle="collapse"
                   data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-
-
-                  <span class="material-icons-outlined me-2 color-primario">privacy_tip</span><strong
-                    class="color-primario">Legales</strong>
+                  <span class="material-icons-outlined me-2 color-primario">privacy_tip</span>
+                  <strong class="color-primario">Legales</strong>
                 </button>
               </h2>
               <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
@@ -618,8 +304,9 @@
       </div>
     </div>
 
-  </section>
-  <!--Fin Seccion Legales-->
+</section>
+<!--Fin Seccion Legales-->
+
 
   <!--Footer-->
   <section id="footer">
