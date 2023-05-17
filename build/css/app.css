@@ -11555,6 +11555,12 @@ p.card-text a {
   border-bottom: 1px solid #C9D0D3;
 }
 
+.divisor-card {
+  height: 2px;
+  margin: 40px 0px;
+  border-bottom: 1px solid #F9BE00;
+}
+
 .divisor-small {
   border-bottom: 1px solid #3E4545;
   padding: 10px 29px 0px 29px;
@@ -11733,21 +11739,20 @@ span.icono-destacada.material-icons-outlined:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 40px 16px 24px;
   gap: 16px;
   width: 337.33px;
-  height: 757.94px;
+  height: auto;
   transition: all 0.3s ease-in;
   position: relative;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
   border: 2px solid #fff;
-  border-radius: 8px;
+  border-radius: 16px;
 }
 .card-content:hover {
   transition: all 0.3s ease-in;
   transform: translateY(10px) scale();
   z-index: 99;
-  border: 2px solid #008EC4;
+  border: 2px solid #F9BE00;
 }
 
 .card-content .card-body {

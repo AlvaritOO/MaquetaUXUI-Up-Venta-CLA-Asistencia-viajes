@@ -231,13 +231,13 @@
     <div class="fondo-denunciar-siniestros">
         <div class="container">
           
-          <h1 class="text-center mb-5">Cotiza tu seguro de viaje</h1>
+          <h2 class="text-center mb-5 fw-bold">Cotiza tu seguro de viaje</h2>
         
           <div class="fondo-cotizacion">
             
-            <div class="row ms-5 mt-4">
+            <div class="row ms-5 mt-5">
             <div class="mb-3 col-sm-6 col-lg-3">
-              <label for="exampleInputEmail1" class="form-label">Cuéntanos la fecha de tu viaje</label>
+              <label for="exampleInputEmail1" class="form-label" >Cuéntanos la fecha de tu viaje</label>
               <select class="form-select" aria-label="Default select example">
                 <option selected>Seleccione</option>
                 <option value="1">One</option>
@@ -284,20 +284,126 @@
             </section>
             </div>
 
+            <div class="container col-5">
+              <div class="alert alert-info d-flex align-items-center" role="alert">
+                <img class="ms-4" src="../../build/img/svg/alert-info-.svg">
+                <div class="ms-4">
+                  Capital de 50UF es solo para asegurado titular.
+                </div>
+              </div>
+            </div>
+
+            <div class="divisor-card ms-3 me-3"></div>
+
+            <h2 class="text-center mb-1 fw-bold">Selecciona el plan que deseas contratar</h2>
 
             <section class="row justify-content-center mt-5 mb-5">
               <card class="card-content text-center" type="button">
                 <a>
-                  <img src="../../build/img/svg/icons-tipo-seguro.svg" class="mt-4 mb-3" alt="...";>
+                  <img src="../../build/img/svg/icono-vida-familiar-full.svg" class="mt-5 pt-5 mb-3" alt="...";>
                 </a>
                 <div class="card-body">
-                  <a id="01-categorias-tab-card-seguro" class="h2 mb-3">Seguro de robo</a>
+                  <a class="h3 mb-3 text-primary fw-bold">Plan Simple</a>
   
-                  <p class="card-text ms-4 me-4">
-                    <a>
-                      Un seguro de robo es un tipo de seguro que cubre las pérdidas económicas causadas por el robo de bienes asegurados. Este tipo de seguro puede cubrir una amplia variedad de bienes, como joyas, electrónica, arte y otros objetos de valor.
-                    </a>
-                  </p>
+                  <ul class="card-text me-4" style="list-style:none">
+                    <li class="fw-bold">USD 35.000</li>
+                    <li>Asistencia Médica</li>
+                    <li class="fw-bold">Incluido</li>
+                    <li>Servicio Telemedicina</li>
+                    <li class="fw-bold">USD 1.200</li>
+                    <li>Extravío de equipaje</li>
+                    <li class="fw-bold">USD 180</li>
+                    <li>Estadía de emergencia</li>
+                    <li class="fw-bold">USD 800</li>
+                    <li>Medicamentos</li>
+                    <li class="fw-bold">UF 50</li>
+                    <li>Invalidez Total y Permanente 2/3 por Accidente</li>
+                    <li class="text-secondary">No incluido</li>
+                    <li class="text-secondary">Interrupción de Viaje por diagnóstico COVID- 19</li>
+                  </ul>
+                <div class="divisor-card"></div>
+
+                <a class="h3 mb-3 text-primary fw-bold">UF 0,00</a>
+                <ul class="card-text me-4" style="list-style:none">
+                  <li class="text-primary">($ 00.00)</li>
+                  <li class="fw-bold">Monto Total a pagar</li>
+                  <li >UF al dd/mm/aaaa</li>
+                </ul>
+                </div>
+                <div class="container-btn gap-2 p-3">
+                  <a class="btn btn-primary fw-bold">Seleccionar</a>
+                </div>
+              </card>
+
+              <card class="card-content text-center ms-3" type="button">
+                <span class="fecha-contratacion mt-4" style="margin-left: 190px;">Recomendado</span>
+                <a>
+                  <img src="../../build/img/svg/icono-vida-social.svg" class="mb-3" alt="...";>
+                </a>
+                <div class="card-body mt-2">
+                  <a class="h3 mb-3 text-primary fw-bold">Plan Plus</a>
+  
+                  <ul class="card-text me-4" style="list-style:none">
+                    <li class="fw-bold">USD 60.000</li>
+                    <li>Asistencia Médica</li>
+                    <li class="fw-bold">Incluido</li>
+                    <li>Servicio Telemedicina</li>
+                    <li class="fw-bold">USD 1.200</li>
+                    <li>Extravío de equipaje</li>
+                    <li class="fw-bold">USD 180</li>
+                    <li>Estadía de emergencia</li>
+                    <li class="fw-bold">USD 800</li>
+                    <li>Medicamentos</li>
+                    <li class="fw-bold">UF 50</li>
+                    <li>Invalidez Total y Permanente 2/3 por Accidente</li>
+                    <li class="text-secondary">No incluido</li>
+                    <li class="text-secondary">Interrupción de Viaje por diagnóstico COVID- 19</li>
+                  </ul>
+                <div class="divisor-card"></div>
+
+                <a class="h3 mb-3 text-primary fw-bold">UF 0,00</a>
+                <ul class="card-text me-4" style="list-style:none">
+                  <li class="text-primary">($ 00.00)</li>
+                  <li class="fw-bold">Monto Total a pagar</li>
+                  <li >UF al dd/mm/aaaa</li>
+                </ul>
+                </div>
+                <div class="container-btn gap-2 p-3">
+                  <a class="btn btn-primary fw-bold">Seleccionar</a>
+                </div>
+              </card>
+
+              <card class="card-content text-center ms-3" type="button">
+                <a>
+                  <img src="../../build/img/svg/icono-vida-familiar-full.svg" class="mt-5 pt-5 mb-3" alt="...";>
+                </a>
+                <div class="card-body">
+                  <a class="h3 mb-3 text-primary fw-bold">Plan Premium</a>
+  
+                  <ul class="card-text me-4" style="list-style:none">
+                    <li class="fw-bold">USD 150.000</li>
+                    <li>Asistencia Médica</li>
+                    <li class="fw-bold">Incluido</li>
+                    <li>Servicio Telemedicina</li>
+                    <li class="fw-bold">USD 1.200</li>
+                    <li>Extravío de equipaje</li>
+                    <li class="fw-bold">USD 180</li>
+                    <li>Estadía de emergencia</li>
+                    <li class="fw-bold">USD 800</li>
+                    <li>Medicamentos</li>
+                    <li class="fw-bold">UF 50</li>
+                    <li>Invalidez Total y Permanente 2/3 por Accidente</li>
+                    <li class="text-secondary">No incluido</li>
+                    <li class="text-secondary">Interrupción de Viaje por diagnóstico COVID- 19</li>
+                  </ul>
+                <div class="divisor-card"></div>
+
+                <a class="h3 mb-3 text-primary fw-bold">UF 0,00</a>
+                <ul class="card-text me-4" style="list-style:none">
+                  <li class="text-primary">($ 00.00)</li>
+                  <li class="fw-bold">Monto Total a pagar</li>
+                  <li >UF al dd/mm/aaaa</li>
+                </ul>
                 </div>
                 <div class="container-btn gap-2 p-3">
                   <a class="btn btn-primary fw-bold">Seleccionar</a>
