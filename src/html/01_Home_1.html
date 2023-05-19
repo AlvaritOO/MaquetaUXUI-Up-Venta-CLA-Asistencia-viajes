@@ -235,54 +235,47 @@
         
           <div class="fondo-cotizacion">
             
-            <div class="row ms-5 mt-4">
-            <div class="mb-3 col-sm-6 col-lg-3">
-              <label for="exampleInputEmail1" class="form-label">Cuéntanos la fecha de tu viaje</label>
-              <select class="form-select" aria-label="Default select example">
-                <option selected>Seleccione</option>
-                <option value="1">One</option>
-                <option value="2">Two</option>
-                <option value="3">Three</option>
-              </select>
-              <p>Tu viaje dura 19 días.</p>
-            </div>
-            <div class="mb-3 col-sm-6 col-lg-2">
-              <label for="exampleInputEmail1" class="form-label"></label>
-              <select class="form-select" aria-label="Default select example">
-                <option selected>Seleccione</option>
-                <option value="1">One</option>
-                <option value="2">Two</option>
-                <option value="3">Three</option>
-              </select>
-            </div>
-            <div class="mb-3 col-sm-6 col-lg-3">
-              <label for="exampleInputEmail1" class="form-label">¿Cuál es tu destino?</label>
-              <select class="form-select" aria-label="Default select example">
-                <option selected>Seleccione</option>
-                <option value="1">América</option>
-                <option value="2">Europa</option>
-                <option value="3">Asia</option>
-                <option value="4">Oceanía</option>
-              </select>
-            </div>
-            <div class="mb-3 col-sm-6 col-lg-2">
-              <label for="exampleInputEmail1" class="form-label">¿Cuántos viajan?</label>
-              <select class="form-select" aria-label="Default select example">
-                <option selected>Seleccione</option>
-                <option value="1">2</option>
-                <option value="2">3</option>
-                <option value="3">4</option>
-              </select>
-              <p>Tú incluido</p>
-            </div>
-            <section class="col-lg-1 mt-3">
-                <div class="row justify-content-end">
-                  <div class="text-end">
-                    <button type="button" class="btn btn-primary">Cotizar</button>
+            <div class="row ms-5 mt-5">
+              <div class="mb-3 p-0 col-sm-6 col-lg-3">
+                <label for="exampleInputEmail1" class="form-label" >Cuéntanos la fecha de tu viaje</label>
+                <input id="startDate" class="form-control" type="date" />
+                <span id="startDateSelected"></span>
+                <p>Tu viaje dura 19 días.</p>
+              </div>
+              <div class="mb-3 col-sm-6 col-lg-3">
+                <label for="exampleInputEmail1" class="form-label text-light">_</label>
+                <input id="endDate" class="form-control" type="date" />
+                <span id="endDateSelected"></span>
+              </div>
+              <div class="mb-3 p-0 col-sm-6 col-lg-2">
+                <label for="exampleInputEmail1" class="form-label">¿Cuál es tu destino?</label>
+                <select class="form-select" aria-label="Default select example">
+                  <option selected>Seleccione</option>
+                  <option value="1">América</option>
+                  <option value="2">Europa</option>
+                  <option value="3">Asia</option>
+                  <option value="4">Oceanía</option>
+                </select>
+              </div>
+              <div class="mb-3 col-sm-6 col-lg-2">
+                <label for="exampleInputEmail1" class="form-label">¿Cuántos viajan?</label>
+                <select class="form-select" aria-label="Default select example">
+                  <option selected>Seleccione</option>
+                  <option value="1">2</option>
+                  <option value="2">3</option>
+                  <option value="3">4</option>
+                </select>
+                <p>Tú incluido</p>
+              </div>
+  
+              <section class="col-lg-2 mt-3">
+                  <div class="row p-0 justify-content-end">
+                    <div class="ms-1 mt-1">
+                      <button type="button" class="btn btn-primary mb-sm-2 mb-2">Cotizar</button>
+                    </div>
                   </div>
-                </div>
-            </section>
-            </div>
+              </section>
+              </div>
 
             <div class="row ms-5 ps-3 mb-4">
               <div class="form-check">
