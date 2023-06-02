@@ -79,7 +79,6 @@
                           <h6>SEGUROS DE SALUD</h6>
                           <a class="dropdown-item p-0" href="#">Vida Oncológico</a>
                         </div>
-
                       </div>
                       <div class="col-lg-3 mega-menu">
                         <div class="mb-3">
@@ -233,22 +232,21 @@
             
             <div class="row ms-5 mt-5">
               <div class="mb-3 p-0 col-sm-6 col-lg-3">
-                <label for="exampleInputEmail1" class="form-label" >Cuéntanos la fecha de tu viaje</label>
-                <input id="startDate" class="form-control" type="date" />
+                <label for="startDate" class="form-label">Cuéntanos la fecha de tu viaje</label>
+                <input id="startDate" class="form-control" type="text" onfocus="(this.type='date')" placeholder="Vie, 19 May 2023" />
                 <span id="startDateSelected"></span>
                 <p>Tu viaje dura 19 días.</p>
               </div>
               <div class="mb-3 col-sm-6 col-lg-3">
-                <label for="exampleInputEmail1" class="form-label text-light">_</label>
-                <input id="endDate" class="form-control" type="date" />
-                <span id="endDateSelected"></span>
+                <label for="endDate" class="form-label text-light">_</label>
+                <input id="endDate" class="form-control" type="text" onfocus="(this.type='date')" placeholder="Vie, 02 Jun 2023" />
+                <span id="endDateSelected"></span>                
               </div>
               <div class="mb-3 p-0 col-sm-6 col-lg-2">
                 <label for="exampleInputEmail1" class="form-label">¿Cuál es tu destino?</label>
                 <select class="form-select" aria-label="Default select example">
-                  <option selected>Seleccione</option>
                   <option value="1">América</option>
-                  <option value="2">Europa</option>
+                  <option value="2" selected>Europa</option>
                   <option value="3">Asia</option>
                   <option value="4">Oceanía</option>
                 </select>
@@ -256,10 +254,10 @@
               <div class="mb-3 col-sm-6 col-lg-2">
                 <label for="exampleInputEmail1" class="form-label">¿Cuántos viajan?</label>
                 <select class="form-select" aria-label="Default select example">
-                  <option selected>Seleccione</option>
-                  <option value="1">2</option>
-                  <option value="2">3</option>
-                  <option value="3">4</option>
+                  <option value="1">1</option>
+                  <option value="2" selected>2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
                 </select>
                 <p>Tú incluido</p>
               </div>
@@ -336,7 +334,7 @@
 <section id="requisitos" class="back-diagonal pt-4 pb-4">
   <div class="container fondo-requisitos ">
     <div class="container">
-      <div class="text-center imagen-req mt-5 mb-5">
+      <div class="text-center imagen-req mt-5 mb-5" width="40" height="40">
         <span class="material-icons-outlined"><i class="bi bi-check-circle"></i></span>
       </div>
       <h2 class="text-center pb-4 mb-4 contraste text-white">Requisitos</h2>
