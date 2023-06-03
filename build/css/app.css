@@ -12410,6 +12410,12 @@ span.ic-form {
   box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.08);
 }
 
+.check-size {
+  font-size: 40px;
+  width: 40px;
+  height: 40px;
+}
+
 p.text-legales {
   font-size: 0.8rem;
 }
