@@ -72,14 +72,13 @@ $("#enviarEncuesta").on('click', function (e) {
 
 
 //toast nuevo beneficiario
-var toastTrigger = document.getElementById('liveToastBtn')
-var toastLiveExample = document.getElementById('liveToast')
+var toastTrigger = document.getElementById('liveToastBtn');
+var toastLiveExample = document.getElementById('liveToast');
 if (toastTrigger) {
   toastTrigger.addEventListener('click', function () {
-    var toast = new bootstrap.Toast(toastLiveExample)
+    var toast = new bootstrap.Toast(toastLiveExample);
     toast.show();
-  
-  })
+  });
 }
 
 var toastTrigger2 = document.getElementById('liveToastBtn2')
