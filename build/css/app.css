@@ -12447,6 +12447,13 @@ span.ic-form {
   background-color: #DEFFF5 !important;
 }
 
+.webpay-bg {
+  width: 802px;
+  background-color: #F6F7F7;
+  border-radius: 16px;
+  padding: 24px;
+}
+
 p.text-legales {
   font-size: 0.8rem;
 }
