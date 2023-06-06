@@ -12448,10 +12448,11 @@ span.ic-form {
 }
 
 .webpay-bg {
-  width: 802px;
+  width: 850px;
   background-color: #F6F7F7;
   border-radius: 16px;
   padding: 24px;
+  margin-left: 0% !important;
 }
 
 p.text-legales {
