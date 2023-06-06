@@ -31,8 +31,7 @@
     <div class="container">
       <header
         class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 border-bottom">
-        <a id="01-pv-home-navbar-logo-caja-los-andes" href="/"
-          class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
+        <a id="01-pv-home-navbar-logo-caja-los-andes" href="/" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
           <img src="../../build/img/svg/logo-cla.svg" alt="Caja los Andes" class="logo-cla">
         </a>
 
@@ -80,7 +79,6 @@
                           <h6>SEGUROS DE SALUD</h6>
                           <a class="dropdown-item p-0" href="#">Vida Oncológico</a>
                         </div>
-
                       </div>
                       <div class="col-lg-3 mega-menu">
                         <div class="mb-3">
@@ -94,7 +92,6 @@
                           <a class="dropdown-item p-0" href="#">Seguro Auto Full</a>
                         </div>
                       </div>
-
                     </div>
                   </div>
                 </li>
@@ -130,12 +127,16 @@
                       </div>
                     </div>
                   </div>
-
-                </li>
-                <li class="nav-item dropdown">
                 </li>
             </div>
-
+            <div class="col-lg-3 text-end">
+              <div class="mb-3">
+                <div class="btn text-white" href="#">
+                  <i class="bi bi-arrow-left"></i>
+                  Volver a seguros
+                </div>
+              </div>
+            </div>
           </div>
           </ul>
       </div>
@@ -189,9 +190,7 @@
 
           <div class="col-lg-12 col-md-6 mb-4 pt-md-6 pt-2">
             <div class="feature-box not-dark">
-              <div class="fbox-icon">
-                <span class="material-icons-outlined" style="height: 52px;">favorite_border</span>
-              </div>
+              <img src="../../build/img/svg/Cardio.svg" alt="Cardio" width="66" height="66"/>
               <div class="fbox-content">
                 <h5 class="fw-bold">Asistencia Médica cuando lo necesites</h5>
                 <p>Podrás acceder a una App que tendrá disponible una asistencia médica 24/7.</p>
@@ -199,9 +198,7 @@
             </div>
 
             <div class="feature-box not-dark mt-4">
-              <div class="fbox-icon">
-                <span class="material-icons-outlined" style="height: 52px;">business_center</span>
-              </div>
+              <img src="../../build/img/svg/Maletín.svg" alt="Maletín" width="66" height="66"/>
               <div class="fbox-content">
                 <h5 class="fw-bold">Indemnización por pérdida de equipaje</h5>
                 <p>En caso que pierdas tu equipaje complementario podrás optar a una indemnización.</p>
@@ -209,9 +206,7 @@
             </div>
 
             <div class="feature-box not-dark mt-4">
-              <div class="fbox-icon">
-                <span class="material-icons-outlined" style="height: 52px;">flight</span>
-              </div>
+              <img src="../../build/img/svg/Vuelo.svg" alt="Vuelo" width="66" height="66"/>
               <div class="fbox-content">
                 <h5 class="fw-bold">Viaja tranquilo</h5>
                 <p>Tendrás optar a más de 20 distintos beneficios de asistencias que te acompañarán en tu viaje.</p>
@@ -237,22 +232,21 @@
             
             <div class="row ms-5 mt-5">
               <div class="mb-3 p-0 col-sm-6 col-lg-3">
-                <label for="exampleInputEmail1" class="form-label" >Cuéntanos la fecha de tu viaje</label>
-                <input id="startDate" class="form-control" type="date" />
+                <label for="startDate" class="form-label">Cuéntanos la fecha de tu viaje</label>
+                <input id="startDate" class="form-control" type="text" onfocus="(this.type='date')" placeholder="Vie, 19 May 2023" />
                 <span id="startDateSelected"></span>
                 <p>Tu viaje dura 19 días.</p>
               </div>
               <div class="mb-3 col-sm-6 col-lg-3">
-                <label for="exampleInputEmail1" class="form-label text-light">_</label>
-                <input id="endDate" class="form-control" type="date" />
-                <span id="endDateSelected"></span>
+                <label for="endDate" class="form-label text-light">_</label>
+                <input id="endDate" class="form-control" type="text" onfocus="(this.type='date')" placeholder="Vie, 02 Jun 2023" />
+                <span id="endDateSelected"></span>                
               </div>
               <div class="mb-3 p-0 col-sm-6 col-lg-2">
                 <label for="exampleInputEmail1" class="form-label">¿Cuál es tu destino?</label>
                 <select class="form-select" aria-label="Default select example">
-                  <option selected>Seleccione</option>
                   <option value="1">América</option>
-                  <option value="2">Europa</option>
+                  <option value="2" selected>Europa</option>
                   <option value="3">Asia</option>
                   <option value="4">Oceanía</option>
                 </select>
@@ -260,10 +254,10 @@
               <div class="mb-3 col-sm-6 col-lg-2">
                 <label for="exampleInputEmail1" class="form-label">¿Cuántos viajan?</label>
                 <select class="form-select" aria-label="Default select example">
-                  <option selected>Seleccione</option>
-                  <option value="1">2</option>
-                  <option value="2">3</option>
-                  <option value="3">4</option>
+                  <option value="1">1</option>
+                  <option value="2" selected>2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
                 </select>
                 <p>Tú incluido</p>
               </div>
@@ -302,17 +296,9 @@
   <!--NO Cubre-->
   <section>
     <div class="container">
-      <div class="text-center mt-5 pt-5 mb-3">
-        <a id="02-home-cobertura-exclusiones-acordeon-cobertura-btn-ver-mas" class="btn btn-ver-mas text-primary fw-bold">
-          Explora hacia abajo
-        </a>
-      </div>
-  
-      <div class="text-center">
-        <a class="text-primary fw-bold">
-          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
-            <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
-          </svg>
+      <div class="text-center mt-3 mb-3">
+        <a id="02-home-cobertura-exclusiones-acordeon-cobertura-btn-ver-mas" class="btn">
+          <img src="../../build/img/boton-ver-mas.png" alt="Explora hacia abajo" />
         </a>
       </div>
       <h2 class="text-center pb-4 mb-4 mt-5 fw-bold">¿Qué no cubre este seguro?</h2>
@@ -348,10 +334,10 @@
 <section id="requisitos" class="back-diagonal pt-4 pb-4">
   <div class="container fondo-requisitos ">
     <div class="container">
-      <div class="text-center imagen-req mt-5 mb-5">
-        <span class="material-icons-outlined"><i class="bi bi-check-circle"></i></span>
+      <div class="text-center imagen-req mb-4">
+        <span class="material-icons-outlined"><i class="bi bi-check-circle check-size"></i></span>
       </div>
-      <h2 class="text-center pb-4 mb-4 contraste text-white">Requisitos</h2>
+      <h2 class="text-center pb-4 mb-4 contraste text-white fw-bold">Requisitos</h2>
         <ol class="ms-5 ps-5">
           <li>La edad mínima de ingreso de los Asegurados es de 18 años.</li>
           <li>La edad máxima de ingreso para todos los Asegurados es hasta los 68 años, 364 días.</li>
@@ -369,7 +355,7 @@
         <div class="container pt-5 mt-4 pb-2 back-gradiente">
           
           <p class="text-center"><span class="material-icons-round">warning_amber</span></p>
-          <h2 class="text-center pb-2">Denunciar <span class="fw-bold">un siniestro</span></h2>
+          <h2 class="text-center pb-2 fw-bold">Denunciar un siniestro</h2>
           <p class="text-center">Declara un siniestro contratado.</p>
 
           <p class="text-center pb-4"> 
@@ -390,7 +376,7 @@
         <div class="col-md-4 mt-2 p-4">
           <div class="col-md-6 mb-4"><img src="../../build/img/svg/logo-cla.svg" class="text-center" height="65px">
           </div>
-          <span class="fw-bold">Caja Los Andes.</span>
+          <span class="fw-bold">Caja Los Andes</span>
           <p>Horario de Atención: Lunes a Viernes de 08:00 a 20:00 hrs.</p>
           <p class="d-none d-sm-block">Teléfono <a id="01-pv-home-canales-contacto-cla-telefono" href="tel:600 510 0000"
               data-bs-toggle="tooltip" data-bs-placement="top" title="Llamar Caja los Andes">600 510 0000</a></p>
@@ -400,7 +386,7 @@
 
         <div class="col-md-4 mt-2 p-4">
           <div class="col-md-6 mb-4"><img src="../../build/img/svg/bnp.svg" class="text-center" height="65px"></div>
-          <span class="fw-bold">BNP Paribas Cardif.</span>
+          <span class="fw-bold">BNP Paribas Cardif</span>
           <p>Horario de Atención: Lunes a Viernes de 09:00 a 18:00 hrs.</p>
           <p class="d-none d-sm-block">Teléfono <a id="01-pv-home-canales-contacto-bnp-telefono" href="tel:800 362 100"
               data-bs-toggle="tooltip" data-bs-placement="top" title="Llamar a BNP Paribas">800 362 100</a></p>
@@ -412,11 +398,11 @@
         <div class="col-md-4 mt-2 p-4">
           <div class="col-md-6 mb-4"><img src="../../build/img/svg/corredora-color.svg" class="text-center"
               height="65px"></div>
-          <span class="fw-bold">Corredora de Seguros La Cámara SpA.</span>
+          <span class="fw-bold">Corredora de Seguros La Cámara SpA</span>
           <p>Horario de Atención: Lunes a Jueves de 08:30 a 18:00 hrs y Viernes de 08:30 a 14:30 hrs.</p>
           <p class="d-none d-sm-block">Teléfono <a id="01-pv-home-canales-contacto-cslc-telefono"
               href="tel:(+56 ) 229 642 400" data-bs-toggle="tooltip" data-bs-placement="top"
-              title="Llamar a Corredora de Seguros">(+56 ) 229 642 400 </a> </p>
+              title="Llamar a Corredora de Seguros">+56 229 642 400 </a> </p>
           <a id="01-pv-home-canales-contacto-cslc-telefono-btn" href="tel:+56229642400"
             class="btn btn-volver d-block d-sm-none">Llamar al (+56 ) 229 642 400</a>
         </div>
@@ -439,8 +425,8 @@
                 <button id="01-pv-home-legales-acordion" class="accordion-button collapsed acordion-legales"
                   type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
                   aria-controls="collapseOne">
-                  <span class="material-icons-outlined me-2 color-primario">privacy_tip</span><strong
-                    class="color-primario">Legales</strong>
+                  <span class="material-icons me-2 color-primario">privacy_tip</span>
+                  <strong class="color-primario">Legales</strong>
                 </button>
               </h2>
               <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
@@ -502,7 +488,7 @@
               data-bs-target="#modalFAQ">Preguntas Frecuentes</a></li>
           <li class="nav-item col-12 col-sm-4 col-lg-3 text-center"><a id="01-pv-home-footer-canal-contactos" href="#"
               class="fw-bold link-footer nav-link px-2 text-left">Canales de Contacto <br><small><i
-                  class="bi bi-telephone-forward pe-2"></i>9 123 456 78</small></a></li>
+                  class="bi bi-telephone-fill pe-2"></i>9 123 456 78</small></a></li>
         </ul>
       </footer>
     </div>

@@ -1,39 +1,38 @@
-@use '../custom' as *;
-
+@use "../custom" as *;
 
 .texto-medium-banner-top {
-    @include font-size(5.5rem);
-    font-weight: 800;
-    color: $white;
-    position: relative;
-    top: 14px;
+  @include font-size(5.5rem);
+  font-weight: 800;
+  color: $white;
+  position: relative;
+  top: 14px;
 }
 
 .texto-imagen-cabecera {
-    line-height: 1em;
-    @include font-size(4.5rem);
-    font-weight: 800;
-    color: $white;
-    //text-shadow: 0px 2px 13px #ffffff4d, 0px 0px 13px #ffffff38;
+  line-height: 1em;
+  @include font-size(4.5rem);
+  font-weight: 800;
+  color: $white;
+  //text-shadow: 0px 2px 13px #ffffff4d, 0px 0px 13px #ffffff38;
 }
 
-.texto-big-banner{
-    width: auto;
+.texto-big-banner {
+  width: auto;
 }
 
-.medium-banner-bottom{
-    @include font-size(1.75rem);
+.medium-banner-bottom {
+  @include font-size(1.75rem);
 }
 
 .texto-medium-banner-bottom {
-    @include font-size(1.5rem);
+  @include font-size(1.5rem);
 }
 
-h2{
-    position: relative;
-    color: $black;
-    z-index: 9;
-    /*&::before {
+h2 {
+  position: relative;
+  color: $black;
+  z-index: 9;
+  /*&::before {
         content: "";
         position: absolute;
         left: 50%;
@@ -48,11 +47,11 @@ h2{
     }*/
 }
 
-h2.contraste{
-    position: relative;
-    color: $black;
-    z-index: 9;
-    /*&::before {
+h2.contraste {
+  position: relative;
+  color: $black;
+  z-index: 9;
+  /*&::before {
         content: "";
         position: absolute;
         left: 50%;
@@ -67,81 +66,81 @@ h2.contraste{
     }*/
 }
 
-a{
-    color: #3E4545; 
-    :hover{
-        color: #3E4545;
-    }
+a {
+  color: #3e4545;
+  :hover {
+    color: #3e4545;
+  }
 }
 
 .contenedor-btn h3 {
-    color: $white;
+  color: $white;
 }
 
 /*mega menu*/
 .dropdown-hover {
-    float: left;
-    overflow: hidden;
+  float: left;
+  overflow: hidden;
 }
 
 .dropdown-hover-content {
-    display: none;
-    position: absolute;
-    //margin-top: 2px;
-    background-color: #fff;
-    left: 0;
-    right: 0;
-    padding: 30px;
-    z-index: 4;
+  display: none;
+  position: absolute;
+  //margin-top: 2px;
+  background-color: #fff;
+  left: 0;
+  right: 0;
+  padding: 30px;
+  z-index: 4;
 }
 
-.dropdown-item:hover, .dropdown-item:focus {
-    color: #1e2125;
-    background-color: #fff;
+.dropdown-item:hover,
+.dropdown-item:focus {
+  color: #1e2125;
+  background-color: #fff;
 }
 
 .dropdown-hover-content .row {
-    width: 100%;
+  width: 100%;
 }
 
 .dropdown-hover-content a.dropdown-item {
-    font-size: 14px;
-    white-space: normal;
+  font-size: 14px;
+  white-space: normal;
 }
 
 .dropdown-hover:hover .dropdown-hover-content {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
-.mega-menu{
-    color: $black;
-    h6{
-        font-weight: 900;
-    }
-    div a{
-        color: $gris-dark;
-    }
+.mega-menu {
+  color: $black;
+  h6 {
+    font-weight: 900;
+  }
+  div a {
+    color: $gris-dark;
+  }
 }
 
 #link-1.dropdown-hover:hover {
-    border-bottom: 2px solid #37587b;
+  border-bottom: 2px solid #37587b;
 }
 
 #link-2.dropdown-hover:hover {
-    border-bottom: 2px solid #37587b;
+  border-bottom: 2px solid #37587b;
 }
 /*end of mega menu*/
 
-
-button.h5{
-    position: relative;
-    color: $gris-dark;
-    z-index: 9;
-    padding-bottom: 4px;
-    margin-bottom: 16px;
-    /*&::before {
+button.h5 {
+  position: relative;
+  color: $gris-dark;
+  z-index: 9;
+  padding-bottom: 4px;
+  margin-bottom: 16px;
+  /*&::before {
         content: "";
         position: absolute;
         left: 51px;
@@ -155,13 +154,13 @@ button.h5{
     }*/
 }
 
-h5 .acordeon{
-    position: relative;
-    color: $gris-dark;
-    z-index: 9;
-    padding-bottom: 4px;
-    margin-bottom: 16px;
-    /*&::before {
+h5 .acordeon {
+  position: relative;
+  color: $gris-dark;
+  z-index: 9;
+  padding-bottom: 4px;
+  margin-bottom: 16px;
+  /*&::before {
         content: "";
         position: absolute;
         left: 40px;
@@ -175,11 +174,11 @@ h5 .acordeon{
     }*/
 }
 
-h5.title-form{
-    position: relative;
-    z-index: 9;
-    margin-bottom: 16px;
-    /*&::after {
+h5.title-form {
+  position: relative;
+  z-index: 9;
+  margin-bottom: 16px;
+  /*&::after {
         content: "";
         position: absolute;
         left: 3px;
@@ -190,27 +189,30 @@ h5.title-form{
         z-index: -9;
         border-radius: 3px;
     }*/
-    
 }
 
-.fondo-blanco{
-    background-color: $white;
+.fondo-blanco {
+  background-color: $white;
 }
 
-.fondo-gris{
-    background-color: $gris-light;
+.fondo-gris {
+  background-color: $gris-light;
 }
 
 .fondo-gris-intermedio {
-    background-color: $gris-intermedio;
+  background-color: $gris-intermedio;
 }
 
-.fondo-gris-suave{
-    background-color: $backgris;
+.fondo-gris-suave {
+  background-color: $backgris;
 }
 
-.medio-fondo-gris{
-    background: linear-gradient(180deg, rgba(255,255,255,1) 54%, rgba(231,231,231,1) 54%);
+.medio-fondo-gris {
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 1) 54%,
+    rgba(231, 231, 231, 1) 54%
+  );
 }
 
 //Fin header

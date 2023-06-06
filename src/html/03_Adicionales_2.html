@@ -144,13 +144,17 @@
 
     <!--toast nuevo beneficiario-->
     <div class="toast-container position-fixed top-0 end-0 p-3" style="z-index: 99991">
-      <div id="liveToast" class="toast text-white bg-success border-0" role="alert" aria-live="assertive"
-        aria-atomic="true">
+      <div id="liveToast" class="toast align-items-center text-bg-success border-2 text-dark" role="alert" aria-live="assertive" aria-atomic="true">
         <div class="d-flex">
-          <div class="toast-body">
-            <b>Beneficiario inscrito correctamente.</b>
+          <div class="toast-body row">
+            <div class="col-1">
+              <i class="bi bi-check-circle-fill fs-5 text-success"></i>
+            </div>
+            <div class="col-10 ms-2">
+              <b>Beneficiario inscrito<br>correctamente</b>
+            </div>
           </div>
-          <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast"
+          <button type="button" class="btn-close me-2 m-auto" data-bs-dismiss="toast"
             aria-label="Close"></button>
         </div>
       </div>
@@ -199,7 +203,7 @@
               <div class="col-sm-12 col-md-10 offset-md-1">
                 <div class="position-relative">
                     <span class="position-absolute top-0 start-0 translate-middle text-center">Datos del asegurado</span>
-                    <span class="position-absolute top-0 start-35 translate-middle text-center">Viajeros adicionales</span>
+                    <span class="position-absolute top-0 start-35 translate-middle text-center fw-bold">Viajeros adicionales</span>
                     <span class="position-absolute top-0 start-65 translate-middle text-center">Resumen y confirmación</span>
                     <span class="position-absolute top-0 start-101 translate-middle text-center" style="width: 200px">Medios de pago</span>
                 </div>
@@ -447,7 +451,7 @@
                       <div class="row justify-content-end mt-4">
                         <div class="col-12 text-end">
                           <button type="button" class="btn btn-volver">Cancelar</button>
-                          <button type="button" class="btn btn-primary" id="liveToastBtn">Guardar cambios</button>
+                          <button type="button" class="btn btn-primary" id="liveToastBtn1">Guardar cambios</button>
                         </div>
                       </div>
                     </form>
@@ -708,7 +712,7 @@
         <div class="col-8 text-end">
           <button type="button" class="btn btn-volver">Volver</button>
 
-          <button type="button" class="btn btn-primary">Continuar</button>
+          <button type="button" class="btn btn-primary" id="liveToastBtn">Continuar</button>
         </div>
       </div>
     </div>
@@ -729,7 +733,7 @@
                   data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
 
 
-                  <span class="material-icons-outlined me-2 color-primario">privacy_tip</span><strong
+                  <span class="material-icons me-2 color-primario">privacy_tip</span><strong
                     class="color-primario">Legales</strong>
                 </button>
               </h2>
@@ -792,7 +796,7 @@
               data-bs-target="#modalFAQ">Preguntas Frecuentes</a></li>
           <li class="nav-item col-12 col-sm-4 col-lg-3 text-center"><a id="01-pv-home-footer-canal-contactos" href="#"
               class="fw-bold link-footer nav-link px-2 text-left">Canales de Contacto <br><small><i
-                  class="bi bi-telephone-forward pe-2"></i>9 123 456 78</small></a></li>
+                  class="bi bi-telephone-fill pe-2"></i>9 123 456 78</small></a></li>
         </ul>
       </footer>
     </div>
@@ -1015,7 +1019,6 @@
   <script src="../js/jquery.scheletrone.js"></script>
   <script src="../js/funciones.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
-
 </body>
 
 </html>

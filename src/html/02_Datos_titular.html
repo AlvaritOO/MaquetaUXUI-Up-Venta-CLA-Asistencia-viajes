@@ -164,7 +164,7 @@
             <div class="row mt-5">
               <div class="col-sm-12 col-md-10 offset-md-1">
                 <div class="position-relative">
-                    <span class="position-absolute top-0 start-0 translate-middle text-center">Datos del asegurado</span>
+                    <span class="position-absolute top-0 start-0 translate-middle text-center fw-bold">Datos del asegurado</span>
                     <span class="position-absolute top-0 start-35 translate-middle text-center">Viajeros adicionales</span>
                     <span class="position-absolute top-0 start-65 translate-middle text-center">Resumen y confirmación</span>
                     <span class="position-absolute top-0 start-101 translate-middle text-center" style="width: 200px">Medios de pago</span>
@@ -197,23 +197,33 @@
   </section>
   <!--fin wizard mobile-->
 
+  <div class="container p-4 mt-4 back-gradiente">
+    <div class="row">
+      <div class="col-lg-4"><strong>Seguro de asistencia en viaje</strong><br>
+        (Nombre del pan)
+      </div>
+      <div class="col-lg-3 text-center"><strong>[Continente]</strong>
+      </div>
+      <div class="col-lg-2 text-center"><strong>3 Adicionales</strong>
+      </div>
+      <div class="col-lg-3 text-center"><strong>UF 0.00/Total</strong><br>
+        $00.00 aprox
+      </div>
+    </div>
+  </div>
+
 <!-- form -->
 <section id="formulario">
-  <div class="container">
+  <div class="container mt-5">
     <form>
       <div class="row">
-        <div class="divisor"></div>
         <h2 class="mb-5 fw-bold color-primary">Bienvenido Cristian<br>
           <span class="h6">15.526.234-6</span></h2>
         
         
       <h5 class="title-form fw-bold">DATOS DEL TITULAR</h5>
-        <p class="mb-4 fst-italic link-secondary">(*) Campos Obligatorios</p>
-        <div class="mb-3 col-sm-6 col-lg-4">
+        <div class="my-2 col-sm-6 col-lg-4">
           <label for="exampleInputEmail1" class="form-label">Fecha de nacimiento</label>
-              <span class="material-icons-outlined ic-form" data-bs-toggle="tooltip" data-bs-placement="top" title="Si la fecha de nacimiento no corresponde dirígete a tu sucursal Caja Los Andes más cercana para modificar el dato">
-                info
-              </span>
           <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="01-09-1984" >
         </div>
 
@@ -267,7 +277,7 @@
       <div class="row">
         <h5 class="title-form fw-bold">CONTACTO</h5>
         <div class="mb-3 col-sm-6 col-md-5 col-lg-4">
-          <label for="exampleInputEmail1" class="form-label">Teléfono de Contacto*</label>
+          <label for="exampleInputEmail1" class="form-label">Teléfono de Contacto</label>
           <input type="" class="form-control input-telefono" id="exampleInputEmail1" aria-describedby="emailHelp"  value="+569 ">
           <div class="invalid-feedback">
             Debes ingresar un número valido
@@ -277,12 +287,12 @@
 
       <div class="row">
         <div class="mb-3 col-sm-6 col-lg-4">
-          <label for="exampleInputEmail1" class="form-label">Correo electrónico*</label>
+          <label for="exampleInputEmail1" class="form-label">Correo electrónico</label>
           <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="">
         </div>
 
         <div class="mb-3 col-sm-6 col-lg-4">
-          <label for="exampleInputEmail1" class="form-label">Confirme correo electrónico*</label>
+          <label for="exampleInputEmail1" class="form-label">Confirme correo electrónico</label>
           <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="">
         </div>
         </row>
@@ -293,7 +303,7 @@
 
         <div class="row">
           <div class="mb-3 col-sm-6 col-lg-4">
-            <label for="exampleInputEmail1" class="form-label">País de residencia*</label>
+            <label for="exampleInputEmail1" class="form-label">País de residencia</label>
             <select class="form-select" aria-label="Chile">
               <option selected>Seleccione</option>
               <option value="1" selected="selected">Chile</option>
@@ -303,10 +313,10 @@
           </div>
         
           <div class="mb-3 col-sm-6 col-lg-4">
-            <label for="exampleInputEmail1" class="form-label">Región*</label>
+            <label for="exampleInputEmail1" class="form-label">Región</label>
             <select class="form-select" aria-label="Default select
                       example">
-              <option selected>Seleccione*</option>
+              <option selected>Seleccione</option>
               <option value="1">Region Metropolitana</option>
               <option value="2">A</option>
               <option value="3">B</option>
@@ -317,7 +327,7 @@
         
         <div class="row">
           <div class="mb-3 col-sm-6 col-lg-4">
-            <label for="exampleInputEmail1" class="form-label">Comuna*</label>
+            <label for="exampleInputEmail1" class="form-label">Comuna</label>
             <select class="form-select" aria-label="Chile">
               <option selected>Seleccione</option>
               <option value="2">A</option>
@@ -327,7 +337,7 @@
           </div>
         
           <div class="mb-3 col-sm-6 col-lg-4">
-            <label for="exampleInputEmail1" class="form-label">Calle*</label>
+            <label for="exampleInputEmail1" class="form-label">Calle</label>
             <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="">
           </div>
         </div> 
@@ -375,7 +385,7 @@
                   data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
 
 
-                  <span class="material-icons-outlined me-2 color-primario">privacy_tip</span><strong
+                  <span class="material-icons me-2 color-primario">privacy_tip</span><strong
                     class="color-primario">Legales</strong>
                 </button>
               </h2>
@@ -439,7 +449,7 @@
               data-bs-target="#modalFAQ">Preguntas Frecuentes</a></li>
           <li class="nav-item col-12 col-sm-4 col-lg-3 text-center"><a id="01-pv-home-footer-canal-contactos" href="#"
               class="fw-bold link-footer nav-link px-2 text-left">Canales de Contacto <br><small><i
-                  class="bi bi-telephone-forward pe-2"></i>9 123 456 78</small></a></li>
+                  class="bi bi-telephone-fill pe-2"></i>9 123 456 78</small></a></li>
         </ul>
       </footer>
     </div>

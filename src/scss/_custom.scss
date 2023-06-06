@@ -1,20 +1,18 @@
-$blue:    #0095C5 !default;
+$blue: #0095c5 !default;
 
 //Variables
-$primary: #0076A9;
-$secundario: #FFB300;
-$gris-dark: #3E4545;
+$primary: #0076a9;
+$secundario: #ffb300;
+$gris-dark: #3e4545;
 $gris-darker: #666;
 $white: #fff;
-$verde: #5B9E45;
+$verde: #5b9e45;
 $error: #dc3545;
 $gris-light: #ccc;
 $gris-intermedio: #e7e7e7;
-$backgris: #F8F8F8;
+$backgris: #f8f8f8;
 $black: #000;
-$g3: #A8B3B7;
-
-
+$g3: #a8b3b7;
 
 //Card
 $card-border-radius: 0px;
@@ -24,22 +22,22 @@ $tooltip-border-radius: 8px;
 $tooltip-bg: $black;
 
 //Formularios
-$form-label-font-weight: bolder;  
-$form-label-margin-bottom: .1rem;
+$form-label-font-weight: bolder;
+$form-label-margin-bottom: 0.1rem;
 
 //Alerts
-$alert-border-width:  4px;
+$alert-border-width: 4px;
 
 //Carousel
 $carousel-indicator-height: 8px;
 $carousel-indicator-active-bg: $secundario;
-$carousel-indicator-opacity:         .3;
+$carousel-indicator-opacity: 0.3;
 
-$badge-font-size:                   0.9em;
+$badge-font-size: 0.9em;
 //Inputs
-$input-focus-border-color:#008EC4;
+$input-focus-border-color: #008ec4;
 $input-border-radius: 8px;
-$input-border-color: #0076A9;
+$input-border-color: #0076a9;
 $input-focus-color: $primary;
 $input-focus-width: 3px;
 $input-focus-box-shadow: $secundario;
@@ -52,7 +50,7 @@ $btn-padding-y: 11px;
 $link-color: #fff !default;
 $link-color: #ccc;*/
 $btn-padding-x: 24px;
-$btn-close-color: #0076A9;
+$btn-close-color: #000000;
 
 //Navbar
 $navbar-toggler-border-radius: 0px;
@@ -60,18 +58,17 @@ $navbar-toggler-border-radius: 0px;
 //Nav-tabs
 $nav-tabs-border-radius: 0px;
 
-
 //Modal
 $modal-content-border-radius: 24px;
 
 $position-values: (
   0: 0,
-  1:1%,
-  2:2%,
-  3:3%,
-  4:4%,
+  1: 1%,
+  2: 2%,
+  3: 3%,
+  4: 4%,
   5: 5%,
-  5y5:5.5%,
+  5y5: 5.5%,
   6: 6%,
   7: 7%,
   8: 8%,
@@ -103,11 +100,11 @@ $position-values: (
 );
 
 @font-face {
-  font-family: 'Rawson';
+  font-family: "Rawson";
   src: url("../../src/fonts/RawsonRegular.otf") format("opentype") !important;
 }
 
-html{
+html {
   scroll-behavior: smooth;
   font-family: "Rawson", sans-serif;
 }
@@ -134,11 +131,8 @@ div.nav.nav-tabs.tabs-categorias.mt-4 button span {
   top: 5px;
 }
 
-
-
-
 // Importar Bootstrap
-@import '../../node_modules/bootstrap/scss/bootstrap.scss';
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
 
 .carousel-indicators {
   position: absolute;

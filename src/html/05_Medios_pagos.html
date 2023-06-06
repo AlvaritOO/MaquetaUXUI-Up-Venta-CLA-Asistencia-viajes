@@ -166,7 +166,7 @@
                     <span class="position-absolute top-0 start-0 translate-middle text-center">Datos del asegurado</span>
                     <span class="position-absolute top-0 start-35 translate-middle text-center">Viajeros adicionales</span>
                     <span class="position-absolute top-0 start-65 translate-middle text-center">Resumen y confirmación</span>
-                    <span class="position-absolute top-0 start-101 translate-middle text-center" style="width: 200px">Medios de pago</span>
+                    <span class="position-absolute top-0 start-101 translate-middle text-center fw-bold" style="width: 200px">Medios de pago</span>
                 </div>
             </div>
           </div>
@@ -193,59 +193,53 @@
 <!-- form -->
 <section id="mediosPago">
   <div class="container mt-4">
-      <div class="row">
-        <h5 class="title-form fw-bold">MEDIOS DE PAGO</h5>
-          <p>Estás contratando el Seguro XXXXXX por UF XX.XXX ($XX.XXX). <br>
-            El seguro que vas a contratar se descontará mensualmente de la liquidación de sueldo.</p>
-
-          <p class="fw-bold">Empresa seleccionada:</p>
-
-          <div class="container mb-3">
+    <div class="row">
+      <h5 class="title-form fw-bold">MEDIOS DE PAGO</h5>
+      <p>Estás contratando el Seguro XXXXXX por UF XX.XXX ($XX.XXX).<br>
+        El monto de tu seguro de asistencia en viaje debe ser cancelado en este momento a través de transbank con tarjeta de crédito o debito.</p>
+        
+      <div class="container mt-5 mb-3 webpay-bg position-relative">
+        <div class="row">
+          <div class="col-lg-6">
             <div class="form-check form-check-inline">
-              <img class="bd-placeholder-img" src="../../build/img/svg/logo-webpay.svg" width="300px">
+              <input class="form-check-input" type="radio" name="paymentMethod" id="webpayOption" value="webpay" checked>
+              <label class="form-check-label" for="webpayOption">
+                  <img class="bd-placeholder-img" src="../../build/img/svg/logo-webpay.svg" width="300px">
+              </label>
             </div>
           </div>
+        </div>   
+      </div> 
 
-          <div class="modal fade" id="exampleModa2" tabindex="-1" aria-labelledby="exampleModalLabe3" aria-hidden="true">
-            <div class="modal-dialog modal-lg">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h5 class="modal-title color-primary" id="exampleModalLabe3">Modal Mandato de Cargo</h5>
-                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam at varius turpis. Nunc volutpat, ipsum eget iaculis
-                  aliquam, mauris nisi congue leo, et mattis sapien elit et enim. Nunc ut urna interdum, dapibus nisi a, tempor mauris.
-                  Pellentesque quis justo ut ligula dapibus consectetur. In orci dui, convallis non erat non, consequat elementum leo.
-                  Nunc in aliquam arcu. Pellentesque cursus tortor id lorem laoreet tempor. Praesent libero tellus, placerat eget aliquet
-                  fringilla, interdum et justo.
-                  Ut a dictum orci. Phasellus in nisl non neque pellentesque facilisis. Fusce in dolor imperdiet, semper elit sed,
-                  dignissim quam. Fusce id erat sed justo porta commodo. Aliquam eleifend non ex elementum pulvinar. Ut at orci faucibus,
-                  rutrum nunc eget, accumsan lacus. Proin sed varius elit. Maecenas vel odio felis. Nunc justo lorem, mollis id urna eget,
-                  auctor feugiat libero. Praesent ut suscipit est. Curabitur sem turpis, pellentesque non tempus in, posuere vel enim.
-                  Vivamus pellentesque neque id quam porttitor placerat. Aliquam hendrerit molestie vestibulum. Morbi vulputate dapibus
-                  imperdiet.</div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                  <button type="button" class="btn btn-primary">Entiendo y Acepto las Condiciones</button>
-                </div>
-              </div>
+      <div class="modal fade" id="exampleModa2" tabindex="-1" aria-labelledby="exampleModalLabe3" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title color-primary" id="exampleModalLabe3">Modal Mandato de Cargo</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <!-- Aquí va tu contenido -->
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+              <button type="button" class="btn btn-primary">Entiendo y Acepto las Condiciones</button>
             </div>
           </div>
-
-          <section id="botonera">
-            <div class="container mt-5">
-              <div class="row justify-content-end">
-                <div class="col-8 text-end">
-                  <button type="button" class="btn btn-volver">Volver</button>
-
-                  <button type="button" class="btn btn-primary">Finalizar contratación
-                  </button>
-                </div>
-              </div>
-            </div>
-          </section>
+        </div>
       </div>
+    
+      <section id="botonera">
+        <div class="container mt-5">
+          <div class="row justify-content-end">
+            <div class="col-8 text-end">
+              <button type="button" class="btn btn-volver">Volver</button>
+              <button type="button" class="btn btn-primary">Finalizar contratación</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>    
   </div>
 </section>
 
@@ -262,7 +256,7 @@
               <h2 class="accordion-header" id="headingOne">
                 <button class="accordion-button collapsed acordion-legales" type="button" data-bs-toggle="collapse"
                   data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                  <span class="material-icons-outlined me-2 color-primario">privacy_tip</span>
+                  <span class="material-icons me-2 color-primario">privacy_tip</span>
                   <strong class="color-primario">Legales</strong>
                 </button>
               </h2>
@@ -326,7 +320,7 @@
               data-bs-target="#modalFAQ">Preguntas Frecuentes</a></li>
           <li class="nav-item col-12 col-sm-4 col-lg-3 text-center"><a id="01-pv-home-footer-canal-contactos" href="#"
               class="fw-bold link-footer nav-link px-2 text-left">Canales de Contacto <br><small><i
-                  class="bi bi-telephone-forward pe-2"></i>9 123 456 78</small></a></li>
+                  class="bi bi-telephone-fill pe-2"></i>9 123 456 78</small></a></li>
         </ul>
       </footer>
     </div>
