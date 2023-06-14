@@ -173,13 +173,14 @@
     has contratado exitosamente tu seguro!</h3>
 
     <h6 class="text-center pb-4">Contrataste tu Seguro XXXX Plan XXXX <br>
-      Enviaremos a la brevedad a tu correo electrónico el certificado de cobertura de tu seguro contratado.
+      Enviaremos a la brevedad a tu correo electrónico el certificado de cobertura de tu <br>seguro contratado.
       <br>
-      <span class="fw-bold">Seguro Contratado:</span> NOMBRE SEGURO.
-      <br>
-      <span class="fw-bold">Valor Pagado:</span>UF XX.XX ($XX.XX)</h6>
+    </h6>
+    <h6 class="text-center pb-4">
+      <span class="fw-bold">Valor Pagado:</span> UF XX.XX ($XX.XX)<br>
+      <span class="fw-bold">Fecha: DD/MM/AAAA - Hora: HH:MM:SS</span>
 
-    <h6 class="text-center pb-4"><span class="fw-bold">Fecha: DD/MM/AAAA - Hora: HH:MM:SS</span> <br> Se ha enviado el comprobante al correo registrado CORREO DEL ASEGURADO.</h6>
+    </h6>
 
     <!-- Encuesta-->
 <section id="SeguroSatisfaccion">
@@ -230,17 +231,16 @@
     
           <input type="radio" class="btn-check" name="options" id="option10" autocomplete="off">
           <label id="06-pv-contratar-exito__opcion--satisfecho-10" class="btn btn-success" for="option10">10</label>
-        </div>
-        <div class="row">
-          <div class="col text-center">
-          </div>
-          <div class="col text-start satisfecho">
-            <p>Nada satisfecho</p>
-          </div>
-          <div class="col text-end satisfecho">
-            <p>Muy satisfecho</p>
-          </div>
-          <div class="col text-center">
+          
+          <div class="row d-flex justify-content-evenly">
+            <div class="col text-end satisfecho">
+              <p>Nada satisfecho</p>
+            </div>
+            <div class="col-2 text-center mx-4">
+            </div>
+            <div class="col text-start satisfecho ms-2">
+              <p>Muy satisfecho</p>
+            </div>
           </div>
         </div>
         
@@ -284,10 +284,12 @@
           <label id="06-pv-contratar-exito__opcion--facilidad-10" class="btn btn-success" for="option1010">10</label>
         
           <div class="row d-flex justify-content-evenly">
-            <div class="col text-center satisfecho">
+            <div class="col text-end satisfecho">
               <p>Nada satisfecho</p>
             </div>
-            <div class="col text-center satisfecho">
+            <div class="col-2 text-center mx-4">
+            </div>
+            <div class="col text-start satisfecho ms-2">
               <p>Muy satisfecho</p>
             </div>
           </div>
@@ -329,17 +331,16 @@
     
           <input type="radio" class="btn-check" name="options3" id="option101010" autocomplete="off">
           <label id="06-pv-contratar-exito__opcion--recomendar-10" class="btn btn-success" for="option101010">10</label>
-        </div>
-        <div class="row">
-          <div class="col text-center">
-          </div>
-          <div class="col text-start satisfecho">
-            <p>Nada satisfecho</p>
-          </div>
-          <div class="col text-end satisfecho">
-            <p>Muy satisfecho</p>
-          </div>
-          <div class="col text-center">
+        
+          <div class="row d-flex justify-content-evenly">
+            <div class="col text-end satisfecho">
+              <p>Nada satisfecho</p>
+            </div>
+            <div class="col-2 text-center mx-4">
+            </div>
+            <div class="col text-start satisfecho ms-2">
+              <p>Muy satisfecho</p>
+            </div>
           </div>
         </div>
 
@@ -374,10 +375,10 @@
 
   </div>  
 <section id="botonera">
-  <div class="container mt-5">
+  <div class="container mt-3 mb-5">
     <div class="row justify-content-end">
       <div class="col-8 text-end">
-        <button type="button" class="btn btn-volver">Volver al inicio</button>
+        <a class="btn text-primary fw-bold btn-sm" href="#"><i class="bi bi-arrow-left"></i> Volver al inicio</a>
       </div>
     </div>
   </div>
@@ -398,7 +399,7 @@
                   data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
 
 
-                  <span class="material-icons-outlined me-2 color-primario">privacy_tip</span><strong
+                  <span class="material-icons me-2 color-primario">privacy_tip</span><strong
                     class="color-primario">Legales</strong>
                 </button>
               </h2>
