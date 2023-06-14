@@ -234,7 +234,8 @@
                       <a class=" position-absolute top-50 start-80 translate-middle link-dark">Editar</a>
                     </div>
                     <div class="d-grid gap-2 d-md-flex justify-content-md-end d-none d-sm-none d-md-none d-lg-block">
-                      <a class=" position-absolute top-50 start-90 translate-middle link-dark">Eliminar</a>
+                      <a class=" position-absolute top-50 start-90 translate-middle link-dark" data-bs-toggle="modal"
+                      data-bs-target="#modalquitarbeneficiario">Eliminar</a>
                     </div>
 
                   </button>
@@ -934,6 +935,28 @@
     </div>
   </div>
   <!-- Fin Modal terminos-->
+
+  <!-- Modal Quitar beneficiario -->
+  <div class="modal fade" id="modalquitarbeneficiario" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-body m-2 p-4">
+          <div class="row">
+            <div class="col-12 text-start">
+              <h4 class="color-primary">Quitar beneficiario</h4>
+            </div>
+            <div class="col-12 text-start mt-2 mb-3">
+              <p><strong>¿Esta seguro que desea quitar este beneficiario?</strong><br>Esta acción no se puede deshacer</p>
+            <div class="col-12 text-end">
+              <button type="button" class="btn btn-volver me-3" data-bs-dismiss="modal">Cancelar</button>
+              <button type="button" class="btn btn-primary">Confirmar eliminación</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Fin Modal Quitar beneficiario -->
 
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
   <script src="../js/bootstrap.min.js"></script>
