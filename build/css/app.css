@@ -2,6 +2,7 @@
 /*$btn-link-color: #ccc;
 $link-color: #fff !default;
 $link-color: #ccc;*/
+/* $btn-padding-x: 24px; */
 @font-face {
   font-family: "Rawson";
   src: url("../../src/fonts/RawsonRegular.otf") format("opentype") !important;
@@ -2766,7 +2767,7 @@ textarea.form-control-lg {
 }
 
 .btn {
-  --bs-btn-padding-x: 24px;
+  --bs-btn-padding-x: 0.75rem;
   --bs-btn-padding-y: 11px;
   --bs-btn-font-family: ;
   --bs-btn-font-size: 1rem;
@@ -3558,8 +3559,8 @@ textarea.form-control-lg {
 }
 
 .dropdown-toggle-split {
-  padding-right: 18px;
-  padding-left: 18px;
+  padding-right: 0.5625rem;
+  padding-left: 0.5625rem;
 }
 .dropdown-toggle-split::after, .dropup .dropdown-toggle-split::after, .dropend .dropdown-toggle-split::after {
   margin-left: 0;
@@ -11877,8 +11878,11 @@ section#PerdidaRenuncia p i {
 }
 
 .encuesta label {
-  border-radius: 24px;
-  margin-bottom: 24px;
+  border-radius: 36px;
+  margin-bottom: 12px;
+  height: 42px;
+  width: 42px;
+  padding: auto;
 }
 
 .contenedor-plan {
@@ -12421,7 +12425,7 @@ span.ic-form {
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
-  color: #0076A9;
+  color: #0076a9;
   flex: none;
   order: 0;
   flex-grow: 0;
@@ -12438,21 +12442,32 @@ span.ic-form {
   isolation: isolate;
   width: 727px;
   height: 528px;
-  background: #FFFFFF;
+  background: #ffffff;
   box-shadow: 0px 8px 40px rgba(0, 0, 0, 0.16);
   border-radius: 24px;
 }
 
 .text-bg-success {
-  background-color: #DEFFF5 !important;
+  background-color: #defff5 !important;
 }
 
 .webpay-bg {
   width: 850px;
-  background-color: #F6F7F7;
+  background-color: #f6f7f7;
   border-radius: 16px;
   padding: 24px;
   margin-left: 0% !important;
+}
+
+.satisfecho {
+  width: 97px;
+  height: 16px;
+  color: #3E4545 !important;
+  font-family: "Rawson Pro", sans-serif !important;
+  font-style: normal;
+  font-weight: 650;
+  font-size: 14px;
+  line-height: 16px;
 }
 
 p.text-legales {
