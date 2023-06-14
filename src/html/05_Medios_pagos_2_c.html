@@ -58,13 +58,11 @@
               <span class="toggler-icon middle-bar"></span>
               <span class="toggler-icon bottom-bar"></span>
             </button>
+
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-
-
-
                 <li class="nav-item dropdown-hover">
-                  <a class="nav-link dropdown-hover-button" href="#">Contratar Seguros</a>
+                  <a class="nav-link active dropdown-hover-button" href="#">Contratar Seguros</a>
                   <div class="dropdown-hover-content shadow">
                     <div class="row">
                       <div class="col-lg-3 mega-menu">
@@ -130,16 +128,12 @@
                       </div>
                     </div>
                   </div>
+
+                </li>
+                <li class="nav-item dropdown">
                 </li>
             </div>
-            <div class="col-lg-3 text-end">
-              <div class="mb-3">
-                <div class="btn text-white" href="#">
-                  <i class="bi bi-arrow-left"></i>
-                  Volver a seguros
-                </div>
-              </div>
-            </div>
+            <a class="btn text-primary fw-bold btn-sm d-none d-lg-block" href="#"><i class="bi bi-arrow-left"></i> Volver a seguros</a>
           </div>
           </ul>
       </div>
@@ -148,349 +142,120 @@
   </section>
   <!--Fin Header-->
 
-  <!--Carrusel-->
-  <section id="carousel">
-    <div class="row">
-      <div class="carousel-item active">
-        <img src="../../build/img/image-asistencia.jpg" class="img-fluid d-none d-sm-block">
-        <img src="../../build/img/image-asistencia-mobile.jpg" class="img-fluid d-block d-sm-none">
-        <div class="">
-          <div class="col-md-12 contenedor-btn ">
-            <div
-              class="texto-big-banner col-sm-8 col-md-10 col-lg-10 offset-md-1 position-absolute bottom-30 start-4 p-4">
-              <h1 class="texto-imagen-cabecera pb-2">Seguro de<br><span class="texto-medium-banner-top">asistencia en viaje</span>
-              </h1>
-            </div>
-            <div
-              class="col-sm-10 col-md-7 col-lg-6 col-xl-5 offset-md-1 position-absolute bottom-16 start-4 p-4 d-md-none d-lg-block d-sm-none d-md-block">
-              <h3 class="pb-2 texto-medium-banner-bottom">¡Viaja tranquilo y disfruta de tu viaje sin preocupaciones con el seguro de Accidentes ITP 2/3 + Asistencia en Viaje!</h3>
-            </div>
 
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!--Fin Carrusel-->
-
-  <!-- Caracteristicas -->
-  <section id="carateristicas" class="pt-4">
-    <div class="container">
+<!--wizard-->
+<section id="wizard" class="mb-5 pt-3 container d-none d-lg-block">
+  <div class="container contenedor-wizard">
       <div class="row">
-        <h2 class="text-center pb-4 mb-4 mt-5">¿Por qué contratar <span class="fw-bold">Nuestro Seguro de Asistencia en Viaje?</span></h2>
-        <div class="col-lg-6 pt-4 d-none d-sm-block d-sm-none d-md-block d-md-none d-lg-block">
-          <div class="col-lg-12 col-12 ms-5">
-            <img class="bd-placeholder-img" src="../../build/img/ELLA 1.jpg" width="500px">
-          </div>
-        </div>
-
-        <!--item1-->
-
-        <div class="col-lg-6">
-
-          <div class="col-lg-12 col-md-6 mb-4 pt-md-6 pt-2">
-            <div class="feature-box not-dark">
-              <img src="../../build/img/svg/Cardio.svg" alt="Cardio" width="66" height="66"/>
-              <div class="fbox-content">
-                <h5 class="fw-bold">Asistencia Médica cuando lo necesites</h5>
-                <p>Podrás acceder a una App que tendrá disponible una asistencia médica 24/7.</p>
-              </div>
+        <div class="col-sm-12 col-md-10 offset-md-1">
+          <div class="position-relative">
+            <div class="progress" style="height: 1px;">
+              <div class="progress-bar" role="progressbar" style="width: 100%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
             </div>
-
-            <div class="feature-box not-dark mt-4">
-              <img src="../../build/img/svg/Maletín.svg" alt="Maletín" width="66" height="66"/>
-              <div class="fbox-content">
-                <h5 class="fw-bold">Indemnización por pérdida de equipaje</h5>
-                <p>En caso que pierdas tu equipaje complementario podrás optar a una indemnización.</p>
-              </div>
-            </div>
-
-            <div class="feature-box not-dark mt-4">
-              <img src="../../build/img/svg/Vuelo.svg" alt="Vuelo" width="66" height="66"/>
-              <div class="fbox-content">
-                <h5 class="fw-bold">Viaja tranquilo</h5>
-                <p>Tendrás optar a más de 20 distintos beneficios de asistencias que te acompañarán en tu viaje.</p>
-              </div>
-            </div>
-
+            <button type="button" class="position-absolute top-0 start-1 translate-middle btn btn-sm btn-primary rounded-pill" style="width: 2rem; height:2rem;">1</button>
+          <button type="button" class="position-absolute top-0 start-35 translate-middle btn btn-sm btn-primary rounded-pill" style="width: 2rem; height:2rem;">2</button>
+          <button type="button" class="position-absolute top-0 start-65 translate-middle btn btn-sm btn-primary rounded-pill" style="width: 2rem; height:2rem;">3</button>
+          <button type="button" class="position-absolute top-0 start-100 translate-middle btn btn-sm btn-primary rounded-pill" style="width: 2rem; height:2rem;">4</button>
           </div>
         </div>
       </div>
-    </div>
-  </section>
-  <!-- Fin Caracteristicas -->
-
-
-  <!-- Canales de contacto-->
-  <section id="CanalesContacto">
-    <div class="fondo-denunciar-siniestros">
-        <div class="container">
-          
-          <h2 class="text-center mb-5 fw-bold">Cotiza tu seguro de viaje</h2>
-        
-          <div class="fondo-cotizacion">
-
-            <div class="container col-5 mt-5">
-              <div class="alert alert-info d-flex align-items-center" role="alert">
-                <img class="ms-4" src="../../build/img/svg/alert-info-.svg">
-                <div class="ms-4">
-                  Capital de 50UF es solo para asegurado titular.
+      <div class="container d-none d-sm-block">
+            <div class="row mt-5">
+              <div class="col-sm-12 col-md-10 offset-md-1">
+                <div class="position-relative">
+                    <span class="position-absolute top-0 start-0 translate-middle text-center">Datos del asegurado</span>
+                    <span class="position-absolute top-0 start-35 translate-middle text-center">Viajeros adicionales</span>
+                    <span class="position-absolute top-0 start-65 translate-middle text-center">Resumen y confirmación</span>
+                    <span class="position-absolute top-0 start-101 translate-middle text-center fw-bold" style="width: 200px">Medios de pago</span>
                 </div>
-              </div>
             </div>
-
-            <div class="divisor-card ms-3 me-3"></div>
-
-            <h2 class="text-center mb-1 fw-bold">Selecciona el plan que deseas contratar</h2>
-            <span class="text-center mt-2">El afiliado titular, además de la asistencia básica de viaje, tendrá una cobertura de UF 50 por Invalidez Total y Permanente 2/3 por Accidente.</span>
-            <section class="row justify-content-center mt-4 mb-5">
-              <card class="card-content text-center" type="button">
-                <div class="card-body">
-                  <a class="h3 mb-3 mt-5 pt-3 text-primary fw-bold">Plan Simple</a>
-  
-                  <ul class="card-text me-4" style="list-style:none">
-                    <li class="fw-bold">USD 35.000</li>
-                    <li>Asistencia Médica y COVID-19</li>
-                    <li class="fw-bold mt-3">Incluido</li>
-                    <li>Servicio Telemedicina</li>
-                    <li class="fw-bold mt-3">USD 1.200</li>
-                    <li>Extravío de equipaje</li>
-                    <li class="fw-bold mt-3">USD 180</li>
-                    <li>Estadía de emergencia</li>
-                    <li class="fw-bold mt-3">USD 800</li>
-                    <li>Medicamentos</li>
-                    <li class="text-secondary fw-bold mt-3">No incluido</li>
-                    <li class="text-secondary">Interrupción de Viaje por diagnóstico COVID- 19</li>
-                    <button type="button" class="btn btn-primary mt-3 detallesPlan" data-bs-toggle="modal" data-bs-target="#detallesModalSimple" id="detallesPlanSimple">
-                      Detalles del plan
-                    </button>
-                  </ul>
-                <div class="divisor-card"></div>
-
-                <a class="h3 mb-3 text-primary fw-bold">UF 0,00</a>
-                <ul class="card-text me-4" style="list-style:none">
-                  <li class="text-primary">($ 00.00)</li>
-                  <li class="fw-bold">Monto Total a pagar</li>
-                  <li >UF al dd/mm/aaaa</li>
-                </ul>
-                </div>
-                <div class="container-btn gap-2 p-3">
-                  <a class="btn btn-primary fw-bold">Seleccionar</a>
-                </div>
-              </card>
-
-              <card class="card-content text-center ms-3" type="button">
-                <span class="fecha-contratacion mt-3" style="margin-left: 190px;">Recomendado</span>
-                <div class="card-body">
-                  <a class="h3 mb-3 text-primary fw-bold">Plan Plus</a>
-  
-                  <ul class="card-text me-4" style="list-style:none">
-                    <li class="fw-bold">USD 60.000</li>
-                    <li>Asistencia Médica y COVID-19</li>
-                    <li class="fw-bold mt-3">Incluido</li>
-                    <li>Servicio Telemedicina</li>
-                    <li class="fw-bold mt-3">USD 1.200</li>
-                    <li>Extravío de equipaje</li>
-                    <li class="fw-bold mt-3">USD 900</li>
-                    <li>Estadía de emergencia</li>
-                    <li class="fw-bold mt-3">USD 1000</li>
-                    <li>Medicamentos</li>
-                    <li class="text-secondary mt-3"><strong>No incluido</strong></li>
-                    <li class="text-secondary">Interrupción de Viaje por diagnóstico COVID- 19</li>
-                    <button type="button" class="btn btn-primary mt-3 detallesPlan" data-bs-toggle="modal" data-bs-target="#detallesModalPlus" id="detallesPlanSimple">
-                      Detalles del plan
-                    </button>
-                  </ul>
-                <div class="divisor-card"></div>
-
-                <a class="h3 mb-3 text-primary fw-bold">UF 0,00</a>
-                <ul class="card-text me-4" style="list-style:none">
-                  <li class="text-primary">($ 00.00)</li>
-                  <li class="fw-bold">Monto Total a pagar</li>
-                  <li >UF al dd/mm/aaaa</li>
-                </ul>
-                </div>
-                <div class="container-btn gap-2 p-3">
-                  <a class="btn btn-primary fw-bold">Seleccionar</a>
-                </div>
-              </card>
-
-              <card class="card-content text-center ms-3" type="button">
-                <div class="card-body">
-                  <a class="h3 mb-3 mt-5 pt-3 text-primary fw-bold">Plan Premium COVID</a>
-                  <ul class="card-text me-4" style="list-style:none">
-                    <li class="fw-bold">USD 150.000</li>
-                    <li>Asistencia Médica y COVID-19</li>
-                    <li class="fw-bold mt-3">Incluido</li>
-                    <li>Servicio Telemedicina</li>
-                    <li class="fw-bold mt-3">USD 1.200</li>
-                    <li>Extravío de equipaje</li>
-                    <li class="fw-bold mt-3">USD 1.100</li>
-                    <li>Estadía de emergencia</li>
-                    <li class="fw-bold mt-3">USD 2.000</li>
-                    <li>Medicamentos</li>
-                    <li class="fw-bold mt-3">USD 1500</li>
-                    <li>Interrupción de Viaje por diagnóstico COVID- 19</li>
-                    <button type="button" class="btn btn-primary mt-3 detallesPlan" data-bs-toggle="modal" data-bs-target="#detallesModalPremium" id="detallesPlanSimple">
-                      Detalles del plan
-                    </button>
-                  </ul>
-                <div class="divisor-card"></div>
-
-                <a class="h3 mb-3 text-primary fw-bold">UF 0,00</a>
-                <ul class="card-text me-4" style="list-style:none">
-                  <li class="text-primary">($ 00.00)</li>
-                  <li class="fw-bold">Monto Total a pagar</li>
-                  <li >UF al dd/mm/aaaa</li>
-                </ul>
-                </div>
-                <div class="container-btn gap-2 p-3">
-                  <a class="btn btn-primary fw-bold">Seleccionar</a>
-                </div>
-              </card>
-
-            </section>
-
-          </div>
-
-        </div>
-    </div>
-
-  </section>
-  <!--Fin Canales de contacto-->
-
-  <!--NO Cubre-->
-  <section>
-    <div class="container">
-      <div class="text-center mt-3 mb-3">
-        <a id="02-home-cobertura-exclusiones-acordeon-cobertura-btn-ver-mas" class="btn">
-          <img src="../../build/img/boton-ver-mas.png" alt="Explora hacia abajo" />
-        </a>
-      </div>
-      <h2 class="text-center pb-4 mb-4 mt-5 fw-bold">¿Qué no cubre este seguro?</h2>
-    </div>
-    <div class="container d-flex align-items-center justify-content-center">
-      <div class="row container-fluid mb-4">
-          <div id="02-home-cobertura-exclusiones-acordeon-cobertura">
-            <div class="col-lg-12 col-12 px-5 mb-5 pb-5">
-              <d class="fw-bold">No se indemnizará al asegurado titular cuando la hospitalización por Accidente del Asegurado o los gastos médicos por accidente, se produzcan como consecuencia de:</d>
-                  <ul class="list-unstyled no-cubre mt-4">
-                    <li><span class="material-icons me-2">close</span>Guerra, declarada o no, invasión, acción de un enemigo extranjero, hostilidades u operaciones bélicas.</li>
-                    <li><span class="material-icons me-2">close</span>Lesiones auto-inferidas, atentados contra su propia vida, automutilación o autolesión, o por lesiones inferidas al Asegurado por terceros con su consentimiento, ya sea estando en su pleno juicio o enajenado mentalmente.</li>
-                    <li><span class="material-icons me-2">close</span>Comisión o participación del Asegurado o sus Beneficiario(s) en actos calificados como delito según la ley, en calidad de autor, cómplice o encubridor. Las peleas o riñas también serán excluidas a excepción de que haya sido en legítima defensa.</li>
-                    <li><span class="material-icons me-2">close</span>Participación activa del Asegurado en actos de rebelión, revolución, sublevación, asonada, motín, conmoción civil, subversión incluidos los actos terroristas entendiéndose por acto terrorista toda conducta calificada como tal por la ley, así como el uso de fuerza o violencia o la amenaza de ésta motivado por causas políticas, religiosas, ideológicas o similares, con la intención de ejercer influencia sobre cualquier gobierno o de atemorizar a la población, o a cualquier segmento de la misma.</li>
-                    <li><span class="material-icons me-2">close</span>Movimientos sísmicos desde el grado 8 en escala de Mercalli.</li>
-                    <li><span class="material-icons me-2">close</span>Participación en carreras, apuestas o competencias (remuneradas o no).</li>
-                  </ul>
-                  <p>Esta Póliza no otorga cobertura, indemnización, pago o prestación alguna en aquellos casos en que el(los) contratante (s), Asegurado(s) y/o Beneficiario(s) sean objeto o se encuentren incluidos en cualquier listado, sanción o restricción económica o comercial, embargo o medida restrictiva elaborada, dictada, administrada, impuesta o aplicada por la Oficina de Control de Activos Extranjeros (OFAC) del Departamento del Tesoro de los Estados Unidos de Norteamérica, el Departamento de Estado
-                    de los Estados Unidos de Norteamérica, el Consejo de Seguridad de las Naciones Unidas y la Unión Europea.</p>
-              </div>
           </div>
       </div>
-  
-    </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    
-  </section>
-
-<!--Seccion requisitos-->
-<section id="requisitos" class="back-diagonal pt-4 pb-4">
-  <div class="container fondo-requisitos ">
-    <div class="container">
-      <div class="text-center imagen-req mb-4">
-        <span class="material-icons-outlined"><i class="bi bi-check-circle check-size"></i></span>
-      </div>
-      <h2 class="text-center pb-4 mb-4 contraste text-white fw-bold">Requisitos</h2>
-        <ol class="ms-5 ps-5">
-          <li>La edad mínima de ingreso de los Asegurados es de 18 años.</li>
-          <li>La edad máxima de ingreso para todos los Asegurados es hasta los 68 años, 364 días.</li>
-          <li>La edad máxima de permanencia para todos los Asegurados es hasta los 69 años, 364 días.</li>
-        </ol>
-    </div>
   </div>
 </section>
-<!--Fin Seccion requisitos-->
+<!--fin wizard-->
 
-  <!-- Canales de contacto-->
-  <section id="CanalesContacto">
-    <div class="container pt-4 mt-6" id="canales">
+<!-- wizard mobile-->
+<section id="wizard-mobile">
+  <div class="container d-lg-none mt-2 mb-1 wizard-mobile shadow">
       <div class="row">
-        <div class="container pt-5 mt-4 pb-2 back-gradiente">
-          
-          <p class="text-center"><span class="material-icons-round">warning_amber</span></p>
-          <h2 class="text-center pb-2 fw-bold">Denunciar un siniestro</h2>
-          <p class="text-center">Declara un siniestro contratado.</p>
-
-          <p class="text-center pb-4"> 
-            <a id="01-categorias-canales-contacto-denunciar-siniestro" type="button"
-            class="text-primary fw-bold" style="text-decoration: none;">Denunciar un siniestro
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-            fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
-            <path fill-rule="evenodd"
-              d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
-          </svg>
-            </a>
-          </p>
-        </div>
-
-        <h2 class="text-center pb-4 mb-4 mt-5">¿Tienes<span class="fw-bold"> dudas?</span></h2>
-        <p class="text-center">Si tienes dudas, puedes contactarte con nosotros a través de los siguientes canales:</p>
-
-        <div class="col-md-4 mt-2 p-4">
-          <div class="col-md-6 mb-4"><img src="../../build/img/svg/logo-cla.svg" class="text-center" height="65px">
-          </div>
-          <span class="fw-bold">Caja Los Andes</span>
-          <p>Horario de Atención: Lunes a Viernes de 08:00 a 20:00 hrs.</p>
-          <p class="d-none d-sm-block">Teléfono <a id="01-pv-home-canales-contacto-cla-telefono" href="tel:600 510 0000"
-              data-bs-toggle="tooltip" data-bs-placement="top" title="Llamar Caja los Andes">600 510 0000</a></p>
-          <a id="01-pv-home-canales-contacto-cla-telefono-btn" href="tel:600 510 0000"
-            class="btn btn-volver d-block d-sm-none">Llamar al 600 510 0000</a>
-        </div>
-
-        <div class="col-md-4 mt-2 p-4">
-          <div class="col-md-6 mb-4"><img src="../../build/img/svg/bnp.svg" class="text-center" height="65px"></div>
-          <span class="fw-bold">BNP Paribas Cardif</span>
-          <p>Horario de Atención: Lunes a Viernes de 09:00 a 18:00 hrs.</p>
-          <p class="d-none d-sm-block">Teléfono <a id="01-pv-home-canales-contacto-bnp-telefono" href="tel:800 362 100"
-              data-bs-toggle="tooltip" data-bs-placement="top" title="Llamar a BNP Paribas">800 362 100</a></p>
-          <a id="01-pv-home-canales-contacto-bnp-telefono-btn" href="tel:800 362 100"
-            class="btn btn-volver d-block d-sm-none">Llamar al 800 362 100</a>
-        </div>
-
-
-        <div class="col-md-4 mt-2 p-4">
-          <div class="col-md-6 mb-4"><img src="../../build/img/svg/corredora-color.svg" class="text-center"
-              height="65px"></div>
-          <span class="fw-bold">Corredora de Seguros La Cámara SpA</span>
-          <p>Horario de Atención: Lunes a Jueves de 08:30 a 18:00 hrs y Viernes de 08:30 a 14:30 hrs.</p>
-          <p class="d-none d-sm-block">Teléfono <a id="01-pv-home-canales-contacto-cslc-telefono"
-              href="tel:(+56 ) 229 642 400" data-bs-toggle="tooltip" data-bs-placement="top"
-              title="Llamar a Corredora de Seguros">(+56 ) 229 642 400 </a> </p>
-          <a id="01-pv-home-canales-contacto-cslc-telefono-btn" href="tel:+56229642400"
-            class="btn btn-volver d-block d-sm-none">Llamar al (+56 ) 229 642 400</a>
-        </div>
-
-
+            <div class="col-6 paso-actual">
+                    <span class="now-next text-right">Ahora</span>
+                    <span class="h4 text-right">Paso 4 de 4</span>
+                    <p class="nombre-paso text-right">Medios de pago</p>
+            </div>
+  
       </div>
-    </div>
-
+  </div>
   </section>
-  <!--Fin Canales de contacto-->
+  <!--fin wizard mobile-->
 
-  <!--Seccion Legales-->
-  <section id="legales">
-    <div class="container mt-4 mb-4">
+<!-- form -->
+<section id="mediosPago">
+  <div class="container mt-4">
+    <div class="row">
+      <h5 class="title-form fw-bold">MEDIOS DE PAGO</h5>
+      <p>Estás contratando el Seguro XXXXXX por UF XX.XXX ($XX.XXX).<br>
+        El monto de tu seguro de asistencia en viaje debe ser cancelado en este momento a través de transbank con tarjeta de crédito o debito.</p>
+        
+      <div class="container mt-5 mb-3 webpay-bg position-relative">
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="paymentMethod" id="webpayOption" value="webpay" checked>
+              <label class="form-check-label" for="webpayOption">
+                  <img class="bd-placeholder-img" src="../../build/img/svg/logo-webpay.svg" width="300px">
+              </label>
+            </div>
+          </div>
+        </div>   
+      </div> 
+
+      <div class="modal fade" id="exampleModa2" tabindex="-1" aria-labelledby="exampleModalLabe3" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title color-primary" id="exampleModalLabe3">Modal Mandato de Cargo</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <!-- Aquí va tu contenido -->
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+              <button type="button" class="btn btn-primary">Entiendo y Acepto las Condiciones</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+      <section id="botonera">
+        <div class="container mt-5">
+          <div class="row justify-content-end">
+            <div class="col-8 text-end">
+              <button type="button" class="btn btn-volver">Volver</button>
+              <button type="button" class="btn btn-primary">Finalizar contratación</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>    
+  </div>
+</section>
+
+<!--fin form-->
+
+
+<!--Seccion Legales-->
+<section id="legales">
+    <div class="container mt-5 mb-4">
       <div class="row">
         <div class="col-lg-8 mx-auto">
           <div class="accordion accordion-flush" id="accordionExample">
             <div class="accordion-item">
               <h2 class="accordion-header" id="headingOne">
-                <button id="01-pv-home-legales-acordion" class="accordion-button collapsed acordion-legales"
-                  type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
-                  aria-controls="collapseOne">
+                <button class="accordion-button collapsed acordion-legales" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                   <span class="material-icons me-2 color-primario">privacy_tip</span>
                   <strong class="color-primario">Legales</strong>
                 </button>
@@ -533,8 +298,9 @@
       </div>
     </div>
 
-  </section>
-  <!--Fin Seccion Legales-->
+</section>
+<!--Fin Seccion Legales-->
+
 
   <!--Footer-->
   <section id="footer">
@@ -767,73 +533,6 @@
   </div>
   <!-- Fin Modal terminos-->
 
-  <!-- Modal Planes Simple -->
-  <div class="modal fade" id="detallesModalSimple" tabindex="-1" aria-labelledby="detallesModalLabelSimple" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-scrollable modal-lg modal-dialog-centered">
-      <div class="modal-content">
-        <div class="modal-body p-5">
-          <p>Recuerda 1 que estarás cubierto por Invalidez Total y Permanente 2/3 por Accidente, donde se te pagará una indemnización en caso que resultes con una Invalidez Total y Permanente 2/3 de UF 50, como consecuencia de un accidente ocurrido durante la vigencia del seguro (de tu Viaje). Adicionalmente, estarás contratando una asistencia en viaje, la cual prestará los servicios de telemedicina, pérdida de equipaje, gastos médicos y otros. </p>
-          <br>
-          <p><strong>Nota:</strong> La Cobertura de Incapacidad será únicamente para el asegurado titular, los adicionales, solo contaran con el beneficio de asistencia.
-          <br>
-          <strong>Método de pago:</strong> Transbank.<br>
-          <strong>¿Qué beneficio adicional contempla este seguro?</strong>
-          <img src="../../build/img/svg/image_tabla_planes.svg" alt="imagen tabla planes">
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Entendido</button>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Modal Planes Plus -->
-
-  <div class="modal fade" id="detallesModalPlus" tabindex="-1" aria-labelledby="detallesModalLabelPlus" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-scrollable modal-lg modal-dialog-centered">
-      <div class="modal-content">
-        <div class="modal-body p-5">
-          <p>Recuerda 2 que estarás cubierto por Invalidez Total y Permanente 2/3 por Accidente, donde se te pagará una indemnización en caso que resultes con una Invalidez Total y Permanente 2/3 de UF 50, como consecuencia de un accidente ocurrido durante la vigencia del seguro (de tu Viaje). Adicionalmente, estarás contratando una asistencia en viaje, la cual prestará los servicios de telemedicina, pérdida de equipaje, gastos médicos y otros. </p>
-          <br>
-          <p><strong>Nota:</strong> La Cobertura de Incapacidad será únicamente para el asegurado titular, los adicionales, solo contaran con el beneficio de asistencia.
-          <br>
-          <strong>Método de pago:</strong> Transbank.<br>
-          <strong>¿Qué beneficio adicional contempla este seguro?</strong>
-          <img src="../../build/img/svg/image_tabla_planes.svg" alt="imagen tabla planes">
-          <img src="../../build/img/svg/image_tabla_planes.svg" alt="imagen tabla planes">
-          <img src="../../build/img/svg/image_tabla_planes.svg" alt="imagen tabla planes">
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Entendido</button>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Modal Planes Premium -->
-
-  <div class="modal fade" id="detallesModalPremium" tabindex="-1" aria-labelledby="detallesModalLabelPremium" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-scrollable modal-lg modal-dialog-centered">
-      <div class="modal-content">
-        <div class="modal-body p-5">
-          <p>Recuerda 3 que estarás cubierto por Invalidez Total y Permanente 2/3 por Accidente, donde se te pagará una indemnización en caso que resultes con una Invalidez Total y Permanente 2/3 de UF 50, como consecuencia de un accidente ocurrido durante la vigencia del seguro (de tu Viaje). Adicionalmente, estarás contratando una asistencia en viaje, la cual prestará los servicios de telemedicina, pérdida de equipaje, gastos médicos y otros. </p>
-          <br>
-          <p><strong>Nota:</strong> La Cobertura de Incapacidad será únicamente para el asegurado titular, los adicionales, solo contaran con el beneficio de asistencia.
-          <br>
-          <strong>Método de pago:</strong> Transbank.<br>
-          <strong>¿Qué beneficio adicional contempla este seguro?</strong>
-          <img src="../../build/img/svg/image_tabla_planes.svg" alt="imagen tabla planes">
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Entendido</button>
-        </div>
-      </div>
-    </div>
-  </div>
-  
-
-  
-
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
   <script src="../js/bootstrap.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"
@@ -845,21 +544,6 @@
   <script src="../js/funciones.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
 
-
-  <script>
-    let startDate = document.getElementById('startDate')
-    let endDate = document.getElementById('endDate')
-
-    startDate.addEventListener('change',(e)=>{
-      let startDateVal = e.target.value
-      document.getElementById('startDateSelected').innerText = startDateVal
-    })
-
-    endDate.addEventListener('change',(e)=>{
-      let endDateVal = e.target.value
-      document.getElementById('endDateSelected').innerText = endDateVal
-    })  
-  </script>
 </body>
 
 </html>
