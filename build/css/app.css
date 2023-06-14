@@ -2,7 +2,6 @@
 /*$btn-link-color: #ccc;
 $link-color: #fff !default;
 $link-color: #ccc;*/
-/* $btn-padding-x: 24px; */
 @font-face {
   font-family: "Rawson";
   src: url("../../src/fonts/RawsonRegular.otf") format("opentype") !important;
@@ -2767,7 +2766,7 @@ textarea.form-control-lg {
 }
 
 .btn {
-  --bs-btn-padding-x: 0.75rem;
+  --bs-btn-padding-x: 24px;
   --bs-btn-padding-y: 11px;
   --bs-btn-font-family: ;
   --bs-btn-font-size: 1rem;
@@ -3559,8 +3558,8 @@ textarea.form-control-lg {
 }
 
 .dropdown-toggle-split {
-  padding-right: 0.5625rem;
-  padding-left: 0.5625rem;
+  padding-right: 18px;
+  padding-left: 18px;
 }
 .dropdown-toggle-split::after, .dropup .dropdown-toggle-split::after, .dropend .dropdown-toggle-split::after {
   margin-left: 0;
