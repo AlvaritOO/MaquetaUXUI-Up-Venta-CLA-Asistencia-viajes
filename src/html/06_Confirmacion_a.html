@@ -31,7 +31,8 @@
     <div class="container">
       <header
         class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 border-bottom">
-        <a id="01-pv-home-navbar-logo-caja-los-andes" href="/" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
+        <a id="01-pv-home-navbar-logo-caja-los-andes" href="/"
+          class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
           <img src="../../build/img/svg/logo-cla.svg" alt="Caja los Andes" class="logo-cla">
         </a>
 
@@ -59,11 +60,8 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-
-
-
                 <li class="nav-item dropdown-hover">
-                  <a class="nav-link dropdown-hover-button" href="#">Contratar Seguros</a>
+                  <a class="nav-link active dropdown-hover-button" href="#">Contratar Seguros</a>
                   <div class="dropdown-hover-content shadow">
                     <div class="row">
                       <div class="col-lg-3 mega-menu">
@@ -79,6 +77,7 @@
                           <h6>SEGUROS DE SALUD</h6>
                           <a class="dropdown-item p-0" href="#">Vida Oncológico</a>
                         </div>
+
                       </div>
                       <div class="col-lg-3 mega-menu">
                         <div class="mb-3">
@@ -92,6 +91,7 @@
                           <a class="dropdown-item p-0" href="#">Seguro Auto Full</a>
                         </div>
                       </div>
+
                     </div>
                   </div>
                 </li>
@@ -127,303 +127,280 @@
                       </div>
                     </div>
                   </div>
+
+                </li>
+                <li class="nav-item dropdown">
                 </li>
             </div>
-            <div class="col-lg-3 text-end">
-              <div class="mb-3">
-                <div class="btn text-white" href="#">
-                  <i class="bi bi-arrow-left"></i>
-                  Volver a seguros
-                </div>
-              </div>
-            </div>
+            
+            <a class="btn text-primary fw-bold btn-sm d-none d-lg-block" href="#"><i class="bi bi-arrow-left"></i> Volver a seguros</a>
           </div>
           </ul>
+          
       </div>
     </div>
     <!--Fin NavBar-->
   </section>
   <!--Fin Header-->
 
-  <!--Carrusel-->
-  <section id="carousel">
-    <div class="row">
-      <div class="carousel-item active">
-        <img src="../../build/img/image-asistencia.jpg" class="img-fluid d-none d-sm-block">
-        <img src="../../build/img/image-asistencia-mobile.jpg" class="img-fluid d-block d-sm-none">
-        <div class="">
-          <div class="col-md-12 contenedor-btn ">
-            <div
-              class="texto-big-banner col-sm-8 col-md-10 col-lg-10 offset-md-1 position-absolute bottom-30 start-4 p-4">
-              <h1 class="texto-imagen-cabecera pb-2">Seguro de<br><span class="texto-medium-banner-top">asistencia en viaje</span>
-              </h1>
-            </div>
-            <div
-              class="col-sm-10 col-md-7 col-lg-6 col-xl-5 offset-md-1 position-absolute bottom-16 start-4 p-4 d-md-none d-lg-block d-sm-none d-md-block">
-              <h3 class="pb-2 texto-medium-banner-bottom">¡Viaja tranquilo y disfruta de tu viaje sin preocupaciones con el seguro de Accidentes ITP 2/3 + Asistencia en Viaje!</h3>
-            </div>
-
+  <!--toast encuesta enviada-->
+  <div class="toast-container position-fixed top-0 end-0 p-3 me-5" style="z-index: 99991">
+    <div id="liveToastEncuesta" class="toast align-items-center text-bg-success border-2 text-dark" role="alert" aria-live="assertive" aria-atomic="true">
+      <div class="d-flex">
+        <div class="toast-body row">
+          <div class="col-1">
+            <i class="bi bi-check-circle-fill fs-5 text-success"></i>
+          </div>
+          <div class="col-10 ms-2">
+            <b>Encuesta enviada<br>correctamente</b>
           </div>
         </div>
+        <button type="button" class="btn-close me-2 m-auto" data-bs-dismiss="toast"
+          aria-label="Close"></button>
       </div>
     </div>
-  </section>
-  <!--Fin Carrusel-->
+  </div>
+  <!--toast encuesta enviada-->
 
-  <!-- Caracteristicas -->
-  <section id="carateristicas" class="pt-4">
-    <div class="container">
-      <div class="row">
-        <h2 class="text-center pb-4 mb-4 mt-5">¿Por qué contratar <span class="fw-bold">Nuestro Seguro de Asistencia en Viaje?</span></h2>
-        <div class="col-lg-6 pt-4 d-none d-sm-block d-sm-none d-md-block d-md-none d-lg-block">
-          <div class="col-lg-12 col-12 ms-5">
-            <img class="bd-placeholder-img" src="../../build/img/ELLA 1.jpg" width="500px">
-          </div>
-        </div>
+<div class="container mb-2 espaciado-cabecera espacido-padding text-center">
 
-        <!--item1-->
-
-        <div class="col-lg-6">
-
-          <div class="col-lg-12 col-md-6 mb-4 pt-md-6 pt-2">
-            <div class="feature-box not-dark">
-              <img src="../../build/img/svg/Cardio.svg" alt="Cardio" width="66" height="66"/>
-              <div class="fbox-content">
-                <h5 class="fw-bold">Asistencia Médica cuando lo necesites</h5>
-                <p>Podrás acceder a una App que tendrá disponible una asistencia médica 24/7.</p>
-              </div>
-            </div>
-
-            <div class="feature-box not-dark mt-4">
-              <img src="../../build/img/svg/Maletín.svg" alt="Maletín" width="66" height="66"/>
-              <div class="fbox-content">
-                <h5 class="fw-bold">Indemnización por pérdida de equipaje</h5>
-                <p>En caso que pierdas tu equipaje complementario podrás optar a una indemnización.</p>
-              </div>
-            </div>
-
-            <div class="feature-box not-dark mt-4">
-              <img src="../../build/img/svg/Vuelo.svg" alt="Vuelo" width="66" height="66"/>
-              <div class="fbox-content">
-                <h5 class="fw-bold">Viaja tranquilo</h5>
-                <p>Tendrás optar a más de 20 distintos beneficios de asistencias que te acompañarán en tu viaje.</p>
-              </div>
-            </div>
-
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- Fin Caracteristicas -->
-
-
-  <!-- Canales de contacto-->
-  <section id="CanalesContacto">
-    <div class="fondo-denunciar-siniestros">
-        <div class="container">
-          
-          <h1 class="text-center mb-5">Cotiza tu seguro de viaje</h1>
-        
-          <div class="fondo-cotizacion">
-            
-            <div class="row ms-5 mt-5">
-              <div class="mb-3 p-0 col-sm-6 col-lg-3">
-                <label for="startDate" class="form-label">Cuéntanos la fecha de tu viaje</label>
-                <input id="startDate" class="form-control" type="text" onfocus="(this.type='date')" placeholder="Vie, 19 May 2023" />
-                <span id="startDateSelected"></span>
-                <p>Tu viaje dura 19 días.</p>
-              </div>
-              <div class="mb-3 col-sm-6 col-lg-3">
-                <label for="endDate" class="form-label text-light">_</label>
-                <input id="endDate" class="form-control" type="text" onfocus="(this.type='date')" placeholder="Vie, 02 Jun 2023" />
-                <span id="endDateSelected"></span>                
-              </div>
-              <div class="mb-3 p-0 col-sm-6 col-lg-2">
-                <label for="exampleInputEmail1" class="form-label">¿Cuál es tu destino?</label>
-                <select class="form-select" aria-label="Default select example">
-                  <option value="1">América</option>
-                  <option value="2" selected>Europa</option>
-                  <option value="3">Asia</option>
-                  <option value="4">Oceanía</option>
-                </select>
-              </div>
-              <div class="mb-3 col-sm-6 col-lg-2">
-                <label for="exampleInputEmail1" class="form-label">¿Cuántos viajan?</label>
-                <select class="form-select" aria-label="Default select example">
-                  <option value="1">1</option>
-                  <option value="2" selected>2</option>
-                  <option value="3">3</option>
-                  <option value="4">4</option>
-                </select>
-                <p>Tú incluido</p>
-              </div>
+  <div class="mt-5 mb-3" style="color: #008744;"><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-check2-circle" viewBox="0 0 16 16">
+    <path d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0z"/>
+    <path d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l7-7z"/>
+  </svg></div>
   
-              <section class="col-lg-2 mt-3">
-                  <div class="row p-0 justify-content-end">
-                    <div class="ms-1 mt-1">
-                      <button type="button" class="btn btn-primary mb-sm-2 mb-2">Cotizar</button>
-                    </div>
-                  </div>
-              </section>
-              </div>
+  <h3 class="text-center pb-4 fw-bold">¡Felicidades NOMBRE AFILIADO, <br>
+    has contratado exitosamente tu seguro!</h3>
 
-            <div class="row ms-5 ps-3 mb-4">
-              <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
-                <label class="form-check-label" for="flexCheckChecked">
-                  Acepto que en este seguro no se pueden agregar acompañantes sobre 69 años y que de lo contrario, tu póliza puede ser rechazada.
-                </label>
-              </div>
-              <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
-                <label class="form-check-label" for="flexCheckChecked">
-                  Acepto que este seguro no cubre los siguientes Países: <b>Burán, Crimea, Irán, Irak, Líbano, Libia, Corea del Norte, Somalia, Sur Sudan, Siria, Yemen.</b>
-                </label>
-              </div>
-            </div>
-          </div>
+    <h6 class="text-center pb-4">Contrataste tu Seguro XXXX Plan XXXX <br>
+      Enviaremos a la brevedad a tu correo electrónico el certificado de cobertura de tu <br>seguro contratado.
+      <br>
+    </h6>
+    <h6 class="text-center pb-4">
+      <span class="fw-bold">Valor Pagado:</span> UF XX.XX ($XX.XX)<br>
+      <span class="fw-bold">Fecha: DD/MM/AAAA - Hora: HH:MM:SS</span>
 
-        </div>
-    </div>
+    </h6>
 
-  </section>
-  <!--Fin Canales de contacto-->
+    <!-- Encuesta-->
+<section id="SeguroSatisfaccion">
+  <div class="divisor"></div>
 
-  <!--NO Cubre-->
-  <section>
-    <div class="container">
-      <div class="text-center mt-3 mb-3">
-        <a id="02-home-cobertura-exclusiones-acordeon-cobertura-btn-ver-mas" class="btn">
-          <img src="../../build/img/boton-ver-mas.png" alt="Explora hacia abajo" />
-        </a>
-      </div>
-      <h2 class="text-center pb-4 mb-4 mt-5 fw-bold">¿Qué no cubre este seguro?</h2>
-    </div>
-    <div class="container d-flex align-items-center justify-content-center">
-      <div class="row container-fluid mb-4">
-          <div id="02-home-cobertura-exclusiones-acordeon-cobertura">
-            <div class="col-lg-12 col-12 px-5 mb-5 pb-5">
-              <d class="fw-bold">No se indemnizará al asegurado titular cuando la hospitalización por Accidente del Asegurado o los gastos médicos por accidente, se produzcan como consecuencia de:</d>
-                  <ul class="list-unstyled no-cubre mt-4">
-                    <li><span class="material-icons me-2">close</span>Guerra, declarada o no, invasión, acción de un enemigo extranjero, hostilidades u operaciones bélicas.</li>
-                    <li><span class="material-icons me-2">close</span>Lesiones auto-inferidas, atentados contra su propia vida, automutilación o autolesión, o por lesiones inferidas al Asegurado por terceros con su consentimiento, ya sea estando en su pleno juicio o enajenado mentalmente.</li>
-                    <li><span class="material-icons me-2">close</span>Comisión o participación del Asegurado o sus Beneficiario(s) en actos calificados como delito según la ley, en calidad de autor, cómplice o encubridor. Las peleas o riñas también serán excluidas a excepción de que haya sido en legítima defensa.</li>
-                    <li><span class="material-icons me-2">close</span>Participación activa del Asegurado en actos de rebelión, revolución, sublevación, asonada, motín, conmoción civil, subversión incluidos los actos terroristas entendiéndose por acto terrorista toda conducta calificada como tal por la ley, así como el uso de fuerza o violencia o la amenaza de ésta motivado por causas políticas, religiosas, ideológicas o similares, con la intención de ejercer influencia sobre cualquier gobierno o de atemorizar a la población, o a cualquier segmento de la misma.</li>
-                    <li><span class="material-icons me-2">close</span>Movimientos sísmicos desde el grado 8 en escala de Mercalli.</li>
-                    <li><span class="material-icons me-2">close</span>Participación en carreras, apuestas o competencias (remuneradas o no).</li>
-                  </ul>
-                  <p>Esta Póliza no otorga cobertura, indemnización, pago o prestación alguna en aquellos casos en que el(los) contratante (s), Asegurado(s) y/o Beneficiario(s) sean objeto o se encuentren incluidos en cualquier listado, sanción o restricción económica o comercial, embargo o medida restrictiva elaborada, dictada, administrada, impuesta o aplicada por la Oficina de Control de Activos Extranjeros (OFAC) del Departamento del Tesoro de los Estados Unidos de Norteamérica, el Departamento de Estado
-                    de los Estados Unidos de Norteamérica, el Consejo de Seguridad de las Naciones Unidas y la Unión Europea.</p>
-              </div>
-          </div>
-      </div>
-  
-    </div>
-          </div>
-        </div>
-      </div>
-    </div>
+    <div class="contenedor-renuncia col-12 p-2 py-5">
     
-  </section>
+      <div class="contenedor-encuesta">
+    
+        <h5 class="text-center fw-bold">
+          ¿Nos contarías a continuación cómo ha sido tu experiencia contratando el seguro?
+    
+        </h5>
+    
+        <div class="col-12 encuesta text-center mt-5">
+    
+          <p>¿Cuál es tu nivel de satisfacción?</p>
 
-<!--Seccion requisitos-->
-<section id="requisitos" class="back-diagonal pt-4 pb-4">
-  <div class="container fondo-requisitos ">
-    <div class="container">
-      <div class="text-center imagen-req mb-4">
-        <span class="material-icons-outlined"><i class="bi bi-check-circle check-size"></i></span>
+          <input type="radio" class="btn-check" name="options" id="option0" autocomplete="off">
+          <label id="06-pv-contratar-exito__opcion--satisfecho-0" class="btn btn-danger px-0" for="option0">0</label>
+    
+          <input type="radio" class="btn-check" name="options" id="option1" autocomplete="off">
+          <label id="06-pv-contratar-exito__opcion--satisfecho-1" class="btn btn-danger px-0" for="option1">1</label>
+    
+          <input type="radio" class="btn-check" name="options" id="option2" autocomplete="off">
+          <label id="06-pv-contratar-exito__opcion--satisfecho-2" class="btn btn-danger px-0" for="option2">2</label>
+    
+          <input type="radio" class="btn-check" name="options" id="option3" autocomplete="off">
+          <label id="06-pv-contratar-exito__opcion--satisfecho-3" class="btn btn-danger px-0" for="option3">3</label>
+    
+          <input type="radio" class="btn-check" name="options" id="option4" autocomplete="off">
+          <label id="06-pv-contratar-exito__opcion--satisfecho-4" class="btn btn-danger px-0" for="option4">4</label>
+    
+          <input type="radio" class="btn-check" name="options" id="option5" autocomplete="off">
+          <label id="06-pv-contratar-exito__opcion--satisfecho-5" class="btn btn-danger px-0" for="option5">5</label>
+    
+          <input type="radio" class="btn-check" name="options" id="option6" autocomplete="off">
+          <label id="06-pv-contratar-exito__opcion--satisfecho-6" class="btn btn-danger px-0" for="option6">6</label>
+    
+          <input type="radio" class="btn-check" name="options" id="option7" autocomplete="off">
+          <label id="06-pv-contratar-exito__opcion--satisfecho-7" class="btn btn-warning px-0" for="option7">7</label>
+    
+          <input type="radio" class="btn-check" name="options" id="option8" autocomplete="off">
+          <label id="06-pv-contratar-exito__opcion--satisfecho-8" class="btn btn-warning px-0" for="option8">8</label>
+    
+          <input type="radio" class="btn-check" name="options" id="option9" autocomplete="off">
+          <label id="06-pv-contratar-exito__opcion--satisfecho-9" class="btn btn-success px-0" for="option9">9</label>
+    
+          <input type="radio" class="btn-check" name="options" id="option10" autocomplete="off">
+          <label id="06-pv-contratar-exito__opcion--satisfecho-10" class="btn btn-success px-0" for="option10">10</label>
+          
+          <div class="row d-flex justify-content-evenly">
+            <div class="col text-end satisfecho">
+              <p>Nada satisfecho</p>
+            </div>
+            <div class="col-2 text-center mx-4">
+            </div>
+            <div class="col text-start satisfecho ms-2">
+              <p>Muy satisfecho</p>
+            </div>
+          </div>
+        </div>
+        
+    
+    
+        <div class="container encuesta text-center mt-5">
+    
+          <p>¿Qué tan fácil fue realizar la contratación de este seguro?</p>
+
+          <input type="radio" class="btn-check" name="options2" id="option00" autocomplete="off">
+          <label id="06-pv-contratar-exito__opcion--facilidad-0" class="btn btn-danger px-0" for="option00">0</label>
+    
+          <input type="radio" class="btn-check" name="options2" id="option11" autocomplete="off">
+          <label id="06-pv-contratar-exito__opcion--facilidad-1" class="btn btn-danger px-0" for="option11">1</label>
+    
+          <input type="radio" class="btn-check" name="options2" id="option22" autocomplete="off">
+          <label id="06-pv-contratar-exito__opcion--facilidad-2" class="btn btn-danger px-0" for="option22">2</label>
+    
+          <input type="radio" class="btn-check" name="options2" id="option33" autocomplete="off">
+          <label id="06-pv-contratar-exito__opcion--facilidad-3" class="btn btn-danger px-0" for="option33">3</label>
+    
+          <input type="radio" class="btn-check" name="options2" id="option44" autocomplete="off">
+          <label id="06-pv-contratar-exito__opcion--facilidad-4" class="btn btn-danger px-0" for="option44">4</label>
+    
+          <input type="radio" class="btn-check" name="options2" id="option55" autocomplete="off">
+          <label id="06-pv-contratar-exito__opcion--facilidad-5" class="btn btn-danger px-0" for="option55">5</label>
+    
+          <input type="radio" class="btn-check" name="options2" id="option66" autocomplete="off">
+          <label id="06-pv-contratar-exito__opcion--facilidad-6" class="btn btn-danger px-0" for="option66">6</label>
+    
+          <input type="radio" class="btn-check" name="options2" id="option77" autocomplete="off">
+          <label id="06-pv-contratar-exito__opcion--facilidad-7" class="btn btn-warning px-0" for="option77">7</label>
+    
+          <input type="radio" class="btn-check" name="options2" id="option88" autocomplete="off">
+          <label id="06-pv-contratar-exito__opcion--facilidad-8" class="btn btn-warning px-0" for="option88">8</label>
+    
+          <input type="radio" class="btn-check" name="options2" id="option99" autocomplete="off">
+          <label id="06-pv-contratar-exito__opcion--facilidad-9" class="btn btn-success px-0" for="option99">9</label>
+    
+          <input type="radio" class="btn-check" name="options2" id="option1010" autocomplete="off">
+          <label id="06-pv-contratar-exito__opcion--facilidad-10" class="btn btn-success px-0" for="option1010">10</label>
+        
+          <div class="row d-flex justify-content-evenly">
+            <div class="col text-end satisfecho">
+              <p>Nada satisfecho</p>
+            </div>
+            <div class="col-2 text-center mx-4">
+            </div>
+            <div class="col text-start satisfecho ms-2">
+              <p>Muy satisfecho</p>
+            </div>
+          </div>
+        </div>
+    
+        <div class="col-12 encuesta text-center mt-5">
+    
+          <p>¿Cuál sería tu nivel de recomendación a un familiar, amigo o colega?</p>
+
+          <input type="radio" class="btn-check" name="options3" id="option000" autocomplete="off">
+          <label id="06-pv-contratar-exito__opcion--recomendar-0" class="btn btn-danger px-0" for="option000">0</label>
+    
+          <input type="radio" class="btn-check" name="options3" id="option111" autocomplete="off">
+          <label id="06-pv-contratar-exito__opcion--recomendar-1" class="btn btn-danger px-0" for="option111">1</label>
+    
+          <input type="radio" class="btn-check" name="options3" id="option222" autocomplete="off">
+          <label id="06-pv-contratar-exito__opcion--recomendar-2" class="btn btn-danger px-0" for="option222">2</label>
+    
+          <input type="radio" class="btn-check" name="options3" id="option333" autocomplete="off">
+          <label id="06-pv-contratar-exito__opcion--recomendar-3" class="btn btn-danger px-0" for="option333">3</label>
+    
+          <input type="radio" class="btn-check" name="options3" id="option444" autocomplete="off">
+          <label id="06-pv-contratar-exito__opcion--recomendar-4" class="btn btn-danger px-0" for="option444">4</label>
+    
+          <input type="radio" class="btn-check" name="options3" id="option555" autocomplete="off">
+          <label id="06-pv-contratar-exito__opcion--recomendar-5" class="btn btn-danger px-0" for="option555">5</label>
+    
+          <input type="radio" class="btn-check" name="options3" id="option666" autocomplete="off">
+          <label id="06-pv-contratar-exito__opcion--recomendar-6" class="btn btn-danger px-0" for="option666">6</label>
+    
+          <input type="radio" class="btn-check" name="options3" id="option777" autocomplete="off">
+          <label id="06-pv-contratar-exito__opcion--recomendar-7" class="btn btn-warning px-0" for="option777">7</label>
+    
+          <input type="radio" class="btn-check" name="options3" id="option888" autocomplete="off">
+          <label id="06-pv-contratar-exito__opcion--recomendar-8" class="btn btn-warning px-0" for="option888">8</label>
+    
+          <input type="radio" class="btn-check" name="options3" id="option999" autocomplete="off">
+          <label id="06-pv-contratar-exito__opcion--recomendar-9" class="btn btn-success px-0" for="option999">9</label>
+    
+          <input type="radio" class="btn-check" name="options3" id="option101010" autocomplete="off">
+          <label id="06-pv-contratar-exito__opcion--recomendar-10" class="btn btn-success px-0" for="option101010">10</label>
+        
+          <div class="row d-flex justify-content-evenly">
+            <div class="col text-end satisfecho">
+              <p>Nada satisfecho</p>
+            </div>
+            <div class="col-2 text-center mx-4">
+            </div>
+            <div class="col text-start satisfecho ms-2">
+              <p>Muy satisfecho</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="container col-lg-7 col-sm-3 offset mt-5 ">
+          <div class="text-start">¿Hay algo más que nos quieras comentar?</div>
+          <div class="form-floating">
+            <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"
+              style="height: 100px; border-radius: 8px;"></textarea>
+            <label class="text-muted" for="floatingTextarea">Escribe aquí...            </label>
+          </div>
+    
+          <div class="d-grid gap-2 d-md-flex justify-content-md-end mt-2">
+    
+            <button id="liveToastEncuestaBtn" id="04-pv-renuncia-exito-btn-volver-inicio" type="submit" class="btn btn-primary mt-3">Enviar Encuesta</button>
+          </div>
+    
+        </div>
+    
       </div>
-      <h2 class="text-center pb-4 mb-4 contraste text-white fw-bold">Requisitos</h2>
-        <ol class="ms-5 ps-5">
-          <li>La edad mínima de ingreso de los Asegurados es de 18 años.</li>
-          <li>La edad máxima de ingreso para todos los Asegurados es hasta los 68 años, 364 días.</li>
-          <li>La edad máxima de permanencia para todos los Asegurados es hasta los 69 años, 364 días.</li>
-        </ol>
+
+      <div class="encuesta-ok" style="display: none;">
+            <h5>Gracias por responder. <br>Tu opinión es importante para que podamos mejorar.</h5>
+      </div>
+
+  </div>
+
+
+
+
+</section>
+<!-- Fin Encuesta-->
+
+  </div>  
+<section id="botonera">
+  <div class="container mt-3 mb-5">
+    <div class="row justify-content-end">
+      <div class="col-8 text-end">
+        <a class="btn text-primary fw-bold btn-sm" href="#"><i class="bi bi-arrow-left"></i> Volver al inicio</a>
+      </div>
     </div>
   </div>
 </section>
-<!--Fin Seccion requisitos-->
-
-  <!-- Canales de contacto-->
-  <section id="CanalesContacto">
-    <div class="container pt-4 mt-6" id="canales">
-      <div class="row">
-        <div class="container pt-5 mt-4 pb-2 back-gradiente">
-          
-          <p class="text-center"><span class="material-icons-round">warning_amber</span></p>
-          <h2 class="text-center pb-2 fw-bold">Denunciar un siniestro</h2>
-          <p class="text-center">Declara un siniestro contratado.</p>
-
-          <p class="text-center pb-4"> 
-            <a id="01-categorias-canales-contacto-denunciar-siniestro" type="button"
-            class="text-primary fw-bold" style="text-decoration: none;">Denunciar un siniestro
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-            fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
-            <path fill-rule="evenodd"
-              d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
-          </svg>
-            </a>
-          </p>
-        </div>
-
-        <h2 class="text-center pb-4 mb-4 mt-5">¿Tienes<span class="fw-bold"> dudas?</span></h2>
-        <p class="text-center">Si tienes dudas, puedes contactarte con nosotros a través de los siguientes canales:</p>
-
-        <div class="col-md-4 mt-2 p-4">
-          <div class="col-md-6 mb-4"><img src="../../build/img/svg/logo-cla.svg" class="text-center" height="65px">
-          </div>
-          <span class="fw-bold">Caja Los Andes</span>
-          <p>Horario de Atención: Lunes a Viernes de 08:00 a 20:00 hrs.</p>
-          <p class="d-none d-sm-block">Teléfono <a id="01-pv-home-canales-contacto-cla-telefono" href="tel:600 510 0000"
-              data-bs-toggle="tooltip" data-bs-placement="top" title="Llamar Caja los Andes">600 510 0000</a></p>
-          <a id="01-pv-home-canales-contacto-cla-telefono-btn" href="tel:600 510 0000"
-            class="btn btn-volver d-block d-sm-none">Llamar al 600 510 0000</a>
-        </div>
-
-        <div class="col-md-4 mt-2 p-4">
-          <div class="col-md-6 mb-4"><img src="../../build/img/svg/bnp.svg" class="text-center" height="65px"></div>
-          <span class="fw-bold">BNP Paribas Cardif</span>
-          <p>Horario de Atención: Lunes a Viernes de 09:00 a 18:00 hrs.</p>
-          <p class="d-none d-sm-block">Teléfono <a id="01-pv-home-canales-contacto-bnp-telefono" href="tel:800 362 100"
-              data-bs-toggle="tooltip" data-bs-placement="top" title="Llamar a BNP Paribas">800 362 100</a></p>
-          <a id="01-pv-home-canales-contacto-bnp-telefono-btn" href="tel:800 362 100"
-            class="btn btn-volver d-block d-sm-none">Llamar al 800 362 100</a>
-        </div>
 
 
-        <div class="col-md-4 mt-2 p-4">
-          <div class="col-md-6 mb-4"><img src="../../build/img/svg/corredora-color.svg" class="text-center"
-              height="65px"></div>
-          <span class="fw-bold">Corredora de Seguros La Cámara SpA</span>
-          <p>Horario de Atención: Lunes a Jueves de 08:30 a 18:00 hrs y Viernes de 08:30 a 14:30 hrs.</p>
-          <p class="d-none d-sm-block">Teléfono <a id="01-pv-home-canales-contacto-cslc-telefono"
-              href="tel:(+56 ) 229 642 400" data-bs-toggle="tooltip" data-bs-placement="top"
-              title="Llamar a Corredora de Seguros">+56 229 642 400 </a> </p>
-          <a id="01-pv-home-canales-contacto-cslc-telefono-btn" href="tel:+56229642400"
-            class="btn btn-volver d-block d-sm-none">Llamar al (+56 ) 229 642 400</a>
-        </div>
 
 
-      </div>
-    </div>
-
-  </section>
-  <!--Fin Canales de contacto-->
-
-  <!--Seccion Legales-->
-  <section id="legales">
+<!--Seccion Legales-->
+<section id="legales">
     <div class="container mt-4 mb-4">
       <div class="row">
         <div class="col-lg-8 mx-auto">
-          <div class="accordion accordion-flush" id="accordionExample">
+          <div class="accordion accordion-flush " id="accordionExample">
             <div class="accordion-item">
               <h2 class="accordion-header" id="headingOne">
-                <button id="01-pv-home-legales-acordion" class="accordion-button collapsed acordion-legales"
-                  type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
-                  aria-controls="collapseOne">
-                  <span class="material-icons me-2 color-primario">privacy_tip</span>
-                  <strong class="color-primario">Legales</strong>
+                <button class="accordion-button collapsed acordion-legales" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+
+
+                  <span class="material-icons me-2 color-primario">privacy_tip</span><strong
+                    class="color-primario">Legales</strong>
                 </button>
               </h2>
               <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
@@ -464,8 +441,9 @@
       </div>
     </div>
 
-  </section>
-  <!--Fin Seccion Legales-->
+</section>
+<!--Fin Seccion Legales-->
+
 
   <!--Footer-->
   <section id="footer">
@@ -485,7 +463,7 @@
               data-bs-target="#modalFAQ">Preguntas Frecuentes</a></li>
           <li class="nav-item col-12 col-sm-4 col-lg-3 text-center"><a id="01-pv-home-footer-canal-contactos" href="#"
               class="fw-bold link-footer nav-link px-2 text-left">Canales de Contacto <br><small><i
-                  class="bi bi-telephone-fill pe-2"></i>9 123 456 78</small></a></li>
+                  class="bi bi-telephone-forward pe-2"></i>9 123 456 78</small></a></li>
         </ul>
       </footer>
     </div>

@@ -144,6 +144,25 @@
   </section>
   <!--Fin Header-->
 
+  <!--Toast cambios guardados Viajeros adicionales-->
+  <div class="toast-container position-fixed top-0 end-0 p-3 me-5" style="z-index: 99991">
+    <div id="liveToastViajeros" class="toast align-items-center text-bg-success border-2 text-dark" role="alert" aria-live="assertive" aria-atomic="true">
+      <div class="d-flex">
+        <div class="toast-body row">
+          <div class="col-1">
+            <i class="bi bi-check-circle-fill fs-5 text-success"></i>
+          </div>
+          <div class="col-10 ms-2">
+            Cambios guardados<br>exitosamente
+          </div>
+        </div>
+        <button type="button" class="btn-close me-2 m-auto" data-bs-dismiss="toast"
+          aria-label="Close"></button>
+      </div>
+    </div>
+  </div>
+  <!--Fin Toast cambios guardados Viajeros adicionales-->
+
 <!--wizard-->
 <section id="wizard" class="mb-5 pt-3 container d-none d-lg-block">
   <div class="container contenedor-wizard">
@@ -234,7 +253,8 @@
                       <a class=" position-absolute top-50 start-80 translate-middle link-dark">Editar</a>
                     </div>
                     <div class="d-grid gap-2 d-md-flex justify-content-md-end d-none d-sm-none d-md-none d-lg-block">
-                      <a class=" position-absolute top-50 start-90 translate-middle link-dark">Eliminar</a>
+                      <a class=" position-absolute top-50 start-90 translate-middle link-dark" data-bs-toggle="modal"
+                      data-bs-target="#modalquitarbeneficiario">Eliminar</a>
                     </div>
 
                   </button>
@@ -616,7 +636,7 @@
                       <div class="row justify-content-end mt-4">
                         <div class="col-12 text-end">
                           <button type="button" class="btn btn-volver">Cancelar</button>
-                          <button type="button" class="btn btn-primary" id="liveToastBtn2">Guardar cambios</button>
+                          <button type="button" class="btn btn-primary" id="liveToastVABtn">Guardar cambios</button>
                         </div>
                       </div>
                     </form>
@@ -934,6 +954,28 @@
     </div>
   </div>
   <!-- Fin Modal terminos-->
+
+  <!-- Modal Quitar beneficiario -->
+  <div class="modal fade" id="modalquitarbeneficiario" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-body m-2 p-4">
+          <div class="row">
+            <div class="col-12 text-start">
+              <h4 class="color-primary">Quitar beneficiario</h4>
+            </div>
+            <div class="col-12 text-start mt-2 mb-3">
+              <p><strong>¿Esta seguro que desea quitar este beneficiario?</strong><br>Esta acción no se puede deshacer</p>
+            <div class="col-12 text-end">
+              <button type="button" class="btn btn-volver me-3" data-bs-dismiss="modal">Cancelar</button>
+              <button type="button" class="btn btn-primary">Confirmar eliminación</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Fin Modal Quitar beneficiario -->
 
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
   <script src="../js/bootstrap.min.js"></script>

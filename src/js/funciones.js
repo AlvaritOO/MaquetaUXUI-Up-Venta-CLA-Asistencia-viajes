@@ -101,6 +101,16 @@ if (toastTrigger3) {
   });
 }
 
+// Toast cambios guardados Viajeros adicionales
+var toastTrigger4 = document.getElementById('liveToastVABtn');
+var toastLiveExample4 = document.getElementById('liveToastViajeros');
+if (toastTrigger4) {
+  toastTrigger4.addEventListener('click', function () {
+    var toast = new bootstrap.Toast(toastLiveExample4);
+    toast.show();
+  });
+}
+
 //Cuenta cantidad de beneficiarios
 
 var cantBeneficiarios = document.getElementsByClassName('item-beneficiario').length;
