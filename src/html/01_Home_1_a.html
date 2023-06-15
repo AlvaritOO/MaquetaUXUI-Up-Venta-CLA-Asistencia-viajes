@@ -230,20 +230,21 @@
             <div class="row ms-5 mt-5">
               <div class="mb-3 p-0 col-sm-6 col-lg-3">
                 <label for="startDate" class="form-label">Cuéntanos la fecha de tu viaje</label>
-                <input id="startDate" class="form-control" type="text" onfocus="(this.type='date')" placeholder="Vie, 19 May 2023" />
+                <input id="startDate" class="form-control" type="date"/>
                 <span id="startDateSelected"></span>
-                <p>Tu viaje dura X días.</p>
+                <p>Tu viaje durará XX días.</p>
               </div>
               <div class="mb-3 col-sm-6 col-lg-3">
                 <label for="endDate" class="form-label text-light">_</label>
-                <input id="endDate" class="form-control" type="text" onfocus="(this.type='date')" placeholder="Vie, 02 Jun 2023" />
+                <input id="endDate" class="form-control" type="date"/>
                 <span id="endDateSelected"></span>                
               </div>
               <div class="mb-3 p-0 col-sm-6 col-lg-2">
                 <label for="exampleInputEmail1" class="form-label">¿Cuál es tu destino?</label>
                 <select class="form-select" aria-label="Default select example">
+                  <option selected></option>
                   <option value="1">América</option>
-                  <option value="2" selected>Europa</option>
+                  <option value="2">Europa</option>
                   <option value="3">Asia</option>
                   <option value="4">Oceanía</option>
                 </select>
@@ -251,8 +252,9 @@
               <div class="mb-3 col-sm-6 col-lg-2">
                 <label for="exampleInputEmail1" class="form-label">¿Cuántos viajan?</label>
                 <select class="form-select" aria-label="Default select example">
+                  <option selected></option>
                   <option value="1">1</option>
-                  <option value="2" selected>2</option>
+                  <option value="2">2</option>
                   <option value="3">3</option>
                   <option value="4">4</option>
                 </select>
@@ -262,7 +264,7 @@
               <section class="col-lg-2 mt-3">
                   <div class="row p-0 justify-content-end">
                     <div class="ms-1 mt-1">
-                      <button type="button" class="btn btn-primary mb-sm-2 mb-2">Cotizar</button>
+                      <button type="button" class="btn btn-off mb-sm-2 mb-2" disabled>Cotizar</button>
                     </div>
                   </div>
               </section>
@@ -270,13 +272,13 @@
 
             <div class="row ms-5 ps-3 mb-4">
               <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
                 <label class="form-check-label" for="flexCheckChecked">
                   Acepto que en este seguro no se pueden agregar acompañantes sobre 69 años y que de lo contrario, tu póliza puede ser rechazada.
                 </label>
               </div>
               <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
                 <label class="form-check-label" for="flexCheckChecked">
                   Acepto que este seguro no cubre los siguientes Países: <b>Burán, Crimea, Irán, Irak, Líbano, Libia, Corea del Norte, Somalia, Sur Sudan, Siria, Yemen.</b>
                 </label>
