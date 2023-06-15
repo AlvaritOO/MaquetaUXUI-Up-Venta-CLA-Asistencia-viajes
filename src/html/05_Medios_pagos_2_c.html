@@ -234,7 +234,7 @@
           <div class="row justify-content-end">
             <div class="col-8 text-end">
               <button type="button" class="btn btn-volver">Volver</button>
-              <button type="button" class="btn btn-primary">Finalizar contratación</button>
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticProcedPagoNEEx">Finalizar contratación</button>
             </div>
           </div>
         </div>
@@ -532,6 +532,30 @@
     </div>
   </div>
   <!-- Fin Modal terminos-->
+
+  <!-- Modal Procedimiento Pago no exitoso Ex -->
+  <div class="modal fade" id="staticProcedPagoNEEx" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false" aria-labelledby="staticProcedPagoNEExLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-body p-5">
+          <p><strong>Pago no exitoso</strong>
+            <br>
+            <p>Excediste el máximo de intentos para realizar el pago, por favor dirígete a la sucursal más cercana.</p>
+          </p>
+        </div>
+
+        <div class="container mb-4">
+          <div class="row justify-content-end">
+            <div class="col-8 text-end me-4">
+              <button type="button" class="btn btn-volver" data-bs-dismiss="modal">Volver</button>
+              <button type="button" class="btn btn-primary ms-2" data-bs-dismiss="modal">Ver sucursales</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Fin Modal Procedimiento Pago no exitoso Ex -->
 
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
   <script src="../js/bootstrap.min.js"></script>
