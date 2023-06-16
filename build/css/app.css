@@ -11336,6 +11336,11 @@ textarea.form-control-lg {
   list-style: none;
 }
 
+.table-primary {
+  --bs-table-bg: #0076a9;
+  color: white;
+}
+
 .encuesta .btn-check:checked + .btn,
 :not(.btn-check) + .btn:active,
 .btn:first-child:active,
@@ -12488,6 +12493,10 @@ span.ic-form {
   --bs-btn-disabled-color: #fff;
   --bs-btn-disabled-bg: #6c757d;
   --bs-btn-disabled-border-color: #6c757d;
+}
+
+.no-bold {
+  font-weight: normal;
 }
 
 p.text-legales {
