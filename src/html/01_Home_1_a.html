@@ -187,11 +187,11 @@
 
         <!--item1-->
 
-        <div class="col-lg-6">
+        <div class="col-lg-6 col-12">
 
-          <div class="col-lg-12 col-md-6 mb-4 pt-md-6 pt-2">
+          <div class="col-lg-12 col-md-12 mb-4 pt-md-6 pt-2">
             <div class="feature-box not-dark">
-              <img src="../../build/img/svg/Cardio.svg" alt="Cardio" width="66" height="66" />
+              <img src="../../build/img/svg/Cardio.svg" alt="Cardio" width="66" height="66">
               <div class="fbox-content">
                 <h5 class="fw-bold">Asistencia Médica cuando lo necesites</h5>
                 <p>Podrás acceder a una App que tendrá disponible una asistencia médica 24/7.</p>
@@ -199,7 +199,7 @@
             </div>
 
             <div class="feature-box not-dark mt-4">
-              <img src="../../build/img/svg/Maletín.svg" alt="Maletín" width="66" height="66" />
+              <img src="../../build/img/svg/Maletín.svg" alt="Maletín" width="66" height="66">
               <div class="fbox-content">
                 <h5 class="fw-bold">Indemnización por pérdida de equipaje</h5>
                 <p>En caso que pierdas tu equipaje complementario podrás optar a una indemnización.</p>
@@ -207,7 +207,7 @@
             </div>
 
             <div class="feature-box not-dark mt-4">
-              <img src="../../build/img/svg/Vuelo.svg" alt="Vuelo" width="66" height="66" />
+              <img src="../../build/img/svg/Vuelo.svg" alt="Vuelo" width="66" height="66">
               <div class="fbox-content">
                 <h5 class="fw-bold">Viaja tranquilo</h5>
                 <p>Tendrás optar a más de 20 distintos beneficios de asistencias que te acompañarán en tu viaje.</p>
@@ -224,39 +224,39 @@
 
   <!-- Canales de contacto-->
   <section id="CanalesContacto">
-    <div class="fondo-denunciar-siniestros">
+    <div class="fondo-denunciar-siniestros px-2">
       <div class="container">
 
         <h1 class="text-center mb-5">Cotiza tu seguro de viaje</h1>
 
-        <div class="fondo-cotizacion">
+        <div class="fondo-cotizacion p-lg-5">
 
-          <div class="row ms-5 mt-5">
-            <div class="mb-3 p-0 col-sm-6 col-lg-3">
-              <label for="startDate" class="form-label">Cuéntanos la fecha de tu viaje</label>
-              <input id="startDate" class="form-control" type="date" />
+          <div class="row p-3">
+            <div class="col-sm-6 col-lg-3">
+              <label for="startDate" class="form-label">Fecha de tu salida</label>
+              <input id="startDate" class="form-control" type="date">
               <span id="startDateSelected"></span>
               <p>Tu viaje durará XX días.</p>
             </div>
             <div class="mb-3 col-sm-6 col-lg-3">
-              <label for="endDate" class="form-label text-light">_</label>
-              <input id="endDate" class="form-control" type="date" />
+              <label for="startDate" class="form-label">Fecha de retorno</label>
+              <input id="endDate" class="form-control" type="date">
               <span id="endDateSelected"></span>
             </div>
-            <div class="mb-3 p-0 col-sm-6 col-lg-2">
+            <div class="mb-3 col-sm-6 col-lg-2">
               <label for="exampleInputEmail1" class="form-label">¿Cuál es tu destino?</label>
               <select class="form-select" aria-label="Default select example">
-                <option selected></option>
+                <option selected=""></option>
                 <option value="1">América</option>
                 <option value="2">Europa</option>
                 <option value="3">Asia</option>
                 <option value="4">Oceanía</option>
               </select>
             </div>
-            <div class="mb-3 col-sm-6 col-lg-2">
+            <div class="col-sm-6 col-lg-2">
               <label for="exampleInputEmail1" class="form-label">¿Cuántos viajan?</label>
               <select class="form-select" aria-label="Default select example">
-                <option selected></option>
+                <option selected=""></option>
                 <option value="1">1</option>
                 <option value="2">2</option>
                 <option value="3">3</option>
@@ -266,15 +266,13 @@
             </div>
 
             <section class="col-lg-2 mt-3">
-              <div class="row p-0 justify-content-end">
-                <div class="ms-1 mt-1">
-                  <button type="button" class="btn btn-off mb-sm-2 mb-2" disabled>Cotizar</button>
-                </div>
+              <div class="d-grid gap-2 col-lg-6">
+                <button class="btn btn-primary" type="button">Cotizar</button>
               </div>
             </section>
           </div>
 
-          <div class="row ms-5 ps-3 mb-4">
+          <div class="row p-4">
             <div class="form-check">
               <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
               <label class="form-check-label" for="flexCheckChecked">
@@ -283,8 +281,8 @@
               </label>
             </div>
             <div class="form-check">
-              <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
-              <label class="form-check-label" for="flexCheckChecked">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked2">
+              <label class="form-check-label" for="flexCheckChecked2">
                 Acepto que este seguro no cubre los siguientes Países: <b>Burán, Crimea, Irán, Irak, Líbano, Libia,
                   Corea del Norte, Somalia, Sur Sudan, Siria, Yemen.</b>
               </label>
@@ -293,6 +291,144 @@
         </div>
 
       </div>
+
+
+      <div class="container pb-4">
+
+        <div class="fondo-cotizacion px-2">
+
+          <div class="container col-lg-5 col-sm-12 mt-5">
+            <div class="alert alert-info d-flex align-items-center" role="alert">
+              <img class="ms-4" src="../../build/img/svg/alert-info-.svg">
+              <div class="ms-4">
+                Capital de 50UF es solo para asegurado titular.
+              </div>
+            </div>
+          </div>
+
+          <div class="divisor-card ms-3 me-3"></div>
+
+          <h2 class="text-center mb-1 fw-bold">Selecciona el plan que deseas contratar</h2>
+          <p class="text-center mt-2">El afiliado titular, además de la asistencia básica de viaje, tendrá una
+            cobertura de UF 50 por Invalidez Total y Permanente 2/3 por Accidente.</p>
+          <section class="row justify-content-center mt-4 mb-4">
+
+            <card class="card-content text-center mb-4" type="button">
+              <div class="card-body">
+                <a class="h3 mb-3 mt-5 pt-3 text-primary fw-bold">Plan Simple</a>
+
+                <ul class="card-text me-4" style="list-style:none">
+                  <li class="fw-bold">USD 35.000</li>
+                  <li>Asistencia Médica y COVID-19</li>
+                  <li class="fw-bold mt-3">Incluido</li>
+                  <li>Servicio Telemedicina</li>
+                  <li class="fw-bold mt-3">USD 1.200</li>
+                  <li>Extravío de equipaje</li>
+                  <li class="fw-bold mt-3">USD 180</li>
+                  <li>Estadía de emergencia</li>
+                  <li class="fw-bold mt-3">USD 800</li>
+                  <li>Medicamentos</li>
+                  <li class="text-secondary fw-bold mt-3">No incluido</li>
+                  <li class="text-secondary">Interrupción de Viaje por diagnóstico COVID- 19</li>
+                  <button type="button" class="btn btn-primary mt-3 detallesPlan" data-bs-toggle="modal"
+                    data-bs-target="#detallesModalSimple" id="detallesPlanSimple">
+                    Detalles del plan
+                  </button>
+                </ul>
+                <div class="divisor-card"></div>
+
+                <a class="h3 mb-3 text-primary fw-bold">UF 0,00</a>
+                <ul class="card-text me-4" style="list-style:none">
+                  <li class="text-primary">($ 00.00)</li>
+                  <li class="fw-bold">Monto Total a pagar</li>
+                  <li>UF al dd/mm/aaaa</li>
+                </ul>
+              </div>
+              <div class="container-btn gap-2 p-3">
+                <a class="btn btn-primary fw-bold">Seleccionar</a>
+              </div>
+            </card>
+
+            <card class="card-content p-2 text-center ms-lg-3 ms-0 mb-4" type="button">
+              <div class="plan-recomendado">
+                <span class="fecha-contratacion mt-3">Recomendado</span>
+                <div class="card-body">
+                  <a class="h3 mb-3 text-primary fw-bold">Plan Plus</a>
+
+                  <ul class="card-text me-4" style="list-style:none">
+                    <li class="fw-bold">USD 60.000</li>
+                    <li>Asistencia Médica y COVID-19</li>
+                    <li class="fw-bold mt-3">Incluido</li>
+                    <li>Servicio Telemedicina</li>
+                    <li class="fw-bold mt-3">USD 1.200</li>
+                    <li>Extravío de equipaje</li>
+                    <li class="fw-bold mt-3">USD 900</li>
+                    <li>Estadía de emergencia</li>
+                    <li class="fw-bold mt-3">USD 1000</li>
+                    <li>Medicamentos</li>
+                    <li class="text-secondary mt-3"><strong>No incluido</strong></li>
+                    <li class="text-secondary">Interrupción de Viaje por diagnóstico COVID- 19</li>
+                    <button type="button" class="btn btn-primary mt-3 detallesPlan" data-bs-toggle="modal"
+                      data-bs-target="#detallesModalPlus" id="detallesPlanSimple">
+                      Detalles del plan
+                    </button>
+                  </ul>
+                  <div class="divisor-card"></div>
+
+                  <a class="h3 mb-3 text-primary fw-bold">UF 0,00</a>
+                  <ul class="card-text me-4" style="list-style:none">
+                    <li class="text-primary">($ 00.00)</li>
+                    <li class="fw-bold">Monto Total a pagar</li>
+                    <li>UF al dd/mm/aaaa</li>
+                  </ul>
+                </div>
+                <div class="container-btn gap-2 p-3">
+                  <a class="btn btn-primary fw-bold">Seleccionar</a>
+                </div>
+              </div>
+            </card>
+            
+            <card class="card-content text-center ms-0 ms-lg-3  mb-4" type="button">
+              <div class="card-body">
+                <a class="h3 mb-3 mt-5 pt-3 text-primary fw-bold">Plan Premium COVID</a>
+                <ul class="card-text me-4" style="list-style:none">
+                  <li class="fw-bold">USD 150.000</li>
+                  <li>Asistencia Médica y COVID-19</li>
+                  <li class="fw-bold mt-3">Incluido</li>
+                  <li>Servicio Telemedicina</li>
+                  <li class="fw-bold mt-3">USD 1.200</li>
+                  <li>Extravío de equipaje</li>
+                  <li class="fw-bold mt-3">USD 1.100</li>
+                  <li>Estadía de emergencia</li>
+                  <li class="fw-bold mt-3">USD 2.000</li>
+                  <li>Medicamentos</li>
+                  <li class="fw-bold mt-3">USD 1500</li>
+                  <li>Interrupción de Viaje por diagnóstico COVID- 19</li>
+                  <button type="button" class="btn btn-primary mt-3 detallesPlan" data-bs-toggle="modal"
+                    data-bs-target="#detallesModalPremium" id="detallesPlanSimple">
+                    Detalles del plan
+                  </button>
+                </ul>
+                <div class="divisor-card"></div>
+
+                <a class="h3 mb-3 text-primary fw-bold">UF 0,00</a>
+                <ul class="card-text me-4" style="list-style:none">
+                  <li class="text-primary">($ 00.00)</li>
+                  <li class="fw-bold">Monto Total a pagar</li>
+                  <li>UF al dd/mm/aaaa</li>
+                </ul>
+              </div>
+              <div class="container-btn gap-2 p-3">
+                <a class="btn btn-primary fw-bold">Seleccionar</a>
+              </div>
+            </card>
+
+          </section>
+
+        </div>
+
+      </div>
+
     </div>
 
   </section>
@@ -311,7 +447,7 @@
     <div class="container d-flex align-items-center justify-content-center">
       <div class="row container-fluid mb-4">
         <div id="02-home-cobertura-exclusiones-acordeon-cobertura">
-          <div class="col-lg-12 col-12 px-5 mb-5 pb-5">
+          <div class="col-lg-12 col-12 px-sm-5 mb-5 pb-5">
             <d class="fw-bold">No se indemnizará al asegurado titular cuando la hospitalización por Accidente del
               Asegurado o los gastos médicos por accidente, se produzcan como consecuencia de:</d>
             <ul class="list-unstyled no-cubre mt-4">
@@ -357,26 +493,28 @@
   <!--Seccion requisitos-->
   <section id="requisitos" class="back-diagonal pt-4 pb-4">
     <div class="container fondo-requisitos ">
-      <div class="container">
-        <div class="text-center imagen-req mb-4">
-          <span class="material-icons-outlined"><i class="bi bi-check-circle check-size"></i></span>
-        </div>
-        <h2 class="text-center pb-4 mb-4 contraste text-white fw-bold">Requisitos</h2>
-        <ol class="ms-5 ps-5">
+
+      <div class="text-center imagen-req mb-4">
+        <span class="material-icons-outlined"><i class="bi bi-check-circle check-size"></i></span>
+      </div>
+      <h2 class="text-center pb-4 mb-4 contraste text-white fw-bold">Requisitos</h2>
+      <div class="col-lg-6 offset-lg-3">
+        <ol>
           <li>La edad mínima de ingreso de los Asegurados es de 18 años.</li>
           <li>La edad máxima de ingreso para todos los Asegurados es hasta los 68 años, 364 días.</li>
           <li>La edad máxima de permanencia para todos los Asegurados es hasta los 69 años, 364 días.</li>
         </ol>
       </div>
     </div>
+
   </section>
   <!--Fin Seccion requisitos-->
 
   <!-- Canales de contacto-->
   <section id="CanalesContacto">
     <div class="container pt-4 mt-6" id="canales">
-      <div class="row">
-        <div class="container pt-5 mt-4 pb-2 back-gradiente">
+      <div class="row px-4">
+        <div class="col-lg-6 col-sm-12 pt-5 mt-4 pb-2 back-gradiente offset-lg-2">
 
           <p class="text-center"><span class="material-icons-round">warning_amber</span></p>
           <h2 class="text-center pb-2 fw-bold">Denunciar un siniestro</h2>

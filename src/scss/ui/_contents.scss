@@ -459,7 +459,7 @@ span.icono-destacada.material-icons-outlined {
     transition: all 0.3s ease-in;
     transform: translateY(10px) scale();
     z-index: 99;
-    border: 2px solid #f9be00;
+    border: 2px solid #0076a9;
   }
 }
 
@@ -488,6 +488,12 @@ span.icono-destacada.material-icons-outlined {
     width: 68px;
     padding-top: 16px;
   }
+}
+
+.plan-recomendado {
+  border: 1px solid #e8bc28;
+  border-radius: 8px;
+  padding: 10px;
 }
 
 .container-btn {
