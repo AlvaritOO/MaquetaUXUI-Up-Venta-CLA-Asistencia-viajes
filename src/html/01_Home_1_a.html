@@ -60,9 +60,6 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-
-
-
                 <li class="nav-item dropdown-hover">
                   <a class="nav-link dropdown-hover-button" href="#">Contratar Seguros</a>
                   <div class="dropdown-hover-content shadow">
@@ -313,45 +310,52 @@
             cobertura de UF 50 por Invalidez Total y Permanente 2/3 por Accidente.</p>
           <section class="row justify-content-center mt-4 mb-4">
 
-            <card class="card-content text-center mb-4" type="button">
-              <div class="card-body">
-                <a class="h3 mb-3 mt-5 pt-3 text-primary fw-bold">Plan Simple</a>
+            <card class="card-content p-2 text-center ms-lg-3 ms-0 mb-4" type="button">
+              <div class="">
+                <div class="box-plan-recomendado">
+                  <span class="fecha-contratacion mt-3 invisible">Recomendado</span>
+                </div>
+                <div class="card-body">
+                  <a class="h3 mb-3 text-primary fw-bold">Plan Simple</a>
 
-                <ul class="card-text me-4" style="list-style:none">
-                  <li class="fw-bold">USD 35.000</li>
-                  <li>Asistencia Médica y COVID-19</li>
-                  <li class="fw-bold mt-3">Incluido</li>
-                  <li>Servicio Telemedicina</li>
-                  <li class="fw-bold mt-3">USD 1.200</li>
-                  <li>Extravío de equipaje</li>
-                  <li class="fw-bold mt-3">USD 180</li>
-                  <li>Estadía de emergencia</li>
-                  <li class="fw-bold mt-3">USD 800</li>
-                  <li>Medicamentos</li>
-                  <li class="text-secondary fw-bold mt-3">No incluido</li>
-                  <li class="text-secondary">Interrupción de Viaje por diagnóstico COVID- 19</li>
-                  <button type="button" class="btn btn-primary mt-3 detallesPlan" data-bs-toggle="modal"
-                    data-bs-target="#detallesModalSimple" id="detallesPlanSimple">
-                    Detalles del plan
-                  </button>
-                </ul>
-                <div class="divisor-card"></div>
+                  <ul class="card-text me-4" style="list-style:none">
+                    <li class="fw-bold">USD 35.000</li>
+                    <li>Asistencia Médica y COVID-19</li>
+                    <li class="fw-bold mt-3">Incluido</li>
+                    <li>Servicio Telemedicina</li>
+                    <li class="fw-bold mt-3">USD 1.200</li>
+                    <li>Extravío de equipaje</li>
+                    <li class="fw-bold mt-3">USD 180</li>
+                    <li>Estadía de emergencia</li>
+                    <li class="fw-bold mt-3">USD 800</li>
+                    <li>Medicamentos</li>
+                    <li class="text-secondary mt-3"><strong>No incluido</strong></li>
+                    <li class="text-secondary">Interrupción de Viaje por diagnóstico COVID- 19</li>
+                    <button type="button" class="btn btn-primary mt-3 detallesPlan" data-bs-toggle="modal"
+                      data-bs-target="#detallesModalPlus" id="detallesPlanSimple">
+                      Detalles del plan
+                    </button>
+                  </ul>
+                  <div class="divisor-card"></div>
 
-                <a class="h3 mb-3 text-primary fw-bold">UF 0,00</a>
-                <ul class="card-text me-4" style="list-style:none">
-                  <li class="text-primary">($ 00.00)</li>
-                  <li class="fw-bold">Monto Total a pagar</li>
-                  <li>UF al dd/mm/aaaa</li>
-                </ul>
-              </div>
-              <div class="container-btn gap-2 p-3">
-                <a class="btn btn-primary fw-bold">Seleccionar</a>
+                  <a class="h3 mb-3 text-primary fw-bold">UF 0,00</a>
+                  <ul class="card-text me-4" style="list-style:none">
+                    <li class="text-primary">($ 00.00)</li>
+                    <li class="fw-bold">Monto Total a pagar</li>
+                    <li>UF al dd/mm/aaaa</li>
+                  </ul>
+                </div>
+                <div class="col-8 offset-2 gap-2 p-3">
+                  <a class="btn btn-primary fw-bold">Seleccionar</a>
+                </div>
               </div>
             </card>
 
             <card class="card-content p-2 text-center ms-lg-3 ms-0 mb-4" type="button">
               <div class="plan-recomendado">
-                <span class="fecha-contratacion mt-3">Recomendado</span>
+                <div class="box-plan-recomendado">
+                  <span class="fecha-contratacion mt-3">Recomendado</span>
+                </div>
                 <div class="card-body">
                   <a class="h3 mb-3 text-primary fw-bold">Plan Plus</a>
 
@@ -382,44 +386,50 @@
                     <li>UF al dd/mm/aaaa</li>
                   </ul>
                 </div>
-                <div class="container-btn gap-2 p-3">
+                <div class="col-8 offset-2 gap-2 p-3">
                   <a class="btn btn-primary fw-bold">Seleccionar</a>
                 </div>
               </div>
             </card>
-            
-            <card class="card-content text-center ms-0 ms-lg-3  mb-4" type="button">
-              <div class="card-body">
-                <a class="h3 mb-3 mt-5 pt-3 text-primary fw-bold">Plan Premium COVID</a>
-                <ul class="card-text me-4" style="list-style:none">
-                  <li class="fw-bold">USD 150.000</li>
-                  <li>Asistencia Médica y COVID-19</li>
-                  <li class="fw-bold mt-3">Incluido</li>
-                  <li>Servicio Telemedicina</li>
-                  <li class="fw-bold mt-3">USD 1.200</li>
-                  <li>Extravío de equipaje</li>
-                  <li class="fw-bold mt-3">USD 1.100</li>
-                  <li>Estadía de emergencia</li>
-                  <li class="fw-bold mt-3">USD 2.000</li>
-                  <li>Medicamentos</li>
-                  <li class="fw-bold mt-3">USD 1500</li>
-                  <li>Interrupción de Viaje por diagnóstico COVID- 19</li>
-                  <button type="button" class="btn btn-primary mt-3 detallesPlan" data-bs-toggle="modal"
-                    data-bs-target="#detallesModalPremium" id="detallesPlanSimple">
-                    Detalles del plan
-                  </button>
-                </ul>
-                <div class="divisor-card"></div>
 
-                <a class="h3 mb-3 text-primary fw-bold">UF 0,00</a>
-                <ul class="card-text me-4" style="list-style:none">
-                  <li class="text-primary">($ 00.00)</li>
-                  <li class="fw-bold">Monto Total a pagar</li>
-                  <li>UF al dd/mm/aaaa</li>
-                </ul>
-              </div>
-              <div class="container-btn gap-2 p-3">
-                <a class="btn btn-primary fw-bold">Seleccionar</a>
+            <card class="card-content p-2 text-center ms-lg-3 ms-0 mb-4" type="button">
+              <div class="">
+                <div class="box-plan-recomendado">
+                  <span class="fecha-contratacion mt-3 invisible">Recomendado</span>
+                </div>
+                <div class="card-body">
+                  <a class="h3 mb-3 text-primary fw-bold">Plan Premium COVID</a>
+
+                  <ul class="card-text me-4" style="list-style:none">
+                    <li class="fw-bold">USD 150.000</li>
+                    <li>Asistencia Médica y COVID-19</li>
+                    <li class="fw-bold mt-3">Incluido</li>
+                    <li>Servicio Telemedicina</li>
+                    <li class="fw-bold mt-3">USD 1.200</li>
+                    <li>Extravío de equipaje</li>
+                    <li class="fw-bold mt-3">USD 1.100</li>
+                    <li>Estadía de emergencia</li>
+                    <li class="fw-bold mt-3">USD 2000</li>
+                    <li>Medicamentos</li>
+                    <li class="fw-bold mt-3">USD 1500</li>
+                    <li>Interrupción de Viaje por diagnóstico COVID- 19</li>
+                    <button type="button" class="btn btn-primary mt-3 detallesPlan" data-bs-toggle="modal"
+                      data-bs-target="#detallesModalPlus" id="detallesPlanSimple">
+                      Detalles del plan
+                    </button>
+                  </ul>
+                  <div class="divisor-card"></div>
+
+                  <a class="h3 mb-3 text-primary fw-bold">UF 0,00</a>
+                  <ul class="card-text me-4" style="list-style:none">
+                    <li class="text-primary">($ 00.00)</li>
+                    <li class="fw-bold">Monto Total a pagar</li>
+                    <li>UF al dd/mm/aaaa</li>
+                  </ul>
+                </div>
+                <div class="col-8 offset-2 gap-2 p-3">
+                  <a class="btn btn-primary fw-bold">Seleccionar</a>
+                </div>
               </div>
             </card>
 

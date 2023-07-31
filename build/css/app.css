@@ -11567,7 +11567,7 @@ p.card-text a {
 
 .divisor-card {
   height: 2px;
-  margin: 40px 0px;
+  margin: 38px 20px;
   border-bottom: 1px solid #f9be00;
 }
 
@@ -11794,7 +11794,12 @@ span.icono-destacada.material-icons-outlined:hover {
 .plan-recomendado {
   border: 1px solid #e8bc28;
   border-radius: 8px;
-  padding: 10px;
+  padding:  10px;
+}
+
+.box-plan-recomendado {
+  height: 50px;
+  padding-top: 16px;
 }
 
 .container-btn {
