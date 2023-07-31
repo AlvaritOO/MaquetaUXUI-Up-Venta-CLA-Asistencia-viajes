@@ -253,13 +253,15 @@
                     <b><i class="bi bi-person-badge me-2 d-none"></i>Maximiliano Torres</b>
                     <div class="ms-4 d-none d-sm-block d-sm-none d-md-block">14.567.890-K</div>
                     <div class="ms-4 d-none d-sm-block d-sm-none d-md-block">{Fecha de Nacimiento}</div>
-                    <div class="ms-4 d-none d-lg-block">maximilianohtorrez@correo.cl</div><!-- % en desktop-->
+                    <div class="ms-4 d-none d-lg-block">maximilianohtorrez@correo.cl</div>
+
+                    <!-- % en desktop-->
                     <div class="ms-4 d-lg-none">
-                      <a class="btn btn-outline-secondary">Editar</a>
+                      <a class=" position-absolute top-50 start-60 translate-middle link-dark">Editar</a>
                     </div>
                     <div class="ms-4 d-lg-none">
-                      <a class="btn btn-outline-secondary" data-bs-toggle="modal"
-                        data-bs-target="#exampleModal">Eliminar</a>
+                      <a class=" position-absolute top-50 start-80 translate-middle link-dark" data-bs-toggle="modal"
+                        data-bs-target="#modalquitarbeneficiario">Eliminar</a>
                     </div>
                     <div class="d-grid gap-2 d-md-flex justify-content-md-end d-none d-sm-none d-md-none d-lg-block">
                       <a class=" position-absolute top-50 start-80 translate-middle link-dark">Editar</a>
@@ -447,9 +449,13 @@
                       <div class="divisor"></div>
 
                       <div class="row justify-content-end mt-4">
-                        <div class="col-12 text-end">
+                        <div class="d-none d-sm-block d-sm-none d-md-block text-end">
                           <button type="button" class="btn btn-volver">Cancelar</button>
                           <button type="button" class="btn btn-primary" id="liveToastBtn2">Guardar cambios</button>
+                        </div>
+                        <div class="d-grid d-md-none d-lg-blockcol-lg-4">
+                          <button type="button" class="btn btn-volver">Cancelar</button>
+                          <button type="button" class="btn btn-primary mt-3" id="liveToastBtn2">Guardar cambios</button>
                         </div>
                       </div>
                     </form>
@@ -650,9 +656,13 @@
                       <div class="divisor"></div>
 
                       <div class="row justify-content-end mt-4">
-                        <div class="col-12 text-end">
+                        <div class="d-none d-sm-block d-sm-none d-md-block text-end">
                           <button type="button" class="btn btn-volver">Cancelar</button>
-                          <button type="button" class="btn btn-primary" id="liveToastVABtn">Guardar cambios</button>
+                          <button type="button" class="btn btn-primary" id="liveToastBtn2">Guardar cambios</button>
+                        </div>
+                        <div class="d-grid d-md-none d-lg-blockcol-lg-4">
+                          <button type="button" class="btn btn-volver">Cancelar</button>
+                          <button type="button" class="btn btn-primary mt-3" id="liveToastBtn2">Guardar cambios</button>
                         </div>
                       </div>
                     </form>
@@ -670,13 +680,14 @@
 
 
   <section id="botonera" class="mb-4 mt-4">
-    <div class="container">
-      <div class="row justify-content-end">
-        <div class="col-8 text-end">
-          <button type="button" class="btn btn-volver">Volver</button>
-
-          <button type="button" class="btn btn-primary">Continuar</button>
-        </div>
+    <div class="container mt-4">
+      <div class="d-none d-sm-block d-sm-none d-md-block text-end">
+        <button type="button" class="btn btn-volver">Volver</button>
+        <button type="button" class="btn btn-primary" id="liveToastBtn2">Continuar</button>
+      </div>
+      <div class="d-grid d-md-none d-lg-blockcol-lg-4">
+        <button type="button" class="btn btn-volver">Volver</button>
+        <button type="button" class="btn btn-primary mt-3" id="liveToastBtn2">Continuar</button>
       </div>
     </div>
   </section>
