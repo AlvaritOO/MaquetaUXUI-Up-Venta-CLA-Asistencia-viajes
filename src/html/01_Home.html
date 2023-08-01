@@ -875,8 +875,8 @@
   </div>
   <!-- Fin Modal terminos-->
 
-    <!-- Modal Planes Simple -->
-    <div class="modal fade" id="detallesModalSimple" tabindex="-1" aria-labelledby="detallesModalLabelSimple"
+  <!-- Modal Planes Simple -->
+  <div class="modal fade" id="detallesModalSimple" tabindex="-1" aria-labelledby="detallesModalLabelSimple"
     aria-hidden="true">
     <div class="modal-dialog modal-dialog-scrollable modal-lg modal-dialog-centered">
       <div class="modal-content">
@@ -1423,14 +1423,11 @@
     integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
   <script src="../js/bootstrap.min.js"></script>
-  <script src="../js/scrollreveal.min.js"></script>
-  <script src="../js/owl.carousel.min.js"></script>
-  <script src="../js/splide.min.js"></script>
-  <script src="../js/jquery.scheletrone.js"></script>
   <script src="../js/funciones.js"></script>
+
   <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
   <script>
-    $(document).ready(function() {
+    $(document).ready(function () {
       const checkbox1 = $('#flexCheckChecked');
       const checkbox2 = $('#flexCheckChecked2');
       const cotizarBtn = $('#cotizarBtn');
@@ -1448,7 +1445,7 @@
         cotizarBtn.toggleClass('btn-off', !ambosMarcados);
       }
 
-      cotizarBtn.on('click', function() {
+      cotizarBtn.on('click', function () {
         contenedor.toggle();
         cotizarDatos.hide();
       });
