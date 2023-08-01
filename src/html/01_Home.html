@@ -334,7 +334,7 @@
                     <li class="text-secondary mt-3"><strong>No incluido</strong></li>
                     <li class="text-secondary">Interrupción de Viaje por diagnóstico COVID- 19</li>
                     <button type="button" class="btn btn-primary mt-3 detallesPlan" data-bs-toggle="modal"
-                      data-bs-target="#detallesModalPlus" id="detallesPlanSimple">
+                      data-bs-target="#detallesModalSimple" id="detallesPlanSimple">
                       Detalles del plan
                     </button>
                   </ul>
@@ -375,7 +375,7 @@
                     <li class="text-secondary mt-3"><strong>No incluido</strong></li>
                     <li class="text-secondary">Interrupción de Viaje por diagnóstico COVID- 19</li>
                     <button type="button" class="btn btn-primary mt-3 detallesPlan" data-bs-toggle="modal"
-                      data-bs-target="#detallesModalPlus" id="detallesPlanSimple">
+                      data-bs-target="#detallesModalPlus" id="detallesPlanPlus">
                       Detalles del plan
                     </button>
                   </ul>
@@ -416,7 +416,7 @@
                     <li class="fw-bold mt-3">USD 1500</li>
                     <li>Interrupción de Viaje por diagnóstico COVID- 19</li>
                     <button type="button" class="btn btn-primary mt-3 detallesPlan" data-bs-toggle="modal"
-                      data-bs-target="#detallesModalPlus" id="detallesPlanSimple">
+                      data-bs-target="#detallesModalPremium" id="detallesPlanPremium">
                       Detalles del plan
                     </button>
                   </ul>
@@ -875,10 +875,554 @@
   </div>
   <!-- Fin Modal terminos-->
 
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
-  <script src="../js/bootstrap.min.js"></script>
+    <!-- Modal Planes Simple -->
+    <div class="modal fade" id="detallesModalSimple" tabindex="-1" aria-labelledby="detallesModalLabelSimple"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-body p-5">
+          <p>Recuerda que estarás cubierto por Invalidez Total y Permanente 2/3 por Accidente, donde se te pagará una
+            indemnización en caso que resultes con una Invalidez Total y Permanente 2/3 de UF 50, como consecuencia de
+            un accidente ocurrido durante la vigencia del seguro (de tu Viaje). Adicionalmente, estarás contratando una
+            asistencia en viaje, la cual prestará los servicios de telemedicina, pérdida de equipaje, gastos médicos y
+            otros. </p>
+          <p><strong>Nota:</strong> La Cobertura de Incapacidad será únicamente para el asegurado titular, los
+            adicionales, solo contaran con el beneficio de asistencia.
+            <br>
+            <strong>Método de pago:</strong> Transbank.<br>
+            **Detalle de montos por periodos de viaje en el documento descargable al resumen del flujo de contratación.
+            <br>
+            Monto máximo global USD 35.000 (dependiendo de la opción escogida).
+            <br>
+          <p>
+            <strong>¿Qué beneficio adicional contempla este seguro?</strong>
+          </p>
+          <table class="table table-bordered">
+            <thead class="table-primary">
+              <tr>
+                <th scope="col">Tipo de Beneficio</th>
+                <th scope="col">Plan Simple</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row" class="no-bold">Asistencia Médica en caso de accidente</th>
+                <td>USD 35.000</td>
+              </tr>
+              <tr>
+                <th scope="row" class="no-bold">Asistencia Médica en caso de Enfermedad no preexistente (Incluido
+                  COVID-19)</th>
+                <td>USD 35.000</td>
+              </tr>
+              <tr>
+                <th scope="row" class="no-bold">Primera atención médica en caso de enfermedad preexistente</th>
+                <td>USD 300</td>
+              </tr>
+              <tr>
+                <th scope="row" class="no-bold">Odontología de Urgencia</th>
+                <td>USD 500</td>
+              </tr>
+              <tr>
+                <th scope="row" class="no-bold">Medicamentos Ambulatorios</th>
+                <td>USD 800</td>
+              </tr>
+              <tr>
+                <th scope="row" class="no-bold">Medicamentos en caso de hospitalización</th>
+                <td>Incluido</td>
+              </tr>
+              <tr>
+                <th scope="row" class="no-bold">Prácticas de deportes</th>
+                <td>USD 10.000</td>
+              </tr>
+              <tr>
+                <th scope="row" class="no-bold">Estado de Embarazo</th>
+                <td>USD 10.000</td>
+              </tr>
+              <tr>
+                <th scope="row" class="no-bold">Prótesis y ortesis</th>
+                <td>USD 1.300</td>
+              </tr>
+              <tr>
+                <th scope="row" class="no-bold">Translado sanitarios</th>
+                <td>Incluido</td>
+              </tr>
+              <tr>
+                <th scope="row" class="no-bold">Repatriaciones (Sanitaria o funeraria)</th>
+                <td>Incluido</td>
+              </tr>
+              <tr>
+                <th scope="row" class="no-bold">Regreso de acompañante del titular repatriado</th>
+                <td>Incluido</td>
+              </tr>
+              <tr>
+                <th scope="row" class="no-bold">Translado de un familiar</th>
+                <td>Incluido</td>
+              </tr>
+              <tr>
+                <th scope="row" class="no-bold">Estancia de un familiar</th>
+                <td>USD 400</td>
+              </tr>
+              <tr>
+                <th scope="row" class="no-bold">Gastos de hotel por reposo forsozo luego de una hospitalización</th>
+                <td>USD 180</td>
+              </tr>
+              <tr>
+                <th scope="row" class="no-bold">Acompañamiento de menores o mayores</th>
+                <td>Incluido</td>
+              </tr>
+              <tr>
+                <th scope="row" class="no-bold">Regreso anticipado por siniestro grave en el domicilio</th>
+                <td>Incluido</td>
+              </tr>
+              <tr>
+                <th scope="row" class="no-bold">Diferencia de tarifa por viaje de regreso retrasado o anticipado</th>
+                <td>Incluido</td>
+              </tr>
+              <tr>
+                <th scope="row" class="no-bold">Asistencia legal por responsabilidad de un accidente</th>
+                <td>USD 8.000</td>
+              </tr>
+              <tr>
+                <th scope="row" class="no-bold">Anticipo de fondos para fianzas</th>
+                <td>USD 8.000</td>
+              </tr>
+              <tr>
+                <th scope="row" class="no-bold">Asistencia en caso de robo o extravío de documentos, etc.</th>
+                <td>Incluido</td>
+              </tr>
+              <tr>
+                <th scope="row" class="no-bold">Localización de equipajes</th>
+                <td>Incluido</td>
+              </tr>
+              <tr>
+                <th scope="row" class="no-bold">Telemed - Consultas médicas online</th>
+                <td>Incluido</td>
+              </tr>
+              <tr>
+                <th scope="row" class="no-bold">Indemnización por pérdida de equipaje</th>
+                <td>USD 1.200</td>
+              </tr>
+              <tr>
+                <th scope="row" class="no-bold">Indemnización por demora en la entrega del equipaje</th>
+                <td>USD 200</td>
+              </tr>
+            </tbody>
+            <thead class="table-primary">
+              <tr>
+                <th scope="col">Prestaciones específicas por COVID</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row" class="no-bold">Garantía cancelación e interrupción viaje por COVID</th>
+                <td>No Incluido</td>
+              </tr>
+              <tr>
+                <th scope="row" class="no-bold">Reembolso de gastos por alojamiento y alimentación por viaje prolongado
+                </th>
+                <td>No Incluido</td>
+              </tr>
+              <tr>
+                <th scope="row" class="no-bold">Diferencia de tarifa o penalidad por viaje de regreso retrasado o
+                  anticipado del titular</th>
+                <td>No Incluido</td>
+              </tr>
+              <tr>
+                <th scope="row" class="no-bold">Traslado de un familiar</th>
+                <td>No Incluido</td>
+              </tr>
+              <tr>
+                <th scope="row" class="no-bold">Estancia de un familiar</th>
+                <td>No Incluido</td>
+              </tr>
+            </tbody>
+          </table>
+          <p>
+            <strong>Importante:</strong> Los seguros indicados están amparados por la presente póliza contratada por
+            esta compañía de seguros y aplican las exclusiones de uso habitual y/o legal para este tipo de coberturas y
+            aprobadas por el Organismo Contralor de Seguros del país en que se emita la Tarjeta.
+          </p>
+        </div>
+        <div class="container mb-4 mt-3">
+          <div class="row justify-content-end">
+            <div class="col-8 text-end me-4">
+              <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Entendido</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal Planes Plus -->
+
+  <div class="modal fade" id="detallesModalPlus" tabindex="-1" aria-labelledby="detallesModalLabelPlus"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-body p-5">
+          <p>Recuerda que estarás cubierto por Invalidez Total y Permanente 2/3 por Accidente, donde se te pagará una
+            indemnización en caso que resultes con una Invalidez Total y Permanente 2/3 de UF 50, como consecuencia de
+            un accidente ocurrido durante la vigencia del seguro (de tu Viaje). Adicionalmente, estarás contratando una
+            asistencia en viaje, la cual prestará los servicios de telemedicina, pérdida de equipaje, gastos médicos y
+            otros. </p>
+          <br>
+          <p><strong>Nota:</strong> La Cobertura de Incapacidad será únicamente para el asegurado titular, los
+            adicionales, solo contaran con el beneficio de asistencia.
+            <br>
+            <strong>Método de pago:</strong> Transbank.<br>
+            **Detalle de montos por periodos de viaje en el documento descargable al resumen del flujo de contratación.
+            <br>
+            Monto máximo global USD 60.000 (dependiendo de la opción escogida).
+            <br>
+          <p>
+            <strong>¿Qué beneficio adicional contempla este seguro?</strong>
+          </p>
+          <table class="table table-bordered">
+            <thead class="table-primary">
+              <tr>
+                <th scope="col">Tipo de Beneficio</th>
+                <th scope="col">Plan Plus</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row" class="no-bold">Asistencia Médica en caso de accidente</th>
+                <td>USD 60.000</td>
+              </tr>
+              <tr>
+                <th scope="row" class="no-bold">Asistencia Médica en caso de Enfermedad no preexistente (Incluido
+                  COVID-19)</th>
+                <td>USD 60.000</td>
+              </tr>
+              <tr>
+                <th scope="row" class="no-bold">Primera atención médica en caso de enfermedad preexistente</th>
+                <td>USD 300</td>
+              </tr>
+              <tr>
+                <th scope="row" class="no-bold">Odontología de Urgencia</th>
+                <td>USD 500</td>
+              </tr>
+              <tr>
+                <th scope="row" class="no-bold">Medicamentos Ambulatorios</th>
+                <td>USD 1.000</td>
+              </tr>
+              <tr>
+                <th scope="row" class="no-bold">Medicamentos en caso de hospitalización</th>
+                <td>Incluido</td>
+              </tr>
+              <tr>
+                <th scope="row" class="no-bold">Prácticas de deportes</th>
+                <td>USD 10.000</td>
+              </tr>
+              <tr>
+                <th scope="row" class="no-bold">Estado de Embarazo</th>
+                <td>USD 10.000</td>
+              </tr>
+              <tr>
+                <th scope="row" class="no-bold">Prótesis y ortesis</th>
+                <td>USD 2.500</td>
+              </tr>
+              <tr>
+                <th scope="row" class="no-bold">Translado sanitarios</th>
+                <td>Incluido</td>
+              </tr>
+              <tr>
+                <th scope="row" class="no-bold">Repatriaciones (Sanitaria o funeraria)</th>
+                <td>Incluido</td>
+              </tr>
+              <tr>
+                <th scope="row" class="no-bold">Regreso de acompañante del titular repatriado</th>
+                <td>Incluido</td>
+              </tr>
+              <tr>
+                <th scope="row" class="no-bold">Translado de un familiar</th>
+                <td>Incluido</td>
+              </tr>
+              <tr>
+                <th scope="row" class="no-bold">Estancia de un familiar</th>
+                <td>USD 400</td>
+              </tr>
+              <tr>
+                <th scope="row" class="no-bold">Gastos de hotel por reposo forsozo luego de una hospitalización</th>
+                <td>USD 900</td>
+              </tr>
+              <tr>
+                <th scope="row" class="no-bold">Acompañamiento de menores o mayores</th>
+                <td>Incluido</td>
+              </tr>
+              <tr>
+                <th scope="row" class="no-bold">Regreso anticipado por siniestro grave en el domicilio</th>
+                <td>Incluido</td>
+              </tr>
+              <tr>
+                <th scope="row" class="no-bold">Diferencia de tarifa por viaje de regreso retrasado o anticipado</th>
+                <td>Incluido</td>
+              </tr>
+              <tr>
+                <th scope="row" class="no-bold">Asistencia legal por responsabilidad de un accidente</th>
+                <td>USD 8.000</td>
+              </tr>
+              <tr>
+                <th scope="row" class="no-bold">Anticipo de fondos para fianzas</th>
+                <td>USD 8.000</td>
+              </tr>
+              <tr>
+                <th scope="row" class="no-bold">Asistencia en caso de robo o extravío de documentos, etc.</th>
+                <td>Incluido</td>
+              </tr>
+              <tr>
+                <th scope="row" class="no-bold">Localización de equipajes</th>
+                <td>Incluido</td>
+              </tr>
+              <tr>
+                <th scope="row" class="no-bold">Telemed - Consultas médicas online</th>
+                <td>Incluido</td>
+              </tr>
+              <tr>
+                <th scope="row" class="no-bold">Indemnización por pérdida de equipaje</th>
+                <td>USD 1.200</td>
+              </tr>
+              <tr>
+                <th scope="row" class="no-bold">Indemnización por demora en la entrega del equipaje</th>
+                <td>USD 200</td>
+              </tr>
+            </tbody>
+            <thead class="table-primary">
+              <tr>
+                <th scope="col">Prestaciones específicas por COVID</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row" class="no-bold">Garantía cancelación e interrupción viaje por COVID</th>
+                <td>No Incluido</td>
+              </tr>
+              <tr>
+                <th scope="row" class="no-bold">Reembolso de gastos por alojamiento y alimentación por viaje prolongado
+                </th>
+                <td>No Incluido</td>
+              </tr>
+              <tr>
+                <th scope="row" class="no-bold">Diferencia de tarifa o penalidad por viaje de regreso retrasado o
+                  anticipado del titular</th>
+                <td>No Incluido</td>
+              </tr>
+              <tr>
+                <th scope="row" class="no-bold">Traslado de un familiar</th>
+                <td>No Incluido</td>
+              </tr>
+              <tr>
+                <th scope="row" class="no-bold">Estancia de un familiar</th>
+                <td>No Incluido</td>
+              </tr>
+            </tbody>
+          </table>
+          <p>
+            <strong>Importante:</strong> Los seguros indicados están amparados por la presente póliza contratada por
+            esta compañía de seguros y aplican las exclusiones de uso habitual y/o legal para este tipo de coberturas y
+            aprobadas por el Organismo Contralor de Seguros del país en que se emita la Tarjeta.
+          </p>
+        </div>
+        <div class="container mb-4 mt-3">
+          <div class="row justify-content-end">
+            <div class="col-8 text-end me-4">
+              <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Entendido</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal Planes Premium -->
+
+  <div class="modal fade" id="detallesModalPremium" tabindex="-1" aria-labelledby="detallesModalLabelPremium"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-body p-5">
+          <p>Recuerda que estarás cubierto por Invalidez Total y Permanente 2/3 por Accidente, donde se te pagará una
+            indemnización en caso que resultes con una Invalidez Total y Permanente 2/3 de UF 50, como consecuencia de
+            un accidente ocurrido durante la vigencia del seguro (de tu Viaje). Adicionalmente, estarás contratando una
+            asistencia en viaje, la cual prestará los servicios de telemedicina, pérdida de equipaje, gastos médicos y
+            otros. </p>
+          <br>
+          <p><strong>Nota:</strong> La Cobertura de Incapacidad será únicamente para el asegurado titular, los
+            adicionales, solo contaran con el beneficio de asistencia.
+            <br>
+            <strong>Método de pago:</strong> Transbank.<br>
+            **Detalle de montos por periodos de viaje en el documento descargable al resumen del flujo de contratación.
+            <br>
+            Monto máximo global USD 150.000 (dependiendo de la opción escogida).
+            <br>
+          <p>
+            <strong>¿Qué beneficio adicional contempla este seguro?</strong>
+          </p>
+          <table class="table table-bordered">
+            <thead class="table-primary">
+              <tr>
+                <th scope="col">Tipo de Beneficio</th>
+                <th scope="col">Plan Premium</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row" class="no-bold">Asistencia Médica en caso de accidente</th>
+                <td>USD 150.000</td>
+              </tr>
+              <tr>
+                <th scope="row" class="no-bold">Asistencia Médica en caso de Enfermedad no preexistente (Incluido
+                  COVID-19)</th>
+                <td>USD 150.000</td>
+              </tr>
+              <tr>
+                <th scope="row" class="no-bold">Primera atención médica en caso de enfermedad preexistente</th>
+                <td>USD 500</td>
+              </tr>
+              <tr>
+                <th scope="row" class="no-bold">Odontología de Urgencia</th>
+                <td>USD 700</td>
+              </tr>
+              <tr>
+                <th scope="row" class="no-bold">Medicamentos Ambulatorios</th>
+                <td>USD 2.000</td>
+              </tr>
+              <tr>
+                <th scope="row" class="no-bold">Medicamentos en caso de hospitalización</th>
+                <td>Incluido</td>
+              </tr>
+              <tr>
+                <th scope="row" class="no-bold">Prácticas de deportes</th>
+                <td>USD 10.000</td>
+              </tr>
+              <tr>
+                <th scope="row" class="no-bold">Estado de Embarazo</th>
+                <td>USD 10.000</td>
+              </tr>
+              <tr>
+                <th scope="row" class="no-bold">Prótesis y ortesis</th>
+                <td>USD 3.500</td>
+              </tr>
+              <tr>
+                <th scope="row" class="no-bold">Translado sanitarios</th>
+                <td>Incluido</td>
+              </tr>
+              <tr>
+                <th scope="row" class="no-bold">Repatriaciones (Sanitaria o funeraria)</th>
+                <td>Incluido</td>
+              </tr>
+              <tr>
+                <th scope="row" class="no-bold">Regreso de acompañante del titular repatriado</th>
+                <td>Incluido</td>
+              </tr>
+              <tr>
+                <th scope="row" class="no-bold">Translado de un familiar</th>
+                <td>Incluido</td>
+              </tr>
+              <tr>
+                <th scope="row" class="no-bold">Estancia de un familiar</th>
+                <td>USD 500</td>
+              </tr>
+              <tr>
+                <th scope="row" class="no-bold">Gastos de hotel por reposo forsozo luego de una hospitalización</th>
+                <td>USD 1.100</td>
+              </tr>
+              <tr>
+                <th scope="row" class="no-bold">Acompañamiento de menores o mayores</th>
+                <td>Incluido</td>
+              </tr>
+              <tr>
+                <th scope="row" class="no-bold">Regreso anticipado por siniestro grave en el domicilio</th>
+                <td>Incluido</td>
+              </tr>
+              <tr>
+                <th scope="row" class="no-bold">Diferencia de tarifa por viaje de regreso retrasado o anticipado</th>
+                <td>Incluido</td>
+              </tr>
+              <tr>
+                <th scope="row" class="no-bold">Asistencia legal por responsabilidad de un accidente</th>
+                <td>USD 8.000</td>
+              </tr>
+              <tr>
+                <th scope="row" class="no-bold">Anticipo de fondos para fianzas</th>
+                <td>USD 8.000</td>
+              </tr>
+              <tr>
+                <th scope="row" class="no-bold">Asistencia en caso de robo o extravío de documentos, etc.</th>
+                <td>Incluido</td>
+              </tr>
+              <tr>
+                <th scope="row" class="no-bold">Localización de equipajes</th>
+                <td>Incluido</td>
+              </tr>
+              <tr>
+                <th scope="row" class="no-bold">Telemed - Consultas médicas online</th>
+                <td>Incluido</td>
+              </tr>
+              <tr>
+                <th scope="row" class="no-bold">Indemnización por pérdida de equipaje</th>
+                <td>USD 1.200</td>
+              </tr>
+              <tr>
+                <th scope="row" class="no-bold">Indemnización por demora en la entrega del equipaje</th>
+                <td>USD 200</td>
+              </tr>
+            </tbody>
+            <thead class="table-primary">
+              <tr>
+                <th scope="col">Prestaciones específicas por COVID</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row" class="no-bold">Garantía cancelación e interrupción viaje por COVID</th>
+                <td>USD 1.500</td>
+              </tr>
+              <tr>
+                <th scope="row" class="no-bold">Reembolso de gastos por alojamiento y alimentación por viaje prolongado
+                </th>
+                <td>USD 1.500</td>
+              </tr>
+              <tr>
+                <th scope="row" class="no-bold">Diferencia de tarifa o penalidad por viaje de regreso retrasado o
+                  anticipado del titular</th>
+                <td>USD 1.000</td>
+              </tr>
+              <tr>
+                <th scope="row" class="no-bold">Traslado de un familiar</th>
+                <td>USD 1.000</td>
+              </tr>
+              <tr>
+                <th scope="row" class="no-bold">Estancia de un familiar</th>
+                <td>USD 500</td>
+              </tr>
+            </tbody>
+          </table>
+          <p>
+            <strong>Importante:</strong> Los seguros indicados están amparados por la presente póliza contratada por
+            esta compañía de seguros y aplican las exclusiones de uso habitual y/o legal para este tipo de coberturas y
+            aprobadas por el Organismo Contralor de Seguros del país en que se emita la Tarjeta.
+          </p>
+        </div>
+        <div class="container mb-4 mt-3">
+          <div class="row justify-content-end">
+            <div class="col-8 text-end me-4">
+              <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Entendido</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"
     integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+  <script src="../js/bootstrap.min.js"></script>
   <script src="../js/scrollreveal.min.js"></script>
   <script src="../js/owl.carousel.min.js"></script>
   <script src="../js/splide.min.js"></script>
@@ -886,43 +1430,26 @@
   <script src="../js/funciones.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
   <script>
-    // Funcion home cotizar
     $(document).ready(function() {
-      // Obtenemos los elementos de los checkboxes, el botón y los containers
       const checkbox1 = $('#flexCheckChecked');
       const checkbox2 = $('#flexCheckChecked2');
       const cotizarBtn = $('#cotizarBtn');
       const contenedor = $('#contenedorplanes');
       const cotizarDatos = $('#cotizar-datos');
 
-      // Agregamos un evento "change" a los checkboxes
-      checkbox1.on('change', actualizarEstadoBoton);
-      checkbox2.on('change', actualizarEstadoBoton);
-  
-      // Llamamos a la función para deshabilitar el botón inicialmente si no están ambos marcados
+      checkbox1.add(checkbox2).on('change', actualizarEstadoBoton);
+
       actualizarEstadoBoton();
-  
-      // Función para actualizar el estado del botón "Cotizar"
+
       function actualizarEstadoBoton() {
-        // Verificamos si ambos checkboxes están marcados
-        if (checkbox1.prop('checked') && checkbox2.prop('checked')) {
-          // Si ambos están marcados, habilitamos el botón y asignamos una clase activa
-          cotizarBtn.prop('disabled', false);
-          cotizarBtn.addClass('btn-primary')
-          cotizarBtn.removeClass('btn-off')
-        } else {
-          // Si uno o ambos checkboxes están desmarcados, deshabilitamos el botón y asignamos una clase de deshabilitado
-          cotizarBtn.prop('disabled', true);
-          cotizarBtn.removeClass('btn-primary')
-          cotizarBtn.addClass('btn-off')
-        }
+        const ambosMarcados = checkbox1.prop('checked') && checkbox2.prop('checked');
+        cotizarBtn.prop('disabled', !ambosMarcados);
+        cotizarBtn.toggleClass('btn-primary', ambosMarcados);
+        cotizarBtn.toggleClass('btn-off', !ambosMarcados);
       }
-  
-      // Agregar evento al botón "Cotizar" para mostrar/ocultar el contenedor
+
       cotizarBtn.on('click', function() {
-        // Cambiamos el estado del display del contenedor "contenedorplanes"
         contenedor.toggle();
-        // Ocultamos el contenedor "cotizar-datos"
         cotizarDatos.hide();
       });
     });
