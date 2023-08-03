@@ -12,7 +12,7 @@ html {
 }
 
 body {
-  font-family: "Rawson", sans-serif !important;
+  font-family: "Rawson", sans-serif;
   font-size: 18px;
   overflow-x: hidden;
   display: flex;
@@ -12789,27 +12789,27 @@ nav a.nav-link.active {
 color: #FFFFFF !important;
 }*/
 .texto-medium-banner-top {
-  font-size: calc(1.675rem + 5.1vw);
-  font-weight: 800;
+  font-size: calc(1.525rem + 3.3vw);
+  font-weight: 650;
   color: #fff;
   position: relative;
   top: 14px;
 }
 @media (min-width: 1200px) {
   .texto-medium-banner-top {
-    font-size: 5.5rem;
+    font-size: 4rem;
   }
 }
 
 .texto-imagen-cabecera {
   line-height: 1em;
-  font-size: calc(1.575rem + 3.9vw);
-  font-weight: 800;
+  font-size: calc(1.525rem + 3.3vw);
+  font-weight: 650;
   color: #fff;
 }
 @media (min-width: 1200px) {
   .texto-imagen-cabecera {
-    font-size: 4.5rem;
+    font-size: 4rem;
   }
 }
 
