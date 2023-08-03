@@ -1287,6 +1287,10 @@ span.ic-form {
   right: 0 !important;
 }
 
+.text-bg-incorrect {
+  background-color: #fbeded !important;
+}
+
 // Small devices
 @media (min-width: 100px) and (max-width: 991px) {
   .position-toast {
