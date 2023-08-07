@@ -60,7 +60,6 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-
                 <li class="nav-item dropdown-hover">
                   <a class="nav-link active dropdown-hover-button" href="#">Contratar Seguros</a>
                   <div class="dropdown-hover-content shadow">
@@ -133,484 +132,276 @@
                 <li class="nav-item dropdown">
                 </li>
             </div>
+
             <a class="btn text-primary fw-bold btn-sm d-none d-lg-block" href="#"><i class="bi bi-arrow-left"></i>
               Volver a seguros</a>
           </div>
           </ul>
+
       </div>
     </div>
     <!--Fin NavBar-->
   </section>
   <!--Fin Header-->
 
-  <!--toast nuevo beneficiario-->
-  <div class="toast-container position-fixed top-0 end-0 p-3" style="z-index: 99991">
-    <div id="liveToast" class="toast text-white bg-success border-0" role="alert" aria-live="assertive"
-      aria-atomic="true">
-      <div class="d-flex">
-        <div class="toast-body">
-          <b>Beneficiario inscrito correctamente.</b>
+  <!--toast encuesta enviada-->
+  <div class="toast-container position-fixed position-toast p-3 me-5" style="z-index: 99991">
+    <div id="liveToastEncuesta" class="toast align-items-center text-bg-success border-2 text-dark" role="alert"
+      aria-live="assertive" aria-atomic="true">
+        <div class="toast-body d-flex row">
+          <div class="col">
+            <i class="bi bi-check-circle-fill fs-5 text-success"></i>
+          </div>
+          <div class="col-9">
+            <b>Encuesta enviada<br>correctamente</b>
+          </div>
+          <button type="button" class="btn-close col m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
         </div>
-        <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast"
-          aria-label="Close"></button>
-      </div>
-    </div>
-
-    <div id="liveToast2" class="toast text-white bg-success border-0" role="alert" aria-live="assertive"
-      aria-atomic="true">
-      <div class="d-flex">
-        <div class="toast-body">
-          <b>Cambios Guardados correctamente</b>
-        </div>
-        <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast"
-          aria-label="Close"></button>
-      </div>
     </div>
   </div>
+  <!--toast encuesta enviada-->
 
-  <div id="liveToast3" class="toast text-white bg-success border-0" role="alert" aria-live="assertive"
-    aria-atomic="true">
-    <div class="d-flex">
-      <div class="toast-body">
-        <b>Beneficario eliminado correctamente</b>
-      </div>
-      <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast"
-        aria-label="Close"></button>
-    </div>
-  </div>
+  <div class="container mb-2 espaciado-cabecera text-center">
 
-  <!--wizard-->
-  <section id="wizard" class="mb-5 pt-3 container d-none d-lg-block">
-    <div class="container contenedor-wizard">
-      <div class="row">
-        <div class="col-sm-12 col-md-10 offset-md-1">
-          <div class="position-relative">
-            <div class="progress" style="height: 1px;">
-              <div class="progress-bar" role="progressbar" style="width: 100%;" aria-valuenow="25" aria-valuemin="0"
-                aria-valuemax="100"></div>
-            </div>
-            <button type="button"
-              class="position-absolute top-0 start-1 translate-middle btn btn-sm btn-primary rounded-pill"
-              style="width: 2rem; height:2rem;">1</button>
-            <button type="button"
-              class="position-absolute top-0 start-35 translate-middle btn btn-sm btn-primary rounded-pill"
-              style="width: 2rem; height:2rem;">2</button>
-            <button type="button"
-              class="position-absolute top-0 start-65 translate-middle btn btn-sm btn-primary rounded-pill"
-              style="width: 2rem; height:2rem;">3</button>
-            <button type="button"
-              class="position-absolute top-0 start-100 translate-middle btn btn-sm btn-wizard-secundary rounded-pill"
-              style="width: 2rem; height:2rem;">4</button>
-          </div>
-        </div>
-      </div>
-      <div class="container d-none d-sm-block">
-        <div class="row mt-5">
-          <div class="col-sm-12 col-md-10 offset-md-1">
-            <div class="position-relative">
-              <span class="position-absolute top-0 start-0 translate-middle text-center">Datos del asegurado</span>
-              <span class="position-absolute top-0 start-35 translate-middle text-center">Viajeros adicionales</span>
-              <span class="position-absolute top-0 start-65 translate-middle text-center fw-bold">Resumen y
-                confirmación</span>
-              <span class="position-absolute top-0 start-101 translate-middle text-center" style="width: 200px">Medios
-                de pago</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!--fin wizard-->
+    <div class="mt-5 mb-3" style="color: #008744;"><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50"
+        fill="currentColor" class="bi bi-check2-circle" viewBox="0 0 16 16">
+        <path
+          d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0z" />
+        <path
+          d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l7-7z" />
+      </svg></div>
 
-  <!-- wizard mobile-->
-  <section id="wizard-mobile">
-    <div class="container d-lg-none mt-2 mb-1 wizard-mobile shadow">
-      <div class="row">
-        <div class="col-6 paso-actual">
-          <span class="now-next text-right">Ahora</span>
-          <span class="h4 text-right">Paso 3 de 4</span>
-          <p class="nombre-paso text-right">Resumen y confirmación</p>
-        </div>
+    <h3 class="text-center pb-4 fw-bold">¡Felicidades NOMBRE AFILIADO, <br>
+      has contratado exitosamente tu seguro!</h3>
 
-        <div class="col-6 paso-siguiente">
-          <span class="now-next text-right">Siguiente</span>
-          <span class="h4 text-right">Paso 4 de 4</span>
-          <p class="nombre-paso text-right">Medios de pago</p>
-        </div>
+    <h6 class="text-center pb-4">Contrataste tu Seguro XXXX Plan XXXX <br>
+      Enviaremos a la brevedad a tu correo electrónico el certificado de cobertura de tu <br>seguro contratado.
+      <br>
+    </h6>
+    <h6 class="text-center pb-4">
+      <span class="fw-bold">Valor Pagado:</span> UF XX.XX ($XX.XX)<br>
+      <span class="fw-bold">Fecha: DD/MM/AAAA - Hora: HH:MM:SS</span>
 
-      </div>
-    </div>
-  </section>
-  <!--fin wizard mobile-->
+    </h6>
 
+    <!-- Encuesta-->
+    <section id="SeguroSatisfaccion">
+      <div class="divisor"></div>
 
-  <!-- RESUMEN Y CONFIRMACIÓN -->
-  <section id="beneficiarios" class="pt-4 ">
-    <div class="container">
-      <div class="row">
-        <h5 class="title-form fw-bold">RESUMEN Y CONFIRMACIÓN</h5>
-        <p class="mb-5">
-          ¡Estás a un solo paso de contratar tu seguro XXXXXX! Para finalizar el proceso de contratación, te pedimos que puedas aceptar los términos y condiciones en la parte final.
-        </p>
-      </div>
-  </section>
+      <div class="contenedor-renuncia col-12 p-2 py-5">
 
-  <!-- Detalle del Seguro -->
-  <section id="resumen" class="p-4">
-    <div class="container detalles-seguros">
-      <div class="col-12 mb-4">
-        <p class="title-form text-primary fw-bold ms-3 mt-4">Detalle del Seguro XXXX</p>
-        <div class="row ms-2 mt-2">
-          <div class="col-sm-12 col-lg-2">
+        <div class="contenedor-encuesta">
 
-            <span class="fw-bold">Titular Asegurado</span>
-            <ul class="list-unstyled">
-              <li>Cristian Torres</li>
-            </ul>
-          </div>
-          <div class="col-sm-12 col-lg-2">
+          <h5 class="text-center fw-bold">
+            ¿Nos contarías a continuación cómo ha sido tu experiencia contratando el seguro?
 
-            <span class="fw-bold">Viajeron adicionales</span>
-            <ul class="list-unstyled">
-              <li>Maximiliano Torres
-                Luciana Rincón</li>
-            </ul>
-          </div>
+          </h5>
 
-          <div class="col-sm-12 col-lg-2">
-            <span class="fw-bold">Plan seleccionado</span>
-            <ul class="list-unstyled">
-              <li>Plan XXXXXX</li>
-            </ul>
-          </div>
+          <div class="col-12 encuesta text-center mt-5">
 
-          <div class="col-sm-12 col-lg-2">
-            <div class="row">
-              <span class="fw-bold">Monto asegurado</span>
-              <ul class="list-unstyled">
-                <li>50 UF</li>
-              </ul>
-            </div>
-          </div>
+            <p>¿Cuál es tu nivel de satisfacción?</p>
 
-          <div class="col-sm-12 col-lg-2">
-            <span class="fw-bold">Vigencia del viaje</span>
-            <ul class="list-unstyled">
-              <li>Desde dd/mm/año hasta dd/mm/año</li>
-            </ul>
-          </div>
+            <input type="radio" class="btn-check" name="options" id="option0" autocomplete="off">
+            <label class="btn btn-danger px-0" for="option0">0</label>
 
-          <div class="col-sm-12 col-lg-2">
-            <span class="fw-bold">Total a pagar</span>
-            <ul class="list-unstyled">
-              <li>UF: XXXX <br>
-                CLP: XXXXXX</li>
-            </ul>
-          </div>
-        </div>
-      </div>
+            <input type="radio" class="btn-check" name="options" id="option1" autocomplete="off">
+            <label class="btn btn-danger px-0" for="option1">1</label>
 
-  </div>
+            <input type="radio" class="btn-check" name="options" id="option2" autocomplete="off">
+            <label class="btn btn-danger px-0" for="option2">2</label>
 
-  </section>
+            <input type="radio" class="btn-check" name="options" id="option3" autocomplete="off">
+            <label class="btn btn-danger px-0" for="option3">3</label>
 
-  <!-- ¡Tendrás los siguientes beneficios! -->
-  <section id="resumen" class="p-4">
-    <div class="container detalles-seguros">
-      <div class="row">
-        <p class="title-form text-primary fw-bold ms-3 mt-4">¡Tendrás los siguientes beneficios!</p>
-        <p class="ms-3 mt-2">(Recuerda que para utilizarlos debes seguir las instrucciones que te enviaremos una vez
-          hayas terminado de contratar tu seguro).</p>
-        <div class="row  ms-2 mt-2">
-          <div class="col-sm-12 col-lg-2">
-            <span class="fw-bold">Asistencia médica</span>
-            <ul class="list-unstyled">
-              <li>USD XX.XX</li>
-            </ul>
-          </div>
-          <div class="col-sm-12 col-lg-2">
-            <span class="fw-bold">Extravío de equipaje</span>
-            <ul class="list-unstyled">
-              <li>USD XX.XX</li>
-            </ul>
-          </div>
+            <input type="radio" class="btn-check" name="options" id="option4" autocomplete="off">
+            <label class="btn btn-warning px-0" for="option4">4</label>
 
-          <div class="col-sm-12 col-lg-2">
-            <span class="fw-bold">Medicamentos</span>
-            <ul class="list-unstyled">
-              <li>USD XX.XX</li>
-            </ul>
-          </div>
+            <input type="radio" class="btn-check" name="options" id="option5" autocomplete="off">
+            <label class="btn btn-warning px-0" for="option5">5</label>
 
-          <div class="col-sm-12 col-lg-2">
-            <span class="fw-bold">Telemedicina</span>
-            <ul class="list-unstyled">
-              <li>USD XX.XX</li>
-            </ul>
-          </div>
+            <input type="radio" class="btn-check" name="options" id="option6" autocomplete="off">
+            <label class="btn btn-warning px-0" for="option6">6</label>
 
-          <div class="col-sm-12 col-lg-2">
-            <div class="row">
-              <span class="fw-bold">Estadía de emergencia</span>
-              <ul class="list-unstyled">
-                <li>USD XX.XX</li>
-              </ul>
-            </div>
-          </div>
+            <input type="radio" class="btn-check" name="options" id="option7" autocomplete="off">
+            <label class="btn btn-success px-0" for="option7">7</label>
 
-  </section>
+            <input type="radio" class="btn-check" name="options" id="option8" autocomplete="off">
+            <label class="btn btn-success px-0" for="option8">8</label>
 
-  <div class="container mb-4">
-    <a class="btn btn-volver"><i class="bi bi-box-arrow-in-down"></i> Descargar póliza</a>
-  </div>
+            <input type="radio" class="btn-check" name="options" id="option9" autocomplete="off">
+            <label class="btn btn-success px-0" for="option9">9</label>
 
-  <!-- Autorizaciones-->
-  <section>
-    <div class="container mt-4">
-      <div class="row">
-        <div class="col-lg-12">
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-            <label class="form-check-label" for="flexCheckDefault" data-bs-toggle="tooltip" data-bs-placement="right"
-              title="" data-bs-original-title="Ver el uso de mis datos para contactabilidad">
-              Autorizo el uso de mis datos para contactabilidad. <br>
-              <span><a type="button" data-bs-toggle="modal" data-bs-target="#exampleModa1"><u>Ver documento de Aceptación</u></a></span>
-            </label>
-          </div>
-        </div>
-      </div>
-    </div>
+            <input type="radio" class="btn-check" name="options" id="option10" autocomplete="off">
+            <label class="btn btn-success px-0"
+              for="option10">10</label>
 
-    <div class="container mt-4">
-      <div class="row">
-        <div class="col-lg-12">
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault2">
-            <label class="form-check-label" for="flexCheckDefault2" data-bs-toggle="tooltip" data-bs-placement="right"
-              title="" data-bs-original-title="Ver Términos y Condiciones del seguro">
-              He leído y acepto Términos y Condiciones del seguro. <br>
-              <span><a type="button" data-bs-toggle="modal" data-bs-target="#exampleModal3"><u>Ver documento de Aceptación</u></a></span>
-            </label>
-          </div>
-        </div>
-      </div>
-    </div>
-
-
-    <!--modal -->
-    <div class="modal fade" id="exampleModa1" tabindex="-1" aria-labelledby="exampleModalLabe3" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-scrollable modal-lg modal-dialog-centered">
-        <div class="modal-content">
-          <div class="modal-body p-5">
-            <h5 class="fw-bold" id="exampleModalLabe3">Autorización de uso de Datos para Contactabilidad.</h5>
-            <p>
-              Autorizo que mi información personal sea recopilada, almacenada, tratada y divulgada por
-              Caja de Compensación de Asignación Familiar de Los Andes (“Caja Los Andes” o la “Caja”), según la
-              normativa. Vigente y conforme al Acuerdo de Privacidad.
-            </p>
-            <p>
-              <b>1. Autorización de tratamiento de Datos Personales:</b> Por medio de la contratación de este seguro
-              autorizo, como responsables de bases de datos, a las sociedades: BNP Paribas Cardif Seguros Generales
-              S.A., BNP Paribas Cardif Seguros de Vida S.A. y BNP Paribas Cardif Servicios y Asistencia Ltda.
-              (conjuntamente “BNP Paribas Cardif”) a tratar mis datos personales, de acuerdo a los fines y condiciones
-              aquí descritos. Los datos que autorizo tratar son los contenidos en esta solicitud, y aquellos que más
-              adelante resulten necesarios para el otorgamiento de los productos y/o servicios contratados de BNP
-              Paribas Cardif.
-            </p>
-            <p>
-            <ul class="list-unstyled">
-              <b>2. Propósitos del tratamiento:</b> Los propósitos para los cuales autorizo a BNP Paribas Cardif a
-              tratar mis datos personales son todos o algunos de los siguientes propósitos:
-              <li>a) Evaluar esta solicitud y proporcionarme los productos y servicios que sean contratados;
-              </li>
-              <li>
-                b) Contactarme y responder a mis consultas;
-              </li>
-              <li>
-                c) Gestionar y procesar los denuncios de mis siniestros;
-              </li>
-              <li>
-                d) Enviar comunicaciones publicitarias;
-              </li>
-              <li>
-                e) Evaluar y mejorar los productos y servicios de BNP Paribas Cardif, a través de desarrollos asociados
-                a seguros, análisis de datos y estudios analíticos;
-              </li>
-              <li>
-                f) Realizar operaciones propias del negocio de BNP Paribas Cardif tales como: contabilidad,
-                administración, monitoreo de riesgo y técnico, auditorías, facturación y, cobros; y (vii) dar
-                cumplimiento a las obligaciones legales de BNP Paribas Cardif.
-              </li>
-
-            </ul>
-            </p>
-            <p>
-              <b>3. Datos personales de terceros:</b> Sobre la información personal de terceros que yo entregue a BNP
-              Paribas Cardif (ej. beneficiaros), declaro contar con las autorizaciones suficientes, para que BNP Paribas
-              Cardif trate debidamente aquella información, según los propósitos indicados en el número anterior.
-            </p>
-            <p>
-              <b>4. Comunicación de datos a terceros:</b> Únicamente para los propósitos indicados, autorizo a BNP
-              Paribas Cardif para que pueda comunicar mis datos personales a sus proveedores y terceros colaboradores
-              como, por ejemplo, corredores de seguros, liquidadores, intermediadores y socios comerciales.
-            </p>
-            <p>
-              <b>5. Mis derechos:</b> Declaro conocer que mis derechos como titular de datos, los puedo hacer efectivos
-              de manera gratuita comunicándome al 800362100.</ul>
-            </p>
-          </div>
-
-          <div class="container mb-4 mt-3">
-            <div class="row justify-content-end">
-              <div class="col-8 text-end me-4">
-                <button type="button" class="btn btn-volver" data-bs-dismiss="modal">Entiendo y acepto</button>
+            <div class="row d-flex justify-content-evenly">
+              <div class="col text-end satisfecho">
+                <p>Nada satisfecho</p>
+              </div>
+              <div class="col-2 text-center mx-4">
+              </div>
+              <div class="col text-start satisfecho ms-2">
+                <p>Muy satisfecho</p>
               </div>
             </div>
           </div>
-        </div>
-      </div>
-    </div>
 
 
-    <!--modal verificacion-->
-    <div class="modal fade" id="modalVerificacion" tabindex="-1" aria-labelledby="modalVerificacion" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title color-primary" id="modalVerificacion">Verificación</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
 
-            <form>
-              <div class="mb-3">
-                <label for="exampleInputEmail1" class="form-label">Número de documento o serie</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                <div id="emailHelp" class="form-text" data-bs-toggle="collapse" href="#collapseExample" role="button"
-                  aria-expanded="false" aria-controls="collapseExample"><a href="#">¿Donde encuentro esto?</a></div>
+          <div class="container encuesta text-center mt-5">
+
+            <p>¿Qué tan fácil fue realizar la contratación de este seguro?</p>
+
+            <input type="radio" class="btn-check" name="options2" id="option00" autocomplete="off">
+            <label class="btn btn-danger px-0" for="option00">0</label>
+
+            <input type="radio" class="btn-check" name="options2" id="option11" autocomplete="off">
+            <label class="btn btn-danger px-0" for="option11">1</label>
+
+            <input type="radio" class="btn-check" name="options2" id="option22" autocomplete="off">
+            <label class="btn btn-danger px-0" for="option22">2</label>
+
+            <input type="radio" class="btn-check" name="options2" id="option33" autocomplete="off">
+            <label class="btn btn-danger px-0" for="option33">3</label>
+
+            <input type="radio" class="btn-check" name="options2" id="option44" autocomplete="off">
+            <label class="btn btn-danger px-0" for="option44">4</label>
+
+            <input type="radio" class="btn-check" name="options2" id="option55" autocomplete="off">
+            <label class="btn btn-danger px-0" for="option55">5</label>
+
+            <input type="radio" class="btn-check" name="options2" id="option66" autocomplete="off">
+            <label class="btn btn-danger px-0" for="option66">6</label>
+
+            <input type="radio" class="btn-check" name="options2" id="option77" autocomplete="off">
+            <label class="btn btn-warning px-0" for="option77">7</label>
+
+            <input type="radio" class="btn-check" name="options2" id="option88" autocomplete="off">
+            <label class="btn btn-warning px-0" for="option88">8</label>
+
+            <input type="radio" class="btn-check" name="options2" id="option99" autocomplete="off">
+            <label class="btn btn-success px-0" for="option99">9</label>
+
+            <input type="radio" class="btn-check" name="options2" id="option1010" autocomplete="off">
+            <label class="btn btn-success px-0"
+              for="option1010">10</label>
+
+            <div class="row d-flex justify-content-evenly">
+              <div class="col text-end satisfecho">
+                <p>Nada satisfecho</p>
               </div>
-
-              <div class="collapse mb-4" id="collapseExample">
-                <div class="card card-body">
-
-                  <p class="form-text">En la <strong>nueva cedula de Identidad</strong> puedes encontrar el número de
-                    documento en la parte
-                    <strong>frontal.</strong>
-                  </p>
-                  <p class="form-text">En la <strong>vieja cedula de Identidad</strong> puedes encontrar el número de
-                    serie en la parte
-                    <strong>trasera</strong>.
-                  </p>
-                  <img src="img/serie-carnet.jpg" class="img-fluid">
-
-                </div>
+              <div class="col-2 text-center mx-4">
               </div>
-
-            </form>
-
-
-            <div class="col-sm-12 mt-4 text-left">
-              <p class="mb-2">*Debes validar el captcha para continuar</p>
-              <img src="img/captcha-ejemplo.jpg">
-            </div>
-
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-            <button type="submit" class="btn btn-primary">Validar número de serie</button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!--modal terminos y condiciones-->
-    <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabe3" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-scrollable modal-lg modal-dialog-centered">
-        <div class="modal-content">
-          <div class="modal-body p-5">
-            <h5 class="fw-bold" id="exampleModalLabe3">Términos y condiciones</h5>
-            <p>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-              ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-              fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-              mollit anim id est laborum.
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-              ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-              fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-              mollit anim id est laborum.
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-              ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-              fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-              mollit anim id est laborum.
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-              ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-              fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-              mollit anim id est laborum.
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-              ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-              fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-              mollit anim id est laborum.
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-              ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-              fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-              mollit anim id est laborum.
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-              ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-              fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-              mollit anim id est laborum.
-            </p>
-          </div>
-
-          <div class="container mb-4 mt-3">
-            <div class="row justify-content-end">
-              <div class="col-8 text-end me-4">
-                <button type="button" class="btn btn-volver" data-bs-dismiss="modal">Entiendo y acepto</button>
+              <div class="col text-start satisfecho ms-2">
+                <p>Muy satisfecho</p>
               </div>
             </div>
           </div>
+
+          <div class="col-12 encuesta text-center mt-5">
+
+            <p>¿Cuál sería tu nivel de recomendación a un familiar, amigo o colega?</p>
+
+            <input type="radio" class="btn-check" name="options3" id="option000" autocomplete="off">
+            <label class="btn btn-danger px-0"
+              for="option000">0</label>
+
+            <input type="radio" class="btn-check" name="options3" id="option111" autocomplete="off">
+            <label class="btn btn-danger px-0"
+              for="option111">1</label>
+
+            <input type="radio" class="btn-check" name="options3" id="option222" autocomplete="off">
+            <label class="btn btn-danger px-0"
+              for="option222">2</label>
+
+            <input type="radio" class="btn-check" name="options3" id="option333" autocomplete="off">
+            <label class="btn btn-danger px-0"
+              for="option333">3</label>
+
+            <input type="radio" class="btn-check" name="options3" id="option444" autocomplete="off">
+            <label class="btn btn-danger px-0"
+              for="option444">4</label>
+
+            <input type="radio" class="btn-check" name="options3" id="option555" autocomplete="off">
+            <label class="btn btn-danger px-0"
+              for="option555">5</label>
+
+            <input type="radio" class="btn-check" name="options3" id="option666" autocomplete="off">
+            <label class="btn btn-danger px-0"
+              for="option666">6</label>
+
+            <input type="radio" class="btn-check" name="options3" id="option777" autocomplete="off">
+            <label class="btn btn-warning px-0"
+              for="option777">7</label>
+
+            <input type="radio" class="btn-check" name="options3" id="option888" autocomplete="off">
+            <label class="btn btn-warning px-0"
+              for="option888">8</label>
+
+            <input type="radio" class="btn-check" name="options3" id="option999" autocomplete="off">
+            <label class="btn btn-success px-0"
+              for="option999">9</label>
+
+            <input type="radio" class="btn-check" name="options3" id="option101010" autocomplete="off">
+            <label class="btn btn-success px-0"
+              for="option101010">10</label>
+
+            <div class="row d-flex justify-content-evenly">
+              <div class="col text-end satisfecho">
+                <p>Nada satisfecho</p>
+              </div>
+              <div class="col-2 text-center mx-4">
+              </div>
+              <div class="col text-start satisfecho ms-2">
+                <p>Muy satisfecho</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="container col-lg-7 col-md-9 offset mt-5 ">
+            <div class="text-start">¿Hay algo más que nos quieras comentar?</div>
+            <div class="form-floating">
+              <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"
+                style="height: 100px; border-radius: 8px;"></textarea>
+              <label class="text-muted" for="floatingTextarea">Escribe aquí... </label>
+            </div>
+
+            <div class="d-grid gap-2 d-md-flex justify-content-md-end mt-2">
+
+              <button id="liveToastEncuestaBtn" id="04-pv-renuncia-exito-btn-volver-inicio" type="submit"
+                class="btn btn-primary mt-3">Enviar Encuesta</button>
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="encuesta-ok" style="display: none;">
+          <h5>Gracias por responder. <br>Tu opinión es importante para que podamos mejorar.</h5>
+        </div>
+
+      </div>
+
+
+
+
+    </section>
+    <!-- Fin Encuesta-->
+
+  </div>
+  <section id="botonera">
+    <div class="container mt-3 mb-5">
+      <div class="row justify-content-end">
+        <div class="col-8 text-end">
+          <a class="btn text-primary fw-bold btn-sm" href="#"><i class="bi bi-arrow-left"></i> Volver al inicio</a>
         </div>
       </div>
     </div>
-
-    <!-- fin autorizaciones-->
-
-  </section>
-
-  <section id="botonera" class="mb-4 mt-4">
-    <div class="container mt-4">
-      <div class="d-none d-sm-block d-sm-none d-md-block text-end">
-        <button type="button" class="btn btn-volver">Volver</button>
-        <button type="button" class="btn btn-primary">Continuar</button>
-      </div>
-      <div class="d-grid d-md-none d-lg-blockcol-lg-4">
-        <button type="button" class="btn btn-volver">Volver</button>
-        <button type="button" class="btn btn-primary mt-3">Continuar</button>
-      </div>
-    </div>
   </section>
 
 
-  <!--fin seccion beneficiario-->
+
 
   <!--Seccion Legales-->
   <section id="legales">
@@ -669,6 +460,7 @@
   </section>
   <!--Fin Seccion Legales-->
 
+
   <!--Footer-->
   <section id="footer">
     <div class="container">
@@ -687,7 +479,7 @@
               data-bs-target="#modalFAQ">Preguntas Frecuentes</a></li>
           <li class="nav-item col-12 col-sm-4 col-lg-3 text-center"><a id="01-pv-home-footer-canal-contactos" href="#"
               class="fw-bold link-footer nav-link px-2 text-left">Canales de Contacto <br><small><i
-                  class="bi bi-telephone-fill pe-2"></i>9 123 456 78</small></a></li>
+                  class="bi bi-telephone-forward pe-2"></i>9 123 456 78</small></a></li>
         </ul>
       </footer>
     </div>

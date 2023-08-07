@@ -12510,6 +12510,22 @@ span.ic-form {
   font-weight: normal;
 }
 
+.position-toast {
+  top: 0 !important;
+  right: 0 !important;
+}
+
+.text-bg-incorrect {
+  background-color: #fbeded !important;
+}
+
+@media (min-width: 100px) and (max-width: 991px) {
+  .position-toast {
+    top: 0 !important;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+  }
+}
 p.text-legales {
   font-size: 0.8rem;
 }
