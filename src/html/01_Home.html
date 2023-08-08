@@ -296,11 +296,16 @@
 
         <div class="fondo-cotizacion px-2">
 
-          <div class="container col-lg-5 col-sm-12 mt-5">
-            <div class="alert alert-info d-flex align-items-center" role="alert">
-              <img class="ms-4" src="../../build/img/svg/alert-info-.svg">
-              <div class="ms-4">
-                Capital de 50UF es solo para asegurado titular.
+          <div class="container mt-4">
+            <a id="BtnVolverSeguros" class="btn text-primary fw-bold btn-sm flex-shrink-1 bd-highlight"><i class="bi bi-arrow-left"></i>
+              Volver a seguros
+            </a>
+            <div class="d-flex bd-highlight">
+              <div class="alert alert-info d-flex align-items-center bd-highlight mx-auto mt-3" role="alert">
+                <img class="ms-4" src="../../build/img/svg/alert-info-.svg">
+                <div class="ms-4">
+                  Capital de 50UF es solo para asegurado titular.
+                </div>
               </div>
             </div>
           </div>
@@ -1431,6 +1436,7 @@
       const checkbox1 = $('#flexCheckChecked');
       const checkbox2 = $('#flexCheckChecked2');
       const cotizarBtn = $('#cotizarBtn');
+      const BtnVolverSeguros = $('#BtnVolverSeguros')
       const contenedor = $('#contenedorplanes');
       const cotizarDatos = $('#cotizar-datos');
 
@@ -1449,6 +1455,11 @@
         contenedor.toggle();
         cotizarDatos.hide();
       });
+
+      BtnVolverSeguros.on('click', function () {
+        contenedor.toggle();
+        cotizarDatos.show();
+      })
     });
   </script>
 </body>
