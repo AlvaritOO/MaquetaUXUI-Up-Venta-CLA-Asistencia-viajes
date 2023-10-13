@@ -9,13 +9,13 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Kaisei+HarunoUmi:wght@400;700&family=Open+Sans&display=swap"
     rel="stylesheet">
-  <link rel="stylesheet" href="../../build/css/app.css">
+  <link rel="stylesheet" href="../../../build/css/app.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
   <title>CLA - OneInsurance</title>
   <!-- Animate -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
-  <link rel="stylesheet" href="../../build/css/splide.min.css" />
+  <link rel="stylesheet" href="../../../build/css/splide.min.css" />
   <!-- Material  CSS -->
   <link
     href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
@@ -33,13 +33,13 @@
         class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 border-bottom">
         <a id="01-pv-home-navbar-logo-caja-los-andes" href="/"
           class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
-          <img src="../../build/img/svg/logo-cla.svg" alt="Caja los Andes" class="logo-cla">
+          <img src="../../../build/img/svg/logo-cla.svg" alt="Caja los Andes" class="logo-cla">
         </a>
 
         <div class="col-md-6 text-end d-none d-sm-block d-sm-none d-md-block">
-          <a id="01-pv-home-navbar-logo-bnp-paribas" href="#"><img src="../../build/img/svg/bnp.svg"
+          <a id="01-pv-home-navbar-logo-bnp-paribas" href="#"><img src="../../../build/img/svg/bnp.svg"
               class="logo-bnp mr-4" alt="BNP Paribas Cardif"></a>
-          <a id="01-pv-home-navbar-logo-corredora" href="#"><img src="../../build/img/svg/corredora-color.svg"
+          <a id="01-pv-home-navbar-logo-corredora" href="#"><img src="../../../build/img/svg/corredora-color.svg"
               class="logo-cslc ms-4" alt="Corredora de seguros la Camara"></a>
         </div>
       </header>
@@ -58,9 +58,9 @@
               <span class="toggler-icon middle-bar"></span>
               <span class="toggler-icon bottom-bar"></span>
             </button>
+
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-
                 <li class="nav-item dropdown-hover">
                   <a class="nav-link active dropdown-hover-button" href="#">Contratar Seguros</a>
                   <div class="dropdown-hover-content shadow">
@@ -143,41 +143,6 @@
   </section>
   <!--Fin Header-->
 
-  <!--toast nuevo beneficiario-->
-  <div class="toast-container position-fixed top-0 end-0 p-3" style="z-index: 99991">
-    <div id="liveToast" class="toast text-white bg-success border-0" role="alert" aria-live="assertive"
-      aria-atomic="true">
-      <div class="d-flex">
-        <div class="toast-body">
-          <b>Beneficiario inscrito correctamente.</b>
-        </div>
-        <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast"
-          aria-label="Close"></button>
-      </div>
-    </div>
-
-    <div id="liveToast2" class="toast text-white bg-success border-0" role="alert" aria-live="assertive"
-      aria-atomic="true">
-      <div class="d-flex">
-        <div class="toast-body">
-          <b>Cambios Guardados correctamente</b>
-        </div>
-        <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast"
-          aria-label="Close"></button>
-      </div>
-    </div>
-  </div>
-
-  <div id="liveToast3" class="toast text-white bg-success border-0" role="alert" aria-live="assertive"
-    aria-atomic="true">
-    <div class="d-flex">
-      <div class="toast-body">
-        <b>Beneficario eliminado correctamente</b>
-      </div>
-      <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast"
-        aria-label="Close"></button>
-    </div>
-  </div>
 
   <!--wizard-->
   <section id="wizard" class="mb-5 pt-3 container d-none d-lg-block">
@@ -199,7 +164,7 @@
               class="position-absolute top-0 start-65 translate-middle btn btn-sm btn-primary rounded-pill"
               style="width: 2rem; height:2rem;">3</button>
             <button type="button"
-              class="position-absolute top-0 start-100 translate-middle btn btn-sm btn-wizard-secundary rounded-pill"
+              class="position-absolute top-0 start-100 translate-middle btn btn-sm btn-primary rounded-pill"
               style="width: 2rem; height:2rem;">4</button>
           </div>
         </div>
@@ -210,10 +175,9 @@
             <div class="position-relative">
               <span class="position-absolute top-0 start-0 translate-middle text-center">Datos del asegurado</span>
               <span class="position-absolute top-0 start-35 translate-middle text-center">Viajeros adicionales</span>
-              <span class="position-absolute top-0 start-65 translate-middle text-center fw-bold">Resumen y
-                confirmación</span>
-              <span class="position-absolute top-0 start-101 translate-middle text-center" style="width: 200px">Medios
-                de pago</span>
+              <span class="position-absolute top-0 start-65 translate-middle text-center">Resumen y confirmación</span>
+              <span class="position-absolute top-0 start-101 translate-middle text-center fw-bold"
+                style="width: 200px">Medios de pago</span>
             </div>
           </div>
         </div>
@@ -228,12 +192,6 @@
       <div class="row">
         <div class="col-6 paso-actual">
           <span class="now-next text-right">Ahora</span>
-          <span class="h4 text-right">Paso 3 de 4</span>
-          <p class="nombre-paso text-right">Resumen y confirmación</p>
-        </div>
-
-        <div class="col-6 paso-siguiente">
-          <span class="now-next text-right">Siguiente</span>
           <span class="h4 text-right">Paso 4 de 4</span>
           <p class="nombre-paso text-right">Medios de pago</p>
         </div>
@@ -243,389 +201,78 @@
   </section>
   <!--fin wizard mobile-->
 
-
-  <!-- RESUMEN Y CONFIRMACIÓN -->
-  <section id="beneficiarios" class="pt-4 ">
-    <div class="container">
-      <div class="row">
-        <h5 class="title-form fw-bold">RESUMEN Y CONFIRMACIÓN</h5>
-        <p class="mb-5">
-          ¡Estás a un solo paso de contratar tu seguro XXXXXX! Para finalizar el proceso de contratación, te pedimos que puedas aceptar los términos y condiciones en la parte final.
-        </p>
-      </div>
-  </section>
-
-  <!-- Detalle del Seguro -->
-  <section id="resumen" class="p-4">
-    <div class="container detalles-seguros">
-      <div class="col-12 mb-4">
-        <p class="title-form text-primary fw-bold ms-3 mt-4">Detalle del Seguro XXXX</p>
-        <div class="row ms-2 mt-2">
-          <div class="col-sm-12 col-lg-2">
-
-            <span class="fw-bold">Titular Asegurado</span>
-            <ul class="list-unstyled">
-              <li>Cristian Torres</li>
-            </ul>
-          </div>
-          <div class="col-sm-12 col-lg-2">
-
-            <span class="fw-bold">Viajeron adicionales</span>
-            <ul class="list-unstyled">
-              <li>Maximiliano Torres
-                Luciana Rincón</li>
-            </ul>
-          </div>
-
-          <div class="col-sm-12 col-lg-2">
-            <span class="fw-bold">Plan seleccionado</span>
-            <ul class="list-unstyled">
-              <li>Plan XXXXXX</li>
-            </ul>
-          </div>
-
-          <div class="col-sm-12 col-lg-2">
-            <div class="row">
-              <span class="fw-bold">Monto asegurado</span>
-              <ul class="list-unstyled">
-                <li>50 UF</li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="col-sm-12 col-lg-2">
-            <span class="fw-bold">Vigencia del viaje</span>
-            <ul class="list-unstyled">
-              <li>Desde dd/mm/año hasta dd/mm/año</li>
-            </ul>
-          </div>
-
-          <div class="col-sm-12 col-lg-2">
-            <span class="fw-bold">Total a pagar</span>
-            <ul class="list-unstyled">
-              <li>UF: XXXX <br>
-                CLP: XXXXXX</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-  </div>
-
-  </section>
-
-  <!-- ¡Tendrás los siguientes beneficios! -->
-  <section id="resumen" class="p-4">
-    <div class="container detalles-seguros">
-      <div class="row">
-        <p class="title-form text-primary fw-bold ms-3 mt-4">¡Tendrás los siguientes beneficios!</p>
-        <p class="ms-3 mt-2">(Recuerda que para utilizarlos debes seguir las instrucciones que te enviaremos una vez
-          hayas terminado de contratar tu seguro).</p>
-        <div class="row  ms-2 mt-2">
-          <div class="col-sm-12 col-lg-2">
-            <span class="fw-bold">Asistencia médica</span>
-            <ul class="list-unstyled">
-              <li>USD XX.XX</li>
-            </ul>
-          </div>
-          <div class="col-sm-12 col-lg-2">
-            <span class="fw-bold">Extravío de equipaje</span>
-            <ul class="list-unstyled">
-              <li>USD XX.XX</li>
-            </ul>
-          </div>
-
-          <div class="col-sm-12 col-lg-2">
-            <span class="fw-bold">Medicamentos</span>
-            <ul class="list-unstyled">
-              <li>USD XX.XX</li>
-            </ul>
-          </div>
-
-          <div class="col-sm-12 col-lg-2">
-            <span class="fw-bold">Telemedicina</span>
-            <ul class="list-unstyled">
-              <li>USD XX.XX</li>
-            </ul>
-          </div>
-
-          <div class="col-sm-12 col-lg-2">
-            <div class="row">
-              <span class="fw-bold">Estadía de emergencia</span>
-              <ul class="list-unstyled">
-                <li>USD XX.XX</li>
-              </ul>
-            </div>
-          </div>
-
-  </section>
-
-  <div class="container mb-4">
-    <a class="btn btn-volver"><i class="bi bi-box-arrow-in-down"></i> Descargar póliza</a>
-  </div>
-
-  <!-- Autorizaciones-->
-  <section>
+  <!-- form -->
+  <section id="mediosPago">
     <div class="container mt-4">
       <div class="row">
-        <div class="col-lg-12">
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-            <label class="form-check-label" for="flexCheckDefault" data-bs-toggle="tooltip" data-bs-placement="right"
-              title="" data-bs-original-title="Ver el uso de mis datos para contactabilidad">
-              Autorizo el uso de mis datos para contactabilidad. <br>
-              <span><a type="button" data-bs-toggle="modal" data-bs-target="#exampleModa1"><u>Ver documento de Aceptación</u></a></span>
-            </label>
-          </div>
-        </div>
-      </div>
-    </div>
+        <h5 class="title-form fw-bold">MEDIOS DE PAGO</h5>
+        <p>Estás contratando el Seguro XXXXXX por UF XX.XXX ($XX.XXX).<br>
+          El monto de tu seguro de asistencia en viaje debe ser cancelado en este momento a través de transbank con
+          tarjeta de crédito o debito.</p>
 
-    <div class="container mt-4">
-      <div class="row">
-        <div class="col-lg-12">
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault2">
-            <label class="form-check-label" for="flexCheckDefault2" data-bs-toggle="tooltip" data-bs-placement="right"
-              title="" data-bs-original-title="Ver Términos y Condiciones del seguro">
-              He leído y acepto Términos y Condiciones del seguro. <br>
-              <span><a type="button" data-bs-toggle="modal" data-bs-target="#exampleModal3"><u>Ver documento de Aceptación</u></a></span>
-            </label>
-          </div>
-        </div>
-      </div>
-    </div>
-
-
-    <!--modal -->
-    <div class="modal fade" id="exampleModa1" tabindex="-1" aria-labelledby="exampleModalLabe3" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-scrollable modal-lg modal-dialog-centered">
-        <div class="modal-content">
-          <div class="modal-body p-5">
-            <h5 class="fw-bold" id="exampleModalLabe3">Autorización de uso de Datos para Contactabilidad.</h5>
-            <p>
-              Autorizo que mi información personal sea recopilada, almacenada, tratada y divulgada por
-              Caja de Compensación de Asignación Familiar de Los Andes (“Caja Los Andes” o la “Caja”), según la
-              normativa. Vigente y conforme al Acuerdo de Privacidad.
-            </p>
-            <p>
-              <b>1. Autorización de tratamiento de Datos Personales:</b> Por medio de la contratación de este seguro
-              autorizo, como responsables de bases de datos, a las sociedades: BNP Paribas Cardif Seguros Generales
-              S.A., BNP Paribas Cardif Seguros de Vida S.A. y BNP Paribas Cardif Servicios y Asistencia Ltda.
-              (conjuntamente “BNP Paribas Cardif”) a tratar mis datos personales, de acuerdo a los fines y condiciones
-              aquí descritos. Los datos que autorizo tratar son los contenidos en esta solicitud, y aquellos que más
-              adelante resulten necesarios para el otorgamiento de los productos y/o servicios contratados de BNP
-              Paribas Cardif.
-            </p>
-            <p>
-            <ul class="list-unstyled">
-              <b>2. Propósitos del tratamiento:</b> Los propósitos para los cuales autorizo a BNP Paribas Cardif a
-              tratar mis datos personales son todos o algunos de los siguientes propósitos:
-              <li>a) Evaluar esta solicitud y proporcionarme los productos y servicios que sean contratados;
-              </li>
-              <li>
-                b) Contactarme y responder a mis consultas;
-              </li>
-              <li>
-                c) Gestionar y procesar los denuncios de mis siniestros;
-              </li>
-              <li>
-                d) Enviar comunicaciones publicitarias;
-              </li>
-              <li>
-                e) Evaluar y mejorar los productos y servicios de BNP Paribas Cardif, a través de desarrollos asociados
-                a seguros, análisis de datos y estudios analíticos;
-              </li>
-              <li>
-                f) Realizar operaciones propias del negocio de BNP Paribas Cardif tales como: contabilidad,
-                administración, monitoreo de riesgo y técnico, auditorías, facturación y, cobros; y (vii) dar
-                cumplimiento a las obligaciones legales de BNP Paribas Cardif.
-              </li>
-
-            </ul>
-            </p>
-            <p>
-              <b>3. Datos personales de terceros:</b> Sobre la información personal de terceros que yo entregue a BNP
-              Paribas Cardif (ej. beneficiaros), declaro contar con las autorizaciones suficientes, para que BNP Paribas
-              Cardif trate debidamente aquella información, según los propósitos indicados en el número anterior.
-            </p>
-            <p>
-              <b>4. Comunicación de datos a terceros:</b> Únicamente para los propósitos indicados, autorizo a BNP
-              Paribas Cardif para que pueda comunicar mis datos personales a sus proveedores y terceros colaboradores
-              como, por ejemplo, corredores de seguros, liquidadores, intermediadores y socios comerciales.
-            </p>
-            <p>
-              <b>5. Mis derechos:</b> Declaro conocer que mis derechos como titular de datos, los puedo hacer efectivos
-              de manera gratuita comunicándome al 800362100.</ul>
-            </p>
-          </div>
-
-          <div class="container mb-4 mt-3">
-            <div class="row justify-content-end">
-              <div class="col-8 text-end me-4">
-                <button type="button" class="btn btn-volver" data-bs-dismiss="modal">Entiendo y acepto</button>
+        <div class="container mt-5 mb-3 webpay-bg position-relative">
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="paymentMethod" id="webpayOption" value="webpay"
+                  checked>
+                <label class="form-check-label" for="webpayOption">
+                  <img class="bd-placeholder-img" src="../../../build/img/svg/logo-webpay.svg" width="300px">
+                </label>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </div>
 
-
-    <!--modal verificacion-->
-    <div class="modal fade" id="modalVerificacion" tabindex="-1" aria-labelledby="modalVerificacion" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title color-primary" id="modalVerificacion">Verificación</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-
-            <form>
-              <div class="mb-3">
-                <label for="exampleInputEmail1" class="form-label">Número de documento o serie</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                <div id="emailHelp" class="form-text" data-bs-toggle="collapse" href="#collapseExample" role="button"
-                  aria-expanded="false" aria-controls="collapseExample"><a href="#">¿Donde encuentro esto?</a></div>
+        <div class="modal fade" id="exampleModa2" tabindex="-1" aria-labelledby="exampleModalLabe3" aria-hidden="true">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title color-primary" id="exampleModalLabe3">Modal Mandato de Cargo</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
-
-              <div class="collapse mb-4" id="collapseExample">
-                <div class="card card-body">
-
-                  <p class="form-text">En la <strong>nueva cedula de Identidad</strong> puedes encontrar el número de
-                    documento en la parte
-                    <strong>frontal.</strong>
-                  </p>
-                  <p class="form-text">En la <strong>vieja cedula de Identidad</strong> puedes encontrar el número de
-                    serie en la parte
-                    <strong>trasera</strong>.
-                  </p>
-                  <img src="img/serie-carnet.jpg" class="img-fluid">
-
-                </div>
+              <div class="modal-body">
+                <!-- Aquí va tu contenido -->
               </div>
-
-            </form>
-
-
-            <div class="col-sm-12 mt-4 text-left">
-              <p class="mb-2">*Debes validar el captcha para continuar</p>
-              <img src="img/captcha-ejemplo.jpg">
-            </div>
-
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-            <button type="submit" class="btn btn-primary">Validar número de serie</button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!--modal terminos y condiciones-->
-    <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabe3" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-scrollable modal-lg modal-dialog-centered">
-        <div class="modal-content">
-          <div class="modal-body p-5">
-            <h5 class="fw-bold" id="exampleModalLabe3">Términos y condiciones</h5>
-            <p>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-              ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-              fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-              mollit anim id est laborum.
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-              ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-              fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-              mollit anim id est laborum.
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-              ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-              fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-              mollit anim id est laborum.
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-              ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-              fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-              mollit anim id est laborum.
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-              ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-              fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-              mollit anim id est laborum.
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-              ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-              fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-              mollit anim id est laborum.
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-              ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-              fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-              mollit anim id est laborum.
-            </p>
-          </div>
-
-          <div class="container mb-4 mt-3">
-            <div class="row justify-content-end">
-              <div class="col-8 text-end me-4">
-                <button type="button" class="btn btn-volver" data-bs-dismiss="modal">Entiendo y acepto</button>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                <button type="button" class="btn btn-primary">Entiendo y Acepto las Condiciones</button>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </div>
 
-    <!-- fin autorizaciones-->
-
-  </section>
-
-  <section id="botonera" class="mb-4 mt-4">
-    <div class="container mt-4">
-      <div class="d-none d-sm-block d-sm-none d-md-block text-end">
-        <button type="button" class="btn btn-volver">Volver</button>
-        <button type="button" class="btn btn-primary">Continuar</button>
-      </div>
-      <div class="d-grid d-md-none d-lg-blockcol-lg-4">
-        <button type="button" class="btn btn-volver">Volver</button>
-        <button type="button" class="btn btn-primary mt-3">Continuar</button>
+        <section id="botonera" class="mb-4 mt-4">
+          <div class="container mt-4">
+            <div class="d-none d-sm-block d-sm-none d-md-block text-end">
+              <button type="button" class="btn btn-volver">Volver</button>
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticProcedPago">Pagar y contratar</button>
+            </div>
+            <div class="d-grid d-md-none d-lg-blockcol-lg-4">
+              <button type="button" class="btn btn-volver">Volver</button>
+              <button type="button" class="btn btn-primary mt-3" data-bs-toggle="modal" data-bs-target="#staticProcedPago">Pagar y contratar</button>
+            </div>
+          </div>
+        </section>
       </div>
     </div>
   </section>
 
+  <!--fin form-->
 
-  <!--fin seccion beneficiario-->
 
   <!--Seccion Legales-->
   <section id="legales">
-    <div class="container mt-4 mb-4">
+    <div class="container mt-5 mb-4">
       <div class="row">
         <div class="col-lg-8 mx-auto">
-          <div class="accordion accordion-flush " id="accordionExample">
+          <div class="accordion accordion-flush" id="accordionExample">
             <div class="accordion-item">
               <h2 class="accordion-header" id="headingOne">
                 <button class="accordion-button collapsed acordion-legales" type="button" data-bs-toggle="collapse"
                   data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-
-
-                  <span class="material-icons me-2 color-primario">privacy_tip</span><strong
-                    class="color-primario">Legales</strong>
+                  <span class="material-icons me-2 color-primario">privacy_tip</span>
+                  <strong class="color-primario">Legales</strong>
                 </button>
               </h2>
               <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
@@ -669,13 +316,14 @@
   </section>
   <!--Fin Seccion Legales-->
 
+
   <!--Footer-->
   <section id="footer">
     <div class="container">
       <footer class="d-flex flex-wrap justify-content-between align-items-center py-4">
         <p class="col-md-4 col-12 col-sm-2 col-lg-4 mb-0 text-muted">
           <a id="01-pv-home-footer-logo-bnp" href="#"><img class="col-6 logo-footer" alt="BNP Paribas Cardif"
-              src="../../build/img/svg/cardif-byn.svg"></a>
+              src="../../../build/img/svg/cardif-byn.svg"></a>
         </p>
 
         <ul class="nav col-md-8 mt-2 justify-content-end">
@@ -900,15 +548,40 @@
   </div>
   <!-- Fin Modal terminos-->
 
+  <!-- Modal Procedimiento Pago -->
+  <div class="modal fade" id="staticProcedPago" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false"
+    aria-labelledby="staticProcedPagoLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-body p-5">
+          <p><strong>Procedimiento de pago</strong>
+          </p>
+          <br>
+          Estás contratando el Seguro <b>XXXXXX por UF XX.XXX ($XX.XXX)</b>, por lo que te re direccionaremos para que
+          puedas realizar el pago del seguro.
+        </div>
+
+        <div class="container mb-4">
+          <div class="row justify-content-end">
+            <div class="col-8 text-end me-4">
+              <button type="button" class="btn btn-volver" data-bs-dismiss="modal">Aceptar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Fin Modal Procedimiento Pago -->
+
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
-  <script src="../js/bootstrap.min.js"></script>
+  <script src="../../js/bootstrap.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"
     integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-  <script src="../js/scrollreveal.min.js"></script>
-  <script src="../js/owl.carousel.min.js"></script>
-  <script src="../js/splide.min.js"></script>
-  <script src="../js/jquery.scheletrone.js"></script>
-  <script src="../js/funciones.js"></script>
+  <script src="../../js/scrollreveal.min.js"></script>
+  <script src="../../js/owl.carousel.min.js"></script>
+  <script src="../../js/splide.min.js"></script>
+  <script src="../../js/jquery.scheletrone.js"></script>
+  <script src="../../js/funciones.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
 
 </body>
