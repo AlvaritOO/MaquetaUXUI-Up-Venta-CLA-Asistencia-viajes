@@ -253,6 +253,23 @@ p.card-text a {
   border-bottom: 1px solid #f9be00;
 }
 
+.divisor-card-escolaridad {
+  height: auto;
+  width: 250px;
+  margin: 20px 20px;
+  border-bottom: 1px solid #f9be00;
+}
+
+
+.row-escolaridad {
+  margin: 0 auto;
+  width: 80%;
+}
+
+.card-content-escolaridad {
+  margin: 0 auto;
+}
+
 .divisor-small {
   border-bottom: 1px solid $gris-dark;
   padding: 10px 29px 0px 29px;
@@ -446,6 +463,28 @@ span.icono-destacada.material-icons-outlined {
     50%{background-position:100% 50%}
     100%{background-position:0% 50%}
 }*/
+.card-content-escolaridad {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+
+  width: 337px;
+  height: auto;
+  transition: all 0.3s ease-in;
+  position: relative;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  background-color: $white;
+  border: 2px solid $white;
+  border-radius: 20px;
+
+  &:hover {
+    transition: all 0.3s ease-in;
+    transform: translateY(10px) scale();
+    z-index: 99;
+    border: 2px solid #0076a9;
+  }
+}
 
 .card-content {
   display: flex;
@@ -1339,4 +1378,9 @@ a.btn-mas-monto {
   position: relative;
   top: 88px;
   left: 65px;
+}
+
+.text-primary-uf {
+  --bs-text-opacity: 1;
+  color:  #008EC4 !important;
 }
