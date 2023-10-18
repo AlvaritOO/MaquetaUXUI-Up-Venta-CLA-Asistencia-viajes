@@ -326,7 +326,7 @@ p.card-text a {
 
 .back-gradiente {
   background: #def4ff;
-  border-radius: 24px;
+  border-radius: 16px;
   max-width: 800px;
   p,
   h2 {
@@ -972,6 +972,7 @@ section#requisitos div ol li::marker {
 .contenedor-wizard {
   margin-top: 172px;
   margin-bottom: 2px;
+  width: 80%;
 }
 
 .nombre-paso {
@@ -1383,4 +1384,9 @@ a.btn-mas-monto {
 .text-primary-uf {
   --bs-text-opacity: 1;
   color:  #008EC4 !important;
+}
+
+.container-text-planes {
+  width: auto;
+  margin-left: 200px;
 }
