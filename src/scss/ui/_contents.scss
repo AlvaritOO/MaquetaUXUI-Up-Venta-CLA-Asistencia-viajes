@@ -808,6 +808,18 @@ p.title-folleto {
   background: #00648f;
 }
 
+.btn-amarillo {
+  color: $black;
+  border: 2px solid $black;
+  background: #F9BE00;
+}
+
+.btn-amarillo:hover {
+  color: $black;
+  border: 2px solid $black;
+  background: #F9BE00;
+}
+
 .contenedor-imagen-categoria {
   height: 650px;
   background-color: $gris-dark;

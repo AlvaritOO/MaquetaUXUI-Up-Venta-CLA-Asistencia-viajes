@@ -293,18 +293,18 @@
 
                     <!-- % en desktop-->
                     <div class="ms-4 d-lg-none">
-                      <a class=" position-absolute top-50 start-60 translate-middle link-dark">Editar</a>
+                      <p class="position-absolute top-50 start-60 translate-middle text-primary fw-bold">Editar</p>
                     </div>
                     <div class="ms-4 d-lg-none">
-                      <a class=" position-absolute top-50 start-80 translate-middle link-dark" data-bs-toggle="modal"
-                        data-bs-target="#modalquitarbeneficiario">Eliminar</a>
+                      <p class="position-absolute top-50 start-80 translate-middle text-primary fw-bold"
+                        data-bs-toggle="modal" data-bs-target="#modalquitarbeneficiario">Eliminar</p>
                     </div>
                     <div class="d-grid gap-2 d-md-flex justify-content-md-end d-none d-sm-none d-md-none d-lg-block">
-                      <a class=" position-absolute top-50 start-80 translate-middle link-dark">Editar</a>
+                      <p class="position-absolute top-50 start-80 translate-middle text-primary fw-bold">Editar</p>
                     </div>
                     <div class="d-grid gap-2 d-md-flex justify-content-md-end d-none d-sm-none d-md-none d-lg-block">
-                      <a class=" position-absolute top-50 start-90 translate-middle link-dark" data-bs-toggle="modal"
-                        data-bs-target="#modalquitarbeneficiario">Eliminar</a>
+                      <p class="position-absolute top-50 start-90 translate-middle text-primary fw-bold"
+                        data-bs-toggle="modal" data-bs-target="#modalquitarbeneficiario">Eliminar</p>
                     </div>
 
                   </button>
@@ -314,33 +314,45 @@
                   <div class="accordion-body">
 
                     <form class="fondo-viajeros">
-
+                      <h5 class="title-form fw-bold">DATOS DE ASEGURADO ADICIONAL</h5>
                       <div class="row mt-4 mb-4">
-
-                        <div class="mb-3 col-sm-5 col-md-6 col-lg-4">
-                          <label for="exampleInputEmail1" class="form-label">Nombres</label>
-                          <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-                            placeholder="">
-                        </div>
-
-                        <div class="mb-3 col-sm-5 col-md-6 col-lg-4">
-                          <label for="exampleInputEmail1" class="form-label">Apellidos</label>
-                          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-                            placeholder="">
-                        </div>
-                      </div>
-
-                      <div class="row">
-                        <div class="mb-3 col-sm-5 col-md-6 col-lg-4">
-                          <label for="exampleInputEmail1" class="form-label">RUT</label>
-                          <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-                            placeholder="">
-                        </div>
 
                         <div class="mb-3 col-sm-5 col-md-6 col-lg-4">
                           <label for="exampleInputEmail1" class="form-label">Fecha de nacimiento</label>
                           <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
                             placeholder="">
+                        </div>
+
+                        <div class="mb-3 col-sm-6 col-lg-4">
+                          <label for="exampleInputEmail1" class="form-label">Nacionalidad</label>
+                          <select class="form-select" aria-label="Default select example">
+                            <option selected>Seleccione</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                          </select>
+                        </div>
+                      </div>
+
+                      <div class="row">
+                        <div class="mb-3 col-sm-6 col-lg-4">
+                          <label for="exampleInputEmail1" class="form-label">Profesión / Ocupación</label>
+                          <select class="form-select" aria-label="Default select example" disabled>
+                            <option selected>Seleccione</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                          </select>
+                        </div>
+
+                        <div class="mb-3 col-sm-6 col-lg-4">
+                          <label for="exampleInputEmail1" class="form-label">Estado civil</label>
+                          <select class="form-select" aria-label="Default select example" disabled>
+                            <option selected>Seleccione</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                          </select>
                         </div>
                       </div>
 
@@ -358,59 +370,15 @@
                         <label class="form-check-label" for="inlineRadio2">Masculino</label>
                       </div>
 
-                      <div class="row">
-                        <div class="mb-3 col-sm-6 col-lg-4">
-                          <label for="exampleInputEmail1" class="form-label">Nacionalidad</label>
-                          <select class="form-select" aria-label="Default select example">
-                            <option selected>Seleccione</option>
-                            <option value="1">One</option>
-                            <option value="2">Two</option>
-                            <option value="3">Three</option>
-                          </select>
-                        </div>
+                      <div class="divisor mt-0"></div>
 
-                        <div class="mb-3 col-sm-6 col-lg-4">
-                          <label for="exampleInputEmail1" class="form-label">Vinculo con el titular</label>
-                          <select class="form-select" aria-label="Default select example">
-                            <option selected>Seleccione</option>
-                            <option value="1">One</option>
-                            <option value="2">Two</option>
-                            <option value="3">Three</option>
-                          </select>
-                        </div>
+                      <div class="form-check my-4">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                        <label class="form-check-label text-primary" for="flexCheckChecked">
+                          Copiar datos de contacto y residencia del titular
+                        </label>
                       </div>
-
-                      <div class="row">
-                        <div class="mb-3 col-sm-6 col-lg-4">
-                          <label for="exampleInputEmail1" class="form-label">Profesión / Ocupación</label>
-                          <select class="form-select" aria-label="Default select example">
-                            <option selected>Seleccione</option>
-                            <option value="1">One</option>
-                            <option value="2">Two</option>
-                            <option value="3">Three</option>
-                          </select>
-                        </div>
-
-                        <div class="mb-3 col-sm-6 col-lg-4">
-                          <label for="exampleInputEmail1" class="form-label">Estado civil</label>
-                          <select class="form-select" aria-label="Default select example">
-                            <option selected>Seleccione</option>
-                            <option value="1">One</option>
-                            <option value="2">Two</option>
-                            <option value="3">Three</option>
-                          </select>
-                        </div>
-                      </div>
-                      <div class="divisor"></div>
-
-                      <div class="row">
-                        <div class="mb-3 col-sm-5 col-md-6 col-lg-4">
-                          <label for="exampleInputEmail1" class="form-label">Teléfono de contacto</label>
-                          <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-                            placeholder="">
-                        </div>
-                      </div>
-
+                      <h5 class="title-form fw-bold">CONTACTO</h5>
                       <div class="row">
                         <div class="mb-3 col-sm-5 col-md-6 col-lg-4">
                           <label for="exampleInputEmail1" class="form-label">Correo electrónico</label>
@@ -427,7 +395,7 @@
                       </div>
 
                       <div class="divisor"></div>
-
+                      <h5 class="title-form fw-bold">RESIDENCIA</h5>
                       <div class="row">
                         <div class="mb-3 col-sm-6 col-md-6 col-lg-4">
                           <label for="exampleInputEmail1" class="form-label">País de residencia</label>
@@ -482,16 +450,17 @@
                         </div>
                       </div>
 
-                      <div class="divisor"></div>
+
 
                       <div class="row justify-content-end mt-4">
                         <div class="d-none d-sm-block d-sm-none d-md-block text-end">
                           <button type="button" class="btn btn-volver">Cancelar</button>
-                          <button type="button" class="btn btn-primary" id="liveToastBtn2">Guardar cambios</button>
+                          <button type="button" class="btn btn-amarillo ms-3" id="liveToastBtn2">Guardar cambios</button>
                         </div>
                         <div class="d-grid d-md-none d-lg-blockcol-lg-4">
                           <button type="button" class="btn btn-volver">Cancelar</button>
-                          <button type="button" class="btn btn-primary mt-3" id="liveToastBtn2">Guardar cambios</button>
+                          <button type="button" class="btn btn-amarillo mt-3" id="liveToastBtn2">Guardar
+                            cambios</button>
                         </div>
                       </div>
                     </form>
@@ -517,18 +486,18 @@
 
                     <!-- % en desktop-->
                     <div class="ms-4 d-lg-none">
-                      <a class=" position-absolute top-50 start-60 translate-middle link-dark">Editar</a>
+                      <p class="position-absolute top-50 start-60 translate-middle text-primary fw-bold">Editar</p>
                     </div>
                     <div class="ms-4 d-lg-none">
-                      <a class=" position-absolute top-50 start-80 translate-middle link-dark" data-bs-toggle="modal"
-                        data-bs-target="#modalquitarbeneficiario">Eliminar</a>
+                      <p class="position-absolute top-50 start-80 translate-middle text-primary fw-bold"
+                        data-bs-toggle="modal" data-bs-target="#modalquitarbeneficiario">Eliminar</p>
                     </div>
                     <div class="d-grid gap-2 d-md-flex justify-content-md-end d-none d-sm-none d-md-none d-lg-block">
-                      <a class=" position-absolute top-50 start-80 translate-middle link-dark">Editar</a>
+                      <p class="position-absolute top-50 start-80 translate-middle text-primary fw-bold">Editar</p>
                     </div>
                     <div class="d-grid gap-2 d-md-flex justify-content-md-end d-none d-sm-none d-md-none d-lg-block">
-                      <a class=" position-absolute top-50 start-90 translate-middle link-dark" data-bs-toggle="modal"
-                        data-bs-target="#modalquitarbeneficiario">Eliminar</a>
+                      <p class="position-absolute top-50 start-90 translate-middle text-primary fw-bold"
+                        data-bs-toggle="modal" data-bs-target="#modalquitarbeneficiario">Eliminar</p>
                     </div>
 
                   </button>
@@ -538,33 +507,45 @@
                   <div class="accordion-body">
 
                     <form class="fondo-viajeros">
-
+                      <h5 class="title-form fw-bold">DATOS DE ASEGURADO ADICIONAL</h5>
                       <div class="row mt-4 mb-4">
-
-                        <div class="mb-3 col-sm-5 col-md-6 col-lg-4">
-                          <label for="exampleInputEmail1" class="form-label">Nombres</label>
-                          <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-                            placeholder="">
-                        </div>
-
-                        <div class="mb-3 col-sm-5 col-md-6 col-lg-4">
-                          <label for="exampleInputEmail1" class="form-label">Apellidos</label>
-                          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-                            placeholder="">
-                        </div>
-                      </div>
-
-                      <div class="row">
-                        <div class="mb-3 col-sm-5 col-md-6 col-lg-4">
-                          <label for="exampleInputEmail1" class="form-label">RUT</label>
-                          <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-                            placeholder="">
-                        </div>
 
                         <div class="mb-3 col-sm-5 col-md-6 col-lg-4">
                           <label for="exampleInputEmail1" class="form-label">Fecha de nacimiento</label>
                           <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
                             placeholder="">
+                        </div>
+
+                        <div class="mb-3 col-sm-6 col-lg-4">
+                          <label for="exampleInputEmail1" class="form-label">Nacionalidad</label>
+                          <select class="form-select" aria-label="Default select example">
+                            <option selected>Seleccione</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                          </select>
+                        </div>
+                      </div>
+
+                      <div class="row">
+                        <div class="mb-3 col-sm-6 col-lg-4">
+                          <label for="exampleInputEmail1" class="form-label">Profesión / Ocupación</label>
+                          <select class="form-select" aria-label="Default select example" disabled>
+                            <option selected>Seleccione</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                          </select>
+                        </div>
+
+                        <div class="mb-3 col-sm-6 col-lg-4">
+                          <label for="exampleInputEmail1" class="form-label">Estado civil</label>
+                          <select class="form-select" aria-label="Default select example" disabled>
+                            <option selected>Seleccione</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                          </select>
                         </div>
                       </div>
 
@@ -582,59 +563,15 @@
                         <label class="form-check-label" for="inlineRadio2">Masculino</label>
                       </div>
 
-                      <div class="row">
-                        <div class="mb-3 col-sm-6 col-lg-4">
-                          <label for="exampleInputEmail1" class="form-label">Nacionalidad</label>
-                          <select class="form-select" aria-label="Default select example">
-                            <option selected>Seleccione</option>
-                            <option value="1">One</option>
-                            <option value="2">Two</option>
-                            <option value="3">Three</option>
-                          </select>
-                        </div>
+                      <div class="divisor mt-0"></div>
 
-                        <div class="mb-3 col-sm-6 col-lg-4">
-                          <label for="exampleInputEmail1" class="form-label">Vinculo con el titular</label>
-                          <select class="form-select" aria-label="Default select example">
-                            <option selected>Seleccione</option>
-                            <option value="1">One</option>
-                            <option value="2">Two</option>
-                            <option value="3">Three</option>
-                          </select>
-                        </div>
+                      <div class="form-check my-4">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                        <label class="form-check-label text-primary" for="flexCheckChecked">
+                          Copiar datos de contacto y residencia del titular
+                        </label>
                       </div>
-
-                      <div class="row">
-                        <div class="mb-3 col-sm-6 col-lg-4">
-                          <label for="exampleInputEmail1" class="form-label">Profesión / Ocupación</label>
-                          <select class="form-select" aria-label="Default select example">
-                            <option selected>Seleccione</option>
-                            <option value="1">One</option>
-                            <option value="2">Two</option>
-                            <option value="3">Three</option>
-                          </select>
-                        </div>
-
-                        <div class="mb-3 col-sm-6 col-lg-4">
-                          <label for="exampleInputEmail1" class="form-label">Estado civil</label>
-                          <select class="form-select" aria-label="Default select example">
-                            <option selected>Seleccione</option>
-                            <option value="1">One</option>
-                            <option value="2">Two</option>
-                            <option value="3">Three</option>
-                          </select>
-                        </div>
-                      </div>
-                      <div class="divisor"></div>
-
-                      <div class="row">
-                        <div class="mb-3 col-sm-5 col-md-6 col-lg-4">
-                          <label for="exampleInputEmail1" class="form-label">Teléfono de contacto</label>
-                          <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-                            placeholder="">
-                        </div>
-                      </div>
-
+                      <h5 class="title-form fw-bold">CONTACTO</h5>
                       <div class="row">
                         <div class="mb-3 col-sm-5 col-md-6 col-lg-4">
                           <label for="exampleInputEmail1" class="form-label">Correo electrónico</label>
@@ -651,7 +588,7 @@
                       </div>
 
                       <div class="divisor"></div>
-
+                      <h5 class="title-form fw-bold">RESIDENCIA</h5>
                       <div class="row">
                         <div class="mb-3 col-sm-6 col-md-6 col-lg-4">
                           <label for="exampleInputEmail1" class="form-label">País de residencia</label>
@@ -706,16 +643,17 @@
                         </div>
                       </div>
 
-                      <div class="divisor"></div>
+
 
                       <div class="row justify-content-end mt-4">
                         <div class="d-none d-sm-block d-sm-none d-md-block text-end">
                           <button type="button" class="btn btn-volver">Cancelar</button>
-                          <button type="button" class="btn btn-primary" id="liveToastBtn2">Guardar cambios</button>
+                          <button type="button" class="btn btn-amarillo ms-3" id="liveToastBtn2">Guardar cambios</button>
                         </div>
                         <div class="d-grid d-md-none d-lg-blockcol-lg-4">
                           <button type="button" class="btn btn-volver">Cancelar</button>
-                          <button type="button" class="btn btn-primary mt-3" id="liveToastBtn2">Guardar cambios</button>
+                          <button type="button" class="btn btn-amarillo mt-3" id="liveToastBtn2">Guardar
+                            cambios</button>
                         </div>
                       </div>
                     </form>
@@ -742,18 +680,18 @@
 
                     <!-- % en desktop-->
                     <div class="ms-4 d-lg-none">
-                      <a class=" position-absolute top-50 start-60 translate-middle link-dark">Editar</a>
+                      <p class="position-absolute top-50 start-60 translate-middle text-primary fw-bold">Editar</p>
                     </div>
                     <div class="ms-4 d-lg-none">
-                      <a class=" position-absolute top-50 start-80 translate-middle link-dark" data-bs-toggle="modal"
-                        data-bs-target="#modalquitarbeneficiario">Eliminar</a>
+                      <p class="position-absolute top-50 start-80 translate-middle text-primary fw-bold"
+                        data-bs-toggle="modal" data-bs-target="#modalquitarbeneficiario">Eliminar</p>
                     </div>
                     <div class="d-grid gap-2 d-md-flex justify-content-md-end d-none d-sm-none d-md-none d-lg-block">
-                      <a class=" position-absolute top-50 start-80 translate-middle link-dark">Editar</a>
+                      <p class="position-absolute top-50 start-80 translate-middle text-primary fw-bold">Editar</p>
                     </div>
                     <div class="d-grid gap-2 d-md-flex justify-content-md-end d-none d-sm-none d-md-none d-lg-block">
-                      <a class=" position-absolute top-50 start-90 translate-middle link-dark" data-bs-toggle="modal"
-                        data-bs-target="#modalquitarbeneficiario">Eliminar</a>
+                      <p class="position-absolute top-50 start-90 translate-middle text-primary fw-bold"
+                        data-bs-toggle="modal" data-bs-target="#modalquitarbeneficiario">Eliminar</p>
                     </div>
 
                   </button>
@@ -763,33 +701,45 @@
                   <div class="accordion-body">
 
                     <form class="fondo-viajeros">
-
+                      <h5 class="title-form fw-bold">DATOS DE ASEGURADO ADICIONAL</h5>
                       <div class="row mt-4 mb-4">
-
-                        <div class="mb-3 col-sm-5 col-md-6 col-lg-4">
-                          <label for="exampleInputEmail1" class="form-label">Nombres</label>
-                          <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-                            placeholder="">
-                        </div>
-
-                        <div class="mb-3 col-sm-5 col-md-6 col-lg-4">
-                          <label for="exampleInputEmail1" class="form-label">Apellidos</label>
-                          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-                            placeholder="">
-                        </div>
-                      </div>
-
-                      <div class="row">
-                        <div class="mb-3 col-sm-5 col-md-6 col-lg-4">
-                          <label for="exampleInputEmail1" class="form-label">RUT</label>
-                          <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-                            placeholder="">
-                        </div>
 
                         <div class="mb-3 col-sm-5 col-md-6 col-lg-4">
                           <label for="exampleInputEmail1" class="form-label">Fecha de nacimiento</label>
                           <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
                             placeholder="">
+                        </div>
+
+                        <div class="mb-3 col-sm-6 col-lg-4">
+                          <label for="exampleInputEmail1" class="form-label">Nacionalidad</label>
+                          <select class="form-select" aria-label="Default select example">
+                            <option selected>Seleccione</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                          </select>
+                        </div>
+                      </div>
+
+                      <div class="row">
+                        <div class="mb-3 col-sm-6 col-lg-4">
+                          <label for="exampleInputEmail1" class="form-label">Profesión / Ocupación</label>
+                          <select class="form-select" aria-label="Default select example" disabled>
+                            <option selected>Seleccione</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                          </select>
+                        </div>
+
+                        <div class="mb-3 col-sm-6 col-lg-4">
+                          <label for="exampleInputEmail1" class="form-label">Estado civil</label>
+                          <select class="form-select" aria-label="Default select example" disabled>
+                            <option selected>Seleccione</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                          </select>
                         </div>
                       </div>
 
@@ -807,59 +757,15 @@
                         <label class="form-check-label" for="inlineRadio2">Masculino</label>
                       </div>
 
-                      <div class="row">
-                        <div class="mb-3 col-sm-6 col-lg-4">
-                          <label for="exampleInputEmail1" class="form-label">Nacionalidad</label>
-                          <select class="form-select" aria-label="Default select example">
-                            <option selected>Seleccione</option>
-                            <option value="1">One</option>
-                            <option value="2">Two</option>
-                            <option value="3">Three</option>
-                          </select>
-                        </div>
+                      <div class="divisor mt-0"></div>
 
-                        <div class="mb-3 col-sm-6 col-lg-4">
-                          <label for="exampleInputEmail1" class="form-label">Vinculo con el titular</label>
-                          <select class="form-select" aria-label="Default select example">
-                            <option selected>Seleccione</option>
-                            <option value="1">One</option>
-                            <option value="2">Two</option>
-                            <option value="3">Three</option>
-                          </select>
-                        </div>
+                      <div class="form-check my-4">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                        <label class="form-check-label text-primary" for="flexCheckChecked">
+                          Copiar datos de contacto y residencia del titular
+                        </label>
                       </div>
-
-                      <div class="row">
-                        <div class="mb-3 col-sm-6 col-lg-4">
-                          <label for="exampleInputEmail1" class="form-label">Profesión / Ocupación</label>
-                          <select class="form-select" aria-label="Default select example">
-                            <option selected>Seleccione</option>
-                            <option value="1">One</option>
-                            <option value="2">Two</option>
-                            <option value="3">Three</option>
-                          </select>
-                        </div>
-
-                        <div class="mb-3 col-sm-6 col-lg-4">
-                          <label for="exampleInputEmail1" class="form-label">Estado civil</label>
-                          <select class="form-select" aria-label="Default select example">
-                            <option selected>Seleccione</option>
-                            <option value="1">One</option>
-                            <option value="2">Two</option>
-                            <option value="3">Three</option>
-                          </select>
-                        </div>
-                      </div>
-                      <div class="divisor"></div>
-
-                      <div class="row">
-                        <div class="mb-3 col-sm-5 col-md-6 col-lg-4">
-                          <label for="exampleInputEmail1" class="form-label">Teléfono de contacto</label>
-                          <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-                            placeholder="">
-                        </div>
-                      </div>
-
+                      <h5 class="title-form fw-bold">CONTACTO</h5>
                       <div class="row">
                         <div class="mb-3 col-sm-5 col-md-6 col-lg-4">
                           <label for="exampleInputEmail1" class="form-label">Correo electrónico</label>
@@ -876,7 +782,7 @@
                       </div>
 
                       <div class="divisor"></div>
-
+                      <h5 class="title-form fw-bold">RESIDENCIA</h5>
                       <div class="row">
                         <div class="mb-3 col-sm-6 col-md-6 col-lg-4">
                           <label for="exampleInputEmail1" class="form-label">País de residencia</label>
@@ -931,16 +837,17 @@
                         </div>
                       </div>
 
-                      <div class="divisor"></div>
+
 
                       <div class="row justify-content-end mt-4">
                         <div class="d-none d-sm-block d-sm-none d-md-block text-end">
                           <button type="button" class="btn btn-volver">Cancelar</button>
-                          <button type="button" class="btn btn-primary" id="liveToastBtn2">Guardar cambios</button>
+                          <button type="button" class="btn btn-amarillo ms-3" id="liveToastBtn2">Guardar cambios</button>
                         </div>
                         <div class="d-grid d-md-none d-lg-blockcol-lg-4">
                           <button type="button" class="btn btn-volver">Cancelar</button>
-                          <button type="button" class="btn btn-primary mt-3" id="liveToastBtn2">Guardar cambios</button>
+                          <button type="button" class="btn btn-amarillo mt-3" id="liveToastBtn2">Guardar
+                            cambios</button>
                         </div>
                       </div>
                     </form>
@@ -967,18 +874,18 @@
 
                     <!-- % en desktop-->
                     <div class="ms-4 d-lg-none">
-                      <a class=" position-absolute top-50 start-60 translate-middle link-dark">Editar</a>
+                      <p class="position-absolute top-50 start-60 translate-middle text-primary fw-bold">Editar</p>
                     </div>
                     <div class="ms-4 d-lg-none">
-                      <a class=" position-absolute top-50 start-80 translate-middle link-dark" data-bs-toggle="modal"
-                        data-bs-target="#modalquitarbeneficiario">Eliminar</a>
+                      <p class="position-absolute top-50 start-80 translate-middle text-primary fw-bold"
+                        data-bs-toggle="modal" data-bs-target="#modalquitarbeneficiario">Eliminar</p>
                     </div>
                     <div class="d-grid gap-2 d-md-flex justify-content-md-end d-none d-sm-none d-md-none d-lg-block">
-                      <a class=" position-absolute top-50 start-80 translate-middle link-dark">Editar</a>
+                      <p class="position-absolute top-50 start-80 translate-middle text-primary fw-bold">Editar</p>
                     </div>
                     <div class="d-grid gap-2 d-md-flex justify-content-md-end d-none d-sm-none d-md-none d-lg-block">
-                      <a class=" position-absolute top-50 start-90 translate-middle link-dark" data-bs-toggle="modal"
-                        data-bs-target="#modalquitarbeneficiario">Eliminar</a>
+                      <p class="position-absolute top-50 start-90 translate-middle text-primary fw-bold"
+                        data-bs-toggle="modal" data-bs-target="#modalquitarbeneficiario">Eliminar</p>
                     </div>
 
                   </button>
@@ -988,33 +895,45 @@
                   <div class="accordion-body">
 
                     <form class="fondo-viajeros">
-
+                      <h5 class="title-form fw-bold">DATOS DE ASEGURADO ADICIONAL</h5>
                       <div class="row mt-4 mb-4">
-
-                        <div class="mb-3 col-sm-5 col-md-6 col-lg-4">
-                          <label for="exampleInputEmail1" class="form-label">Nombres</label>
-                          <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-                            placeholder="">
-                        </div>
-
-                        <div class="mb-3 col-sm-5 col-md-6 col-lg-4">
-                          <label for="exampleInputEmail1" class="form-label">Apellidos</label>
-                          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-                            placeholder="">
-                        </div>
-                      </div>
-
-                      <div class="row">
-                        <div class="mb-3 col-sm-5 col-md-6 col-lg-4">
-                          <label for="exampleInputEmail1" class="form-label">RUT</label>
-                          <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-                            placeholder="">
-                        </div>
 
                         <div class="mb-3 col-sm-5 col-md-6 col-lg-4">
                           <label for="exampleInputEmail1" class="form-label">Fecha de nacimiento</label>
                           <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
                             placeholder="">
+                        </div>
+
+                        <div class="mb-3 col-sm-6 col-lg-4">
+                          <label for="exampleInputEmail1" class="form-label">Nacionalidad</label>
+                          <select class="form-select" aria-label="Default select example">
+                            <option selected>Seleccione</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                          </select>
+                        </div>
+                      </div>
+
+                      <div class="row">
+                        <div class="mb-3 col-sm-6 col-lg-4">
+                          <label for="exampleInputEmail1" class="form-label">Profesión / Ocupación</label>
+                          <select class="form-select" aria-label="Default select example" disabled>
+                            <option selected>Seleccione</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                          </select>
+                        </div>
+
+                        <div class="mb-3 col-sm-6 col-lg-4">
+                          <label for="exampleInputEmail1" class="form-label">Estado civil</label>
+                          <select class="form-select" aria-label="Default select example" disabled>
+                            <option selected>Seleccione</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                          </select>
                         </div>
                       </div>
 
@@ -1032,59 +951,15 @@
                         <label class="form-check-label" for="inlineRadio2">Masculino</label>
                       </div>
 
-                      <div class="row">
-                        <div class="mb-3 col-sm-6 col-lg-4">
-                          <label for="exampleInputEmail1" class="form-label">Nacionalidad</label>
-                          <select class="form-select" aria-label="Default select example">
-                            <option selected>Seleccione</option>
-                            <option value="1">One</option>
-                            <option value="2">Two</option>
-                            <option value="3">Three</option>
-                          </select>
-                        </div>
+                      <div class="divisor mt-0"></div>
 
-                        <div class="mb-3 col-sm-6 col-lg-4">
-                          <label for="exampleInputEmail1" class="form-label">Vinculo con el titular</label>
-                          <select class="form-select" aria-label="Default select example">
-                            <option selected>Seleccione</option>
-                            <option value="1">One</option>
-                            <option value="2">Two</option>
-                            <option value="3">Three</option>
-                          </select>
-                        </div>
+                      <div class="form-check my-4">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                        <label class="form-check-label text-primary" for="flexCheckChecked">
+                          Copiar datos de contacto y residencia del titular
+                        </label>
                       </div>
-
-                      <div class="row">
-                        <div class="mb-3 col-sm-6 col-lg-4">
-                          <label for="exampleInputEmail1" class="form-label">Profesión / Ocupación</label>
-                          <select class="form-select" aria-label="Default select example">
-                            <option selected>Seleccione</option>
-                            <option value="1">One</option>
-                            <option value="2">Two</option>
-                            <option value="3">Three</option>
-                          </select>
-                        </div>
-
-                        <div class="mb-3 col-sm-6 col-lg-4">
-                          <label for="exampleInputEmail1" class="form-label">Estado civil</label>
-                          <select class="form-select" aria-label="Default select example">
-                            <option selected>Seleccione</option>
-                            <option value="1">One</option>
-                            <option value="2">Two</option>
-                            <option value="3">Three</option>
-                          </select>
-                        </div>
-                      </div>
-                      <div class="divisor"></div>
-
-                      <div class="row">
-                        <div class="mb-3 col-sm-5 col-md-6 col-lg-4">
-                          <label for="exampleInputEmail1" class="form-label">Teléfono de contacto</label>
-                          <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-                            placeholder="">
-                        </div>
-                      </div>
-
+                      <h5 class="title-form fw-bold">CONTACTO</h5>
                       <div class="row">
                         <div class="mb-3 col-sm-5 col-md-6 col-lg-4">
                           <label for="exampleInputEmail1" class="form-label">Correo electrónico</label>
@@ -1101,7 +976,7 @@
                       </div>
 
                       <div class="divisor"></div>
-
+                      <h5 class="title-form fw-bold">RESIDENCIA</h5>
                       <div class="row">
                         <div class="mb-3 col-sm-6 col-md-6 col-lg-4">
                           <label for="exampleInputEmail1" class="form-label">País de residencia</label>
@@ -1156,16 +1031,17 @@
                         </div>
                       </div>
 
-                      <div class="divisor"></div>
+
 
                       <div class="row justify-content-end mt-4">
                         <div class="d-none d-sm-block d-sm-none d-md-block text-end">
                           <button type="button" class="btn btn-volver">Cancelar</button>
-                          <button type="button" class="btn btn-primary" id="liveToastBtn2">Guardar cambios</button>
+                          <button type="button" class="btn btn-amarillo ms-3" id="liveToastBtn2">Guardar cambios</button>
                         </div>
                         <div class="d-grid d-md-none d-lg-blockcol-lg-4">
                           <button type="button" class="btn btn-volver">Cancelar</button>
-                          <button type="button" class="btn btn-primary mt-3" id="liveToastBtn2">Guardar cambios</button>
+                          <button type="button" class="btn btn-amarillo mt-3" id="liveToastBtn2">Guardar
+                            cambios</button>
                         </div>
                       </div>
                     </form>

@@ -12088,6 +12088,18 @@ p.title-folleto {
   background: #00648f;
 }
 
+.btn-amarillo {
+  color: #000;
+  border: 2px solid #000;
+  background: #F9BE00;
+}
+
+.btn-amarillo:hover {
+  color: #000;
+  border: 2px solid #000;
+  background: #F9BE00;
+}
+
 .contenedor-imagen-categoria {
   height: 650px;
   background-color: #3e4545;
