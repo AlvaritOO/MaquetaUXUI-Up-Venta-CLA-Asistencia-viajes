@@ -198,18 +198,10 @@
   <section id="wizard-mobile">
     <div class="container d-lg-none mt-2 mb-1 wizard-mobile shadow">
       <div class="row">
-        <div class="col-6 paso-actual">
-          <span class="now-next text-right">Ahora</span>
-          <span class="h4 text-right">Paso 1 de 5</span>
-          <p class="nombre-paso text-right">Datos del asegurado</p>
+        <div class="col-12 paso-actual">
+          <img src="../../../build/img/svg/stepper_bubble-5.svg" alt="">
+          <span class="h6 text-right mx-2">RESUMEN Y CONFIRMACIÓN</span>
         </div>
-
-        <div class="col-6 paso-siguiente">
-          <span class="now-next text-right">Siguiente</span>
-          <span class="h4 text-right">Paso 2 de 5</span>
-          <p class="nombre-paso text-right">Declaración de salud</p>
-        </div>
-
       </div>
     </div>
   </section>
@@ -294,11 +286,17 @@
       
               <div class="container mb-4">
                 <div class="row justify-content-end">
-                  <div class="col-8 text-end me-4">
+                  <div class="col-8 text-end me-4 d-none d-sm-block d-sm-none d-md-block">
                     <button type="button" class="btn btn-volver" data-bs-dismiss="modal">Cancelar</button>
                     <button type="button" class="btn btn-primary ms-2" data-bs-dismiss="modal">Sí, confirmo esta opción</button>
                   </div>
+                  <div class="d-grid d-md-none d-lg-blockcol-lg-4 mt-5">
+                    <button type="button" class="btn btn-primary">Sí, confirmo esta opción</button>
+                    <button type="button" class="btn btn-volver mt-3">Continuar</button>
+                  </div>
                 </div>
+
+
               </div>
             </div>
           </div>
@@ -309,20 +307,22 @@
     </div>
 
   </section>
+  <!--fin form-->
 
+  <!-- Botonera-->
   <section id="botonera" class="mb-4 mt-4">
     <div class="container mt-4">
       <div class="d-none d-sm-block d-sm-none d-md-block text-end">
         <button type="button" class="btn btn-volver">Volver</button>
-        <button type="button" class="btn btn-primary mx-2" id="liveToastBtn2">Continuar</button>
+        <button type="button" class="btn btn-primary mx-2">Continuar</button>
       </div>
       <div class="d-grid d-md-none d-lg-blockcol-lg-4">
-        <button type="button" class="btn btn-volver">Volver</button>
-        <button type="button" class="btn btn-primary mt-3" id="liveToastBtn2">Continuar</button>
+        <button type="button" class="btn btn-primary">Continuar</button>
+        <button type="button" class="btn btn-volver mt-3">Volver</button>
       </div>
     </div>
   </section>
-  <!--fin form-->
+  <!-- Fin Botonera-->
 
   <!--Seccion Legales-->
   <section id="legales">
