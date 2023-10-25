@@ -12783,14 +12783,29 @@ img.logo-cslc-small {
 /* State when the navbar is collapsed */
 .navbar-toggler.collapsed .top-bar {
   position: absolute;
-  top: -5px;
+  top: 1px;
   transform: rotate(0deg);
 }
 
 .navbar-toggler.collapsed .middle-bar {
   opacity: 1;
   position: absolute;
-  top: 4px;
+  top: 7px;
+  filter: alpha(opacity=100);
+}
+
+.navbar-toggler.collapsed .middle-bar-2 {
+  opacity: 1;
+  position: absolute;
+  top: 19px;
+  filter: alpha(opacity=100);
+}
+
+.navbar-toggler.collapsed .menu-text {
+  opacity: 1;
+  position: absolute;
+  top: 30px;
+  right: -10px;
   filter: alpha(opacity=100);
 }
 
@@ -12807,6 +12822,12 @@ img.logo-cslc-small {
 }
 
 .navbar-toggler .middle-bar {
+  opacity: 0;
+  top: inherit;
+  filter: alpha(opacity=0);
+}
+
+.navbar-toggler .middle-bar-2 {
   opacity: 0;
   top: inherit;
   filter: alpha(opacity=0);
