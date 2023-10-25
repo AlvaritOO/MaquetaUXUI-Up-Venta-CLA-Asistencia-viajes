@@ -12099,7 +12099,7 @@ p.title-folleto {
 .btn-amarillo:hover {
   color: #000;
   border: 2px solid #000;
-  background: #F9BE00;
+  background: #FDE1A7;
 }
 
 .contenedor-imagen-categoria {
@@ -13161,9 +13161,9 @@ h5.title-form {
     margin-top: 50px;
   }
   .texto-imagen-cabecera {
-    line-height: 1em;
+    line-height: 0.5em;
     font-size: calc(1.325rem + 0.9vw);
-    font-weight: 800;
+    font-weight: 600;
     color: #fff;
   }
 }
@@ -13182,8 +13182,9 @@ h5.title-form {
 }
 @media (max-width: 575.98px) {
   .texto-medium-banner-bottom {
-    font-size: 0.8rem;
-    display: none;
+    font-size: 1em;
+    line-height: 2em;
+    margin-bottom: 40px;
   }
 }
 @media (max-width: 575.98px) {
