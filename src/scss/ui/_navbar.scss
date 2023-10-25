@@ -159,6 +159,12 @@ img.logo-cslc-small {
     filter: alpha(opacity=0);
 }
 
+.navbar-toggler .menu-text {
+    opacity: 0;
+    top: inherit;
+    filter: alpha(opacity=0);
+}
+
 .navbar-toggler .bottom-bar {
     top: inherit;
     transform: rotate(-135deg);
@@ -226,6 +232,8 @@ nav a.nav-link.active{
 .disabled-proteccion{
     color: $gris-light !important;
 }
+
+
 
 //Fin Navbar
 
