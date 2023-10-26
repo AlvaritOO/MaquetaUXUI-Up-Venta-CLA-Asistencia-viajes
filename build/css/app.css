@@ -12898,17 +12898,6 @@ img.logo-cslc-small {
   width: 140%;
 }
 
-.navegaciona {
-  color: #212529;
-  font-size: 16px;
-  font-weight: bolder;
-  transition: all 0.3s ease-in;
-}
-.navegaciona:hover {
-  color: #3e4545;
-  transition: all 0.3s ease-in;
-}
-
 .navegacion-white {
   background-color: #fff;
   transition: all 0.3s ease-in;
@@ -13231,6 +13220,16 @@ h5.title-form {
     width: 30%;
     position: absolute;
     top: 0.7em;
+  }
+  .navegacion nav a {
+    color: #212529;
+    font-size: 16px;
+    font-weight: bolder;
+    transition: all 0.3s ease-in;
+  }
+  .navegacion nav a:hover {
+    color: #3e4545;
+    transition: all 0.3s ease-in;
   }
   .dropdown-hover:hover .dropdown-hover-content {
     display: -webkit-box;

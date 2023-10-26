@@ -224,17 +224,6 @@ img.logo-cslc-small {
     width: 140%;
 } 
 
-.navegaciona {
-    color: $dark;
-    font-size: 16px;
-    //font-family: 'Rawson';
-    font-weight: bolder;
-    transition: all 0.3s ease-in;
-    &:hover{
-        color: $gris-dark;
-        transition: all 0.3s ease-in;
-    }
-}
 
 .navegacion-white  {
     background-color: $white;

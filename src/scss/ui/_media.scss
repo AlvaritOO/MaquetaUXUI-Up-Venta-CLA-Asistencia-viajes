@@ -13,6 +13,17 @@
         top: 0.7em;
     }
     
+    .navegacion nav a {
+        color: $dark;
+        font-size: 16px;
+        //font-family: 'Rawson';
+        font-weight: bolder;
+        transition: all 0.3s ease-in;
+        &:hover{
+            color: $gris-dark;
+            transition: all 0.3s ease-in;
+        }
+    }
     
     .dropdown-hover:hover .dropdown-hover-content {
         display: -webkit-box;
