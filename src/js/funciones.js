@@ -10,6 +10,17 @@ $(window).scroll(function () {
   }
 });
 
+$(window).scroll(function () {
+  var scrollTop = $(window).scrollTop();
+  if ($(this).scrollTop() >= 40) {
+    $(".contenedor-navegacion-2").addClass("navegacion-white");
+    $(".myHeader").addClass("back-white");
+  } else {
+    $(".contenedor-navegacion-2").removeClass("navegacion-white");
+    $(".myHeader").removeClass("back-white");
+  }
+});
+
 //scroll + de  400
 $(window).scroll(function () {
   if ($(this).scrollTop() > 400) {

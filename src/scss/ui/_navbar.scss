@@ -197,9 +197,33 @@ img.logo-cslc-small {
     };
 }
 
+.contenedor-navegacion-2 .navegacion nav a{
+    color: $white;
+    font-size: 16px;
+    font-weight: bolder;
+
+}
+
+.contenedor-navegacion-2 .volver-seguro a{
+    color: $white !important;
+    font-size: 16px;
+    font-weight: bolder;
+}
+
 .navegacion-white  {
     background-color: $white;
     transition: all 0.3s ease-in;
+    .navegacion nav a {
+        color: $dark;
+        font-size: 16px;
+        //font-family: 'Rawson';
+        font-weight: bolder;
+        transition: all 0.3s ease-in;
+        &:hover{
+            color: $gris-dark;
+            transition: all 0.3s ease-in;
+        }
+    }
 }
 
 .myHeader{
@@ -212,8 +236,9 @@ img.logo-cslc-small {
 }
 
 //NavBar Principal
+
 .navegacion nav a {
-    color: $gris-intermedio;
+    color: $dark;
     font-size: 16px;
     //font-family: 'Rawson';
     font-weight: bolder;
@@ -227,6 +252,7 @@ img.logo-cslc-small {
 nav a.nav-link.active{
     font-weight: bolder;
     border-bottom: 3px solid $primary;
+    color: $primary !important;
 }
 
 .disabled-proteccion{
@@ -257,7 +283,6 @@ nav a.nav-link.active{
 .nav-tab1 li a{
     color: $gris-dark;
     border-bottom: 3px solid $g3;
-    color: $gris-dark;
 }
 
 .nav-tab1 a.nav-link.active {
