@@ -196,14 +196,20 @@ img.logo-cslc-small {
     };
 }
 
+.myHeader{
+    transition: all 0.3s ease-in;
+}
+
+.icono-nav-home{
+    font-size: 1.1rem;
+    font-weight: bolder;
+}
+
 .contenedor-navegacion-2 .navegacion nav a{
     color: $white;
     font-size: 16px;
     font-weight: bolder;
-    .dropdown-hover-content a.dropdown-item{
-        color: $gris-intermedio;
     }
-}
 
 .contenedor-navegacion-2 .volver-seguro a {
     color: $white !important;
@@ -218,6 +224,17 @@ img.logo-cslc-small {
     width: 140%;
 } 
 
+.navegaciona {
+    color: $dark;
+    font-size: 16px;
+    //font-family: 'Rawson';
+    font-weight: bolder;
+    transition: all 0.3s ease-in;
+    &:hover{
+        color: $gris-dark;
+        transition: all 0.3s ease-in;
+    }
+}
 
 .navegacion-white  {
     background-color: $white;
@@ -251,14 +268,6 @@ img.logo-cslc-small {
     }
 }
 
-.myHeader{
-    transition: all 0.3s ease-in;
-}
-
-.icono-nav-home{
-    font-size: 1.1rem;
-    font-weight: bolder;
-}
 
 //NavBar Principal
 
@@ -274,17 +283,21 @@ img.logo-cslc-small {
     }
 }
 
-nav a.nav-link.active{
+.pi {
     font-weight: bolder;
     border-bottom: 3px solid $primary;
     color: $white !important;
 }
 
+nav a.nav-link.active {
+    font-weight: bolder;
+    border-bottom: 3px solid $primary;
+    color: $primary;
+}
+
 .disabled-proteccion{
     color: $gris-light !important;
 }
-
-
 
 //Fin Navbar
 
