@@ -12875,11 +12875,21 @@ img.logo-cslc-small {
   font-size: 16px;
   font-weight: bolder;
 }
+.contenedor-navegacion-2 .navegacion nav a .dropdown-hover-content a.dropdown-item {
+  color: #e7e7e7;
+}
 
 .contenedor-navegacion-2 .volver-seguro a {
   color: #fff !important;
   font-size: 16px;
   font-weight: bolder;
+}
+
+.volver-seguro-img {
+  background-image: url("../../../build/img/svg/arrow_back_white.svg");
+  background-repeat: no-repeat;
+  background-position: 11px 6px;
+  width: 140%;
 }
 
 .navegacion-white {
@@ -12895,6 +12905,21 @@ img.logo-cslc-small {
 .navegacion-white .navegacion nav a:hover {
   color: #3e4545;
   transition: all 0.3s ease-in;
+}
+.navegacion-white .volver-seguro a {
+  color: #0076a9 !important;
+  font-size: 16px;
+  font-weight: bolder;
+}
+.navegacion-white .volver-seguro-img {
+  background-image: url("../../../build/img/svg/arrow_back.svg");
+  background-repeat: no-repeat;
+  background-position: 8px 6px;
+}
+.navegacion-white nav a.nav-link.active {
+  font-weight: bolder;
+  border-bottom: 3px solid #0076a9;
+  color: #0076a9 !important;
 }
 
 .myHeader {
@@ -12920,7 +12945,7 @@ img.logo-cslc-small {
 nav a.nav-link.active {
   font-weight: bolder;
   border-bottom: 3px solid #0076a9;
-  color: #0076a9 !important;
+  color: #fff !important;
 }
 
 .disabled-proteccion {

@@ -187,7 +187,6 @@ img.logo-cslc-small {
     }
 }
 .btn.btn-text {
-    
     color: #0076A9;
     background-color: #FFFFFF;
     height: 48px;
@@ -201,14 +200,24 @@ img.logo-cslc-small {
     color: $white;
     font-size: 16px;
     font-weight: bolder;
-
+    .dropdown-hover-content a.dropdown-item{
+        color: $gris-intermedio;
+    }
 }
 
-.contenedor-navegacion-2 .volver-seguro a{
+.contenedor-navegacion-2 .volver-seguro a {
     color: $white !important;
     font-size: 16px;
     font-weight: bolder;
 }
+
+.volver-seguro-img {
+    background-image: url('../../../build/img/svg/arrow_back_white.svg');
+    background-repeat: no-repeat;
+    background-position: 11px 6px;
+    width: 140%;
+} 
+
 
 .navegacion-white  {
     background-color: $white;
@@ -223,6 +232,22 @@ img.logo-cslc-small {
             color: $gris-dark;
             transition: all 0.3s ease-in;
         }
+    }
+    .volver-seguro a {
+        color: $primary !important;
+        font-size: 16px;
+        font-weight: bolder;
+    }
+    .volver-seguro-img {
+        background-image: url('../../../build/img/svg/arrow_back.svg');
+        background-repeat: no-repeat;
+        background-position: 8px 6px;
+    } 
+
+    nav a.nav-link.active{
+        font-weight: bolder;
+        border-bottom: 3px solid $primary;
+        color: $primary !important;
     }
 }
 
@@ -252,7 +277,7 @@ img.logo-cslc-small {
 nav a.nav-link.active{
     font-weight: bolder;
     border-bottom: 3px solid $primary;
-    color: $primary !important;
+    color: $white !important;
 }
 
 .disabled-proteccion{
@@ -262,6 +287,9 @@ nav a.nav-link.active{
 
 
 //Fin Navbar
+
+
+
 
 .nav-tab1 {
     background-color: #FFFFFF;
