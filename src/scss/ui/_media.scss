@@ -155,8 +155,25 @@
     }
   }
 }
-//Fin Media Queries XS
 
+@media (max-width: 576px) {
+  .contenedor-beneficiarios .row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .contenedor-beneficiarios .checkbox {
+    width: 50%;
+  }
+
+  .contenedor-beneficiarios .accordion-item {
+    width: 90%;
+    position: absolute;
+    left: 30px;
+    top: -30px;
+  }
+}
 //Media Queries MD ≥576px
 @include media-breakpoint-only(sm) {
   .texto-imagen-cabecera {
@@ -261,12 +278,12 @@
     font-weight: bolder;
     border-bottom: 3px solid $primary;
     color: $primary !important;
-}
+  }
 
-.pe {
+  .pe {
     font-weight: bolder;
     color: $black !important;
-}
+  }
 
   .texto-imagen-cabecera {
     line-height: 1em;

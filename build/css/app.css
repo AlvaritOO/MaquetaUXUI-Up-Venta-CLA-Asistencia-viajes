@@ -13098,7 +13098,7 @@ a :hover {
 
 .dropdown-item:hover,
 .dropdown-item:focus {
-  color: #1e2125;
+  color: #0076a9;
   background-color: #fff;
 }
 
@@ -13379,6 +13379,22 @@ h5.title-form {
   .items-fijos span.material-icons {
     color: #ffb300;
     font-size: 4rem;
+  }
+}
+@media (max-width: 576px) {
+  .contenedor-beneficiarios .row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .contenedor-beneficiarios .checkbox {
+    width: 50%;
+  }
+  .contenedor-beneficiarios .accordion-item {
+    width: 90%;
+    position: absolute;
+    left: 30px;
+    top: -30px;
   }
 }
 @media (min-width: 576px) and (max-width: 767.98px) {
