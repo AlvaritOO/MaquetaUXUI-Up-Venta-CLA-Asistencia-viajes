@@ -13221,6 +13221,15 @@ h5.title-form {
     position: absolute;
     top: 0.7em;
   }
+  .pi {
+    font-weight: bolder;
+    border-bottom: 3px solid #0076a9;
+    color: #0076a9 !important;
+  }
+  .pe {
+    font-weight: bolder;
+    color: #000 !important;
+  }
   .navegacion nav a {
     color: #212529;
     font-size: 16px;
@@ -13399,6 +13408,19 @@ h5.title-form {
   }
 }
 @media (min-width: 576px) and (max-width: 767.98px) {
+  .pi {
+    font-weight: bolder;
+    border-bottom: 3px solid #0076a9;
+    color: #0076a9 !important;
+  }
+}
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .pe {
+    font-weight: bolder;
+    color: #000 !important;
+  }
+}
+@media (min-width: 576px) and (max-width: 767.98px) {
   .fijo-arriba {
     position: relative;
     top: 0;
@@ -13463,6 +13485,15 @@ h5.title-form {
 @media (min-width: 768px) and (max-width: 991.98px) {
   .espaciado-cabecera {
     margin-top: 50px;
+  }
+  .pi {
+    font-weight: bolder;
+    border-bottom: 3px solid #0076a9;
+    color: #0076a9 !important;
+  }
+  .pe {
+    font-weight: bolder;
+    color: #000 !important;
   }
   .texto-imagen-cabecera {
     line-height: 1em;
