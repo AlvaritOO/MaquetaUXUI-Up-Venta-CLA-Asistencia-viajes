@@ -1227,6 +1227,13 @@ span.ic-form {
   border-radius: 16px;
 }
 
+.alert-success {
+  background: #DEFFF5;
+  border: 1px solid #006E62;
+  box-shadow: 0px 8px 40px rgba(0, 0, 0, 0.08);
+  border-radius: 16px;
+}
+
 //Fin Alertas
 
 .detalles-seguros {
@@ -1415,5 +1422,9 @@ a.btn-mas-monto {
 
 .color-red {
   color: red;
+}
+
+.color-green {
+  color: $verde;
 }
 

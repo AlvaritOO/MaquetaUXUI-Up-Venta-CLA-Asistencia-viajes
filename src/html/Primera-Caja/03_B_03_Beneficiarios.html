@@ -153,24 +153,18 @@
         <div class="col-sm-12 col-md-10 offset-md-1">
           <div class="position-relative">
             <div class="progress" style="height: 1px;">
-              <div class="progress-bar" role="progressbar" style="width: 50%;" aria-valuenow="25" aria-valuemin="0"
+              <div class="progress-bar" role="progressbar" style="width: 100%;" aria-valuenow="25" aria-valuemin="0"
                 aria-valuemax="100"></div>
             </div>
             <button type="button"
               class="position-absolute top-0 start-1 translate-middle btn btn-sm btn-primary rounded-pill"
               style="width: 2rem; height:2rem;">1</button>
             <button type="button"
-              class="position-absolute top-0 start-25 translate-middle btn btn-sm btn-primary rounded-pill"
+              class="position-absolute top-0 start-50 translate-middle btn btn-sm btn-primary rounded-pill"
               style="width: 2rem; height:2rem;">2</button>
             <button type="button"
-              class="position-absolute top-0 start-50 translate-middle btn btn-sm btn-wizard-secundary rounded-pill"
-              style="width: 2rem; height:2rem;">3</button>
-            <button type="button"
-              class="position-absolute top-0 start-75 translate-middle btn btn-sm btn-wizard-secundary rounded-pill"
-              style="width: 2rem; height:2rem;">4</button>
-            <button type="button"
               class="position-absolute top-0 start-100 translate-middle btn btn-sm btn-wizard-secundary rounded-pill"
-              style="width: 2rem; height:2rem;">5</button>
+              style="width: 2rem; height:2rem;">3</button>
           </div>
         </div>
       </div>
@@ -180,13 +174,9 @@
             <div class="position-relative">
               <span class="position-absolute top-0 start-0 translate-middle text-center fw-bold">
                 MIS DATOS DE <br> ASEGURADO</span>
-              <span class="position-absolute top-0 start-25 translate-middle text-center fw-bold">
-                DECLARACIÓN <br> DE SALUD</span>
               <span class="position-absolute top-0 start-50 translate-middle text-center">
-                ADICIONALES</span>
-              <span class="position-absolute top-0 start-75 translate-middle text-center">
-                MEDIOS DE <br> PAGO</span>
-              <span class="position-absolute top-0 start-101 translate-middle text-center">
+                BENEFICIARIOS O <br>HEREDEROS LEGALES</span>
+              <span class="position-absolute top-0 start-100 translate-middle text-center">
                 RESUMEN Y CONFIRMACIÓN</span>
             </div>
           </div>
@@ -206,7 +196,7 @@
     <div class="container d-lg-none mt-2 mb-1 wizard-mobile shadow">
       <div class="row">
         <div class="col-12 paso-actual">
-          <img src="../../../build/img/svg/stepper_bubble-2-5.svg" alt="">
+          <img src="../../../build/img/svg/stepper_bubble-1-5.svg" alt="">
           <span class="h6 text-right mx-2">MIS DATOS DE ASEGURADO</span>
         </div>
       </div>
@@ -217,100 +207,351 @@
   <div class="container mt-4">
     <div class="col-sm-12 m-auto p-4 back-gradiente">
       <div class="row">
-        <div class="col-lg-4 pb-4 pb-lg-0"><strong>Seguro Escolar</strong><br>
-          Plan 4
+        <div class="col-lg-4 pb-4 pb-lg-0"><strong>Seguro primera caja</strong><br>
+          Plan único
         </div>
-        <div class="col-lg-4 text-left pb-4"><strong>4 Adicionales</strong>
+        <div class="col-lg-4 text-left pb-4"><strong>Titular</strong><br>
+          Cristian Torres
         </div>
-        <div class="col-lg-4 text-left "><strong>UF 1,051/Total</strong><br>
-          $ 11.307 aprox
+        <div class="col-lg-4 text-left "><strong>UF 500/Total</strong><br>
+          Costo $0
         </div>
       </div>
     </div>
   </div>
 
   <!-- form -->
-  <section id="formulario" class="mt-4">
+  <section class="d-flex flex-wrap align-items-center justify-content-between py-3 flex-shrink-0">
 
-    <div class="container">
-      <div class="row">
-        <h5 class="fw-bold">DECLARACIÓN DE SALUD</h5>
-
-        <p>Para continuar, cuéntanos sobre tu estado de salud (o el de algún miembro de tu grupo familiar <b>que deseas
-            incluir en el seguro, </b>en caso que aplique). La DPS (declaración personas de salud) es un requisito para
-          contratar tu seguro.</p>
-        <p>La exclusión de cobertura contenida en las Condiciones Generales de la póliza N° XXXXXXXXX corresponde a
-          situaciones de salud o enfermedades diagnosticadas o conocidas por el asegurado antes de la contratación del
-          seguro. En consecuencia, le solicitamos responder: Si usted está en conocimiento de haber padecido, padecer o
-          encontrarse en tratamiento de salud por alguna de las situaciones, condiciones o enfermedades que se señalan
-          más abajo:
-        </p>
-
-        <p class="fw-bold mt-3">
-          ¿Has sido diagnosticado o estás en conocimiento de tener alguna de las enfermedades mencionadas a
-          continuación?
-        </p>
-
-        <ul class="ms-3">
-          <li>Cáncer</li>
-          <li>Leucemia</li>
-          <li>Cirrosis Hepática</li>
-          <li>Diabetes Mellitus</li>
-          <li>Enfermedades Pulmonares Crónicas (EPOC) (Enfisema, Fibrosis Quística)</li>
-          <li>Hemorragia Cerebral</li>
-          <li>Infarto al Miocardio</li>
-          <li>Insuficiencia Renal Crónica</li>
-          <li>Enfermedades Cardiovasculares (Hipertensión arterial, Enfermedades Valvulares, Bypass Aorto Coronario)
-          </li>
-          <li>SIDA</li>
-          <li>VIH</li>
-        </ul>
-
-        <div class="container mb-3">
-          <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"
-              data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-            <label class="form-check-label" for="inlineRadio1" data-bs-toggle="modal" data-bs-target="#staticBackdrop"
-              data-bs-whatever="@fat">Sí, ha sido diagosticado</label>
-          </div>
-          <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
-            <label class="form-check-label" for="inlineRadio2">No padecemos ninguna enfermedad de este tipo</label>
-          </div>
-        </div>
-
-        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-          aria-labelledby="staticBackdropLabel" aria-hidden="true">
-          <div class="modal-dialog modal-dialog-scrollable modal-lg modal-dialog-centered">
-            <div class="modal-content">
-              <div class="text-end mt-3 mb-0 me-3">
-                <img src="../../../build/img/svg/cerrarX.svg" class="" alt="" data-bs-dismiss="modal"
-                  aria-label="Close">
+    <div class="container mt-5">
+      <div>
+        <h3 class="fw-bold my-4">Beneficiarios</h3>
+        <div class="container">
+          <div class="body-buttom-beneficiario mt-3">
+            <div class="row col-12">
+              <div class="col-1 p-2">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
               </div>
-              <div class="modal-body p-3">
-                <h5 class="text-primary fw-bold mx-4">¿Estás seguro? </h5>
-                <h6 class="mx-4">Seleccionando la opcion 'Sí, ha sido diagosticado' no podrás continuar con el proceso
-                  de contratación.</h6>
+              <div class="col-11">
+                <h3 class="fw-bold">Herederos legales:</h3>
+                <p>Son aquellos familiares que en caso en que fallezcas recibirán todo o parte de tu herencia de acuerdo
+                  a lo que señale la ley. Ejemplo: Padres, hermanos, hijos, etc.</p>
               </div>
+            </div>
+          </div>
 
-              <div class="container mb-4">
-                <div class="row justify-content-end">
-                  <div class="col-8 text-end me-4 d-none d-sm-block d-sm-none d-md-block">
-                    <button type="button" class="btn btn-volver" data-bs-dismiss="modal">Cancelar</button>
-                    <button type="button" class="btn btn-primary ms-2" data-bs-dismiss="modal">Sí, confirmo esta
-                      opción</button>
-                  </div>
-                  <div class="d-grid d-md-none d-lg-blockcol-lg-4 mt-5">
-                    <button type="button" class="btn btn-primary">Sí, confirmo esta opción</button>
-                    <button type="button" class="btn btn-volver mt-3">Cancelar</button>
-                  </div>
-                </div>
+          <div class="body-buttom-beneficiario mt-3">
+            <div class="row">
+              <div class="col-1 p-2">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+              </div>
+              <div class="col-11">
+                <h3 class="fw-bold">Otros beneficiarios:</h3>
+                <p>Son las personas que designes cuando contratas tu seguro y son las que recibiran el pago de tu
+                  cobertura en caso de que fallezcas. Mientras tu seguro esté activo, puedes modificar tus beneficiarios
+                  siempre que se informe por escrito. Ejemplo: Pareja, amigos, padres, hermanos, hijos, primos etc.</p>
               </div>
             </div>
           </div>
         </div>
+
       </div>
-    </div>
+
+      <h5 class="mt-5 fw-bold">Agregar beneficiarios</h5>
+
+      <p>
+        Recuerda, puedes designar <strong>hasta 7 beneficiarios</strong> por
+        cobertura de fallecimiento <br />
+        y la distribución que realizas entre los distintos beneficiarios
+        debe sumar <strong>100%</strong>.
+      </p>
+
+      <h4 class="mt-5 mb-3 fw-bold">Beneficiarios: 1 (69%)</h4>
+
+      <!-- Beneficiario Uno-->
+      <div id="contenedor-beneficiarios" class="contenedor-beneficiarios">
+        <div class="row acordeon-beneficiarios">
+
+          <div class="col-xs-11 col-sm-11 col-md-11 col-lg-11">
+
+            <div class="accordion accordion-flush mb-4 position-relative item-beneficiario" id="accordionFlushExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingOne1">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseOne1" aria-expanded="false" aria-controls="flush-collapseOne1">
+                    <b class="mt-1">Maximiliano Torres <p>14.567.890-K</p></b>
+                    <div class="ms-5 d-none d-sm-block d-md-none d-md-block d-lg-block">Porcentaje asignado: <b>69%</b>
+                    </div>
+
+                    <!-- % en desktop-->
+                    <div class="ms-4 d-lg-none">
+                      <img src="../../../build/img/svg/edit-lapiz.svg"
+                        class="position-absolute top-50 start-70 translate-middle" alt="">
+                    </div>
+                    <div class="ms-4 d-lg-none">
+                      <img src="../../../build/img/svg/delete-basurero.svg"
+                        class="position-absolute top-50 start-80 translate-middle text-primary fw-bold"
+                        data-bs-toggle="modal" data-bs-target="#modalquitarbeneficiario" alt="">
+                    </div>
+                    <div class="d-grid gap-2 d-md-flex justify-content-md-end d-none d-sm-none d-md-none d-lg-block">
+                      <p class="position-absolute top-50 start-80 translate-middle text-primary fw-bold">Editar</p>
+                    </div>
+                    <div class="d-grid gap-2 d-md-flex justify-content-md-end d-none d-sm-none d-md-none d-lg-block">
+                      <p class="position-absolute top-50 start-90 translate-middle text-primary fw-bold"
+                        data-bs-toggle="modal" data-bs-target="#modalquitarbeneficiario">Eliminar</p>
+                    </div>
+
+                  </button>
+                </h2>
+                <div id="flush-collapseOne1" class="accordion-collapse collapse" aria-labelledby="flush-headingOne1"
+                  data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">
+
+                    <form class="fondo-viajeros">
+                      <h5 class="title-form fw-bold">DATOS PERSONALES</h5>
+                      <div class="row mt-4">
+
+                        <div class="mb-3 col-sm-5 col-md-6 col-lg-4">
+                          <label for="exampleInputEmail1" class="form-label">RUT</label>
+                          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                            placeholder="">
+                        </div>
+                      </div>
+
+                      <div class="row">
+                        <div class="mb-3 col-sm-6 col-lg-4">
+                          <label for="exampleInputEmail1" class="form-label">Nombres</label>
+                          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                            placeholder="">
+                        </div>
+
+                        <div class="mb-3 col-sm-6 col-lg-4">
+                          <label for="exampleInputEmail1" class="form-label">Apellido Paterno</label>
+                          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                            placeholder="">
+                        </div>
+
+                        <div class="mb-3 col-sm-6 col-lg-4">
+                          <label for="exampleInputEmail1" class="form-label">Apellido Materno</label>
+                          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                            placeholder="">
+                        </div>
+                      </div>
+
+                      <div class="row">
+                        <div class="mb-3 col-sm-6 col-md-6 col-lg-4">
+                          <label for="exampleInputEmail1" class="form-label">Vinculo con el titular</label>
+                          <select class="form-select" aria-label="Default select example">
+                            <option selected>Seleccione</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                          </select>
+                        </div>
+
+                        <div class="mb-3 col-sm-6 col-lg-4">
+                          <label for="exampleInputEmail1" class="form-label">Porcentaje asignado</label>
+                          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                            placeholder="">
+                        </div>
+                      </div>
+
+                      <div class="divisor mt-3"></div>
+
+                      <div class="row">
+                        <h5 class="title-form fw-bold">CONTACTO</h5>
+                        <!--<div class="mb-3 col-sm-6 col-md-6 col-lg-4">
+                          <label for="exampleInputEmail1" class="form-label">Teléfono de Contacto</label>
+                          <input type="" class="form-control input-telefono" id="exampleInputEmail1"
+                            aria-describedby="emailHelp" value="+569 ">
+                          <div class="invalid-feedback">
+                            Debes ingresar un número valido
+                          </div>
+                        </div>-->
+                      </div>
+
+                      <div class="row">
+                        <div class="mb-3 col-sm-6 col-lg-4">
+                          <label for="exampleInputEmail1" class="form-label">Correo electrónico</label>
+                          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                            placeholder="">
+                        </div>
+
+                        <div class="mb-3 col-sm-6 col-lg-4">
+                          <label for="exampleInputEmail1" class="form-label">Confirme correo electrónico</label>
+                          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                            placeholder="">
+                        </div>
+                      </div>
+
+                      <div class="row justify-content-end mt-4">
+                        <div class="d-none d-sm-block d-sm-none d-md-block text-end">
+                          <button type="button" class="btn btn-volver">Cancelar</button>
+                          <button type="button" class="btn btn-amarillo ms-3" id="liveToastBtn2">Guardar
+                            cambios</button>
+                        </div>
+                        <div class="d-grid d-md-none d-lg-blockcol-lg-4">
+                          <button type="button" class="btn btn-volver">Cancelar</button>
+                          <button type="button" class="btn btn-amarillo mt-3" id="liveToastBtn2">Guardar
+                            cambios</button>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="accordion accordion-flush mb-4 position-relative item-beneficiario" id="accordionFlushExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingOne2">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseOne2" aria-expanded="false" aria-controls="flush-collapseOne2">
+                    <b class="mt-1">Julieta Torres <p>25.667.924-0</p></b>
+                    <div class="ms-5 d-none d-sm-block d-md-none d-md-block d-lg-block">Porcentaje asignado: <b>31%</b>
+                    </div>
+
+                    <!-- % en desktop-->
+                    <div class="ms-4 d-lg-none">
+                      <img src="../../../build/img/svg/edit-lapiz.svg"
+                        class="position-absolute top-50 start-70 translate-middle" alt="">
+                    </div>
+                    <div class="ms-4 d-lg-none">
+                      <img src="../../../build/img/svg/delete-basurero.svg"
+                        class="position-absolute top-50 start-80 translate-middle text-primary fw-bold"
+                        data-bs-toggle="modal" data-bs-target="#modalquitarbeneficiario" alt="">
+                    </div>
+                    <div class="d-grid gap-2 d-md-flex justify-content-md-end d-none d-sm-none d-md-none d-lg-block">
+                      <p class="position-absolute top-50 start-80 translate-middle text-primary fw-bold">Editar</p>
+                    </div>
+                    <div class="d-grid gap-2 d-md-flex justify-content-md-end d-none d-sm-none d-md-none d-lg-block">
+                      <p class="position-absolute top-50 start-90 translate-middle text-primary fw-bold"
+                        data-bs-toggle="modal" data-bs-target="#modalquitarbeneficiario">Eliminar</p>
+                    </div>
+
+                  </button>
+                </h2>
+                <div id="flush-collapseOne2" class="accordion-collapse collapse" aria-labelledby="flush-headingOne2"
+                  data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">
+
+                    <form class="fondo-viajeros">
+                      <h5 class="title-form fw-bold">DATOS PERSONALES</h5>
+                      <div class="row mt-4">
+
+                        <div class="mb-3 col-sm-5 col-md-6 col-lg-4">
+                          <label for="exampleInputEmail1" class="form-label">RUT</label>
+                          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                            placeholder="">
+                        </div>
+                      </div>
+
+                      <div class="row">
+                        <div class="mb-3 col-sm-6 col-lg-4">
+                          <label for="exampleInputEmail1" class="form-label">Nombres</label>
+                          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                            placeholder="">
+                        </div>
+
+                        <div class="mb-3 col-sm-6 col-lg-4">
+                          <label for="exampleInputEmail1" class="form-label">Apellido Paterno</label>
+                          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                            placeholder="">
+                        </div>
+
+                        <div class="mb-3 col-sm-6 col-lg-4">
+                          <label for="exampleInputEmail1" class="form-label">Apellido Materno</label>
+                          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                            placeholder="">
+                        </div>
+                      </div>
+
+                      <div class="row">
+                        <div class="mb-3 col-sm-6 col-md-6 col-lg-4">
+                          <label for="exampleInputEmail1" class="form-label">Vinculo con el titular</label>
+                          <select class="form-select" aria-label="Default select example">
+                            <option selected>Seleccione</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                          </select>
+                        </div>
+
+                        <div class="mb-3 col-sm-6 col-lg-4">
+                          <label for="exampleInputEmail1" class="form-label">Porcentaje asignado</label>
+                          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                            placeholder="">
+                        </div>
+                      </div>
+
+                      <div class="divisor mt-3"></div>
+
+                      <div class="row">
+                        <h5 class="title-form fw-bold">CONTACTO</h5>
+                        <!--<div class="mb-3 col-sm-6 col-md-6 col-lg-4">
+                          <label for="exampleInputEmail1" class="form-label">Teléfono de Contacto</label>
+                          <input type="" class="form-control input-telefono" id="exampleInputEmail1"
+                            aria-describedby="emailHelp" value="+569 ">
+                          <div class="invalid-feedback">
+                            Debes ingresar un número valido
+                          </div>
+                        </div>-->
+                      </div>
+
+                      <div class="row">
+                        <div class="mb-3 col-sm-6 col-lg-4">
+                          <label for="exampleInputEmail1" class="form-label">Correo electrónico</label>
+                          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                            placeholder="">
+                        </div>
+
+                        <div class="mb-3 col-sm-6 col-lg-4">
+                          <label for="exampleInputEmail1" class="form-label">Confirme correo electrónico</label>
+                          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                            placeholder="">
+                        </div>
+                      </div>
+
+                      <div class="row justify-content-end mt-4">
+                        <div class="d-none d-sm-block d-sm-none d-md-block text-end">
+                          <button type="button" class="btn btn-volver">Cancelar</button>
+                          <button type="button" class="btn btn-amarillo ms-3" id="liveToastBtn2">Guardar
+                            cambios</button>
+                        </div>
+                        <div class="d-grid d-md-none d-lg-blockcol-lg-4">
+                          <button type="button" class="btn btn-volver">Cancelar</button>
+                          <button type="button" class="btn btn-amarillo mt-3" id="liveToastBtn2">Guardar
+                            cambios</button>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+              <!-- Alert -->
+              <div class="col-sm-12 col-md-12 col-lg-12">
+                <div>
+                  <div class="alert alert-success d-flex align-items-baseline my-4" role="alert">
+                    <div class="me-2"><img src="../../../build/img/svg/icon_check.svg" class="ms-2" alt="">
+                    </div>
+                    <div class="col">
+                      <p>Beneficiario Inscrito correctamente</p>
+                    </div>
+                    <button type="button" class="btn-close " data-bs-dismiss="alert" aria-label="Close"></button>
+                  </div>
+                </div>
+              </div>
+              <!--Fin Alert-->
+              <h5 class="mt-5 fw-bold text-success"><i class="bi bi-check-circle-fill"></i> Porcentaje de asignación
+                completo.</h5>
+              <h6 class="text-primary-uf my-4" type="button"><img src="../../../build/img/svg/add.svg" alt=""> Agregar
+                nuevo beneficiario</h6>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+
 
   </section>
   <!--fin form-->
@@ -329,6 +570,7 @@
     </div>
   </section>
   <!-- Fin Botonera-->
+
 
   <!--Seccion Legales-->
   <section id="legales">
@@ -422,7 +664,7 @@
         <div class="text-end mt-3 mb-0 me-3">
           <img src="../../../build/img/svg/cerrarX.svg" class="" alt="" data-bs-dismiss="modal" aria-label="Close">
         </div>
-          <h5 class="text-primary fw-bold mx-4" id="exampleModalLabel">Preguntas Frecuentes</h5>
+        <h5 class="text-primary fw-bold mx-4" id="exampleModalLabel">Preguntas Frecuentes</h5>
         <div class="modal-body">
           <div class="pregunta">
             <div class="accordion accordion-flush pb-3 pt-3" id="accordionExample1">
@@ -582,7 +824,7 @@
         <div class="text-end mt-3 mb-0 me-3">
           <img src="../../../build/img/svg/cerrarX.svg" class="" alt="" data-bs-dismiss="modal" aria-label="Close">
         </div>
-          <h5 class="text-primary fw-bold mx-4" id="exampleModalLabel">Terminos y Condiciones</h5>
+        <h5 class="text-primary fw-bold mx-4" id="exampleModalLabel">Terminos y Condiciones</h5>
         <div class="modal-body">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eros nunc, porttitor et porta quis,
           aliquet sit
@@ -617,16 +859,16 @@
           Pellentesque massa erat, pretium bibendum elit sit amet, hendrerit condimentum massa. Aenean pharetra suscipit
           auctor.
           Aliquam varius ex at turpis vestibulum fermentum. </div>
-          <div class="container mb-4">
-            <div class="row justify-content-end">
-              <div class="col-8 text-end me-4 d-none d-sm-block d-sm-none d-md-block">
-                <button type="button" class="btn btn-primary ms-2" data-bs-dismiss="modal">Cerrar</button>
-              </div>
-              <div class="d-grid d-md-none d-lg-blockcol-lg-4 mt-5">
-                <button type="button" class="btn btn-primary">Cerrar</button>
-              </div>
+        <div class="container mb-4">
+          <div class="row justify-content-end">
+            <div class="col-8 text-end me-4 d-none d-sm-block d-sm-none d-md-block">
+              <button type="button" class="btn btn-primary ms-2" data-bs-dismiss="modal">Cerrar</button>
+            </div>
+            <div class="d-grid d-md-none d-lg-blockcol-lg-4 mt-5">
+              <button type="button" class="btn btn-primary">Cerrar</button>
             </div>
           </div>
+        </div>
       </div>
     </div>
   </div>
