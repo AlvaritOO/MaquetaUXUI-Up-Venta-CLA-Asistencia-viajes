@@ -292,14 +292,14 @@
                     <div class="ms-4 d-lg-none">
                       <img src="../../../build/img/svg/delete-basurero.svg"
                         class="position-absolute top-50 start-80 translate-middle text-primary fw-bold"
-                        data-bs-toggle="modal" data-bs-target="#modalquitarbeneficiario" alt="">
+                        data-bs-toggle="modal" data-bs-target="#staticBackdrop" alt="">
                     </div>
                     <div class="d-grid gap-2 d-md-flex justify-content-md-end d-none d-sm-none d-md-none d-lg-block">
                       <p class="position-absolute top-50 start-80 translate-middle text-primary fw-bold">Editar</p>
                     </div>
                     <div class="d-grid gap-2 d-md-flex justify-content-md-end d-none d-sm-none d-md-none d-lg-block">
                       <p class="position-absolute top-50 start-90 translate-middle text-primary fw-bold"
-                        data-bs-toggle="modal" data-bs-target="#modalquitarbeneficiario">Eliminar</p>
+                        data-bs-toggle="modal" data-bs-target="#staticBackdrop">Eliminar</p>
                     </div>
 
                   </button>
@@ -402,7 +402,7 @@
                 </div>
               </div>
             </div>
-            
+
             <div class="accordion accordion-flush mb-4 position-relative item-beneficiario" id="accordionFlushExample">
               <div class="accordion-item">
                 <h2 class="accordion-header" id="flush-headingOne2">
@@ -420,14 +420,14 @@
                     <div class="ms-4 d-lg-none">
                       <img src="../../../build/img/svg/delete-basurero.svg"
                         class="position-absolute top-50 start-80 translate-middle text-primary fw-bold"
-                        data-bs-toggle="modal" data-bs-target="#modalquitarbeneficiario" alt="">
+                        data-bs-toggle="modal" data-bs-target="#staticBackdrop" alt="">
                     </div>
                     <div class="d-grid gap-2 d-md-flex justify-content-md-end d-none d-sm-none d-md-none d-lg-block">
                       <p class="position-absolute top-50 start-80 translate-middle text-primary fw-bold">Editar</p>
                     </div>
                     <div class="d-grid gap-2 d-md-flex justify-content-md-end d-none d-sm-none d-md-none d-lg-block">
                       <p class="position-absolute top-50 start-90 translate-middle text-primary fw-bold"
-                        data-bs-toggle="modal" data-bs-target="#modalquitarbeneficiario">Eliminar</p>
+                        data-bs-toggle="modal" data-bs-target="#staticBackdrop">Eliminar</p>
                     </div>
 
                   </button>
@@ -642,15 +642,15 @@
         </p>
 
         <ul class="nav col-md-8 mt-2 justify-content-end">
-          <li class="nav-item col-12 col-sm-4 col-lg-3 text-center"><a id="01-pv-home-footer-terminos-condicones"
+          <li class="nav-item col-12 col-sm-4 col-lg-3 text-center"><a 
               href="#" class="fw-bold link-footer nav-link px-2" data-bs-toggle="modal"
               data-bs-target="#modaltyc">Términos y Condiciones</a></li>
-          <li class="nav-item col-12 col-sm-4 col-lg-3 text-center"><a id="01-pv-home-footer-pregunta-frecuentes"
+          <li class="nav-item col-12 col-sm-4 col-lg-3 text-center"><a 
               href="#" class="fw-bold link-footer nav-link px-2" data-bs-toggle="modal"
               data-bs-target="#modalFAQ">Preguntas Frecuentes</a></li>
-          <li class="nav-item col-12 col-sm-4 col-lg-3 text-center"><a id="01-pv-home-footer-canal-contactos" href="#"
-              class="fw-bold link-footer nav-link px-2 text-left">Canales de Contacto <br><small><i
-                  class="bi bi-telephone-fill pe-2"></i>9 123 456 78</small></a></li>
+          <li class="nav-item col-12 col-sm-4 col-lg-3 text-center"><a
+            href="#" class="fw-bold link-footer nav-link px-2 text-left">Canales de Contacto <br><small><i
+              class="bi bi-telephone-fill pe-2"></i>9 123 456 78</small></a></li>
         </ul>
       </footer>
     </div>
@@ -658,6 +658,37 @@
   <!--Fin Footer-->
 
   <!--Fin Footer Consolidado-->
+
+    <!--modal Caja Los Andes-->
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="text-end mt-3 mb-0 me-3">
+          <img src="../../../build/img/svg/cerrarX.svg" class="" alt="" data-bs-dismiss="modal" aria-label="Close">
+        </div>
+        <div class="modal-body p-3">
+          <h5 class="text-primary fw-bold mx-4">Eliminar beneficiario</h5>
+          <h6 class="mx-4"><b>¿Estás seguro que deseas eliminar este beneficiario?</b><br>
+            Esta acción no se puede deshacer.</h6>
+        </div>
+
+        <div class="container mb-4">
+          <div class="row justify-content-end">
+            <div class="col-8 text-end me-4 d-none d-sm-block d-sm-none d-md-block">
+              <button type="button" class="btn btn-volver" data-bs-dismiss="modal">Cancelar</button>
+              <button type="button" class="btn btn-primary ms-2" data-bs-dismiss="modal">Confirmar</button>
+            </div>
+            <div class="d-grid d-md-none d-lg-blockcol-lg-4 mt-5">
+              <button type="button" class="btn btn-primary">Confirmar</button>
+              <button type="button" class="btn btn-volver mt-3">Cancelar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--modal Caja Los Andes-->
 
   <!--modal FAQ-->
   <div class="modal fade" id="modalFAQ" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
