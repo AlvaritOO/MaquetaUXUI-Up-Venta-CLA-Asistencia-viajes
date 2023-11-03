@@ -173,9 +173,28 @@
     left: 30px;
     top: -30px;
   }
+
+  .body-buttom-beneficiario {
+    padding: 24px;
+    height: auto;
+    width: 100%;
+    min-width: 327px;
+    background: $light;
+    border-radius: 16px;
+  }
 }
 //Media Queries MD ≥576px
 @include media-breakpoint-only(sm) {
+
+  .body-buttom-beneficiario {
+    padding: 24px;
+    height: auto;
+    width: 100%;
+    min-width: 327px;
+    background: $light;
+    border-radius: 16px;
+  }
+
   .texto-imagen-cabecera {
     line-height: 1em;
     @include font-size(1rem);
@@ -270,6 +289,16 @@
 
 //Media Queries MD ≥768px
 @include media-breakpoint-only(md) {
+
+  .body-buttom-beneficiario {
+    padding: 24px;
+    height: auto;
+    width: 100%;
+    min-width: 327px;
+    background: $light;
+    border-radius: 16px;
+  }
+
   .espaciado-cabecera {
     margin-top: 50px;
   }
